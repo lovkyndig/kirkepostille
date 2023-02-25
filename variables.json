@@ -1,0 +1,50 @@
+{
+  "site": {
+    "name": "Kirkepostille",
+    "copyright": "https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=930018821"
+  },
+  "article": {
+    "parent": "Content",
+    "folder": "article",
+    "link": "/article"
+  },
+  "nav": {
+    "home": {
+      "echo": "Hjem",
+      "link": "/home",
+      "more": "Åpne mappe",
+      "not_found": "Ingen artikler funnet."
+    },
+    "about": {
+      "echo": "Om",
+      "link": "/about"
+    },
+    "subscribe": {
+      "echo": "Abonnere",
+      "link": "/subscribe",
+      "rss": "Rss",
+      "sitemap": "Sidekart"
+    }
+  },
+  "menu": {
+    "more": "Toggle",
+    "theme": {
+      "toggle": "Endre tema til"
+    }
+  },
+  "filter": {
+    "catalog": "Indhold",
+    "category": "Series",
+    "tags": "Tags",
+    "series": "Season",
+    "all": "Alle",
+    "less": "Mindre",
+    "more": "Mer",
+    "search": "Søk",
+    "search_guide": "Skriv et ord eller frase...",
+    "list": "List",
+    "clear": "Rens filter",
+    "detail": "info",
+    "loading": "Laster"
+  }
+}
