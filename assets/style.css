@@ -14,6 +14,7 @@
 katex.css is loaded from public-folder in /article/[...slug].vue 
 */
 /*
-ProseH1-5 is changed, because of problem with theme NOTE.
+ProseH1-5 is changed, because of width-problem in theme NOTE (in flexiMode).
 ProseH5 & 6 is unchanged.
+Style is scooped and class-name is fixwidth.
 */

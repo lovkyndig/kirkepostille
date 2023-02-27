@@ -8,8 +8,13 @@ const appConfig = useAppConfig()
       <p v-if="appConfig.theme.author">
         Copyright {{ (new Date()).getFullYear() }}
 
-        <a v-if="appConfig.theme.meta.url" :href="`${appConfig.theme.meta.url}`" target="_blank" class="text-blue-400">{{
-          appConfig.theme.author }}</a>
+        <a
+          v-if="appConfig.theme.meta.url"
+          :href="`${appConfig.theme.meta.url}`"
+          target="_blank"
+          class="text-blue-400"
+        >
+          Gudsbarn</a>
         <span v-else>{{ appConfig.theme.author }}</span>
       </p>
     </div>

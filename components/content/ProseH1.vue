@@ -18,7 +18,6 @@ const flexiMode = useFlexiMode()
 </template>
 <style scoped>
 .fixwidth {
-  color: darkblue;
   width: 100vw
 }
 </style>
