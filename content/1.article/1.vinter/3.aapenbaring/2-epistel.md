@@ -10,7 +10,7 @@ tags:
   - Epistel
 ---
 
-# Rom 12, 6-21 (2. & 3. søn. efter helligtrekonger)
+# Rom 12, 6-21 (2. & 3.søn. efter helligtrekonger)
 Vi har forskellige nådegaver, alt efter den nåde, vi har fået: Den, der har profetisk gave, skal bruge den i overensstemmelse med troen; v7 den, der har en tjeneste, skal passe sin tjeneste; den, der underviser, sin undervisning; v8 den, der formaner, sin formaning; den, der giver, skal give rundhåndet. Den, der er forstander, skal være det med iver, og den, der øver barmhjertighed, skal gøre det glad og gerne.  
 v9 Kærligheden skal være oprigtig. Afsky det onde, hold jer til det gode. v10 Vær hinanden hengivne i broderkærlighed, kappes om at vise hinanden agtelse. v11 Vær ikke tøvende i jeres iver, vær brændende i ånden, tjen Herren. v12 Vær glade i håbet, udholdende i trængslen, vedholdende i bønnen. v13 Vær med til at hjælpe de hellige, når de har behov for hjælp. Læg vægt på at være gæstfrie. v14 Velsign dem, der forfølger jer, velsign, og forband ikke. v15 Glæd jer med de glade, græd med de grædende. v16 Hold sammen i enighed. Stræb ikke efter det høje, men hold jer til det lave, og stol ikke på jeres egen klogskab. v17 Gengæld ingen ondt med ondt; tænk på, hvad der er rigtigt over for alle mennesker. v18 Hold fred med alle mennesker, om det er muligt, så vidt det står til jer. v19 Tag ikke retten i egen hånd, mine kære, men giv plads for Guds vrede, for som der står skrevet: »Hævnen tilhører mig, jeg vil gengælde,« siger Herren. v20 Men »hvis din fjende er sulten, så giv ham noget at spise, hvis han er tørstig, så giv ham noget at drikke; for gør du det, samler du glødende kul på hans hoved.« v21 Lad dig ikke overvinde af det onde, men overvind det onde med det gode.
 

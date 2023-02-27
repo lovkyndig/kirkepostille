@@ -1,7 +1,7 @@
 {
   "site": {
-    "name": "Kirkepostille",
-    "copyright": "https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=930018821"
+    "name": "Kirkepostil",
+    "copyright": "https://kirkepostille.vercel.app/about"
   },
   "article": {
     "parent": "Content",
@@ -28,9 +28,7 @@
   },
   "menu": {
     "more": "Toggle",
-    "theme": {
-      "toggle": "Endre tema til"
-    }
+    "theme": "Endre tema til"
   },
   "filter": {
     "catalog": "Indhold",

@@ -484,7 +484,7 @@ const getFileTypeIcon = (type) => {
                   {{ item.title }}
                 </h2>
               </div>
-              <p v-if="item.description" v-show="showListDetail" class="px-6 text-sm opacity-60 card-description">
+              <p v-if="item.description" v-show="showListDetail" class="px-6 text-sm opacity-60 short-description">
                 {{ item.description }}
               </p>
             </NuxtLink>
@@ -520,12 +520,22 @@ const getFileTypeIcon = (type) => {
 </template>
 
 <style scoped lang="scss">
-
 .filter-list-container {
   @apply grow flex sm:flex-wrap gap-2 overflow-x-auto sm:overflow-x-visible sm:overflow-y-hidden transition-all duration-300
 }
 
 .filter-list-container::-webkit-scrollbar {
   display: none;
+}
+</style>
+<style scoped>
+.short-description {
+  max-lines: 3;
+  overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   max-height: 5rem;      /* fallback (5rem, 5em or 68px) */
+   -webkit-line-clamp: 3; /* number of lines to show */
+   -webkit-box-orient: vertical;
 }
 </style>

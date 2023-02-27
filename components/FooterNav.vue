@@ -146,6 +146,7 @@ const showSearchModal = useShowSearchModal()
           >
             {{ v.nav.home.echo }}
           </NuxtLink>
+          <!--
           <NuxtLink
             :to="v.nav.about.link"
             class="option-item"
@@ -154,6 +155,7 @@ const showSearchModal = useShowSearchModal()
           >
             {{ v.nav.about.echo }}
           </NuxtLink>
+          -->
           <NuxtLink
             v-if="appConfig.theme.subscribePage"
             :to="v.nav.subscribe.link"
@@ -238,15 +240,19 @@ const showSearchModal = useShowSearchModal()
           </p>
         </div>
       </button>
-
+      <!-- This button is for big screens -->
       <button
         v-if="props.footerFlexiMode"
         v-show="!showMoreOptions && !showCategoryOptions"
-        :title="`${v.menu.theme.toggle} ${flexiMode === 'blog' ? 'note' : 'blog'}`"
+        :title="`${v.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog'}`"
         class="grow flex justify-center items-center"
         @click="changeFlexiMode"
       >
-        <div class="mx-2 w-11 h-11 flex flex-col justify-center items-center gap-1 transition-colors duration-300 rounded-lg" :class="flexiMode === 'blog' ? 'flex-col bg-purple-100' : 'bg-green-100'">
+        <div
+          class="mx-2 w-11 h-11 flex flex-col justify-center items-center gap-1 transition-colors duration-300 rounded-lg"
+          :class="flexiMode === 'blog' ? 'flex-col bg-purple-100' : 'bg-green-100'"
+        >
+          <!-- mobil-problem with width of titles & footer-nav -->
           <div class="shrink-0 w-2 h-2 rounded-full" :class="flexiMode === 'blog' ? 'bg-purple-500' : 'bg-green-500'" />
           <div class="shrink-0 space-y-1">
             <div class="w-1.5 h-1.5 rounded-full" :class="flexiMode === 'blog' ? 'bg-purple-400' : 'bg-green-400'" />
@@ -259,7 +265,6 @@ const showSearchModal = useShowSearchModal()
 </template>
 
 <style scoped lang="scss">
-
 .options-container::-webkit-scrollbar {
   display: none;
 }

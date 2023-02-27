@@ -1,9 +1,19 @@
-.card-description {
-  max-lines: 2;
+/* 
+// This style is scoped in list.vue & PostListItem.vue
+.short-description {
+  max-lines: 3;
   overflow: hidden;
    text-overflow: ellipsis;
    display: -webkit-box;
-   max-height: 5rem;      /* fallback (5rem, 5em or 68px) */
-   -webkit-line-clamp: 3; /* number of lines to show */
+   max-height: 5rem;
+   -webkit-line-clamp: 3;
    -webkit-box-orient: vertical;
 }
+*/
+/* 
+katex.css is loaded from public-folder in /article/[...slug].vue 
+*/
+/*
+ProseH1-5 is changed, because of problem with theme NOTE.
+ProseH5 & 6 is unchanged.
+*/

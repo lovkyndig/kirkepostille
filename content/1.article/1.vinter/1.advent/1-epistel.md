@@ -10,7 +10,7 @@ tags:
   - Epistel
 ---
 
-# Rom 13, 11-14 (1 søn. i advent)
+# Rom 13, 11-14 (1.søn. i advent)
 *I kender tilmed timen og ved, at det er på tide at stå op af søvne. For nu er frelsen os nærmere, end da vi kom til tro. Natten er fremrykket, dagen er nær. Lad os da aflægge mørkets gerninger og tage lysets rustning på. Lad os leve sømmeligt, som det hører dagen til, ikke i svir og druk, ikke løsagtigt og udsvævende, ikke i kiv og misundelse, men iklæd jer Herren Jesus Kristus, og vær ikke optaget af det kødelige, så det vækker begær.*
 
 ## Formaning til gode gerninger

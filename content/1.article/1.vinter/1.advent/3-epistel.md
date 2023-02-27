@@ -10,7 +10,7 @@ tags:
   - Epistel
 ---
 
-# 1 Kor 4, 1-5 (3 søn. i advent)
+# 1 Kor 4, 1-5 (3.søn. i advent)
 *Sådan skal man betragte os: som Kristi tjenere og som forvaltere af Guds hemmeligheder; her kræves det så af forvaltere, at de findes tro. Men mig er det ligegyldigt, om jeg bliver bedømt af jer eller af nogen menneskelig domstol, ja, jeg bedømmer ikke engang mig selv; for jeg er mig ikke noget bevidst, men dermed er jeg ikke frikendt. Den, der bedømmer mig, er Herren. Fæld derfor ikke dom før tiden, før Herren kommer! Han skal bringe for lyset, hvad der er skjult i mørket, og åbenbare, hvad hjerterne vil. Og da skal enhver få sin ros fra Gud.*
 
 I denne epistel har vi et eksempel på det, der er talt om i evangeliet på første søndag i advent. Der hørte vi, at disciplene ikke selv red på føllet, men førte det til Kristus og satte ham på det. Det samme gør apostlene her. For korintherne begyndte at dele sig i forskellige partier og hænge ved apostlene. Nogle roste sig af Peter, andre af Paulus og andre af Apollos. Enhver gav forrangen til den apostel, der havde døbt og undervist ham selv, eller, som han syntes, var den fornemste. Men nu kommer Paulus og vil forhindre det. Han tillader ingen at rose sig af den ene eller den anden apostel, men alene af Kristus. Og han siger, at det ikke har nogen betydning, hvem det er, der har døbt og undervist dem, men at hovedsagen er den, at de enigt holder sig til Kristus og er lydig mod ham. Hvad de skal mene om apostlene, lærer Paulus dem i det følgende:

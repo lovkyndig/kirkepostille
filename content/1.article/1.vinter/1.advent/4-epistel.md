@@ -10,7 +10,7 @@ tags:
   - Epistel
 ---
 
-# Fil 4, 4-7 (4 søn. i advent)
+# Fil 4, 4-7 (4.søn. i advent)
 *Glæd jer altid i Herren! Jeg siger atter: Glæd jer! Lad jeres mildhed blive kendt af alle mennesker. Herren er nær. Vær ikke bekymrede for noget, men bring i alle forhold jeres ønsker frem for Gud i bøn og påkaldelse med tak. Og Guds fred, som overgår al forstand, vil bevare jeres hjerter og tanker i Kristus Jesus.*
 
 Dette er en kort tekst. Alligevel er den en vigtig og indholdsrig del af den kristne tros lærdomme. Først lærer apostlen os, hvordan vi skal forholde os over for Gud. Dernæst lærer han, hvordan vi skal forholde os mod næsten. Han siger:
