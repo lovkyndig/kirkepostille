@@ -218,7 +218,7 @@ provide('recommendColumns', recommendColumns)
 
 const autoChangeColumns = ref(true)
 
-let resizeTimerForColumns = null
+const resizeTimerForColumns = null
 
 const windowSize = useWindowSize()
 onMounted(() => {
@@ -298,6 +298,10 @@ const setActiveHeadingId = (id:string) => {
   activeHeadingId.value = id
 }
 provide('setActiveHeadingId', setActiveHeadingId)
+/*
+text-gray-400 is changed to text-gray-500
+and text-gray 300 is changed to text-gray-400
+*/
 </script>
 
 <template>
@@ -311,7 +315,7 @@ provide('setActiveHeadingId', setActiveHeadingId)
           v-if="category"
           :to="{ path: '/list', query: { category: category } }"
           target="_blank"
-          class="p-2 flex items-center gap-1 text-gray-300 hover:text-white hover:bg-purple-500 focus:outline-purple-500 focus:outline-none rounded transition-colors duration-300"
+          class="p-2 flex items-center gap-1 text-gray-400 hover:text-white hover:bg-purple-500 focus:outline-purple-500 focus:outline-none rounded transition-colors duration-300"
         >
           <IconCustom name="material-symbols:category-rounded" class="shrink-0 w-4 h-4" />
           <span class="text-xs">{{ category }}</span>
@@ -319,14 +323,14 @@ provide('setActiveHeadingId', setActiveHeadingId)
         <div v-if="showTime" class="flex flex-wrap justify-center items-center gap-2 sm:gap-4">
           <div
             v-if="props.data.created"
-            class="flex items-center gap-1 text-xs text-gray-300 hover:text-gray-400 transition-colors duration-300"
+            class="flex items-center gap-1 text-xs text-gray-400 hover:text-gray-500 transition-colors duration-300"
           >
             <IconCustom name="mdi:pencil-circle" class="w-4 h-4" />
             <span>Created Time: {{ (new Date(props.data.created)).toLocaleDateString() }}</span>
           </div>
           <div
             v-if="props.data.updated"
-            class="flex items-center gap-1 text-xs text-gray-300 hover:text-gray-400 transition-colors duration-300"
+            class="flex items-center gap-1 text-xs text-gray-400 hover:text-gray-500 transition-colors duration-300"
           >
             <IconCustom name="mdi:clock" class="w-4 h-4" />
             <span>Updated Time: {{ (new Date(props.data.updated)).toLocaleDateString() }}</span>
@@ -335,7 +339,7 @@ provide('setActiveHeadingId', setActiveHeadingId)
         <div class="flex flex-wrap justify-center items-center gap-2 sm:gap-4">
           <button
             v-if="props.data.series"
-            class="p-2 flex items-center gap-1 text-gray-300 hover:text-white hover:bg-green-500 focus:outline-none rounded transition-colors duration-300"
+            class="p-2 flex items-center gap-1 text-gray-400 hover:text-white hover:bg-green-500 focus:outline-none rounded transition-colors duration-300"
             @click="showSeriesModal=true"
           >
             <IconCustom name="bi:collection" class="shrink-0 w-4 h-4" />
@@ -344,7 +348,7 @@ provide('setActiveHeadingId', setActiveHeadingId)
           <button
             v-if="props.data.tags"
             class="p-2 hidden sm:flex items-center gap-1 focus:outline-blue-500 rounded transition-colors duration-300"
-            :class="showTags ? 'bg-blue-500 hover:bg-blue-400 text-white' : 'text-gray-300 hover:text-white hover:bg-blue-500 '"
+            :class="showTags ? 'bg-blue-500 hover:bg-blue-400 text-white' : 'text-gray-400 hover:text-white hover:bg-blue-500 '"
             @click="showTags = !showTags"
           >
             <IconCustom name="bi:collection" class="shrink-0 w-4 h-4" />
@@ -373,7 +377,7 @@ provide('setActiveHeadingId', setActiveHeadingId)
           :key="tag"
           :to="{ path: '/list', query: { tags: [tag] } }"
           target="_blank"
-          class="px-2 py-1 text-xs text-gray-300 hover:text-white hover:bg-blue-500 rounded focus:outline-blue-500 transition-colors duration-300"
+          class="px-2 py-1 text-xs text-gray-400 hover:text-white hover:bg-blue-500 rounded focus:outline-blue-500 transition-colors duration-300"
         >
           #{{ tag }}
         </NuxtLink>

@@ -1,6 +1,6 @@
 {
   "name": "kirkepostil",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Church-Postil by Dr. Martin Luther, in markdown, with search engine.",
   "homepage": "https://kirkepostille.vercel.app",
   "author": "lovkyndig",

@@ -39,7 +39,7 @@
     "less": "Mindre",
     "more": "Mer",
     "search": "Søk",
-    "search_guide": "Søg og find talene her (in this view). Vælg én tale...(loading)... Når hele talen vises (in new view) tryk Ctrl + F for at søge i talen.",
+    "search_guide": "Søg og find talene her (in this view). Vælg én tale...(loading in new view)... Efter lastning tryk Ctrl + F for at søge i talen.",
     "list": "List",
     "clear": "Rens filter",
     "detail": "info",
