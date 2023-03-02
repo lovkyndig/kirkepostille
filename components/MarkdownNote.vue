@@ -216,7 +216,7 @@ onMounted(() => {
     if (divideColumns.value === 1) {
       oneColHeaderOnBigScreen.value = true
     } else { oneColHeaderOnBigScreen.value = false }
-    // console.log(`'???column' + ${divideColumns.value}`)
+
     watch(() => windowSize.value.width, () => {
       recommendColumns.value = Math.max(Math.floor(document.documentElement.clientWidth / 500), 1)
       if (autoChangeColumns.value) {
@@ -226,12 +226,9 @@ onMounted(() => {
       if (divideColumns.value === 1) {
         oneColHeaderOnBigScreen.value = true
       } else { oneColHeaderOnBigScreen.value = false }
-      // console.log(`'???column' + ${divideColumns.value}`)
     })
   }
 })
-
-console.log(`'2 Is onecol true? ' + ${oneColHeaderOnBigScreen.value}`)
 
 const changeDivideColumnsHandler = (event) => {
   if (event.shiftKey) {

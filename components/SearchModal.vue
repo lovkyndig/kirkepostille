@@ -14,8 +14,6 @@ try {
   console.log(error)
   // }
 }
-
-// console.log(pagefind);
 // }
 
 if (baseURL !== '/') {

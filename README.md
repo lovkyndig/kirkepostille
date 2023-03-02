@@ -5,5 +5,10 @@ Kirkepostil is an clone of [`BlogiNote`](https://github.com/Benbinbin/BlogiNote)
 
 Please go there to see the **setup** etc.
 
+## To do-list
+- Verify the ownership of the site in Google Search Console
+- Add mouse-drag-event-handler on PC
+- Add dark-light-themetoggle
+
 ## License
 [MIT](./LICENSE)
