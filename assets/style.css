@@ -17,4 +17,52 @@ katex.css is loaded from public-folder in /article/[...slug].vue
 ProseH1-5 is changed, because of width-problem in theme NOTE (in flexiMode).
 ProseH5 & 6 is unchanged.
 Style is scooped and class-name is fixwidth.
+The button to change between 1 and 2 coloumn is in MarkdownNote.vue line 416
+div-parent to all header is maybe in MarkdownNote.vue line 
 */
+
+@media only screen and (max-width: 940px) {
+  .notewidth {
+    color: royalblue;
+    width: 90vw
+  }
+}
+
+@media screen and (min-width: 940px) and (max-width: 1000px) {
+  .notewidth {
+    color: lightblue;
+    width: 88vw
+  }
+}
+/* 
+Toggle between 1 and 2 coloumn in note-theme-modus if min 1000px 
+See the code in MarkdownNote.vue about changeDivideColumnsHandler
+See the css in /article/[...slug].vue about article-container 
+and line 226 about the class
+In ElementCard.vue line 237 and 335
+The coloumn is set in MarkdownNote.vue line 390 to 1 or 2
+*/
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .notewidth {
+    color: rgb(230, 173, 173);
+    width: 46vw
+  }
+  h1[name='h1top'] {
+    color: rgb(76, 139, 0);
+    width: 88vw
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .notewidth {
+    color: darkblue;
+    width: 48vw
+  }
+  h1[name='h1top'] {
+    color: rgb(139, 107, 0);
+    width: 80vw
+  }
+}
+.fullwidth {
+  width: 90vw
+}

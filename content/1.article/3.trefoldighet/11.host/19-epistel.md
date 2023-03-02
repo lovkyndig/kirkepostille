@@ -1,5 +1,5 @@
 ---
-series: Sep-nov
+series: Høst
 articleType: note
 showTime: false
 showOutdatedWarning: false
@@ -105,7 +105,7 @@ _____
     &nbsp;   
     At Paulus ikke har til hensigt at give tilladelse til nogen form for vrede bekræftes af v.31, hvor al vrede eftertrykkeligt forbydes. Udtrykket *Lad ikke solen gå ned over jeres vrede* er utvivlsomt et almindeligt ordsprog fra ældre tid. Et lignende udtryk kan påvises hos pythagoræerne, og måske har vi også en reminiscens deraf i bestemmelsen om daglejere i **5 Mos 24, 15**: *Hver dag skal du betale ham hans løn, før solen går ned* (Septuaginta: *Den samme dag skal du betale hans løn; lad ikke solen gå ned over den*). Den sproglige parallelitet fremgår af, at der er brugt samme græske verbum (epidyd, gå ned) og den samme præposition (epi, over) som i **Ef 4, 25**). Det ser altså ud til at være et ordsprog, der kan anvendes i forskellige situationer. Vers 27 er således ikke en tilladelse til at holde fast ved vreden til solnedgang, men et forbud og en advarsel mod at forhærde sig i sin vrede. Det bekræftes af, at det ord, der nu bruges om vreden (det græske substantiv parorgismos) er stærkere end det ord, der blev brugt som verbum i begyndelsen af sætningen (gr. orgizomai, at vredes). Det kan gengives med *provokation*, *udæskning til vrede*, idet den græske forstavelse par virker forstærkende. Vi møder det tilsvarende verbum (parorgizo) i 6, 4, hvor det står om ikke at udæske eller opirre sine børn.  
     &nbsp;   
-    Note by Finn B. Andersen  
+    Stikkord: Finn B. Andersen  
     Reference: Flemming Frøkjær-Jensen, Credo Kommentaren. Efeserbrevet, København 1993.  
 <!-- 
 Dr. Martin Luther's Church-Postil 

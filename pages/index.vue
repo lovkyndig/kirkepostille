@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
-import v from '../variables.json'
+import { variables as v } from '~/app/constants'
 // import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 // import fileTypeMap from '@/utils/fileType.json'
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
-import v from '../variables.json'
+import { variables as v } from '~/app/constants'
 
 const props = defineProps({
   footerCatalog: {
@@ -82,9 +82,7 @@ const changeFlexiMode = () => {
  * toggle catalog
  *
  */
-// const showBlogCatalog = useShowBlogCatalog()
 const showBlogCatalog = useState('showBlogCatalog')
-// const showNoteCatalog = useShowNoteCatalog()
 const showNoteCatalog = useState('showNoteCatalog')
 const toggleCatalogHandler = () => {
   if (flexiMode.value === 'blog') {

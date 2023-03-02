@@ -5,10 +5,8 @@ const props = defineProps<{
   nextArticleUrl: string;
 }>()
 
-// defineEmits(['showSeriesModal'])
 const showSeriesModal = useState('showSeriesModal')
 
-// const themeOptions = useTheme()
 const appConfig = useAppConfig()
 
 /**
@@ -59,10 +57,8 @@ if (props.data._path) {
  * toc for markdown article
  *
  */
-// const showCatalog = useShowBlogCatalog()
-const showCatalog = useState<Boolean>('showBlogCatalog', () => {
-  return appConfig.theme.articlePage.showBlogCatalog
-})
+
+const showCatalog = useState('showBlogCatalog')
 
 const article = ref<HTMLElement | null>(null) // get the article DOM
 

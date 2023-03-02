@@ -1,6 +1,6 @@
 // the alternative to Nuxt theme https://nuxt-themes.netlify.app/
 import pkg from './package.json'
-import v from './variables.json'
+import { variables as v } from '~/app/constants'
 
 export default defineAppConfig({
   theme: {
@@ -23,9 +23,7 @@ export default defineAppConfig({
       outdated: {
         show: true,
         threshold: 30
-      },
-      showBlogCatalog: false,
-      showNoteCatalog: false
+      }
     },
     search: {
       exclude: [

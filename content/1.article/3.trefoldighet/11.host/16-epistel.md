@@ -1,5 +1,5 @@
 ---
-series: Sep-nov
+series: Høst
 articleType: note
 showTime: false
 showOutdatedWarning: false

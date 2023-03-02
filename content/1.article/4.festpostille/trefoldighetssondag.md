@@ -1,5 +1,5 @@
 ---
-series: Jun-aug
+series: Sommer
 articleType: note
 showTime: false
 showOutdatedWarning: false

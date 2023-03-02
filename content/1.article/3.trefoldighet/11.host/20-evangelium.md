@@ -1,5 +1,5 @@
 ---
-series: Sep-nov
+series: Høst
 articleType: note
 showTime: false
 showOutdatedWarning: false
@@ -11,7 +11,7 @@ tags:
 ---
 
 # Matt 22, 1-14 (20.søn efter trinitatis)
-Jesus tog til orde og talte igen til dem i lignelser: 
+Jesus tog til orde og talte igen til dem i lignelser:
 *Himmeriget ligner en konge, der holdt sin søns bryllup. Han sendte sine tjenere ud for at kalde de indbudte til brylluppet, men de ville ikke komme. Så sendte han nogle andre tjenere ud, der skulle sige til de indbudte: Nu er der dækket op til fest; mine okser og fedekalve er slagtet, og alt er rede. Kom til brylluppet! 
 Men det tog de sig ikke af og gik, én til sin mark, en anden til sin forretning, og andre igen greb hans tjenere og mishandlede dem og slog dem ihjel. 
 Men kongen blev vred og sendte sine hære ud og dræbte disse mordere og brændte deres by. 

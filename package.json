@@ -1,7 +1,7 @@
 {
   "name": "kirkepostil",
-  "version": "0.1.4",
-  "description": "Church-Postil by Dr. Martin Luther, in markdown, with search engine.",
+  "version": "0.1.7",
+  "description": "⚡ Search after the truth in Church-Postil by Dr. Martin Luther",
   "homepage": "https://kirkepostille.vercel.app",
   "author": "lovkyndig",
   "license": "MIT",
@@ -25,14 +25,16 @@
   "dependencies": {
     "@iconify/vue": "^4.1.0",
     "@nuxt/content": "^2.4.3",
-    "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@nuxtjs/tailwindcss": "^6.4.1",
-    "eslint": "^8.34.0",
+    "@pinia/nuxt": "^0.4.7",
+    "@vueuse/nuxt": "^9.13.0",
+    "eslint": "^8.35.0",
     "feed": "^4.2.2",
     "mermaid": "^9.4.0",
-    "nuxt": "^3.2.2",
-    "pagefind": "^0.11.0",
+    "nuxt": "^3.2.3",
+    "pagefind": "^0.12.0",
+    "pinia": "^2.0.32",
     "rehype-katex": "^6.0.2",
     "remark-critic-markup": "^1.0.1",
     "remark-math": "^5.1.1",
@@ -41,7 +43,7 @@
     "sass": "^1.58.3",
     "sitemap": "^7.1.1",
     "typescript": "^4.9.5",
-    "vue-tsc": "^1.1.7"
+    "vue-tsc": "^1.2.0"
   },
   "scripts": {
     "dev": "nuxi dev",

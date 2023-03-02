@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import v from '../../variables.json'
+import { variables as v } from '~/app/constants'
+
 /**
 *
 * set head meta for article page
@@ -65,12 +66,9 @@ if (data.value?.series) {
       .sort({ seriesOrder: 1, $numeric: true })
       .find()
   })
-
   seriesList.value = seriesResult.value
-
   if (seriesResult.value && seriesResult.value.length > 1) {
     const currentArticleIndex = seriesResult.value.findIndex(item => route.path === item._path)
-
     if (currentArticleIndex !== -1) {
       if (currentArticleIndex === 0) {
         nextArticleName.value = seriesResult.value[currentArticleIndex + 1].title
@@ -91,32 +89,22 @@ if (data.value?.series) {
 if (data.value?.prevArticleUrl) {
   prevArticleUrl.value = data.value.prevArticleUrl
 }
-
 if (data.value?.prevArticleName) {
   prevArticleName.value = data.value.prevArticleName
 }
-
 if (data.value?.nextArticleUrl) {
   nextArticleUrl.value = data.value.nextArticleUrl
 }
-
 if (data.value?.nextArticleName) {
   nextArticleName.value = data.value.nextArticleName
 }
 
 // show or hide series modal
-// const showSeriesModal = ref(false)
-const showSeriesModal = useState<Boolean>('showSeriesModal', () => false)
-// provide('showSeriesModal', showSeriesModal)
-
-// const changeSeriesModalState = (state) => {
-//   showSeriesModal.value = state
-// }
+const showSeriesModal = useState('showSeriesModal')
 
 // stop body scroll when series modal show up
 watch(showSeriesModal, () => {
   if (!document?.body) { return }
-
   if (showSeriesModal.value) {
     document.body.classList.add('overflow-hidden')
   } else {
@@ -138,18 +126,14 @@ const addListener = (list, prefix, suffix) => {
     // add event listener for double click
     element.addEventListener('dblclick', (event) => {
       const target = event.currentTarget as HTMLElement
-
       // after click set the math element border color to 'border-purple-400'
       target.style.borderColor = '#c084fc'
-
       // get the LaTeX source code of math formula
       // refer to https://github.com/KaTeX/KaTeX/issues/645
       const formulaElem = target.querySelector('annotation')
-
       if (formulaElem && formulaElem.textContent) {
         // add '$' or '$$' prefix and suffix for inline math or block math
         const formula = prefix + formulaElem.textContent + suffix
-
         if (clipboard.value) {
           // write the formula to clipboard and set the math element border color based on the promise resolve result
           clipboard.value.writeText(formula).then(() => {
@@ -161,7 +145,6 @@ const addListener = (list, prefix, suffix) => {
           })
             .catch(() => {
               target.style.borderColor = '#f87171'
-
               const timer = setTimeout(() => {
                 target.style.borderColor = 'transparent'
                 clearTimeout(timer)
@@ -170,7 +153,6 @@ const addListener = (list, prefix, suffix) => {
         }
       } else {
         target.style.borderColor = '#f87171'
-
         const timer = setTimeout(() => {
           target.style.borderColor = 'transparent'
           clearTimeout(timer)
@@ -182,11 +164,9 @@ const addListener = (list, prefix, suffix) => {
 
 onMounted(() => {
   clipboard.value = navigator.clipboard
-
   if (articleContainer.value && clipboard.value) {
     const mathInlineList = articleContainer.value.querySelectorAll('.math-inline')
     const mathBlockList = articleContainer.value.querySelectorAll('.math-display')
-
     if (mathInlineList.length > 0) { addListener(mathInlineList, '$', '$') }
     if (mathBlockList.length > 0) { addListener(mathBlockList, '$$\n', '\n$$') }
   }
@@ -225,6 +205,7 @@ watch(showZoomImage, () => {
         :next-article-url="nextArticleUrl"
         class="container mx-auto px-6 md:px-12 py-12 lg:max-w-4xl"
       />
+      <!-- Testing -->
       <MarkdownNote
         v-if="!pending && data && data._type === 'markdown' && data.articleType === 'note'"
         v-show="flexiMode === 'note'"

@@ -1,5 +1,5 @@
 ---
-series: Sep-nov
+series: Høst
 articleType: note
 showTime: false
 showOutdatedWarning: false
@@ -167,8 +167,8 @@ Sådan ser vi, at Kristus ikke gør nogen forskel mellem de svage og stærke i t
 &nbsp;  
 Sådan skal vi undervise og lære hinanden indbyrdes, så vi må holde os til hans Ord. Derved bliver vi stærke nok til at stå Djævelen imod. Ellers ville han i en time sønderbryde os alle som et lerkar; og alle mennesker ville da være for ham som en fjer, som han kunne blæse bort, når og hvordan han ville. Men nu skal denne fjer blive ham tungere end himmel og jord; for en kristen har Kristus i sig; men Kristus er tungere end himmel og jord. Det må være nok om denne tekst.
 
-[^1]: Note av Gudsbarn  
-    Det er denne annen tale som Benjamin Lindner har inntatt i sin utgave av kirkepostillen (den såkalte *Kjernepostillen*.)
+[^1]: Stikkord: kjerenepostille.  
+Det er den adre talen ovenfor som Benjamin Lindner har inntatt i sin utgave av kirkepostillen.
 <!-- 
 Dr. Martin Luther's Church-Postil 
 Original source: https://lutherdansk.dk

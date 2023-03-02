@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
+import { variables as v } from '~/app/constants'
 // import fileTypeMap from '@/utils/fileType.json'
-import v from '../variables.json'
 
 interface MyCustomParsedContent extends ParsedContent {
   tags: string[]

@@ -1,5 +1,5 @@
 ---
-series: Sep-nov
+series: Høst
 articleType: note
 showTime: false
 showOutdatedWarning: false
@@ -20,8 +20,8 @@ Luther henviser til en trykt prædiken fra 1533 *"Von der Christen Harnisch und 
 [Link til NB](https://www.nb.no/items/f25836249f16c172647e65500dbcb5cd?page=667&searchText=luther%20Udvalgte%20fuldst%C3%A6ndige%20Skrifter%202)
 
 
-[^1]: Note av Gudsbarn  
-    Denne preken er inntatt i Benjamin Lindners utgave av kirkepostillen (som på folkemunne er kalt kjernepostillen),
+[^1]: Stikkord: kjernepostille.  
+Denne preken er inntatt i Benjamin Lindners utgave av kirkepostillen.
 <!-- 
 Dr. Martin Luther's Church-Postil 
 Original source: https://lutherdansk.dk

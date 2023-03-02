@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import v from '../variables.json'
+import { variables as v } from '~/app/constants'
 const config = useRuntimeConfig()
 </script>
 

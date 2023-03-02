@@ -5,7 +5,7 @@ const flexiMode = useFlexiMode()
 </script>
 
 <template>
-  <h1 v-if="flexiMode==='note'" :id="id" class="fixwidth">
+  <h1 v-if="flexiMode==='note'" :id="id" class="notewidth" name="h1top">
     <a>
       <slot />
     </a>
@@ -17,7 +17,4 @@ const flexiMode = useFlexiMode()
   </h1>
 </template>
 <style scoped>
-.fixwidth {
-  width: 100vw
-}
 </style>

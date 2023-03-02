@@ -1,7 +1,5 @@
 <script setup lang="ts">
 const props = defineProps<{ data: any }>()
-
-// defineEmits(['showSeriesModal'])
 const showSeriesModal = useState('showSeriesModal')
 
 /**
@@ -105,13 +103,10 @@ props.data.body.children.forEach((elem) => {
   if (articleTree.length === 0 && elem.tag !== 'h1') {
     currentH1 = defaultH1
     currentParent = currentH1
-
     articleTree.push(currentH1)
   }
-
   if (headingArr.includes(elem.tag)) {
     if (elem.tag !== 'h1') { headingIdArr.push(elem.props.id) }
-
     switch (elem.tag) {
       case 'h1':
         currentH1 = {
@@ -140,13 +135,11 @@ props.data.body.children.forEach((elem) => {
           children: [],
           content: []
         }
-
         if (!currentH2) {
           currentParent.children.push(currentH3)
         } else {
           currentH2.children.push(currentH3)
         }
-
         currentParent = currentH3
         break
       case 'h4':
@@ -156,13 +149,11 @@ props.data.body.children.forEach((elem) => {
           children: [],
           content: []
         }
-
         if (!currentH3) {
           currentParent.children.push(currentH3)
         } else {
           currentH3.children.push(currentH4)
         }
-
         currentParent = currentH4
         break
       case 'h5':
@@ -172,7 +163,6 @@ props.data.body.children.forEach((elem) => {
           children: [],
           content: []
         }
-
         if (!currentH4) {
           currentParent.children.push(currentH5)
         } else {
@@ -187,7 +177,6 @@ props.data.body.children.forEach((elem) => {
           children: [],
           content: []
         }
-
         if (!currentH5) {
           currentParent.children.push(currentH6)
         } else {
@@ -209,35 +198,40 @@ props.data.body.children.forEach((elem) => {
  *
  */
 const layout = ref<'waterfall' | 'compact' | 'card'>('waterfall')
-
 const divideColumns = ref(1)
 provide('divideColumns', divideColumns)
-
 const recommendColumns = ref(1)
 provide('recommendColumns', recommendColumns)
-
 const autoChangeColumns = ref(true)
-
-const resizeTimerForColumns = null
-
 const windowSize = useWindowSize()
+const oneColHeaderOnBigScreen = useState('oneColHeaderOnBigScreen') // added
 onMounted(() => {
   if (document.documentElement.clientWidth && window) {
     if (document.documentElement.clientWidth >= 1000) {
       recommendColumns.value = Math.max(Math.floor(document.documentElement.clientWidth / 500), 1)
       divideColumns.value = recommendColumns.value
-
       if (articleTree.length > 1) { layout.value = 'compact' }
     }
-
+    // added check on startup
+    if (divideColumns.value === 1) {
+      oneColHeaderOnBigScreen.value = true
+    } else { oneColHeaderOnBigScreen.value = false }
+    // console.log(`'???column' + ${divideColumns.value}`)
     watch(() => windowSize.value.width, () => {
       recommendColumns.value = Math.max(Math.floor(document.documentElement.clientWidth / 500), 1)
       if (autoChangeColumns.value) {
         divideColumns.value = recommendColumns.value
       }
+      // added check about win.resizing
+      if (divideColumns.value === 1) {
+        oneColHeaderOnBigScreen.value = true
+      } else { oneColHeaderOnBigScreen.value = false }
+      // console.log(`'???column' + ${divideColumns.value}`)
     })
   }
 })
+
+console.log(`'2 Is onecol true? ' + ${oneColHeaderOnBigScreen.value}`)
 
 const changeDivideColumnsHandler = (event) => {
   if (event.shiftKey) {
@@ -249,7 +243,32 @@ const changeDivideColumnsHandler = (event) => {
     if (columns > recommendColumns.value) { columns = 1 }
     divideColumns.value = columns
   }
+  // added code to fix problem with headers in node-modus (on big screens)
+  // this code isn't doing something
+  if (divideColumns.value === 1) {
+    oneColHeaderOnBigScreen.value = true
+    console.log(`'Problem with heading-width? ' + ${oneColHeaderOnBigScreen.value}`)
+  } else { oneColHeaderOnBigScreen.value = false }
 }
+
+// added code to fix problem with headers in node-modus (on big screens)
+watch(oneColHeaderOnBigScreen, () => {
+  const elements = document.querySelectorAll("h2,h3,h4,h5[name='hnames']")
+  if (oneColHeaderOnBigScreen.value) {
+    // loop trough headers and toggle the class .notewidth
+    elements.forEach((element) => {
+      element.classList.toggle('notewidth')
+      element.classList.add('fullwidth')
+    })
+  } else {
+    // loop trough headers and toggle the class .notewidth
+    elements.forEach((element) => {
+      element.classList.toggle('notewidth')
+      element.classList.remove('fullwidth')
+    })
+  }
+  console.log(`'Finish with watching, and logging columns: ' + ${divideColumns.value}`)
+})
 
 /**
  *
@@ -257,10 +276,8 @@ const changeDivideColumnsHandler = (event) => {
  * toc for markdown article
  *
  */
-// const showCatalog = useShowNoteCatalog()
-const showCatalog = useState<Boolean>('showNoteCatalog', () => {
-  return appConfig.theme.articlePage.showNoteCatalog
-})
+
+const showCatalog = useState('showNoteCatalog')
 
 // collapse heading section
 const collapseHeadings = ref(new Set<string>())
@@ -385,6 +402,7 @@ and text-gray 300 is changed to text-gray-400
     </div>
 
     <div
+      name="colvalue"
       class="markdown-note-container selection:text-white selection:bg-green-400"
       :class="layout === 'compact' ? 'gap-x-2': ''"
       :style="layout === 'compact' ? `columns: ${divideColumns}` : ''"
@@ -397,13 +415,13 @@ and text-gray 300 is changed to text-gray-400
         :count="articleTree.length"
         :class="layout === 'compact' ? 'p-2 mb-2 border rounded break-inside-avoid' : ''"
       />
+      <!-- exporting colvalue to work with it in ElementCard -->
     </div>
 
     <CatalogSidebarForNote
       v-if="props.data?.body?.toc && props.data.body.toc.links.length > 0"
       :catalogs="props.data.body.toc.links"
     />
-
     <div class="hidden md:block fixed top-20 right-4 z-20">
       <button
         class="p-1 flex justify-center items-center absolute -top-4 -left-4 rounded-full"
@@ -412,7 +430,9 @@ and text-gray 300 is changed to text-gray-400
       >
         <IconCustom name="fluent:desktop-sync-24-regular" class="w-4 h-4" />
       </button>
+      <!-- Toggle between 1 & 2 column if min 1000px -->
       <button
+        id="toggle_column"
         class="p-2 flex justify-center items-center text-green-500 bg-green-100 hover:bg-green-50 border border-green-200 transition-colors duration-300 rounded-lg"
         @click="changeDivideColumnsHandler"
       >
@@ -454,4 +474,9 @@ and text-gray 300 is changed to text-gray-400
     @apply text-base;
   }
 }
+
+</style>
+
+<style scoped>
+
 </style>

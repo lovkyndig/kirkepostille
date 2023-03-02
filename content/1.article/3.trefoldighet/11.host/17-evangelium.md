@@ -1,5 +1,5 @@
 ---
-series: Sep-nov
+series: Høst
 articleType: note
 showTime: false
 showOutdatedWarning: false
@@ -11,9 +11,10 @@ tags:
 ---
 
 # Luk 14, 1-11 (17.søn. efter trinitatis)
-**Helbredelsen af manden med vand i kroppen**  
+**Helbredelsen af manden med vand i kroppen**
+
 Engang på en sabbat var Jesus kommet ind for at spise hos en af de ledende farisæere, og de sad og holdt øje med ham. v2 Da stod der foran ham en mand, som led af vand i kroppen, v3 og Jesus spurgte de lovkyndige og farisæerne: »Er det tilladt at helbrede på sabbatten eller ej?« v4 Men de sagde ingenting. Så rørte han ved manden og helbredte ham og lod ham gå. v5 Derpå sagde han til dem: »Hvis en af jer har en søn eller en okse, som falder i en brønd, vil han så ikke straks trække dem op, selv om det er på en sabbat?« v6 Det kunne de ikke svare på.
-**Lignelsen om pladserne ved bordet**  
+**Lignelsen om pladserne ved bordet**
 v7 Da Jesus lagde mærke til, hvordan de indbudte udvalgte sig de øverste pladser ved bordet, fortalte han dem en lignelse: v8 »Når du bliver indbudt til et bryllup, så sæt dig ikke øverst ved bordet. Måske er der indbudt en, der er fornemmere end du, v9 og så kommer han, der har indbudt jer begge, og siger til dig: Giv ham din plads! Så må du med skam indtage den nederste plads. v10 Nej, når du bliver indbudt, gå da hen og sæt dig på den nederste plads, så at han, der indbød dig, kan komme og sige: Min ven, sæt dig højere op! Så bliver du hædret i alle gæsternes påsyn. v11 For enhver, som ophøjer sig selv, skal ydmyges, og den, der ydmyger sig selv, skal ophøjes.«
 
 ## Ordet og troen
