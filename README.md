@@ -10,5 +10,8 @@ Please go there to see the **setup** etc.
 - Add mouse-drag-event-handler on PC
 - Add dark-light-themetoggle
 
+# Remember
+- Copy .output/public/sitemap.xml to ~/public
+
 ## License
 [MIT](./LICENSE)
