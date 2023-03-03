@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { variables as v } from '~/app/constants'
-// import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
-// import fileTypeMap from '@/utils/fileType.json'
 
 const flexiMode = useFlexiMode()
 
@@ -164,7 +162,7 @@ const getFileTypeIcon = (type:string) => {
         <div class="py-16">
           <ContentDoc>
             <template #empty>
-              <IntroCard :avatar="'/default-avatar.png'" />
+              <IntroCard :avatar="appConfig.theme.avatar" />
             </template>
             <template #not-found>
               <h1 class="py-4 text-3xl sm:text-5xl font-bold text-center text-purple-500">

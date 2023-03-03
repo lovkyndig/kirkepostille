@@ -1,3 +1,5 @@
+import pkg from './package.json'
+
 /**
  *
  * copy asset files to public folder
@@ -61,14 +63,14 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     rss: {
-      title: 'BlogiNote',
-      description: 'BlogiNote is a website for showing your blogs and notes with flexible layouts and multiple optimizations.',
-      image: 'https://bloginote.lovkyndig.com/default-avatar.png',
-      favicon: 'https://bloginote.lovkyndig.com/default-favicon.ico',
-      copyright: `All rights reserved ${(new Date()).getFullYear()}, lovkyndig`
+      title: pkg.name,
+      description: pkg.description,
+      image: `${pkg.homepage}/default-avatar.png`,
+      favicon: `${pkg.homepage}/default-favicon.ico`,
+      copyright: `Copyright ${(new Date()).getFullYear()} ${pkg.author}`
     },
     public: {
-      hostname: 'https://bloginote.lovkyndig.com'
+      hostname: pkg.homepage
     }
   },
   modules: [
