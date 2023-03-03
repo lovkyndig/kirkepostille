@@ -22,8 +22,23 @@ useHead({
       rel: 'icon',
       href: appConfig.theme.favicon
     }
+  ],
+  script: [
+    {
+      src: 'https://www.googletagmanager.com/gtag/js?id=G-J0PRB7L04Q',
+      async: true
+    },
+    {
+      innerHTML: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-J0PRB7L04Q');
+      `
+    } // ${process.env.GTAG_ID}
   ]
 })
+// https://github.com/nuxt-community/google-analytics-module/issues/127
 </script>
 
 <template>

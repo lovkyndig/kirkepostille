@@ -154,6 +154,7 @@ const showSearchModal = useShowSearchModal()
             {{ v.nav.about.echo }}
           </NuxtLink>
           -->
+          <!--
           <NuxtLink
             v-if="appConfig.theme.subscribePage"
             :to="v.nav.subscribe.link"
@@ -163,6 +164,7 @@ const showSearchModal = useShowSearchModal()
           >
             {{ v.nav.subscribe.echo }}
           </NuxtLink>
+          -->
         </div>
       </Transition>
 

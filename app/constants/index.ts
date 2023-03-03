@@ -20,7 +20,7 @@ export const variables = {
       link: '/about'
     },
     subscribe: {
-      echo: 'Abonnere',
+      echo: 'Rss',
       link: '/subscribe',
       rss: 'Rss',
       sitemap: 'Sidekart'

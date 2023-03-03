@@ -108,7 +108,6 @@ export default defineNuxtConfig({
     strict: false,
     typeCheck: true
   },
-  css: [
-    '~/assets/style.css'
-  ]
+  css: ['~/assets/style.css']
+  // plugins: ['~/plugins/vue-gtag']
 })
