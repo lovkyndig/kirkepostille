@@ -53,9 +53,6 @@ copyContentFiles('content', 'public', ['.md', '.json', '.csv'])
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  app: {
-    // baseURL: '/'
-  },
   nitro: {
     prerender: {
       routes: ['/rss.xml', '/sitemap.xml']
@@ -108,6 +105,24 @@ export default defineNuxtConfig({
     strict: false,
     typeCheck: true
   },
-  css: ['~/assets/style.css']
+  css: ['~/assets/style.css'],
   // plugins: ['~/plugins/vue-gtag']
+  app: {
+    head: {
+      script: [
+        {
+          src: `https://www.googletagmanager.com/gtag/js?id=G-${process.env.GTAG_ID}`,
+          async: true
+        },
+        {
+          innerHTML: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-${process.env.GTAG_ID}');
+          `
+        }
+      ]
+    }
+  }
 })

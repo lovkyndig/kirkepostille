@@ -13,7 +13,6 @@ if (props.data.body.children.length > 0 && props.data.body.children[0].tag === '
   showTitle.value = false
 }
 
-// const themeOptions = useTheme()
 const appConfig = useAppConfig()
 /**
  *
@@ -21,9 +20,7 @@ const appConfig = useAppConfig()
  *
  */
 let showTime = true
-// if ('articlePage' in themeOptions.value && 'showTime' in themeOptions.value.articlePage) {
 showTime = appConfig.theme.articlePage.showTime
-// }
 
 if ('showTime' in props.data) {
   showTime = props.data.showTime
@@ -35,9 +32,7 @@ if ('showTime' in props.data) {
  *
  */
 let showOutdatedWarningComponent = false
-// if (themeOptions.value?.articlePage?.outdated?.show) {
 showOutdatedWarningComponent = appConfig.theme.articlePage.outdated.show
-// }
 
 if ('showOutdatedWarning' in props.data) {
   showOutdatedWarningComponent = props.data.showOutdatedWarning
@@ -312,10 +307,7 @@ const setActiveHeadingId = (id:string) => {
   activeHeadingId.value = id
 }
 provide('setActiveHeadingId', setActiveHeadingId)
-/*
-text-gray-400 is changed to text-gray-500
-and text-gray 300 is changed to text-gray-400
-*/
+
 </script>
 
 <template>

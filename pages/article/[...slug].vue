@@ -205,7 +205,6 @@ watch(showZoomImage, () => {
         :next-article-url="nextArticleUrl"
         class="container mx-auto px-6 md:px-12 py-12 lg:max-w-4xl"
       />
-      <!-- Testing -->
       <MarkdownNote
         v-if="!pending && data && data._type === 'markdown' && data.articleType === 'note'"
         v-show="flexiMode === 'note'"
@@ -257,7 +256,6 @@ watch(showZoomImage, () => {
         </NuxtLink>
       </div>
     </NuxtLayout>
-    <!-- toggle-button on big screens -->
     <button
       v-if="!pending && data && data.articleType === 'note'"
       :title="`${v.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog'}`"

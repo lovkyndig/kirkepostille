@@ -22,10 +22,11 @@ useHead({
       rel: 'icon',
       href: appConfig.theme.favicon
     }
-  ],
+  ]
+  /*
   script: [
     {
-      src: 'https://www.googletagmanager.com/gtag/js?id=G-J0PRB7L04Q',
+      src: `https://www.googletagmanager.com/gtag/js?id=${process.env.GTAG_ID}`,
       async: true
     },
     {
@@ -33,10 +34,11 @@ useHead({
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-J0PRB7L04Q');
+      gtag('config', ${process.env.GTAG_ID});
       `
-    } // ${process.env.GTAG_ID}
+    }
   ]
+  */
 })
 // https://github.com/nuxt-community/google-analytics-module/issues/127
 </script>
