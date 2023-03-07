@@ -8,7 +8,6 @@ const getCoverUrl = (relativeURL:string) => {
   if (relativeURL.startsWith('./')) {
     const articleFolderPathArr = props.article._path.split('/').slice(0, -1)
     const imagePathArr = relativeURL.split('/').slice(1)
-
     return [...articleFolderPathArr, ...imagePathArr].join('/')
   } else {
     return relativeURL

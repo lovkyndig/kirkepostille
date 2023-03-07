@@ -15,7 +15,7 @@ export default defineAppConfig({
     favicon: '/default-favicon.ico',
     homePage: {
       showBlogPosts: true,
-      postItemLimit: 20
+      postItemLimit: 2
     },
     subscribePage: true,
     articlePage: {

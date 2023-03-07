@@ -1,16 +1,15 @@
 <script setup lang="ts">
+import { title } from 'process'
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { variables as v } from '~/app/constants'
 
 const flexiMode = useFlexiMode()
-
 /**
  *
  * get nav data
  *
  */
 const { data: navTree } = await useAsyncData('rootFolder', () => fetchContentNavigation())
-
 const appConfig = useAppConfig()
 
 /**
@@ -27,14 +26,13 @@ let showBlogPosts = true
 showBlogPosts = appConfig.theme.homePage.showBlogPosts
 
 const queryPostsWhere = { _type: 'markdown' }
-const queryPostsLimit = appConfig.theme.homePage.postItemLimit || 5
+const queryPostsLimit = appConfig.theme.homePage.postItemLimit || 2
 const queryPostsOnly = ['title', 'description', '_type', '_path', 'cover', 'series', 'seriesOrder', 'tags']
 
 if (showBlogPosts && Array.isArray(navTree.value)) {
   articleFolder = navTree.value.find((item) => {
     return item._path === v.article.link
   })
-
   if (articleFolder?.children && articleFolder.children.length > 0) {
     articleFolder.children.forEach((item) => {
       if (item._type === 'markdown' && articleFolderFiles.length < queryPostsLimit) {
@@ -47,11 +45,9 @@ if (showBlogPosts && Array.isArray(navTree.value)) {
 const getCategory = (path = '') => {
   let category = ''
   const pathArr = path.split('/')
-
   if (pathArr.length === 3 && pathArr[1] === v.article.folder) {
     category = pathArr[2]
   }
-
   return category
 }
 
@@ -75,11 +71,8 @@ const togglePostCategorySectionsHandler = (category:string) => {
  *
  */
 const currentTree = ref<NavItem[] | null>([])
-
 currentTree.value = navTree.value
-
 let folderNavPath:number[] = []
-
 const folderNavArr = ref([
   {
     title: v.article.parent,
@@ -93,9 +86,7 @@ const setTreeHandler = (path: number[], type = 'drill-down') => {
   } else if (type === 'reset') {
     folderNavPath = path
   }
-
   let treeTemp = navTree.value as NavItem[]
-
   // rebuild the folderNavArr
   // set the root as start
   const folderNavArrTemp = [
@@ -104,10 +95,8 @@ const setTreeHandler = (path: number[], type = 'drill-down') => {
       path: [] as number[]
     }
   ]
-
   // the start folderNavPath just contain empty array
   let folderNavPathTemp:number[] = []
-
   if (folderNavPath.length > 0) {
     folderNavPath.forEach((index) => {
       folderNavPathTemp = folderNavPathTemp.concat(index)
@@ -118,7 +107,6 @@ const setTreeHandler = (path: number[], type = 'drill-down') => {
       treeTemp = treeTemp[index].children as NavItem[]
     })
   }
-
   currentTree.value = treeTemp
   folderNavArr.value = folderNavArrTemp
 }
@@ -127,7 +115,6 @@ const fileTypeMap: any = useFileTypeMap() // 🚨 maybe should fix this "any" ty
 
 const getFileTypeIcon = (type:string) => {
   const fileType = fileTypeMap.value[type]
-
   if (!fileType) {
     return fileTypeMap.value.default.iconName
   } else {
@@ -232,7 +219,7 @@ const getFileTypeIcon = (type:string) => {
                   <ContentQuery
                     :path="category._path"
                     :where="queryPostsWhere"
-                    :limit="2"
+                    :limit="queryPostsLimit"
                     :only="queryPostsOnly"
                   >
                     <template #default="{ data }">

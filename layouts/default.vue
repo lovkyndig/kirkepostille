@@ -9,11 +9,9 @@ const appConfig = useAppConfig()
 useHead({
   style: [
     {
-      // type: 'text/css',
       children: 'html, body { scroll-behavior: smooth }'
     },
     {
-      // type: 'text/css',
       children: 'body { overflow: overlay }'
     }
   ],
@@ -22,23 +20,8 @@ useHead({
       rel: 'icon',
       href: appConfig.theme.favicon
     }
-  ]
-  /*
-  script: [
-    {
-      src: `https://www.googletagmanager.com/gtag/js?id=${process.env.GTAG_ID}`,
-      async: true
-    },
-    {
-      innerHTML: `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', ${process.env.GTAG_ID});
-      `
-    }
-  ]
-  */
+  ],
+  script: []
 })
 // https://github.com/nuxt-community/google-analytics-module/issues/127
 </script>

@@ -94,3 +94,27 @@ export const useFileTypeMap = () => useState('fileTypeMap', () => {
  *
  */
 export const useShowSearchModal = () => useState<Boolean>('showSearchModal', () => false)
+
+/**
+ *
+ * Necessary code to use the find-property on window-object
+ * source:
+ * https://stackoverflow.com/questions/12709074/how-do-you-explicitly-set-a-new-property-on-window-in-typescript/56402425#56402425
+ *
+ */
+declare global {
+  interface Window {
+    find: any,
+    URL: any
+  }
+}
+
+/**
+ *
+ * Creating state to transfer search-input to url and handled on loading md-page
+ * from SearchMode.vue to [...slug].vue
+ * The value isn't saved in searchString but only used in SearchModal
+ *
+ */
+// export const useSearchString = () => useState<String>('searchString', () => { return '' })
+export const useSearchString = () => useState<String>('searchString', () => '')

@@ -16,8 +16,6 @@ useHead({
   ]
 })
 
-const route = useRoute()
-
 /**
  *
  * switch the flexiMode
@@ -33,6 +31,7 @@ const changeFlexiMode = () => {
   }
 }
 
+const route = useRoute()
 /**
  *
  * get article data
@@ -162,6 +161,32 @@ const addListener = (list, prefix, suffix) => {
   })
 }
 
+/**
+ *
+ * Get the search-param from the input in SearchModal.vue
+ * source:
+ * https://codybontecou.com/using-url-query-params-in-nuxt-3.html
+ *
+ */
+// get and set query-parameter
+const router = useRouter()
+const findSearchparam = ref(route.query.searchparam ? route.query.searchparam : '')
+watch(findSearchparam, (findSearchparam) => {
+  router.push({
+    path: '/',
+    query: { searchparam: findSearchparam }
+  })
+})
+const searchString = useState('searchString')
+// save and print query-parameter
+const saveAndPrintMessage = () => {
+  searchString.value = findSearchparam.value
+  if (!findSearchparam.value) {
+    console.log('A new page is opened without searchparam')
+  }
+}
+saveAndPrintMessage()
+
 onMounted(() => {
   clipboard.value = navigator.clipboard
   if (articleContainer.value && clipboard.value) {
@@ -171,6 +196,7 @@ onMounted(() => {
     if (mathBlockList.length > 0) { addListener(mathBlockList, '$$\n', '\n$$') }
   }
 })
+// NB! The Code below is running before the code inside onMounted()
 
 /**
  *
@@ -189,6 +215,7 @@ watch(showZoomImage, () => {
     document.body.classList.remove('overflow-hidden')
   }
 })
+
 </script>
 
 <template>
@@ -218,7 +245,6 @@ watch(showZoomImage, () => {
           <pre>{{ data }}</pre>
         </div>
       </div>
-
       <div v-if="(prevArticleUrl || nextArticleUrl)" class="container lg:max-w-4xl mx-auto px-6 md:px-12 py-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
         <NuxtLink
           v-if="prevArticleUrl"
@@ -256,6 +282,9 @@ watch(showZoomImage, () => {
         </NuxtLink>
       </div>
     </NuxtLayout>
+    <!-- *****************************  FIND-NEXT ********************************* -->
+    <FindNext />
+    <!-- *****************************  FIND-NEXT ********************************* -->
     <button
       v-if="!pending && data && data.articleType === 'note'"
       :title="`${v.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog'}`"
@@ -269,7 +298,6 @@ watch(showZoomImage, () => {
         <div class="w-1 h-1 rounded-full " :class="flexiMode === 'blog' ? 'bg-purple-400' : 'bg-green-400'" />
       </div>
     </button>
-
     <Teleport to="body">
       <SeriesModal
         v-if="data?.series && seriesList.length > 0 && showSeriesModal"
@@ -300,6 +328,7 @@ watch(showZoomImage, () => {
     background-color: #94a3b8;
   }
 }
+
 </style>
 
 <style lang="scss">

@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
 import { variables as v } from '~/app/constants'
-// import fileTypeMap from '@/utils/fileType.json'
 
 interface MyCustomParsedContent extends ParsedContent {
   tags: string[]
@@ -14,22 +13,12 @@ const route = useRoute()
  * build the category filter options
  *
  */
-// the fetchContentNavigation() composable seems not work with queryBuilder argument at latest @nuxt/content version
-// https://github.com/nuxt/content/issues/1399
-// need to use where method to build a more complex queryBuilder
-// const queryBuilder = queryContent().where({ _path: { $contains: '/article' } })
-// const { data: articleArr } = await useAsyncData('articleFolder', () => fetchContentNavigation(queryBuilder))
-
 const { data: navTree } = await useAsyncData('rootFolder', () => fetchContentNavigation())
-
-// const articleFolder = articleArr.value[0]
-
 let articleFolder
 const categoryArr = []
 
 if (Array.isArray(navTree.value)) {
   articleFolder = navTree.value.find(item => item._path === v.article.link)
-
   if (articleFolder?.children && articleFolder.children.length > 0) {
     articleFolder.children.forEach((item) => {
       if ('children' in item) {
@@ -42,11 +31,9 @@ if (Array.isArray(navTree.value)) {
 const getCategory = (path = '') => {
   let category = ''
   const pathArr = path.split('/')
-
   if (pathArr.length === 3 && pathArr[1] === v.article.folder) {
     category = pathArr[2]
   }
-
   return category
 }
 
@@ -61,7 +48,6 @@ const toggleCategory = (category) => {
   }
   currentTags.value = []
   currentSeries.value = v.filter.all
-
   changeURLHash()
 }
 
@@ -71,16 +57,12 @@ const toggleCategory = (category) => {
  *
  */
 const showMoreFilter = ref(true)
-
 let tagSet, seriesSet
-
 const tagArr = []
 const seriesArr = []
-
 interface ArrayObject {
   [key: string]: string[]
 }
-
 const categoryTags: ArrayObject = {}
 const categorySeries: ArrayObject = {}
 
@@ -90,9 +72,7 @@ if (articleFolder && articleFolder.children.length > 0) {
     if ('children' in item) {
       const categoryTagsArr = []
       const categorySeriesArr = []
-
       const { data } = await useAsyncData(`${item._path}-filter`, () => queryContent<MyCustomParsedContent>(`${item._path}`).where({ _type: 'markdown' }).only(['tags', 'series']).find())
-
       data.value.forEach((article) => {
         if (article.tags) {
           categoryTagsArr.push(...article.tags)
@@ -103,10 +83,8 @@ if (articleFolder && articleFolder.children.length > 0) {
           seriesArr.push(article.series)
         }
       })
-
       // get category
       const category = getCategory(item._path)
-
       if (category) {
         categoryTags[category] = [...new Set(categoryTagsArr)]
         categorySeries[category] = [...new Set(categorySeriesArr)]
@@ -115,13 +93,11 @@ if (articleFolder && articleFolder.children.length > 0) {
       if (item.tags) {
         tagArr.push(...item.tags)
       }
-
       if (item.series) {
         seriesArr.push(item.series)
       }
     }
   }
-
   tagSet = new Set(tagArr)
   seriesSet = new Set(seriesArr)
 }
@@ -136,7 +112,6 @@ const toggleTag = (tag) => {
     changeURLHash()
     return
   }
-
   if (currentTags.value.length > 0) {
     const index = currentTags.value.findIndex(element => element === tag)
     if (index !== -1) {
@@ -147,7 +122,6 @@ const toggleTag = (tag) => {
   } else {
     currentTags.value.push(tag)
   }
-
   changeURLHash()
 }
 
@@ -179,7 +153,6 @@ const changeURLHash = () => {
 onMounted(() => {
   const category = route.query?.category as string || v.filter.all
   currentCategory.value = category
-
   let tags = []
   if (typeof route.query?.tags === 'string') {
     tags = [route.query.tags]
@@ -187,7 +160,6 @@ onMounted(() => {
     tags = route.query.tags
   }
   currentTags.value = tags
-
   const series = route.query?.series as string || v.filter.all
   currentSeries.value = series
 })
@@ -212,7 +184,6 @@ const filterArticleList = ref([])
 watch(() => route.fullPath, () => {
   if (route.path !== '/list' || articleList.value.length === 0) { return }
   let currentArticleList = articleList.value
-
   if (route.query?.category && route.query.category !== v.filter.all) {
     currentArticleList = currentArticleList.filter((item) => {
       const pathArr = item._path.split('/')
@@ -224,7 +195,6 @@ watch(() => route.fullPath, () => {
       }
     })
   }
-
   if (route.query?.tags) {
     let tags = []
     if (typeof route.query.tags === 'string') {
@@ -232,7 +202,6 @@ watch(() => route.fullPath, () => {
     } else if (Array.isArray(route.query.tags)) {
       tags = route.query.tags
     }
-
     if (tags.length > 0) {
       currentArticleList = currentArticleList.filter((item) => {
         return tags.some((tag) => {
@@ -245,13 +214,11 @@ watch(() => route.fullPath, () => {
       })
     }
   }
-
   if (route.query?.series && route.query.series !== v.filter.all) {
     currentArticleList = currentArticleList.filter((item) => {
       return item.series === route.query.series
     })
   }
-
   filterArticleList.value = currentArticleList
 }, {
   immediate: true
@@ -271,7 +238,6 @@ const showListDetail = ref(true)
 const fileTypeMap = useFileTypeMap()
 const getFileTypeIcon = (type) => {
   const fileType = fileTypeMap.value[type]
-
   if (!fileType) {
     return fileTypeMap.value.default.iconName
   } else {

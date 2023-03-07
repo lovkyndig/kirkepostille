@@ -6,15 +6,11 @@ const runtimeConfig = useRuntimeConfig()
 const baseURL = runtimeConfig.app.baseURL
 
 let pagefind: any
-// if (process.env.NODE_ENV === 'production') {
 try {
   pagefind = await import(/* @vite-ignore */pagefindPath)
 } catch (error) {
-  // if (process.env.NODE_ENV === 'development') {
   console.log(error)
-  // }
 }
-// }
 
 if (baseURL !== '/') {
   await pagefind.options({
@@ -45,6 +41,7 @@ const focusInputHandler = () => {
 }
 
 const searchResults = ref<any[]>([])
+const inputText = ref<string>('')
 const appConfig = useAppConfig()
 
 let timer: (null | ReturnType<typeof setTimeout>) = null
@@ -81,12 +78,7 @@ const debouncedSearch = (key: string, delay = 300) => {
   }
 }
 
-const inputText = ref<string>('')
-
-const clearInputTextHandler = () => {
-  inputText.value = ''
-  searchResults.value = []
-}
+const searchString = useState('searchString')
 
 const inputHandler = (event: Event) => {
   const target = event.target as HTMLInputElement
@@ -94,7 +86,10 @@ const inputHandler = (event: Event) => {
     pagefind.preload(target.value)
     debouncedSearch(target.value)
   }
+  searchString.value = target.value // saving searchString.value
 }
+// adding searchString below in NuxtLink
+// and continue to work with searchString in [...slug].vue
 </script>
 
 <template>
@@ -146,7 +141,13 @@ const inputHandler = (event: Event) => {
             :key="item.url"
             class="p-4 hover:text-white hover:bg-purple-500 rounded"
           >
-            <NuxtLink :to="item.url" @click.exact="showSearchModal=false">
+            <!-- inserted target=_blank and changed showSearchModal from false to true -->
+            <!-- :to="item.url" -->
+            <NuxtLink
+              :to="`${item.url+'?searchparam='+searchString}`"
+              target="_blank"
+              @click.exact="showSearchModal=true"
+            >
               <p class="font-bold">
                 {{ item.meta.title }}
               </p>

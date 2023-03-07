@@ -259,7 +259,6 @@ watch(oneColHeaderOnBigScreen, () => {
       element.classList.remove('fullwidth')
     })
   }
-  console.log(`'Finish with watching, and logging columns: ' + ${divideColumns.value}`)
 })
 
 /**
