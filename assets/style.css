@@ -21,17 +21,29 @@ The button to change between 1 and 2 coloumn is in MarkdownNote.vue line 416
 div-parent to all header is maybe in MarkdownNote.vue line 
 */
 
-.find-next {
+#findNext {
+  z-index: 51;
   position: fixed;
   background: transparent;
-  top: 55px;
-  right: 10px
-}
-.find-button {
-  position: fixed;
-  background: transparent;
-  top: 40px;
+  top: 18px;
   right: 20px
+}
+#findNext > button {
+  position: fixed;
+  background: transparent;
+  top: 7px;
+  right: 20px
+}
+#findNext > img {
+  position: fixed;
+  background: transparent;
+  top: 17px;
+  right: 12px
+}
+@media only screen and (max-width: 767px) {
+  #findIndput {
+    visibility: hidden
+  }
 }
 
 @media only screen and (max-width: 940px) {

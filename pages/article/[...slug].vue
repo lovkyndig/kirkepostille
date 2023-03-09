@@ -171,18 +171,20 @@ const addListener = (list, prefix, suffix) => {
 // get and set query-parameter
 const router = useRouter()
 const findSearchparam = ref(route.query.searchparam ? route.query.searchparam : '')
+
 watch(findSearchparam, (findSearchparam) => {
   router.push({
     path: '/',
     query: { searchparam: findSearchparam }
   })
 })
+
 const searchString = useState('searchString')
 // save and print query-parameter
 const saveAndPrintMessage = () => {
   searchString.value = findSearchparam.value
   if (!findSearchparam.value) {
-    console.log('A new page is opened without searchparam')
+    // A new page is opened without searchparam
   }
 }
 saveAndPrintMessage()

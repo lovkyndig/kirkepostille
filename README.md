@@ -5,15 +5,16 @@ Kirkepostil is an clone of [`BlogiNote`](https://github.com/Benbinbin/BlogiNote)
 
 Please go there to see the **setup** etc.
 
-## To do-list
-- Verify the ownership of the site in Google Search Console
-- Check Sitemap.xml loading in Google Console
-- Fix homepage and don't load more than the foure newest articles.
+## License
+[MIT](./LICENSE)
+
+## To do-list (personal)
+- Change Search-box
+  - Use PageFind only on frontpage or in list
+  - Use window.find() on /pages/article/[...slug].vue
+- Google Search Console - Add Verification methods; HTML tag
+- Load only the foure newest articles.
 - Add mouse-drag-event-handler on PC
 - Add dark-light-themetoggle
 
-# Remember before pushing to GitHub
-- 
-
-## License
-[MIT](./LICENSE)
+Updated 09.Mars 23
