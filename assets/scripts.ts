@@ -6,6 +6,7 @@
  * https://codybontecou.com/using-url-query-params-in-nuxt-3.html
  */
 // get querystring if somone, or clear it
+/*
 const searchString = useState('searchString')
 if (process.client) {
   const querystring = window.location.search
@@ -17,6 +18,7 @@ if (process.client) {
     searchString.value = '' // clearing searchString.value
   }
 }
+*/
 /*
 the findSearchparam is saving the value from the previous search
 need to clear it when the page url is changing
@@ -30,7 +32,3 @@ https://stackoverflow.com/questions/979975/get-the-values-from-the-get-parameter
 can also be used:
 window.location.href
 */
-
-const Script1 = function () {
-  // alert('this is script1')
-}
