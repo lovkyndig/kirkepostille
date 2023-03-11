@@ -30,3 +30,7 @@ https://stackoverflow.com/questions/979975/get-the-values-from-the-get-parameter
 can also be used:
 window.location.href
 */
+
+const Script1 = function () {
+  // alert('this is script1')
+}

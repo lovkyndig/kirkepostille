@@ -84,12 +84,29 @@ const inputHandler = (event: Event) => {
   const target = event.target as HTMLInputElement
   if (pagefind) {
     pagefind.preload(target.value)
-    debouncedSearch(target.value)
+    debouncedSearch(target.value) // result of this value is showing
   }
-  searchString.value = target.value // saving searchString.value
+  searchString.value = CheckSearchString(target.value)
+  // searchString.value = target.value // saving searchString.value
 }
-// adding searchString below in NuxtLink
-// and continue to work with searchString in [...slug].vue
+/**
+ * Start working with the searchString and removing "anførselstegn" if somone
+ */
+
+const CheckSearchString = function (str) {
+  const LetterCheck = function (c) {
+    return c.toLowerCase() !== c.toUpperCase()
+  }
+  // use count here to only check check the first positon one time
+  if (!LetterCheck(str.charAt(0))) {
+    str = str.substring(1, str.length) // removes first character
+  }
+  if (!LetterCheck(str.charAt(str.length - 1))) {
+    str = str.substring(0, str.length - 1) // removes last character
+  }
+  // adding searchString below in NuxtLink
+  return str
+}
 </script>
 
 <template>

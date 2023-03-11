@@ -16,7 +16,7 @@ export const variables = {
       not_found: 'Ingen artikler funnet.'
     },
     about: {
-      echo: 'Om',
+      echo: 'Info',
       link: '/about'
     },
     subscribe: {
@@ -39,7 +39,7 @@ export const variables = {
     less: 'Mindre',
     more: 'Mer',
     search: 'Søk',
-    search_guide: 'Søg og find talene her (in this view). Vælg én tale...(loading in new view)... Efter lastning tryk Ctrl + F for at søge i talen.',
+    search_guide: 'Søg efter ord eller en frase. Fraser må være omsluttet av anførselstegn.',
     list: 'List',
     clear: 'Rens filter',
     detail: 'info',

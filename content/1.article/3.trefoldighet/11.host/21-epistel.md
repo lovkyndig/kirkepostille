@@ -20,7 +20,7 @@ Luther henviser til en trykt prædiken fra 1533 *"Von der Christen Harnisch und 
 [Link til NB](https://www.nb.no/items/f25836249f16c172647e65500dbcb5cd?page=667&searchText=luther%20Udvalgte%20fuldst%C3%A6ndige%20Skrifter%202)
 
 
-[^1]: Stikkord: kjernepostille.  
+[^1]: Stikkord: [kjernepostille](https://www.nb.no/items/cb4496c85f066e1ca05c8f5c73c35913).  
 Denne preken er inntatt i Benjamin Lindners utgave av kirkepostillen.
 <!-- 
 Dr. Martin Luther's Church-Postil 

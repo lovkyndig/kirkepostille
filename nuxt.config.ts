@@ -106,9 +106,14 @@ export default defineNuxtConfig({
     typeCheck: true
   },
   css: ['~/assets/style.css'],
-  // plugins: ['~/plugins/vue-gtag']
   app: {
     head: {
+      meta: [
+        {
+          name: 'google-site-verification',
+          content: process.env.GSITE_VERIFICATION
+        }
+      ],
       script: [
         {
           src: `https://www.googletagmanager.com/gtag/js?id=G-${process.env.GTAG_ID}`,

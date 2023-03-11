@@ -144,7 +144,7 @@ const showSearchModal = useShowSearchModal()
           >
             {{ v.nav.home.echo }}
           </NuxtLink>
-          <!--
+          <!-- -->
           <NuxtLink
             :to="v.nav.about.link"
             class="option-item"
@@ -153,7 +153,7 @@ const showSearchModal = useShowSearchModal()
           >
             {{ v.nav.about.echo }}
           </NuxtLink>
-          -->
+          <!-- -->
           <!--
           <NuxtLink
             v-if="appConfig.theme.subscribePage"

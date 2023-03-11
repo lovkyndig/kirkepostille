@@ -114,7 +114,7 @@ const showSearchModal = useShowSearchModal()
         >
           {{ v.filter.category }}
         </button>
-        <!--
+        <!-- -->
         <NuxtLink
           :to="v.nav.about.link"
           class="btn"
@@ -122,7 +122,7 @@ const showSearchModal = useShowSearchModal()
         >
           {{ v.nav.about.echo }}
         </NuxtLink>
-        -->
+        <!-- -->
         <!--
         <NuxtLink
           v-if="appConfig.theme.subscribePage"

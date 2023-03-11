@@ -123,9 +123,9 @@ Dette være nu sagt for denne gang om evangeliet. Lad os anråbe Gud om nåde!
 
 ## Amen
 <!-- 
-Dr. Martin Luther's Kirke-Postille 
+Dr. Martin Luther's Church-Postil 
 Original source: https://lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
-by Gudsbarn 2022-2023.
+by lovkyndig 2023.
 -->
