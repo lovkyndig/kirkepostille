@@ -185,6 +185,7 @@ const saveAndPrintMessage = () => {
   searchString.value = findSearchparam.value
   if (!findSearchparam.value) {
     // A new page is opened without searchparam
+    // console.log('A new page is opened without searchparam')
   }
 }
 saveAndPrintMessage()

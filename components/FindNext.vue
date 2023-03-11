@@ -5,7 +5,17 @@
  */
 const searchString = useState('searchString')
 
+const Checkfrase = function () {
+  const substring = '"'
+  const frase = searchString.value.toString()
+  if (frase.includes(substring)) {
+    const cleanfrase = frase.replace(/"/g, '')
+    searchString.value = cleanfrase
+  }
+}
+
 const findNext = () => {
+  Checkfrase()
   const divElement = document.querySelector('#findNext')
   const text = searchString.value
   if (window.find) { // Firefox, Google Chrome, Safari
