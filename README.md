@@ -10,7 +10,7 @@ Please go there to see the **setup** etc.
 
 ## To do-list (personal)
 - Add MDC-components for use in other Mdc-compoents (tabs)
-- Legg til høre-knapp for å høre talene bli opplest av webredaktøren.
+- Add svg-image in header with text/guide to hear mp3-files with the preaches.
 - Sort articles in search-modal after date created
 - Change Search-box
   - Use PageFind only on frontpage or in list
@@ -20,4 +20,4 @@ Please go there to see the **setup** etc.
 - Add mouse-drag-event-handler on PC
 - Add dark-light-themetoggle
 
-Updated 11.Mars 23
+Updated 12.Mars 23
