@@ -163,32 +163,23 @@ const addListener = (list, prefix, suffix) => {
 
 /**
  *
- * Get the search-param from the input in SearchModal.vue
+ * Get the change search-param from the searchString, originaly set in SearchModal
  * source:
  * https://codybontecou.com/using-url-query-params-in-nuxt-3.html
  *
  */
-// get and set query-parameter
-const router = useRouter()
-const findSearchparam = ref(route.query.searchparam ? route.query.searchparam : '')
+const getAndChangeSearchparam = () => {
+  const searchString = useState('searchString')
+  const findSearchparam = ref(route.query.searchparam ? route.query.searchparam : '')
+  const newString = findSearchparam.value.toString()
+  searchString.value = newString.replace(/\u005F/gu, ' ') // replace to Space_Separator (Zs)
+  console.log('In pages [...slug].vue, searchString is: ' + searchString.value)
 
-watch(findSearchparam, (findSearchparam) => {
-  router.push({
-    path: '/',
-    query: { searchparam: findSearchparam }
-  })
-})
-
-const searchString = useState('searchString')
-// save and print query-parameter
-const saveAndPrintMessage = () => {
-  searchString.value = findSearchparam.value
   if (!findSearchparam.value) {
-    // A new page is opened without searchparam
-    // console.log('A new page is opened without searchparam')
+    console.log('A new page is opened without searchparam. Checking if the searchString is blank: ' + searchString.value)
   }
 }
-saveAndPrintMessage()
+getAndChangeSearchparam()
 
 onMounted(() => {
   clipboard.value = navigator.clipboard

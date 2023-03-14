@@ -78,7 +78,7 @@ const debouncedSearch = (key: string, delay = 300) => {
   }
 }
 
-const searchString = useState('searchString')
+const searchString = useState('searchString') // transfered to findNext.vue as queryparam
 
 const inputHandler = (event: Event) => {
   const target = event.target as HTMLInputElement
@@ -86,27 +86,30 @@ const inputHandler = (event: Event) => {
     pagefind.preload(target.value)
     debouncedSearch(target.value) // result of this value is showing
   }
-  searchString.value = CheckSearchString(target.value)
-  // searchString.value = target.value // saving searchString.value
+  searchString.value = checkSearchString(target.value)
 }
 /**
- * Start working with the searchString and removing "anførselstegn" if somone
+ * Start working with the searchString and removing punctations if somone
  */
+const checkSearchString = (str) => {
+  /**
+   * Using Unicode Character Categories: Other Punctuation (quatationsmark/apostrophe) and Initial Punctuation (Pi)
+   */
+  /* ref:
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+    https://www.compart.com/en/unicode/category
 
-const CheckSearchString = function (str) {
-  const LetterCheck = function (c) {
-    return c.toLowerCase() !== c.toUpperCase()
+  */
+  const fixed = (str) => {
+    const punctations = /\u0022|\u0027|\p{Pi}/gu
+    str = str.replace(punctations, '') // Other Punctuation:  + Initial Punctuation (Pi)
+    return str.replace(/ /g, '_') // replace Space_Separator (Zs) &nbsp; OR %20
   }
-  // use count here to only check check the first positon one time
-  if (!LetterCheck(str.charAt(0))) {
-    str = str.substring(1, str.length) // removes first character
-  }
-  if (!LetterCheck(str.charAt(str.length - 1))) {
-    str = str.substring(0, str.length - 1) // removes last character
-  }
-  // adding searchString below in NuxtLink
-  return str
+  console.log('The searchString from SearchModal is (at the end): ' + fixed(str))
+  // adding this searchString below in NuxtLink, as queryparam to url
+  return fixed(str)
 }
+
 </script>
 
 <template>

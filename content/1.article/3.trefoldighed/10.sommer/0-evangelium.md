@@ -10,7 +10,7 @@ tags:
   - Evangelium
 ---
 
-# Joh 3, 1-15 (Trefoldighetssøndag)
+# Joh 3, 1-15 (Trefoldighedssøndag)
 _Der var et menneske, en af farisæerne, ved navn Nikodemus, medlem af jødernes råd. v2 Han kom til Jesus om natten og sagde til ham: »Rabbi, vi ved, du er en lærer, der er kommet fra Gud; for ingen kan gøre de tegn, du gør, uden at Gud er med ham.« v3 Jesus svarede ham: »Sandelig, sandelig siger jeg dig: Den, der ikke bliver født på ny, kan ikke se Guds rige.« v4 Nikodemus sagde til ham: »Hvordan kan et menneske fødes, når det er gammelt? Det kan da ikke for anden gang komme ind i sin mors liv og fødes?« v5 Jesus svarede: »Sandelig, sandelig siger jeg dig: Den, der ikke bliver født af vand og ånd, kan ikke komme ind i Guds rige. v6 Det, der er født af kødet, er kød, og det, der er født af Ånden, er ånd. v7 Du skal ikke undre dig over, at jeg sagde til dig: I må fødes på ny. v8 Vinden blæser, hvorhen den vil, og du hører den suse, men du ved ikke, hvor den kommer fra, og hvor den farer hen. Sådan er det med enhver, som er født af Ånden.« v9 Nikodemus spurgte ham: »Hvordan kan det gå til?« v10 Jesus svarede: »Du er lærer i Israel og forstår ikke det? v11 Sandelig, sandelig siger jeg dig: Vi taler om det, vi ved, og vi vidner om det, vi har set, men I tager ikke imod vort vidnesbyrd. v12 Tror I ikke, når jeg har talt til jer om det jordiske, hvordan skal I så tro, når jeg taler til jer om det himmelske? v13 Ingen er steget op til Himlen undtagen den, der steg ned fra Himlen, Menneskesønnen._
 
 ## v14 Og ligesom Moses ophøjede slangen i ørkenen, sådan skal Menneskesønnen ophøjes, v15 for at enhver, som tror, skal have evigt liv i ham.

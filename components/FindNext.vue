@@ -5,17 +5,9 @@
  */
 const searchString = useState('searchString')
 
-const Checkfrase = function () {
-  const substring = '"'
-  const frase = searchString.value.toString()
-  if (frase.includes(substring)) {
-    const cleanfrase = frase.replace(/"/g, '')
-    searchString.value = cleanfrase
-  }
-}
+console.log('value in searchString is: ' + searchString.value)
 
 const findNext = () => {
-  Checkfrase()
   const divElement = document.querySelector('#findNext')
   const text = searchString.value
   if (window.find) { // Firefox, Google Chrome, Safari
@@ -33,13 +25,13 @@ onMounted(() => {
     findNext()
   }
   if (document) {
-    const input = document.querySelector('#findIndput')
-    input.addEventListener('keyup', InputListener)
     findNext()
+    // const input = document.querySelector('#findIndput')
+    // input.addEventListener('keyup', InputListener)
   }
 })
 onUnmounted(() => {
-  document.removeEventListener('keyup', InputListener)
+  // document.removeEventListener('keyup', InputListener)
 })
 /**
  * source:

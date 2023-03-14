@@ -9,6 +9,7 @@ Please go there to see the **setup** etc.
 [MIT](./LICENSE)
 
 ## To do-list (personal)
+- Fix bug on search-function, who removes space and insert +.
 - Add MDC-components for use in other Mdc-compoents (tabs)
 - Add svg-image in header with text/guide to hear mp3-files with the preaches.
 - Sort articles in search-modal after date created

@@ -10,7 +10,7 @@ tags:
   - Epistel
 ---
 
-# Rom 11, 33-36 (Trefoldighetssøndag)
+# Rom 11, 33-36 (Trefoldighedssøndag)
 _O dyb af Guds rigdom og visdom og kundskab! Hvor uransagelige er hans domme, og hvor usporlige hans veje! For »hvem kender Herrens tanker, eller hvem kan være hans rådgiver? Hvem har givet ham noget først, så han må gøre gengæld?« Thi fra ham og ved ham og til ham er alle ting. Ham være ære til evig tid! Amen._
 
 Denne tekst læser vi på denne dag, fordi vi fejrer den hellige treenighed eller de tre personer i det guddommelige væsen. Dette er den første, høje og ubegribelige hovedartikel, som i den kristne kirke skal opretholdes ved Guds ord, så vi kender Gud, sådan som han vil kendes. Paulus behandler ikke artiklen nærmere i teksten, men berører den kun ganske kort til sidst, sådan som vi skal høre. Alligevel vil han lære os, at vi i disse høje sager, hvor vi taler om Gud, det være sig hans væsen eller hans vilje og gerninger, ikke skal tænke og dømme efter menneskelig visdom, men alene efter Guds ord. Disse guddommelige sager er alt for høje og overgår langt vor fornuft, så de aldrig kan gribes eller udgrundes med den menneskelige forstand.  
