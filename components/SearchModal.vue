@@ -105,7 +105,7 @@ const checkSearchString = (str) => {
     str = str.replace(punctations, '') // Other Punctuation:  + Initial Punctuation (Pi)
     return str.replace(/ /g, '_') // replace Space_Separator (Zs) &nbsp; OR %20
   }
-  console.log('The searchString from SearchModal is (at the end): ' + fixed(str))
+  // console.log('The searchString from SearchModal is (at the end): ' + fixed(str))
   // adding this searchString below in NuxtLink, as queryparam to url
   return fixed(str)
 }

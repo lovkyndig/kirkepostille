@@ -224,7 +224,9 @@ onMounted(() => {
     })
   }
 })
-
+/**
+ * Added by lovkyndig Mars 2023
+ */
 const changeDivideColumnsHandler = (event) => {
   if (event.shiftKey) {
     divideColumns.value += 1

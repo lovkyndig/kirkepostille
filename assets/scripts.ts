@@ -1,5 +1,6 @@
-// BAKCUP OF TEST-CODE
-
+/**
+ * BAKCUP OF TEST-CODE and script notes
+ */
 /**
  * THE FOLLWOEING CODE WASE JUSED IN [...slug].vue
  * before I ended with code from this source:
@@ -33,6 +34,6 @@ can also be used:
 window.location.href
 */
 
-const Script1 = function () {
-  // alert('this is script1')
+const message = (msg) => {
+  alert(msg)
 }
