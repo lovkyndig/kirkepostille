@@ -1,3 +1,4 @@
+import pkg from './package.json'
 /**
  *
  * copy asset files to public folder
@@ -51,11 +52,11 @@ copyContentFiles('content', 'public', ['.md', '.json', '.csv'])
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  app: {
-    // baseURL: '/'
-  },
+  css: ['~/assets/style.css'],
   typescript: {
-    shim: false
+    shim: false,
+    strict: false,
+    typeCheck: true
   },
   nitro: {
     prerender: {
@@ -64,14 +65,14 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     rss: {
-      title: 'BlogiNote',
-      description: 'BlogiNote is a website for showing your blogs and notes with flexible layouts and multiple optimizations.',
-      image: 'https://bloginote.benbinbin.com/default-avatar.png',
-      favicon: 'https://bloginote.benbinbin.com/default-favicon.ico',
-      copyright: `All rights reserved ${(new Date()).getFullYear()}, Benbinbin`
+      title: pkg.name,
+      description: pkg.description,
+      image: `${pkg.homepage}/default-avatar.png`,
+      favicon: `${pkg.homepage}/default-favicon.ico`,
+      copyright: `Copyright ${(new Date()).getFullYear()} ${pkg.author}`
     },
     public: {
-      hostname: 'https://bloginote.benbinbin.com'
+      hostname: pkg.homepage
     }
   },
   modules: [
@@ -102,5 +103,8 @@ export default defineNuxtConfig({
         }
       }
     }
+  },
+  app: {
+    // baseURL: '/'
   }
 })
