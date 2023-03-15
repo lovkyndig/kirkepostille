@@ -1,19 +1,21 @@
 // the alternative to Nuxt theme https://nuxt-themes.netlify.app/
+import pkg from './package.json'
+import { variables as v } from '~/app/constants'
+
 export default defineAppConfig({
   theme: {
     meta: {
-      name: 'BlogiNote',
-      description: 'A Nuxt theme for showing blog posts and snippet notes with flexible layouts and multiple optimizations.',
-      author: 'Benbinbin',
-      url: 'https://bloginote.benbinbin.com/'
+      name: pkg.name,
+      description: pkg.description,
+      author: pkg.author,
+      url: v.site.copyright
     },
-    author: 'Benbinbin',
-    email: 'benthomsonbin@gmail.com',
+    author: pkg.author,
     avatar: '/default-avatar.png',
     favicon: '/default-favicon.ico',
     homePage: {
       showBlogPosts: true,
-      postItemLimit: 20
+      postItemLimit: 2
     },
     subscribePage: true,
     articlePage: {
@@ -21,9 +23,7 @@ export default defineAppConfig({
       outdated: {
         show: true,
         threshold: 30
-      },
-      showBlogCatalog: false,
-      showNoteCatalog: false
+      }
     },
     search: {
       exclude: [

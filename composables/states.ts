@@ -1,5 +1,3 @@
-// const appConfig = useAppConfig()
-
 /**
  *
  * window width and heigh
@@ -23,21 +21,24 @@ export const useWindowSize = () => useState<WindowSize>('windowSize', () => {
  *
  */
 export const useFlexiMode = () => useState<'blog' | 'note'>('flexiMode', () => 'blog')
+// fixing header in node-modus when only 1 column and screensize > 1000px
+export const useOneColHeaderOnBigScreen = () => useState<Boolean>('oneColHeaderOnBigScreen', () => {
+  return false
+})
 
 /**
  *
  * article catalog
  *
  */
-// move this share state to MarkdownBlog component
-// export const useShowBlogCatalog = () => useState<Boolean>('showBlogCatalog', () => {
-//   return false
-// })
-
-// move this share state to MarkdownNote component
-// export const useShowNoteCatalog = () => useState<Boolean>('showNoteCatalog', () => {
-//   return false
-// })
+// using this share state in MarkdownBlog component
+export const useShowBlogCatalog = () => useState<Boolean>('showBlogCatalog', () => {
+  return false
+})
+// using this share state in MarkdownNote component
+export const useShowNoteCatalog = () => useState<Boolean>('showNoteCatalog', () => {
+  return false
+})
 
 export const useBlogSidebarFloat = () => useState<Boolean>('blogSidebarFloat', () => false)
 export const useNoteSidebarFloat = () => useState<Boolean>('noteSidebarFloat', () => true)
@@ -47,9 +48,8 @@ export const useFloatBlogCatalogType = () => useState<'list' | 'tree'>('floatBlo
 export const useFloatNoteCatalogType = () => useState<'list' | 'tree'>('floatNoteCatalogType', () => 'tree')
 
 // series modal
-// move this share state to page/article/[...slug] component
-// export const useShowSeriesModal = () => useState<Boolean>('showSeriesModal', () => false)
-
+// using this share state in page/article/[...slug] component
+export const useShowSeriesModal = () => useState<Boolean>('showSeriesModal', () => false)
 
 /**
  *
@@ -94,3 +94,27 @@ export const useFileTypeMap = () => useState('fileTypeMap', () => {
  *
  */
 export const useShowSearchModal = () => useState<Boolean>('showSearchModal', () => false)
+
+/**
+ *
+ * Necessary code to use the find-property on window-object
+ * source:
+ * https://stackoverflow.com/questions/12709074/how-do-you-explicitly-set-a-new-property-on-window-in-typescript/56402425#56402425
+ *
+ */
+declare global {
+  interface Window {
+    find: any,
+    URL: any
+  }
+}
+
+/**
+ *
+ * Creating state to transfer search-input to url and handled on loading md-page
+ * from SearchMode.vue to [...slug].vue
+ * The value isn't saved in searchString but only used in SearchModal
+ *
+ */
+// export const useSearchString = () => useState<String>('searchString', () => { return '' })
+export const useSearchString = () => useState<String>('searchString', () => 'NOTHING')

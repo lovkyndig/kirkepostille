@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { variables as v } from '~/app/constants'
+
 /**
 *
 * set head meta for article page
@@ -9,12 +11,10 @@ useHead({
   link: [
     {
       rel: 'stylesheet',
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.15.0/dist/katex.min.css'
+      href: 'style/katex.min.css'
     }
   ]
 })
-
-const route = useRoute()
 
 /**
  *
@@ -31,6 +31,7 @@ const changeFlexiMode = () => {
   }
 }
 
+const route = useRoute()
 /**
  *
  * get article data
@@ -64,13 +65,10 @@ if (data.value?.series) {
       .sort({ seriesOrder: 1, $numeric: true })
       .find()
   })
-
   seriesList.value = seriesResult.value
-
-  if (seriesResult.value && seriesResult.value.length>1) {
+  if (seriesResult.value && seriesResult.value.length > 1) {
     const currentArticleIndex = seriesResult.value.findIndex(item => route.path === item._path)
-
-    if(currentArticleIndex!==-1) {
+    if (currentArticleIndex !== -1) {
       if (currentArticleIndex === 0) {
         nextArticleName.value = seriesResult.value[currentArticleIndex + 1].title
         nextArticleUrl.value = seriesResult.value[currentArticleIndex + 1]._path
@@ -87,35 +85,25 @@ if (data.value?.series) {
   }
 }
 
-if(data.value?.prevArticleUrl) {
+if (data.value?.prevArticleUrl) {
   prevArticleUrl.value = data.value.prevArticleUrl
 }
-
-if(data.value?.prevArticleName) {
+if (data.value?.prevArticleName) {
   prevArticleName.value = data.value.prevArticleName
 }
-
-if(data.value?.nextArticleUrl) {
+if (data.value?.nextArticleUrl) {
   nextArticleUrl.value = data.value.nextArticleUrl
 }
-
-if(data.value?.nextArticleName) {
+if (data.value?.nextArticleName) {
   nextArticleName.value = data.value.nextArticleName
 }
 
 // show or hide series modal
-// const showSeriesModal = ref(false)
-const showSeriesModal = useState<Boolean>('showSeriesModal', () => false)
-// provide('showSeriesModal', showSeriesModal)
-
-// const changeSeriesModalState = (state) => {
-//   showSeriesModal.value = state
-// }
+const showSeriesModal = useState('showSeriesModal')
 
 // stop body scroll when series modal show up
 watch(showSeriesModal, () => {
   if (!document?.body) { return }
-
   if (showSeriesModal.value) {
     document.body.classList.add('overflow-hidden')
   } else {
@@ -137,18 +125,14 @@ const addListener = (list, prefix, suffix) => {
     // add event listener for double click
     element.addEventListener('dblclick', (event) => {
       const target = event.currentTarget as HTMLElement
-
       // after click set the math element border color to 'border-purple-400'
       target.style.borderColor = '#c084fc'
-
       // get the LaTeX source code of math formula
       // refer to https://github.com/KaTeX/KaTeX/issues/645
       const formulaElem = target.querySelector('annotation')
-
       if (formulaElem && formulaElem.textContent) {
         // add '$' or '$$' prefix and suffix for inline math or block math
         const formula = prefix + formulaElem.textContent + suffix
-
         if (clipboard.value) {
           // write the formula to clipboard and set the math element border color based on the promise resolve result
           clipboard.value.writeText(formula).then(() => {
@@ -160,7 +144,6 @@ const addListener = (list, prefix, suffix) => {
           })
             .catch(() => {
               target.style.borderColor = '#f87171'
-
               const timer = setTimeout(() => {
                 target.style.borderColor = 'transparent'
                 clearTimeout(timer)
@@ -169,7 +152,6 @@ const addListener = (list, prefix, suffix) => {
         }
       } else {
         target.style.borderColor = '#f87171'
-
         const timer = setTimeout(() => {
           target.style.borderColor = 'transparent'
           clearTimeout(timer)
@@ -179,17 +161,36 @@ const addListener = (list, prefix, suffix) => {
   })
 }
 
+/**
+ *
+ * Get the change search-param from the searchString, originaly set in SearchModal
+ * source:
+ * https://codybontecou.com/using-url-query-params-in-nuxt-3.html
+ *
+ */
+const getAndChangeSearchparam = () => {
+  const searchString = useState('searchString')
+  const findSearchparam = ref(route.query.searchparam ? route.query.searchparam : '')
+  const newString = findSearchparam.value.toString()
+  searchString.value = newString.replace(/\u005F/gu, ' ') // replace to Space_Separator (Zs)
+  // console.log('In pages [...slug].vue, searchString is: ' + searchString.value)
+
+  if (!findSearchparam.value) {
+    // console.log('A new page is opened without searchparam. Checking if the searchString is blank: ' + searchString.value)
+  }
+}
+getAndChangeSearchparam()
+
 onMounted(() => {
   clipboard.value = navigator.clipboard
-
   if (articleContainer.value && clipboard.value) {
     const mathInlineList = articleContainer.value.querySelectorAll('.math-inline')
     const mathBlockList = articleContainer.value.querySelectorAll('.math-display')
-
     if (mathInlineList.length > 0) { addListener(mathInlineList, '$', '$') }
     if (mathBlockList.length > 0) { addListener(mathBlockList, '$$\n', '\n$$') }
   }
 })
+// NB! The Code below is running before the code inside onMounted()
 
 /**
  *
@@ -208,6 +209,7 @@ watch(showZoomImage, () => {
     document.body.classList.remove('overflow-hidden')
   }
 })
+
 </script>
 
 <template>
@@ -220,8 +222,8 @@ watch(showZoomImage, () => {
         v-if="!pending && data && data._type === 'markdown'"
         v-show="!data.articleType || data.articleType === 'blog' || (data.articleType === 'note' && flexiMode === 'blog')"
         :data="data"
-        :prevArticleUrl="prevArticleUrl"
-        :nextArticleUrl="nextArticleUrl"
+        :prev-article-url="prevArticleUrl"
+        :next-article-url="nextArticleUrl"
         class="container mx-auto px-6 md:px-12 py-12 lg:max-w-4xl"
       />
       <MarkdownNote
@@ -237,34 +239,49 @@ watch(showZoomImage, () => {
           <pre>{{ data }}</pre>
         </div>
       </div>
-
       <div v-if="(prevArticleUrl || nextArticleUrl)" class="container lg:max-w-4xl mx-auto px-6 md:px-12 py-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <NuxtLink v-if="prevArticleUrl" :to="prevArticleUrl"
-          class="px-4 py-6 flex justify-start items-center text-gray-600 hover:text-white hover:bg-green-500 border border-gray-400 hover:border-green-500 focus:outline-none rounded-lg transition-colors duration-300">
+        <NuxtLink
+          v-if="prevArticleUrl"
+          :to="prevArticleUrl"
+          class="px-4 py-6 flex justify-start items-center text-gray-600 hover:text-white hover:bg-green-500 border border-gray-400 hover:border-green-500 focus:outline-none rounded-lg transition-colors duration-300"
+        >
           <div class="flex items-center gap-1">
             <IconCustom name="ic:round-keyboard-arrow-left" class="shrink-0 w-8 h-8 opacity-70" />
             <div class="flex flex-col gap-2">
-              <p class="text-lg font-bold">Previous Article</p>
-              <p v-if="prevArticleName" class="text-xs opacity-80">{{ prevArticleName }}</p>
+              <p class="text-lg font-bold">
+                Previous Article
+              </p>
+              <p v-if="prevArticleName" class="text-xs opacity-80">
+                {{ prevArticleName }}
+              </p>
             </div>
           </div>
         </NuxtLink>
-        <NuxtLink v-if="nextArticleUrl" :to="nextArticleUrl"
-          class="px-4 py-6 flex justify-end items-center text-gray-600 hover:text-white hover:bg-green-500 border border-gray-400 hover:border-green-500 focus:outline-none rounded-lg transition-colors duration-300">
+        <NuxtLink
+          v-if="nextArticleUrl"
+          :to="nextArticleUrl"
+          class="px-4 py-6 flex justify-end items-center text-gray-600 hover:text-white hover:bg-green-500 border border-gray-400 hover:border-green-500 focus:outline-none rounded-lg transition-colors duration-300"
+        >
           <div class="flex items-center gap-1">
             <div class="flex flex-col gap-2">
-              <p class="text-lg font-bold text-end">Next Article</p>
-              <p v-if="nextArticleName" class="text-xs opacity-80 text-end">{{ nextArticleName }}</p>
+              <p class="text-lg font-bold text-end">
+                Next Article
+              </p>
+              <p v-if="nextArticleName" class="text-xs opacity-80 text-end">
+                {{ nextArticleName }}
+              </p>
             </div>
             <IconCustom name="ic:round-keyboard-arrow-right" class="shrink-0 w-8 h-8 opacity-70" />
           </div>
         </NuxtLink>
       </div>
     </NuxtLayout>
-
+    <!-- *****************************  FIND-NEXT ********************************* -->
+    <FindNext />
+    <!-- *****************************  FIND-NEXT ********************************* -->
     <button
       v-if="!pending && data && data.articleType === 'note'"
-      :title="`toggle flex mode to ${flexiMode === 'blog' ? 'note' : 'blog'}`"
+      :title="`${v.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog'}`"
       class="w-9 h-9 hidden sm:flex justify-center items-center gap-1 fixed bottom-4 left-4 z-20 border transition-colors duration-300 rounded-lg"
       :class="flexiMode === 'blog' ? 'flex-col bg-purple-100 hover:bg-purple-50 border-purple-200' : 'flex-row bg-green-100 hover:bg-green-50 border-green-200'"
       @click="changeFlexiMode"
@@ -275,7 +292,6 @@ watch(showZoomImage, () => {
         <div class="w-1 h-1 rounded-full " :class="flexiMode === 'blog' ? 'bg-purple-400' : 'bg-green-400'" />
       </div>
     </button>
-
     <Teleport to="body">
       <SeriesModal
         v-if="data?.series && seriesList.length > 0 && showSeriesModal"
@@ -306,6 +322,7 @@ watch(showZoomImage, () => {
     background-color: #94a3b8;
   }
 }
+
 </style>
 
 <style lang="scss">
