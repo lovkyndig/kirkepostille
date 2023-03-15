@@ -65,14 +65,14 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     rss: {
-      title: 'BlogiNote',
-      description: 'BlogiNote is a website for showing your blogs and notes with flexible layouts and multiple optimizations.',
+      title: 'Kirkepostil',
+      description: 'Search after the truth in Church-Postil',
       image: 'https://bloginote.benbinbin.com/default-avatar.png',
       favicon: 'https://bloginote.benbinbin.com/default-favicon.ico',
-      copyright: `All rights reserved ${(new Date()).getFullYear()}, Benbinbin`
+      copyright: `All rights reserved ${(new Date()).getFullYear()}, Gudsbarn`
     },
     public: {
-      hostname: 'https://bloginote.benbinbin.com'
+      hostname: 'https://kirkepostille.vercel.app'
     }
   },
   modules: [
