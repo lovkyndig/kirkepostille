@@ -1,3 +1,5 @@
+import pkg from './package.json'
+
 /**
  *
  * copy asset files to public folder
@@ -51,12 +53,6 @@ copyContentFiles('content', 'public', ['.md', '.json', '.csv'])
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  app: {
-    // baseURL: '/'
-  },
-  typescript: {
-    shim: false
-  },
   nitro: {
     prerender: {
       routes: ['/rss.xml', '/sitemap.xml']
@@ -64,19 +60,20 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     rss: {
-      title: 'BlogiNote',
-      description: 'BlogiNote is a website for showing your blogs and notes with flexible layouts and multiple optimizations.',
-      image: 'https://bloginote.benbinbin.com/default-avatar.png',
-      favicon: 'https://bloginote.benbinbin.com/default-favicon.ico',
-      copyright: `All rights reserved ${(new Date()).getFullYear()}, Benbinbin`
+      title: pkg.name,
+      description: pkg.description,
+      image: `${pkg.homepage}/default-avatar.png`,
+      favicon: `${pkg.homepage}/default-favicon.ico`,
+      copyright: `Copyright ${(new Date()).getFullYear()} ${pkg.author}`
     },
     public: {
-      hostname: 'https://bloginote.benbinbin.com'
+      hostname: pkg.homepage
     }
   },
   modules: [
     '@nuxt/content',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@vueuse/nuxt'
   ],
   // https://content.nuxtjs.org
   content: {
@@ -101,6 +98,36 @@ export default defineNuxtConfig({
           output: 'htmlAndMathml'
         }
       }
+    }
+  },
+  typescript: {
+    shim: false,
+    strict: false,
+    typeCheck: true
+  },
+  css: ['~/assets/style.css'],
+  app: {
+    head: {
+      meta: [
+        {
+          name: 'google-site-verification',
+          content: process.env.GSITE_VERIFICATION
+        }
+      ],
+      script: [
+        {
+          src: `https://www.googletagmanager.com/gtag/js?id=G-${process.env.GTAG_ID}`,
+          async: true
+        },
+        {
+          innerHTML: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-${process.env.GTAG_ID}');
+          `
+        }
+      ]
     }
   }
 })

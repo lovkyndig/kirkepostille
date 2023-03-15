@@ -1,0 +1,5 @@
+source: .output/public
+bundle_dir: ../../public/_pagefind
+# Move the _pagefind directory to the public-dir. 
+# on the same level as .output-dir.
+# like this: public/_pagefind

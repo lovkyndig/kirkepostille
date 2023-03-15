@@ -4,7 +4,6 @@ const props = defineProps<{
   type: 'created' | 'last updated'
 }>()
 
-// const themeOptions = useTheme()
 const appConfig = useAppConfig()
 
 // the default outdated time threshold of an article is 1 month (30 days)
