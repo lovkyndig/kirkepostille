@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
-import { variables as v } from '~/app/constants'
 
 const props = defineProps({
   footerCatalog: {
@@ -82,7 +81,9 @@ const changeFlexiMode = () => {
  * toggle catalog
  *
  */
+// const showBlogCatalog = useShowBlogCatalog()
 const showBlogCatalog = useState('showBlogCatalog')
+// const showNoteCatalog = useShowNoteCatalog()
 const showNoteCatalog = useState('showNoteCatalog')
 const toggleCatalogHandler = () => {
   if (flexiMode.value === 'blog') {
@@ -122,7 +123,7 @@ const showSearchModal = useShowSearchModal()
             class="text-xs"
             :class="showMoreOptions ? (flexiMode === 'blog' ? 'text-purple-500' : 'text-green-500') : 'text-gray-500'"
           >
-            {{ v.menu.more }}
+            More
           </p>
         </div>
       </button>
@@ -142,29 +143,25 @@ const showSearchModal = useShowSearchModal()
             :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
             @click="showMoreOptions = false"
           >
-            {{ v.nav.home.echo }}
+            Home
           </NuxtLink>
-          <!-- -->
           <NuxtLink
-            :to="v.nav.about.link"
+            to="/about"
             class="option-item"
             :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
             @click="showMoreOptions = false"
           >
-            {{ v.nav.about.echo }}
+            About
           </NuxtLink>
-          <!-- -->
-          <!--
           <NuxtLink
             v-if="appConfig.theme.subscribePage"
-            :to="v.nav.subscribe.link"
+            to="/subscribe"
             class="option-item"
             :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
             @click="showMoreOptions = false"
           >
-            {{ v.nav.subscribe.echo }}
+            Subscribe
           </NuxtLink>
-          -->
         </div>
       </Transition>
 
@@ -178,7 +175,7 @@ const showSearchModal = useShowSearchModal()
         <div class="flex flex-col justify-center items-center gap-1">
           <IconCustom name="ic:round-category" class="w-6 h-6" />
           <p class="text-xs">
-            {{ v.filter.category }}
+            Category
           </p>
         </div>
       </button>
@@ -198,7 +195,7 @@ const showSearchModal = useShowSearchModal()
             :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
             @click="showCategoryOptions = false"
           >
-            {{ v.filter.all }}
+            all
           </NuxtLink>
           <NuxtLink
             v-for="category in categoryArr"
@@ -223,36 +220,28 @@ const showSearchModal = useShowSearchModal()
         <div class="flex flex-col justify-center items-center gap-1">
           <IconCustom name="entypo:list" class="w-6 h-6" />
           <p class="text-xs">
-            {{ v.filter.catalog }}
+            Catalog
           </p>
         </div>
       </button>
 
-      <button
-        v-show="!showMoreOptions && !showCategoryOptions"
-        class="grow px-2 py-3 flex justify-center items-center space-y-1 text-gray-500 bg-gray-50"
-        @click="showSearchModal=true"
-      >
+      <button v-show="!showMoreOptions && !showCategoryOptions" class="grow px-2 py-3 flex justify-center items-center space-y-1 text-gray-500 bg-gray-50"
+      @click="showSearchModal=true"
+        >
         <div class="flex flex-col justify-center items-center gap-1">
-          <IconCustom name="tabler:search" class="w-6 h-6" />
-          <p class="text-xs">
-            {{ v.filter.search }}
-          </p>
+          <IconCustom name="tabler:search" class="w-6 h-6"></IconCustom>
+          <p class="text-xs">Search</p>
         </div>
       </button>
-      <!-- This button is for big screens -->
+
       <button
         v-if="props.footerFlexiMode"
         v-show="!showMoreOptions && !showCategoryOptions"
-        :title="`${v.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog'}`"
+        :title="`toggle flex mode to ${flexiMode === 'blog' ? 'note' : 'blog'}`"
         class="grow flex justify-center items-center"
         @click="changeFlexiMode"
       >
-        <div
-          class="mx-2 w-11 h-11 flex flex-col justify-center items-center gap-1 transition-colors duration-300 rounded-lg"
-          :class="flexiMode === 'blog' ? 'flex-col bg-purple-100' : 'bg-green-100'"
-        >
-          <!-- mobil-problem with width of titles & footer-nav -->
+        <div class="mx-2 w-11 h-11 flex flex-col justify-center items-center gap-1 transition-colors duration-300 rounded-lg" :class="flexiMode === 'blog' ? 'flex-col bg-purple-100' : 'bg-green-100'">
           <div class="shrink-0 w-2 h-2 rounded-full" :class="flexiMode === 'blog' ? 'bg-purple-500' : 'bg-green-500'" />
           <div class="shrink-0 space-y-1">
             <div class="w-1.5 h-1.5 rounded-full" :class="flexiMode === 'blog' ? 'bg-purple-400' : 'bg-green-400'" />
@@ -265,6 +254,7 @@ const showSearchModal = useShowSearchModal()
 </template>
 
 <style scoped lang="scss">
+
 .options-container::-webkit-scrollbar {
   display: none;
 }

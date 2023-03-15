@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
-import { variables as v } from '~/app/constants'
 
 const props = defineProps({
   headerFlexiMode: {
@@ -112,35 +111,29 @@ const showSearchModal = useShowSearchModal()
           @mouseleave="setSubNav(false)"
           @click="showSubNav=!showSubNav"
         >
-          {{ v.filter.category }}
+          Category
         </button>
-        <!-- -->
         <NuxtLink
-          :to="v.nav.about.link"
+          to="/about"
           class="btn"
           :class="flexiMode === 'blog' ? 'text-purple-500 hover:bg-purple-100' : 'text-green-500 hover:bg-green-100'"
         >
-          {{ v.nav.about.echo }}
+          About
         </NuxtLink>
-        <!-- -->
-        <!--
         <NuxtLink
           v-if="appConfig.theme.subscribePage"
-          :to="v.nav.subscribe.link"
+          to="/subscribe"
           class="btn"
           :class="flexiMode === 'blog' ? 'text-purple-500 hover:bg-purple-100' : 'text-green-500 hover:bg-green-100'"
         >
-          {{ v.nav.subscribe.echo }}
+          Subscribe
         </NuxtLink>
-        -->
       </div>
       <div class="flex justify-end items-center gap-4">
-        <button
-          class="self-stretch px-4 py-1.5 flex justify-center items-center gap-2 text-gray-600 border border-gray-400 rounded-md opacity-50 hover:opacity-100 transition-opacity duration-300"
-          @click="showSearchModal=true"
-        >
-          <IconCustom name="tabler:search" class="w-4 h-4" />
-          <span class="hidden lg:block text-sm">{{ v.filter.search }}</span>
+        <button class="self-stretch px-4 py-1.5 flex justify-center items-center gap-2 text-gray-600 border border-gray-400 rounded-md opacity-50 hover:opacity-100 transition-opacity duration-300"
+        @click="showSearchModal=true">
+          <IconCustom name="tabler:search" class="w-4 h-4"></IconCustom>
+          <span class="hidden lg:block text-sm">Search</span>
           <span class="hidden md:flex justify-center items-center gap-1 text-xs ">
             <code class="px-2 py-0.5 border rounded bg-gray-200">Ctrl</code>
             <code class="px-2 py-0.5 border rounded bg-gray-200">K</code>
@@ -148,7 +141,7 @@ const showSearchModal = useShowSearchModal()
         </button>
         <button
           v-if="props.headerFlexiMode"
-          :title="`${v.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog' }`"
+          :title="`toggle flex mode to ${flexiMode === 'blog' ? 'note' : 'blog'}`"
           class="hidden w-10 h-10 sm:flex justify-center items-center gap-1 transition-colors duration-300 rounded-lg"
           :class="flexiMode === 'blog' ? 'flex-col bg-purple-100 hover:bg-purple-200 ' : 'flex-row bg-green-100 hover:bg-green-200 '"
           @click="changeFlexiMode"
@@ -163,6 +156,7 @@ const showSearchModal = useShowSearchModal()
           </div>
         </button>
       </div>
+
     </div>
     <Transition
       enter-from-class="translate-y-0"
@@ -188,7 +182,7 @@ const showSearchModal = useShowSearchModal()
           >
             <IconCustom name="material-symbols:category-rounded" class="w-8 h-8" />
             <p class="py-2 font-bold text-center">
-              {{ v.filter.all }}
+              All
             </p>
           </NuxtLink>
           <NuxtLink

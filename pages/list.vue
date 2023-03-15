@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
-import { variables as v } from '~/app/constants'
+// import fileTypeMap from '@/utils/fileType.json'
 
 interface MyCustomParsedContent extends ParsedContent {
   tags: string[]
@@ -13,12 +13,22 @@ const route = useRoute()
  * build the category filter options
  *
  */
+// the fetchContentNavigation() composable seems not work with queryBuilder argument at latest @nuxt/content version
+// https://github.com/nuxt/content/issues/1399
+// need to use where method to build a more complex queryBuilder
+// const queryBuilder = queryContent().where({ _path: { $contains: '/article' } })
+// const { data: articleArr } = await useAsyncData('articleFolder', () => fetchContentNavigation(queryBuilder))
+
 const { data: navTree } = await useAsyncData('rootFolder', () => fetchContentNavigation())
+
+// const articleFolder = articleArr.value[0]
+
 let articleFolder
 const categoryArr = []
 
 if (Array.isArray(navTree.value)) {
-  articleFolder = navTree.value.find(item => item._path === v.article.link)
+  articleFolder = navTree.value.find(item => item._path === '/article')
+
   if (articleFolder?.children && articleFolder.children.length > 0) {
     articleFolder.children.forEach((item) => {
       if ('children' in item) {
@@ -31,23 +41,26 @@ if (Array.isArray(navTree.value)) {
 const getCategory = (path = '') => {
   let category = ''
   const pathArr = path.split('/')
-  if (pathArr.length === 3 && pathArr[1] === v.article.folder) {
+
+  if (pathArr.length === 3 && pathArr[1] === 'article') {
     category = pathArr[2]
   }
+
   return category
 }
 
-const currentCategory = ref(v.filter.all)
+const currentCategory = ref('all')
 const showMoreCategory = ref(false)
 
 const toggleCategory = (category) => {
   if (currentCategory.value === category) {
-    currentCategory.value = v.filter.all
+    currentCategory.value = 'all'
   } else {
     currentCategory.value = category
   }
   currentTags.value = []
-  currentSeries.value = v.filter.all
+  currentSeries.value = 'all'
+
   changeURLHash()
 }
 
@@ -57,12 +70,16 @@ const toggleCategory = (category) => {
  *
  */
 const showMoreFilter = ref(true)
+
 let tagSet, seriesSet
+
 const tagArr = []
 const seriesArr = []
+
 interface ArrayObject {
   [key: string]: string[]
 }
+
 const categoryTags: ArrayObject = {}
 const categorySeries: ArrayObject = {}
 
@@ -72,7 +89,9 @@ if (articleFolder && articleFolder.children.length > 0) {
     if ('children' in item) {
       const categoryTagsArr = []
       const categorySeriesArr = []
+
       const { data } = await useAsyncData(`${item._path}-filter`, () => queryContent<MyCustomParsedContent>(`${item._path}`).where({ _type: 'markdown' }).only(['tags', 'series']).find())
+
       data.value.forEach((article) => {
         if (article.tags) {
           categoryTagsArr.push(...article.tags)
@@ -83,8 +102,10 @@ if (articleFolder && articleFolder.children.length > 0) {
           seriesArr.push(article.series)
         }
       })
+
       // get category
       const category = getCategory(item._path)
+
       if (category) {
         categoryTags[category] = [...new Set(categoryTagsArr)]
         categorySeries[category] = [...new Set(categorySeriesArr)]
@@ -93,11 +114,13 @@ if (articleFolder && articleFolder.children.length > 0) {
       if (item.tags) {
         tagArr.push(...item.tags)
       }
+
       if (item.series) {
         seriesArr.push(item.series)
       }
     }
   }
+
   tagSet = new Set(tagArr)
   seriesSet = new Set(seriesArr)
 }
@@ -107,11 +130,12 @@ const currentTags = ref([])
 const showMoreTag = ref(false)
 
 const toggleTag = (tag) => {
-  if (tag === v.filter.all) {
+  if (tag === 'all') {
     currentTags.value = []
     changeURLHash()
     return
   }
+
   if (currentTags.value.length > 0) {
     const index = currentTags.value.findIndex(element => element === tag)
     if (index !== -1) {
@@ -122,16 +146,17 @@ const toggleTag = (tag) => {
   } else {
     currentTags.value.push(tag)
   }
+
   changeURLHash()
 }
 
 // set current series
-const currentSeries = ref(v.filter.all)
+const currentSeries = ref('all')
 const showMoreSeries = ref(false)
 
 const toggleSeries = (series) => {
   if (currentSeries.value === series) {
-    currentSeries.value = v.filter.all
+    currentSeries.value = 'all'
   } else {
     currentSeries.value = series
   }
@@ -151,8 +176,9 @@ const changeURLHash = () => {
 
 // get the init current value after Mounted
 onMounted(() => {
-  const category = route.query?.category as string || v.filter.all
+  const category = route.query?.category as string || 'all'
   currentCategory.value = category
+
   let tags = []
   if (typeof route.query?.tags === 'string') {
     tags = [route.query.tags]
@@ -160,7 +186,8 @@ onMounted(() => {
     tags = route.query.tags
   }
   currentTags.value = tags
-  const series = route.query?.series as string || v.filter.all
+
+  const series = route.query?.series as string || 'all'
   currentSeries.value = series
 })
 
@@ -170,13 +197,12 @@ onMounted(() => {
  *
  */
 // get all articles data
-const { pending, data: articleList } = await useAsyncData(`${v.article.folder} +'s'`, () => {
-  return queryContent<MyCustomParsedContent>(v.article.folder)
+const { pending, data: articleList } = await useAsyncData('articles', () => {
+  return queryContent<MyCustomParsedContent>('article')
     .only(['title', 'description', '_type', '_path', 'contentType', '_type', 'series', 'seriesOrder', 'tags'])
-    .sort({ created: 1 })
+    .sort({ seriesOrder: 1, $numeric: true })
     .find()
 })
-// Original: .sort({ seriesOrder: 1, $numeric: true })
 
 // filter articles data
 const filterArticleList = ref([])
@@ -184,7 +210,8 @@ const filterArticleList = ref([])
 watch(() => route.fullPath, () => {
   if (route.path !== '/list' || articleList.value.length === 0) { return }
   let currentArticleList = articleList.value
-  if (route.query?.category && route.query.category !== v.filter.all) {
+
+  if (route.query?.category && route.query.category !== 'all') {
     currentArticleList = currentArticleList.filter((item) => {
       const pathArr = item._path.split('/')
       if (pathArr.length >= 3) {
@@ -195,6 +222,7 @@ watch(() => route.fullPath, () => {
       }
     })
   }
+
   if (route.query?.tags) {
     let tags = []
     if (typeof route.query.tags === 'string') {
@@ -202,6 +230,7 @@ watch(() => route.fullPath, () => {
     } else if (Array.isArray(route.query.tags)) {
       tags = route.query.tags
     }
+
     if (tags.length > 0) {
       currentArticleList = currentArticleList.filter((item) => {
         return tags.some((tag) => {
@@ -214,11 +243,13 @@ watch(() => route.fullPath, () => {
       })
     }
   }
-  if (route.query?.series && route.query.series !== v.filter.all) {
+
+  if (route.query?.series && route.query.series !== 'all') {
     currentArticleList = currentArticleList.filter((item) => {
       return item.series === route.query.series
     })
   }
+
   filterArticleList.value = currentArticleList
 }, {
   immediate: true
@@ -238,6 +269,7 @@ const showListDetail = ref(true)
 const fileTypeMap = useFileTypeMap()
 const getFileTypeIcon = (type) => {
   const fileType = fileTypeMap.value[type]
+
   if (!fileType) {
     return fileTypeMap.value.default.iconName
   } else {
@@ -249,7 +281,7 @@ const getFileTypeIcon = (type) => {
 <template>
   <div>
     <Head>
-      <Title>{{ v.filter.list }}</Title>
+      <Title>List</Title>
     </Head>
     <NuxtLayout name="base">
       <div class="shrink-0 px-4 sm:px-8 py-4 space-y-4 sm:sticky top-0 inset-x-0 z-10 bg-gray-50">
@@ -273,21 +305,21 @@ const getFileTypeIcon = (type) => {
                   :class="showMoreCategory ? 'rotate-90' : 'rotate-0'"
                 />
                 <p>
-                  {{ v.filter.category }}
+                  Category
                 </p>
               </button>
               <p class="px-2 py-1 sm:hidden">
-                {{ v.filter.category }}
+                Category
               </p>
               <ul class="filter-list-container" :class="showMoreCategory ? 'max-h-96' : 'max-h-8'">
                 <li class="shrink-0">
                   <button
                     class="px-2 py-1 flex items-center space-x-1 transition-colors duration-300 rounded"
-                    :class="currentCategory === v.filter.all ? 'text-white bg-purple-500 hover:bg-purple-400' : 'text-purple-400 hover:text-purple-500 bg-purple-100'"
-                    @click="toggleCategory(v.filter.all)"
+                    :class="currentCategory === 'all' ? 'text-white bg-purple-500 hover:bg-purple-400' : 'text-purple-400 hover:text-purple-500 bg-purple-100'"
+                    @click="toggleCategory('all')"
                   >
                     <IconCustom name="material-symbols:category-rounded" class="w-5 h-5" />
-                    <p>{{ v.filter.all }}</p>
+                    <p>all</p>
                   </button>
                 </li>
                 <li v-for="item in categoryArr" :key="item._path" class="shrink-0">
@@ -325,18 +357,18 @@ const getFileTypeIcon = (type) => {
                       :class="showMoreTag ? 'rotate-90' : 'rotate-0'"
                     />
                     <p>
-                      {{ v.filter.tags }}
+                      Tags
                     </p>
                   </button>
                   <p class="px-2 py-1 sm:hidden">
-                    {{ v.filter.tags }}
+                    Tags
                   </p>
                   <ul v-if="tagSet" class="filter-list-container" :class="showMoreTag ? 'max-h-96' : 'max-h-8'">
-                    <li v-for="tag in [v.filter.all, ...tagSet as string[]]" :key="tag" class="shrink-0">
+                    <li v-for="tag in ['all', ...tagSet as string[]]" :key="tag" class="shrink-0">
                       <button
                         class="px-2 py-1 flex items-center space-x-1 transition-colors duration-300 rounded disabled:opacity-30"
-                        :class="(currentTags.length === 0 && tag === v.filter.all) || currentTags.includes(tag) ? 'text-white bg-purple-500 hover:bg-purple-400' : 'text-purple-400 hover:text-purple-500 bg-purple-100'"
-                        :disabled="(tag === v.filter.all || currentCategory === v.filter.all || categoryTags[currentCategory]?.includes(tag)) ? false : true"
+                        :class="(currentTags.length === 0 && tag === 'all') || currentTags.includes(tag) ? 'text-white bg-purple-500 hover:bg-purple-400' : 'text-purple-400 hover:text-purple-500 bg-purple-100'"
+                        :disabled="(tag === 'all' || currentCategory === 'all' || categoryTags[currentCategory]?.includes(tag)) ? false : true"
                         @click="toggleTag(tag)"
                       >
                         <p>#{{ tag }}</p>
@@ -355,18 +387,18 @@ const getFileTypeIcon = (type) => {
                       :class="showMoreSeries ? 'rotate-90' : 'rotate-0'"
                     />
                     <p>
-                      {{ v.filter.series }}
+                      Series
                     </p>
                   </button>
                   <p class="px-2 py-1 sm:hidden">
-                    {{ v.filter.series }}
+                    Series
                   </p>
                   <ul v-if="seriesSet" class="filter-list-container" :class="showMoreSeries ? 'max-h-96' : 'max-h-8'">
-                    <li v-for="series in [v.filter.all, ...seriesSet as string[]]" :key="series" class="shrink-0">
+                    <li v-for="series in ['all', ...seriesSet as string[]]" :key="series" class="shrink-0">
                       <button
                         class="px-2 py-1 flex items-center space-x-1 transition-colors duration-300 rounded disabled:opacity-30"
                         :class="currentSeries === series ? 'text-white bg-purple-500 hover:bg-purple-400' : 'text-purple-400 hover:text-purple-500 bg-purple-100'"
-                        :disabled="(series === v.filter.all || currentCategory === v.filter.all || categorySeries[currentCategory]?.includes(series)) ? false : true"
+                        :disabled="(series === 'all' || currentCategory === 'all' || categorySeries[currentCategory]?.includes(series)) ? false : true"
                         @click="toggleSeries(series)"
                       >
                         <IconCustom name="bi:collection" class="shrink-0 w-5 h-5" />
@@ -381,7 +413,7 @@ const getFileTypeIcon = (type) => {
             <div class="flex items-center space-x-2">
               <button
                 class="px-4 py-1 sm:hidden text-red-400 hover:text-red-500 bg-red-50 hover:bg-red-100 transition-colors duration-300 rounded"
-                @click="toggleCategory(v.filter.all)"
+                @click="toggleCategory('all')"
               >
                 <IconCustom name="ant-design:clear-outlined" class="w-4 h-4" />
               </button>
@@ -409,11 +441,11 @@ const getFileTypeIcon = (type) => {
       <div class="shrink-0 mx-4 sm:mx-8 hidden sm:flex justify-between items-center text-sm">
         <button
           class="p-2 flex items-center text-red-400 hover:text-red-500 bg-red-50 hover:bg-red-100 transition-colors duration-300 rounded"
-          @click="toggleCategory(v.filter.all)"
+          @click="toggleCategory('all')"
         >
           <IconCustom name="ant-design:clear-outlined" class="w-5 h-5" />
           <p class="hidden sm:block">
-            {{ v.filter.clear }}
+            Clear Filter
           </p>
         </button>
         <button
@@ -424,7 +456,7 @@ const getFileTypeIcon = (type) => {
           <IconCustom v-show="showListDetail" name="ic:round-unfold-less" class="w-5 h-5" />
           <IconCustom v-show="!showListDetail" name="ic:round-unfold-more" class="w-5 h-5" />
           <p class="hidden sm:block">
-            {{ showListDetail ? v.filter.less : v.filter.more }} {{ v.filter.detail }}
+            {{ showListDetail ? 'Less' : 'More' }} Detail
           </p>
         </button>
       </div>
@@ -432,7 +464,7 @@ const getFileTypeIcon = (type) => {
       <div v-if="pending" class="grow flex flex-col justify-center items-center space-y-2 text-gray-400">
         <IconCustom name="eos-icons:loading" class="w-10 h-10" />
         <p class="text-xl">
-          {{ v.filter.loading }}
+          Loading
         </p>
       </div>
       <div v-if="!pending && filterArticleList" class="grow container p-4 sm:p-8 mx-auto space-y-4">
@@ -450,7 +482,7 @@ const getFileTypeIcon = (type) => {
                   {{ item.title }}
                 </h2>
               </div>
-              <p v-if="item.description" v-show="showListDetail" class="px-6 text-sm opacity-60 short-description">
+              <p v-if="item.description" v-show="showListDetail" class="px-6 text-sm opacity-60">
                 {{ item.description }}
               </p>
             </NuxtLink>
@@ -463,7 +495,7 @@ const getFileTypeIcon = (type) => {
                 v-for="tag in item.tags"
                 :key="tag"
                 class="px-2 py-1 transition-colors duration-300 rounded"
-                :class="(currentTags.length === 0 && tag === v.filter.all) || currentTags.includes(tag) ? 'text-white bg-blue-500 hover:bg-blue-400' : 'text-blue-400 hover:text-blue-500 bg-blue-100'"
+                :class="(currentTags.length === 0 && tag === 'all') || currentTags.includes(tag) ? 'text-white bg-blue-500 hover:bg-blue-400' : 'text-blue-400 hover:text-blue-500 bg-blue-100'"
                 @click="toggleTag(tag)"
               >
                 #{{ tag }}
@@ -486,22 +518,12 @@ const getFileTypeIcon = (type) => {
 </template>
 
 <style scoped lang="scss">
+
 .filter-list-container {
   @apply grow flex sm:flex-wrap gap-2 overflow-x-auto sm:overflow-x-visible sm:overflow-y-hidden transition-all duration-300
 }
 
 .filter-list-container::-webkit-scrollbar {
   display: none;
-}
-</style>
-<style scoped>
-.short-description {
-  max-lines: 3;
-  overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-   max-height: 5rem;      /* fallback (5rem, 5em or 68px) */
-   -webkit-line-clamp: 3; /* number of lines to show */
-   -webkit-box-orient: vertical;
 }
 </style>

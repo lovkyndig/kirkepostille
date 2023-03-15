@@ -42,8 +42,9 @@ const toggleExpand = () => {
   expand.value = !expand.value
   if (!expand.value && codeBlockContainer.value) {
     nextTick(() => {
-      codeBlockContainer.value.scrollIntoView({ block: 'nearest' })
+      codeBlockContainer.value.scrollIntoView({ block: "nearest" })
     })
+
   }
 }
 

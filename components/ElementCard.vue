@@ -225,16 +225,11 @@ const changeChildrenDivideColumns = (event:MouseEvent) => {
 </script>
 
 <template>
-  <!-- Set id to elem-card and try to fix h1-h6-width -->
   <div
-    name="colsettingchild"
     class="elem-card"
     :class="(childrenSpanAllNum > 0 || layout === 'compact') ? 'my-2' : ''"
     :style="(childrenSpanAllNum > 0 || layout === 'compact') ? 'column-span: all' : ''"
   >
-    <!--
-      elem-card p-2 mb-2 h-fit border rounded break-inside-avoid border-purple-100
-    -->
     <div
       v-if="headingArr.includes(props.elem.type)"
       ref="headingElem"
@@ -256,14 +251,13 @@ const changeChildrenDivideColumns = (event:MouseEvent) => {
       </div>
 
       <ContentRendererMarkdown
-        name="h-parent"
         class="shrink-0 font-bold"
         :class="headingColorMap[props.elem.type]"
         :value="{ body: { type: 'root', children: [props.elem.node] } }"
         :excerpt="false"
       />
       <div />
-      <!-- shrink-0 font-bold text-purple-500 -->
+
       <div
         class="shrink-0 flex justify-start items-center gap-2 opacity-30 hover:opacity-100 transition-opacity duration-300"
       >
@@ -315,7 +309,6 @@ const changeChildrenDivideColumns = (event:MouseEvent) => {
             :class="`${ headingBtnMap[props.elem.type].expand }`"
             @click="changeChildrenDivideColumns"
           >
-            <!-- working with columns in MarkdownNote.vue -->
             <span class="w-4 h-4 text-xs">{{ childrenDivideColumns }}</span>
           </button>
         </div>

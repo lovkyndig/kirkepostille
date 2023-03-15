@@ -1,22 +1,4 @@
 <script setup lang="ts">
-const appConfig = useAppConfig()
-
-useHead({
-  script: [
-    {
-      src: 'https://cse.google.com/cse.js?cx=f40c27a6fb3e54bea',
-      async: true
-    },
-    {
-      innerHTML: `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', ${process.env.GTAG_ID});
-      `
-    }
-  ]
-})
 
 </script>
 
@@ -32,18 +14,13 @@ useHead({
             <h1>
               About
             </h1>
-            <div class="text-center max-w-prose mx-auto p-4">
-              <p>
-                This website is built by website <a
-                  :href="appConfig.theme.meta.url"
-                  target="_blank"
-                  class="text-blue-500 hover:text-blue-600 underline font-bold transition-colors duration-300"
-                > {{ appConfig.theme.author }}</a>.
-              </p>
-              <p>
-                Replace this page with an <i>about.md</i>-file in the <i>content</i>-folder.
-              </p>
-            </div>
+            <p class="max-w-prose mx-auto p-4">
+              This website is built by <a
+                href="https://github.com/Benbinbin/BlogiNote"
+                target="_blank"
+                class="text-blue-500 hover:text-blue-600 underline font-bold transition-colors duration-300"
+              >BlogiNote</a>.
+            </p>
           </div>
         </template>
       </ContentDoc>

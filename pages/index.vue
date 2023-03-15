@@ -1,15 +1,31 @@
 <script setup lang="ts">
-import { title } from 'process'
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
-import { variables as v } from '~/app/constants'
+// import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
+// import fileTypeMap from '@/utils/fileType.json'
 
 const flexiMode = useFlexiMode()
+
+/**
+ *
+ * switch the flexiMode
+ *
+ */
+// const changeFlexiMode = () => {
+//   if (flexiMode.value === 'blog') {
+//     flexiMode.value = 'note'
+//   } else {
+//     flexiMode.value = 'blog'
+//   }
+// }
+
 /**
  *
  * get nav data
  *
  */
 const { data: navTree } = await useAsyncData('rootFolder', () => fetchContentNavigation())
+
+// const themeOptions = useTheme()
 const appConfig = useAppConfig()
 
 /**
@@ -23,16 +39,19 @@ const articleFolderFiles:NavItem[] = []
 
 // render blog posts or not
 let showBlogPosts = true
+// if ('homePage' in themeOptions.value && 'showBlogPosts' in themeOptions.value.homePage) {
 showBlogPosts = appConfig.theme.homePage.showBlogPosts
+// }
 
 const queryPostsWhere = { _type: 'markdown' }
-const queryPostsLimit = appConfig.theme.homePage.postItemLimit || 2
+const queryPostsLimit = appConfig.theme.homePage.postItemLimit || 5
 const queryPostsOnly = ['title', 'description', '_type', '_path', 'cover', 'series', 'seriesOrder', 'tags']
 
 if (showBlogPosts && Array.isArray(navTree.value)) {
   articleFolder = navTree.value.find((item) => {
-    return item._path === v.article.link
+    return item._path === '/article'
   })
+
   if (articleFolder?.children && articleFolder.children.length > 0) {
     articleFolder.children.forEach((item) => {
       if (item._type === 'markdown' && articleFolderFiles.length < queryPostsLimit) {
@@ -45,9 +64,11 @@ if (showBlogPosts && Array.isArray(navTree.value)) {
 const getCategory = (path = '') => {
   let category = ''
   const pathArr = path.split('/')
-  if (pathArr.length === 3 && pathArr[1] === v.article.folder) {
+
+  if (pathArr.length === 3 && pathArr[1] === 'article') {
     category = pathArr[2]
   }
+
   return category
 }
 
@@ -71,11 +92,14 @@ const togglePostCategorySectionsHandler = (category:string) => {
  *
  */
 const currentTree = ref<NavItem[] | null>([])
+
 currentTree.value = navTree.value
+
 let folderNavPath:number[] = []
+
 const folderNavArr = ref([
   {
-    title: v.article.parent,
+    title: 'Root',
     path: [] as number[]
   }
 ])
@@ -86,17 +110,21 @@ const setTreeHandler = (path: number[], type = 'drill-down') => {
   } else if (type === 'reset') {
     folderNavPath = path
   }
+
   let treeTemp = navTree.value as NavItem[]
+
   // rebuild the folderNavArr
   // set the root as start
   const folderNavArrTemp = [
     {
-      title: v.article.parent,
+      title: 'Root',
       path: [] as number[]
     }
   ]
-  // the start folderNavPath just contain empty array
+
+   // the start folderNavPath just contain empty array
   let folderNavPathTemp:number[] = []
+
   if (folderNavPath.length > 0) {
     folderNavPath.forEach((index) => {
       folderNavPathTemp = folderNavPathTemp.concat(index)
@@ -107,6 +135,7 @@ const setTreeHandler = (path: number[], type = 'drill-down') => {
       treeTemp = treeTemp[index].children as NavItem[]
     })
   }
+
   currentTree.value = treeTemp
   folderNavArr.value = folderNavArrTemp
 }
@@ -115,6 +144,7 @@ const fileTypeMap: any = useFileTypeMap() // 🚨 maybe should fix this "any" ty
 
 const getFileTypeIcon = (type:string) => {
   const fileType = fileTypeMap.value[type]
+
   if (!fileType) {
     return fileTypeMap.value.default.iconName
   } else {
@@ -126,18 +156,18 @@ const getFileTypeIcon = (type:string) => {
 <template>
   <div>
     <Head>
-      <Title>{{ v.nav.home.echo }}</Title>
+      <Title>Home</Title>
     </Head>
     <NuxtLayout name="base" :footer-flexi-mode="true" :header-flexi-mode="true">
       <div v-show="flexiMode === 'blog'" class="container px-8 mx-auto">
         <div class="py-16">
           <ContentDoc>
             <template #empty>
-              <IntroCard :avatar="appConfig.theme.avatar" />
+              <IntroCard :avatar="'/default-avatar.png'" />
             </template>
             <template #not-found>
               <h1 class="py-4 text-3xl sm:text-5xl font-bold text-center text-purple-500">
-                {{ appConfig.theme.meta.name }}
+                BlogiNote
               </h1>
             </template>
           </ContentDoc>
@@ -207,7 +237,7 @@ const getFileTypeIcon = (type:string) => {
                     :to="{ path: '/list', query: { category: getCategory(category._path) } }"
                     class="p-2 text-xs font-bold transition-colors duration-300 rounded-lg text-purple-500 bg-purple-100 hover:bg-purple-50"
                   >
-                    {{ v.nav.home.more }}
+                    More
                   </NuxtLink>
                 </div>
                 <div
@@ -215,7 +245,6 @@ const getFileTypeIcon = (type:string) => {
                   class="scroll-container sm:px-4 flex flex-row sm:flex-col gap-2 overflow-x-auto sm:divide-y
                 sm:divide-gray-200"
                 >
-                  <!-- changed :limit="queryPostsLimit" -->
                   <ContentQuery
                     :path="category._path"
                     :where="queryPostsWhere"
@@ -239,7 +268,7 @@ const getFileTypeIcon = (type:string) => {
                     </template>
 
                     <template #not-found>
-                      <p>{{ v.nav.home.not_found }}</p>
+                      <p>No articles found.</p>
                     </template>
                   </ContentQuery>
                 </div>
@@ -297,6 +326,18 @@ const getFileTypeIcon = (type:string) => {
         </div>
       </div>
     </NuxtLayout>
+    <!-- <button
+      :title="`toggle flex mode to ${flexiMode === 'blog' ? 'note' : 'blog'}`"
+      class="w-9 h-9 hidden sm:flex justify-center items-center gap-1 fixed bottom-16 right-4 z-20 border transition-colors duration-300 rounded-lg"
+      :class="flexiMode === 'blog' ? 'flex-col bg-purple-100 hover:bg-purple-50 border-purple-200' : 'flex-row bg-green-100 hover:bg-green-50 border-green-200'"
+      @click="changeFlexiMode"
+    >
+      <div class="shrink-0 w-1.5 h-1.5 rounded-full" :class="flexiMode === 'blog' ? 'bg-purple-500' : 'bg-green-500'" />
+      <div class="shrink-0 space-y-1">
+        <div class="w-1 h-1 rounded-full " :class="flexiMode === 'blog' ? 'bg-purple-400' : 'bg-green-400'" />
+        <div class="w-1 h-1 rounded-full " :class="flexiMode === 'blog' ? 'bg-purple-400' : 'bg-green-400'" />
+      </div>
+    </button> -->
   </div>
 </template>
 

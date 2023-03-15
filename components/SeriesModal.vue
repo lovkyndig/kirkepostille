@@ -5,6 +5,7 @@ const props = defineProps<{
   seriesList: any;
 }>()
 
+// const emits = defineEmits(['close'])
 const showSeriesModal = useState('showSeriesModal')
 const showDetail = ref(false)
 
@@ -17,7 +18,6 @@ const router = useRouter()
 const itemRefs = ref<HTMLElement[]>([])
 const itemNum = ref(0)
 let currentIndex = -1
-
 const ModalKeyListener = function (event:KeyboardEvent) {
   if (event.key === 'Escape') {
     // press Esc key to hide modal
@@ -26,20 +26,26 @@ const ModalKeyListener = function (event:KeyboardEvent) {
   } else if (event.key === 'ArrowDown') {
     // navigate to next item
     currentIndex = currentIndex + 1
+
     if (currentIndex > itemNum.value - 1) {
       currentIndex = 0
     }
+
     const target = itemRefs.value[currentIndex]
+
     if (target) {
       target.focus()
     }
   } else if (event.key === 'ArrowUp') {
     // navigate to prev item
     currentIndex = currentIndex - 1
+
     if (currentIndex < 0) {
       currentIndex = itemNum.value - 1
     }
+
     const target = itemRefs.value[currentIndex]
+
     if (target) {
       target.focus()
     }

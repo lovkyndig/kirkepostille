@@ -10,6 +10,7 @@ const props = defineProps<{
   catalogs: CatalogItem[]
 }>()
 
+// const showCatalogForNote = useShowNoteCatalog()
 const showCatalogForNote = useState('showNoteCatalog')
 
 const sidebar = ref(null)
@@ -46,6 +47,7 @@ onMounted(() => {
   // watch the window size
   // and adjust the width of the fixed sidebar (not the float sidebar)
   watch(() => windowSize.value.width, () => {
+
     if (document.documentElement.clientWidth < 1280 && !sidebarFloatForNote.value) {
       // when the window resize smaller than 1280px at the first time
       // and if the sidebar not toggle to float manually

@@ -37,10 +37,8 @@ useHead({
       rel: 'icon',
       href: appConfig?.theme?.favicon
     }
-  ],
-  script: []
+  ]
 })
-// https://github.com/nuxt-community/google-analytics-module/issues/127
 
 /**
  *
@@ -117,7 +115,7 @@ watch(showSearchModal, () => {
 
 // keyboard shortcuts for search modal
 const ModalKeyListener = function (event: KeyboardEvent) {
-  if (event.ctrlKey && event.key === 'k') {
+  if(event.ctrlKey && event.key ==='k') {
     event.preventDefault()
     showSearchModal.value = !showSearchModal.value
   } else if (showSearchModal.value && event.key === 'Escape') {
@@ -143,8 +141,6 @@ onUnmounted(() => {
     </header>
     <div class="grow flex flex-col">
       <slot />
-      <NuxtLoadingIndicator />
-      <!-- https://nuxt.com/docs/api/components/nuxt-loading-indicator -->
     </div>
     <hr class="p-4 w-1/5 mx-auto">
     <FooterContent />
@@ -165,7 +161,7 @@ onUnmounted(() => {
     </nav>
 
     <ClientOnly>
-      <SearchModal v-show="showSearchModal" />
+      <SearchModal v-show="showSearchModal"></SearchModal>
     </ClientOnly>
   </div>
 </template>

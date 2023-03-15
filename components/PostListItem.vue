@@ -8,6 +8,7 @@ const getCoverUrl = (relativeURL:string) => {
   if (relativeURL.startsWith('./')) {
     const articleFolderPathArr = props.article._path.split('/').slice(0, -1)
     const imagePathArr = relativeURL.split('/').slice(1)
+
     return [...articleFolderPathArr, ...imagePathArr].join('/')
   } else {
     return relativeURL
@@ -34,7 +35,7 @@ const getCoverUrl = (relativeURL:string) => {
       <h3 class="font-bold text-2xl text-gray-600 group-hover:text-blue-400 transition-colors duration-500">
         {{ props.article.title || "This Post Hasn't Title Yet" }}
       </h3>
-      <p v-if="props.article.description" class="text-gray-600 short-description">
+      <p v-if="props.article.description" class="text-gray-600">
         {{ props.article.description }}
       </p>
     </NuxtLink>
@@ -63,13 +64,5 @@ const getCoverUrl = (relativeURL:string) => {
 </template>
 
 <style scoped>
-.short-description {
-  max-lines: 3;
-  overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-   max-height: 5rem;      /* fallback (5rem, 5em or 68px) */
-   -webkit-line-clamp: 3; /* number of lines to show */
-   -webkit-box-orient: vertical;
-}
+
 </style>

@@ -1,5 +1,11 @@
 node_modules
+*.log*
 .nuxt
+.nitro
+.cache
 .output
-yarn.lock
+.env
+dist
+
 public/article
+public/_pagefind
