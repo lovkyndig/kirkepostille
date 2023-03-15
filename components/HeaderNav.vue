@@ -102,7 +102,7 @@ const showSearchModal = useShowSearchModal()
       :class="showSubNav ? 'border-gray-200' : 'border-gray-50 shadow-md shadow-gray-200'"
     >
       <NuxtLink to="/">
-        <img :src="appConfig.avatar" alt="avatar" class="w-8 h-8 rounded-full">
+        <img :src="appConfig.theme.avatar" alt="avatar" class="w-8 h-8 rounded-full">
       </NuxtLink>
       <div class="flex justify-center items-center gap-6">
         <button
@@ -125,7 +125,7 @@ const showSearchModal = useShowSearchModal()
         <!-- -->
         <!--
         <NuxtLink
-          v-if="appConfig.subscribePage"
+          v-if="appConfig.theme.subscribePage"
           :to="v.nav.subscribe.link"
           class="btn"
           :class="flexiMode === 'blog' ? 'text-purple-500 hover:bg-purple-100' : 'text-green-500 hover:bg-green-100'"

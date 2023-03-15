@@ -35,7 +35,7 @@ useHead({
   link: [
     {
       rel: 'icon',
-      href: appConfig?.favicon
+      href: appConfig?.theme?.favicon
     }
   ],
   script: []

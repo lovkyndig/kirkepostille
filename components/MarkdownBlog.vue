@@ -15,8 +15,8 @@ const appConfig = useAppConfig()
  *
  */
 let showTime = true
-// if ('articlePage' in appConfig.theme && 'showTime' in appConfig.articlePage) {
-showTime = appConfig.articlePage.showTime
+// if ('articlePage' in appConfig.theme && 'showTime' in appConfig.theme.articlePage) {
+showTime = appConfig.theme.articlePage.showTime
 // }
 
 if ('showTime' in props.data) {
@@ -30,7 +30,7 @@ if ('showTime' in props.data) {
  */
 let showOutdatedWarningComponent = true
 // if (appConfig?.theme?.articlePage?.outdated?.show) {
-showOutdatedWarningComponent = appConfig.articlePage.outdated.show
+showOutdatedWarningComponent = appConfig.theme.articlePage.outdated.show
 // }
 
 if ('showOutdatedWarning' in props.data) {

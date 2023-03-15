@@ -61,8 +61,8 @@ const debouncedSearch = (key: string, delay = 300) => {
 
           let filterResults = []
 
-          if (appConfig?.search?.exclude && appConfig.search.exclude.length > 0) {
-            filterResults = resultsData.filter(item => !appConfig.search.exclude.includes(item.url))
+          if (appConfig?.theme?.search?.exclude && appConfig.theme.search.exclude.length > 0) {
+            filterResults = resultsData.filter(item => !appConfig.theme.search.exclude.includes(item.url))
           }
 
           searchResults.value = filterResults

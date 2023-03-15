@@ -20,7 +20,7 @@ const appConfig = useAppConfig()
  *
  */
 let showTime = true
-showTime = appConfig.articlePage.showTime
+showTime = appConfig.theme.articlePage.showTime
 
 if ('showTime' in props.data) {
   showTime = props.data.showTime
@@ -32,7 +32,7 @@ if ('showTime' in props.data) {
  *
  */
 let showOutdatedWarningComponent = false
-showOutdatedWarningComponent = appConfig.articlePage.outdated.show
+showOutdatedWarningComponent = appConfig.theme.articlePage.outdated.show
 
 if ('showOutdatedWarning' in props.data) {
   showOutdatedWarningComponent = props.data.showOutdatedWarning
