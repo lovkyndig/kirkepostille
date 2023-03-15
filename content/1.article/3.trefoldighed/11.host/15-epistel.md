@@ -146,7 +146,7 @@ I sit ønske om at afslutte brevet går han fra det særlige tilfælde over til 
 ### v10: »Så lad os altså, efter som vi har lejlighed, gøre det gode imod alle, men mest imod troens egne!«
 Dette er sidste del af formaningen om rigeligt at sørge for Kirkens tjenere og give almisser til alle trængende. Han vil sige: Lad os gøre det gode, mens det er dag; for når natten kommer, kan vi ikke arbejde, Joh 9, 4. Når sandhedens lys er blevet fjernet, kan menneskene vel gøre mange gode gerninger, men forgæves. For siden de vandrer i mørke, véd de ikke, hvor de går hen. Derfor er hele deres liv, virke, lidelse og død forgæves. Og indirekte hentyder han med disse ord til galaterne. Meningen er: Medmindre I forbliver i den sunde lære, som I har modtaget af mig, er det nytteløst, at I har gjort mange gode gerninger og har lidt meget. Ovenfor i kap. 3, 4 sagde han jo: »Har I da prøvet så meget forgæves?« Og »troens egne« kalder han med et nyt udtryk dem, der hører til i vort trossamfund. Blandt dem er Ordets tjenere de vigtigste, men dernæst også alle de andre troende.
 
-[^1]: Stikkord: galaterbrevsforklaring. Luthers forklaring til søndagens epistel hentet fra [Luthers Store Galaterbrevskommenter](http://www.lutherdansk.dk/Galaterbrevet%205/index.htm){:target="_blank"}. Ingressens bibeltekst er norsk, og fra 1930.
+[^1]: Stikkord: galaterbrevsforklaring. Luthers forklaring til søndagens epistel hentet fra [Luthers Store Galaterbrevskommenter](http://www.lutherdansk.dk/Galaterbrevet%205/index.htm). Ingressens bibeltekst er norsk, og fra 1930.
 <!-- 
 Dr. Martin Luther's Church-Postil 
 Original source: https://lutherdansk.dk

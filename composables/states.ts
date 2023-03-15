@@ -107,9 +107,6 @@ declare global {
     find: any,
     URL: any
   }
-  interface AppConfig {
-    theme: any,
-  }
 }
 
 /**
