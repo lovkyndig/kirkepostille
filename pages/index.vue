@@ -23,10 +23,10 @@ const articleFolderFiles:NavItem[] = []
 
 // render blog posts or not
 let showBlogPosts = true
-showBlogPosts = appConfig.theme.homePage.showBlogPosts
+showBlogPosts = appConfig.homePage.showBlogPosts
 
 const queryPostsWhere = { _type: 'markdown' }
-const queryPostsLimit = appConfig.theme.homePage.postItemLimit || 2
+const queryPostsLimit = appConfig.homePage.postItemLimit || 2
 const queryPostsOnly = ['title', 'description', '_type', '_path', 'cover', 'series', 'seriesOrder', 'tags']
 
 if (showBlogPosts && Array.isArray(navTree.value)) {
@@ -133,11 +133,11 @@ const getFileTypeIcon = (type:string) => {
         <div class="py-16">
           <ContentDoc>
             <template #empty>
-              <IntroCard :avatar="appConfig.theme.avatar" />
+              <IntroCard :avatar="appConfig.avatar" />
             </template>
             <template #not-found>
               <h1 class="py-4 text-3xl sm:text-5xl font-bold text-center text-purple-500">
-                {{ appConfig.theme.meta.name }}
+                {{ appConfig.meta.name }}
               </h1>
             </template>
           </ContentDoc>

@@ -5,17 +5,17 @@ const appConfig = useAppConfig()
 <template>
   <div class="py-4 flex justify-center items-center">
     <div class="flex flex-col md:flex-row gap-4 text-xs text-gray-400 text-center">
-      <p v-if="appConfig.theme.author">
+      <p v-if="appConfig.author">
         Copyright {{ (new Date()).getFullYear() }}
 
         <a
-          v-if="appConfig.theme.meta.url"
-          :href="`${appConfig.theme.meta.url}`"
+          v-if="appConfig.meta.url"
+          :href="`${appConfig.meta.url}`"
           target="_blank"
           class="text-blue-400"
         >
           Gudsbarn</a>
-        <span v-else>{{ appConfig.theme.author }}</span>
+        <span v-else>{{ appConfig.author }}</span>
       </p>
     </div>
   </div>

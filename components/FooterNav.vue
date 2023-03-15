@@ -114,7 +114,7 @@ const showSearchModal = useShowSearchModal()
       >
         <div class="flex flex-col justify-center items-center gap-1">
           <img
-            :src="appConfig.theme.avatar"
+            :src="appConfig.avatar"
             alt="avatar"
             class="w-6 h-6"
           >
@@ -156,7 +156,7 @@ const showSearchModal = useShowSearchModal()
           <!-- -->
           <!--
           <NuxtLink
-            v-if="appConfig.theme.subscribePage"
+            v-if="appConfig.subscribePage"
             :to="v.nav.subscribe.link"
             class="option-item"
             :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
