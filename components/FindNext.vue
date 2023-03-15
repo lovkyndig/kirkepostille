@@ -5,7 +5,7 @@
  */
 const searchString = useState('searchString')
 
-// console.log('value in searchString is: ' + searchString.value)
+console.log('value in searchString is: ' + searchString.value)
 
 const findNext = () => {
   const divElement = document.querySelector('#findNext')

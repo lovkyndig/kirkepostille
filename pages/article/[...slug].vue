@@ -173,10 +173,10 @@ const getAndChangeSearchparam = () => {
   const findSearchparam = ref(route.query.searchparam ? route.query.searchparam : '')
   const newString = findSearchparam.value.toString()
   searchString.value = newString.replace(/\u005F/gu, ' ') // replace to Space_Separator (Zs)
-  // console.log('In pages [...slug].vue, searchString is: ' + searchString.value)
+  console.log('In pages [...slug].vue, searchString is: ' + searchString.value)
 
   if (!findSearchparam.value) {
-    // console.log('A new page is opened without searchparam. Checking if the searchString is blank: ' + searchString.value)
+    console.log('A new page is opened without searchparam. Checking if the searchString is blank: ' + searchString.value)
   }
 }
 getAndChangeSearchparam()
