@@ -1,7 +1,7 @@
 ![Kirkepostil](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/cover.PNG)
 
 # Kirkepostil
-Kirkepostil is an clone of [`BlogiNote`](https://github.com/Benbinbin/BlogiNote) from [`Benbinbin`](https://github.com/Benbinbin), that is a hidden treasure, like the treasure in the Bible, hidden for the wise and prudent. Matt 11, 25.
+Kirkepostil is an clone of [`BlogiNote`](https://github.com/Benbinbin/BlogiNote) from [`Benbinbin`](https://github.com/Benbinbin) that is a hidden treasure, like the treasure in the Bible, hidden for the wise and prudent. Matt 11, 25.
 
 Everyone write about the setup in the readme-file, please go everywere else to read about it, (it's the same everywhere) or google about it - like me, when I started for some months ago on GitHub.
 

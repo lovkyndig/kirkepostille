@@ -35,5 +35,5 @@ window.location.href
 */
 
 const message = (msg) => {
-  // alert(msg)
+  alert(msg)
 }
