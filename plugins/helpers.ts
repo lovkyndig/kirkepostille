@@ -2,7 +2,7 @@
 export default defineNuxtPlugin(() => {
   return {
     provide: {
-      avatar: '/default-avatar.png'
+      // avatar: () => '/default-avatar.png'
     }
   }
 })

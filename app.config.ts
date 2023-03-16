@@ -1,7 +1,4 @@
-// the alternative to Nuxt theme https://nuxt-themes.netlify.app/
-// import pkg from './package.json'
-// import { variables as v } from '~/app/constants'
-
+// @ts-nocheck
 export default defineAppConfig({
   author: 'Gudsbarn',
   filter: {
@@ -39,5 +36,9 @@ export default defineAppConfig({
   menu: {
     more: 'Toggle',
     theme: 'Endre tema til'
+  },
+  meta: {
+    name: 'Kirkepostil',
+    url: 'https://kirkepostille.vercel.app/about'
   }
 })

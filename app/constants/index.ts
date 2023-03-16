@@ -12,10 +12,8 @@ export const variables = {
     all: 'Alle'
   },
   meta: {
-    name: 'Kirkepostil',
     description: 'Church-Postil with',
-    author: 'Gudsbarn',
-    url: 'https://kirkepostille.vercel.app/about'
+    author: 'Gudsbarn'
   },
   subscribePage: true,
   homePage: {
