@@ -3,9 +3,6 @@
 // import { variables as v } from '~/app/constants'
 
 export default defineAppConfig({
-  site: {
-    avatar: '/default-avatar.png' // favicon in constants.json
-  },
   author: 'Gudsbarn',
   filter: {
     catalog: 'Indhold',
