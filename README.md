@@ -3,7 +3,7 @@
 # Kirkepostil
 Kirkepostil is an clone of [`BlogiNote`](https://github.com/Benbinbin/BlogiNote) from [`Benbinbin`](https://github.com/Benbinbin), that is a hidden treasure, like the treasure in the Bible, hidden for the wise and prudent. Matt 11, 25.
 
-Everyone write about the setup in the readme-file, please go everywere else to read about it, (it's the same everywhere) or google about it - like me, when I started for some months ago on GitHub.
+Everyone write about the setup in the readme-file, please go away to read about it, (it's the same everywhere) or google about it - like me, when I started for some months ago on GitHub.
 
 ## License
 [MIT](./LICENSE)
@@ -17,7 +17,7 @@ Everyone write about the setup in the readme-file, please go everywere else to r
   - Use PageFind only on frontpage or in list
   - Use window.find() on /pages/article/[...slug].vue
 - Google Search Console - Add Verification methods; HTML tag
-- Load only the foure newest articles.
+- Load only the four newest articles.
 - Add mouse-drag-event-handler on PC
 - Add dark-light-themetoggle
 
