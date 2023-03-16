@@ -1,6 +1,6 @@
 // the alternative to Nuxt theme https://nuxt-themes.netlify.app/
 // import pkg from './package.json'
-import { variables as v } from '~/app/constants'
+// import { variables as v } from '~/app/constants'
 
 export default defineAppConfig({
   theme: {
@@ -8,7 +8,7 @@ export default defineAppConfig({
       name: 'Kirkepostil',
       description: 'Church-Postil with',
       author: 'Gudsbarn',
-      url: v.site.copyright
+      url: 'Gudsbarn'
     },
     author: 'Gudsbarn',
     avatar: '/default-avatar.png',
