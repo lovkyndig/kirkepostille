@@ -2,6 +2,7 @@
 import { title } from 'process'
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { variables as v } from '~/app/constants'
+// import constants from '~/app/constants/constants.json'
 const appConfig = useAppConfig()
 
 const flexiMode = useFlexiMode()
@@ -133,7 +134,7 @@ const getFileTypeIcon = (type:string) => {
         <div class="py-16">
           <ContentDoc>
             <template #empty>
-              <IntroCard :avatar="appConfig.site.avatar" />
+              <IntroCard :avatar="avatar" />
             </template>
             <template #not-found>
               <h1 class="py-4 text-3xl sm:text-5xl font-bold text-center text-purple-500">
