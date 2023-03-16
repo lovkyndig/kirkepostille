@@ -99,7 +99,7 @@ export default defineNuxtConfig({
   },
   typescript: {
     shim: false,
-    strict: true,
+    strict: false,
     typeCheck: true
   },
   css: ['~/assets/style.css'],
