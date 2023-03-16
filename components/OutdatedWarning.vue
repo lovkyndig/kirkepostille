@@ -1,12 +1,12 @@
 <script setup lang="ts">
 const appConfig = useAppConfig()
+const outdatedThreshold = appConfig.theme.articlePage.outdated.threshold || 30
 const props = defineProps<{
   date: string;
   type: 'created' | 'last updated'
 }>()
 
 // the default outdated time threshold of an article is 1 month (30 days)
-const outdatedThreshold = appConfig.theme.articlePage.outdated.threshold || 30
 
 const nowDate = new Date()
 const preDate = new Date(props.date)
