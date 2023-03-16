@@ -1,6 +1,9 @@
 // @ts-nocheck
 export default defineAppConfig({
-  author: 'Gudsbarn',
+  site: {
+    avatar: '/default-avatar.png',
+    author: 'Gudsbarn'
+  },
   filter: {
     catalog: 'Indhold',
     category: 'Series',

@@ -38,7 +38,7 @@ useHead({
                   :href="appConfig.meta.url"
                   target="_blank"
                   class="text-blue-500 hover:text-blue-600 underline font-bold transition-colors duration-300"
-                > {{ appConfig.author }}</a>.
+                > {{ appConfig.site.author }}</a>.
               </p>
               <p>
                 Replace this page with an <i>about.md</i>-file in the <i>content</i>-folder.

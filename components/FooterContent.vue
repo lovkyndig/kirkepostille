@@ -5,7 +5,7 @@ const appConfig = useAppConfig()
 <template>
   <div class="py-4 flex justify-center items-center">
     <div class="flex flex-col md:flex-row gap-4 text-xs text-gray-400 text-center">
-      <p v-if="appConfig.author">
+      <p v-if="appConfig.site.author">
         Copyright {{ (new Date()).getFullYear() }}
 
         <a
@@ -15,7 +15,7 @@ const appConfig = useAppConfig()
           class="text-blue-400"
         >
           Gudsbarn</a>
-        <span v-else>{{ appConfig.author }}</span>
+        <span v-else>{{ appConfig.site.author }}</span>
       </p>
     </div>
   </div>
