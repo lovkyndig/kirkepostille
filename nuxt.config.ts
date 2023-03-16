@@ -51,6 +51,12 @@ copyContentFiles('content', 'public', ['.md', '.json', '.csv'])
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  css: ['~/assets/style.css'],
+  typescript: {
+    shim: false,
+    strict: false,
+    typeCheck: true
+  },
   nitro: {
     prerender: {
       routes: ['/rss.xml', '/sitemap.xml']
@@ -97,12 +103,6 @@ export default defineNuxtConfig({
       }
     }
   },
-  typescript: {
-    shim: false,
-    strict: false,
-    typeCheck: true
-  },
-  css: ['~/assets/style.css'],
   app: {
     head: {
       meta: [
