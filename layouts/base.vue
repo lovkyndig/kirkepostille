@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const appConfig = useAppConfig()
 const props = defineProps({
   headerFlexiMode: {
     type: Boolean,
@@ -15,8 +16,6 @@ const props = defineProps({
 })
 
 const route = useRoute()
-
-const appConfig = useAppConfig()
 
 /**
  *
@@ -35,7 +34,7 @@ useHead({
   link: [
     {
       rel: 'icon',
-      href: appConfig?.theme?.favicon
+      href: appConfig?.theme.favicon
     }
   ],
   script: []
