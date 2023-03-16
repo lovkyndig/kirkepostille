@@ -51,13 +51,6 @@ copyContentFiles('content', 'public', ['.md', '.json', '.csv'])
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  css: ['~/assets/style.css'],
-  app: {
-    // baseURL: '/'
-  },
-  typescript: {
-    shim: false
-  },
   nitro: {
     prerender: {
       routes: ['/rss.xml', '/sitemap.xml']
@@ -66,9 +59,9 @@ export default defineNuxtConfig({
   runtimeConfig: {
     rss: {
       title: 'Kirkepostil',
-      description: 'Search after the truth in Church-Postil',
-      image: 'https://bloginote.benbinbin.com/default-avatar.png',
-      favicon: 'https://bloginote.benbinbin.com/default-favicon.ico',
+      description: 'Church-Postil with the best search engines.',
+      image: 'https://kirkepostille.vercel.app/default-avatar.png',
+      favicon: 'https://kirkepostille.vercel.app/default-favicon.ico',
       copyright: `All rights reserved ${(new Date()).getFullYear()}, Gudsbarn`
     },
     public: {
@@ -102,6 +95,36 @@ export default defineNuxtConfig({
           output: 'htmlAndMathml'
         }
       }
+    }
+  },
+  typescript: {
+    shim: false,
+    strict: true,
+    typeCheck: true
+  },
+  css: ['~/assets/style.css'],
+  app: {
+    head: {
+      meta: [
+        {
+          name: 'google-site-verification',
+          content: process.env.GSITE_VERIFICATION
+        }
+      ],
+      script: [
+        {
+          src: `https://www.googletagmanager.com/gtag/js?id=G-${process.env.GTAG_ID}`,
+          async: true
+        },
+        {
+          innerHTML: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-${process.env.GTAG_ID}');
+          `
+        }
+      ]
     }
   }
 })
