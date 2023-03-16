@@ -102,10 +102,13 @@ export const useShowSearchModal = () => useState<Boolean>('showSearchModal', () 
  * https://stackoverflow.com/questions/12709074/how-do-you-explicitly-set-a-new-property-on-window-in-typescript/56402425#56402425
  *
  */
+
 declare global {
   interface Window {
     find: any,
     URL: any
+    cloudinary: any;
+    gtag: (...args: any[]) => void;
   }
 }
 
