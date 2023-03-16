@@ -53,8 +53,7 @@ copyContentFiles('content', 'public', ['.md', '.json', '.csv'])
 export default defineNuxtConfig({
   css: ['~/assets/style.css'],
   typescript: {
-    shim: false,
-    typeCheck: true
+    shim: false
   },
   nitro: {
     prerender: {
