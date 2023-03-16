@@ -133,7 +133,7 @@ const getFileTypeIcon = (type:string) => {
         <div class="py-16">
           <ContentDoc>
             <template #empty>
-              <IntroCard :avatar="appConfig.theme.avatar" />
+              <IntroCard :avatar="appConfig.site.avatar" />
             </template>
             <template #not-found>
               <h1 class="py-4 text-3xl sm:text-5xl font-bold text-center text-purple-500">

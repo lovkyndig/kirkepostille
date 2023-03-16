@@ -3,7 +3,7 @@
 // import { variables as v } from '~/app/constants'
 
 export default defineAppConfig({
-  theme: {
+  site: {
     avatar: '/default-avatar.png' // favicon in constants.json
   },
   author: 'Gudsbarn',

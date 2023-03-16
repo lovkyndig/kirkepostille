@@ -113,7 +113,7 @@ const showSearchModal = useShowSearchModal()
       >
         <div class="flex flex-col justify-center items-center gap-1">
           <img
-            :src="appConfig.theme.avatar"
+            :src="appConfig.site.avatar"
             alt="avatar"
             class="w-6 h-6"
           >
