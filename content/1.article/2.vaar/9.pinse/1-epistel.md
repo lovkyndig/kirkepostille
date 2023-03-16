@@ -3,8 +3,8 @@ series: Pinse
 articleType: note
 showTime: false
 showOutdatedWarning: false
-created: 2022-06-05
-updated: 2022-06-05
+created: 2023-05-28
+updated: 2022-05-28
 tags:
   - Danish
   - Epistel

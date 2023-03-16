@@ -3,8 +3,8 @@ series: Pinse
 articleType: note
 showTime: false
 showOutdatedWarning: false
-created: 2022-06-06
-updated: 2022-06-06
+created: 2023-05-29
+updated: 2023-05-29
 tags:
   - Danish
   - Evangelium
