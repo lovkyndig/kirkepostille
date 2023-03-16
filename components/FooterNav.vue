@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 // import constants from '~/app/constants/constants.json'
+import { variables as constants } from '~/app/constants'
 const appConfig = useAppConfig()
 
 const props = defineProps({
@@ -177,7 +178,7 @@ const showSearchModal = useShowSearchModal()
         <div class="flex flex-col justify-center items-center gap-1">
           <IconCustom name="ic:round-category" class="w-6 h-6" />
           <p class="text-xs">
-            {{ appConfig.filter.category }}
+            {{ constants.filter.category }}
           </p>
         </div>
       </button>
@@ -197,7 +198,7 @@ const showSearchModal = useShowSearchModal()
             :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
             @click="showCategoryOptions = false"
           >
-            {{ appConfig.filter.all }}
+            {{ constants.filter.all }}
           </NuxtLink>
           <NuxtLink
             v-for="category in categoryArr"
@@ -222,7 +223,7 @@ const showSearchModal = useShowSearchModal()
         <div class="flex flex-col justify-center items-center gap-1">
           <IconCustom name="entypo:list" class="w-6 h-6" />
           <p class="text-xs">
-            {{ appConfig.filter.catalog }}
+            {{ constants.filter.catalog }}
           </p>
         </div>
       </button>
@@ -235,7 +236,7 @@ const showSearchModal = useShowSearchModal()
         <div class="flex flex-col justify-center items-center gap-1">
           <IconCustom name="tabler:search" class="w-6 h-6" />
           <p class="text-xs">
-            {{ appConfig.filter.search }}
+            {{ constants.filter.search }}
           </p>
         </div>
       </button>

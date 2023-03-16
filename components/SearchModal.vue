@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { variables as v } from '~/app/constants'
-const appConfig = useAppConfig()
+import { variables as constants } from '~/app/constants'
+// const appConfig = useAppConfig()
 
 const pagefindPath = '/_pagefind/pagefind.js'
 
@@ -62,8 +62,8 @@ const debouncedSearch = (key: string, delay = 300) => {
 
           let filterResults = []
 
-          if (v?.search?.exclude && v.search.exclude.length > 0) {
-            filterResults = resultsData.filter(item => !v.search.exclude.includes(item.url))
+          if (constants?.search?.exclude && constants.search.exclude.length > 0) {
+            filterResults = resultsData.filter(item => !constants.search.exclude.includes(item.url))
           }
 
           searchResults.value = filterResults
@@ -182,7 +182,7 @@ const checkSearchString = (str) => {
           @click="showSearchModal =false"
         >
           <IconCustom name="fluent:mail-inbox-dismiss-28-filled" class="w-12 h-12 text-purple-400" />
-          <p>{{ appConfig.filter.search_guide }} </p>
+          <p>{{ constants.filter.search_guide }} </p>
         </div>
       </div>
     </div>

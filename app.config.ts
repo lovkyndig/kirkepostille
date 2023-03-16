@@ -4,20 +4,6 @@ export default defineAppConfig({
     avatar: '/default-avatar.png',
     author: 'Gudsbarn'
   },
-  filter: {
-    catalog: 'Indhold',
-    category: 'Series',
-    tags: 'Tags',
-    series: 'Season',
-    less: 'Mindre',
-    more: 'Mer',
-    search: 'Søk',
-    search_guide: 'Søg efter ord eller en frase. Fraser må være omsluttet av anførselstegn.',
-    list: 'List',
-    clear: 'Rens filter',
-    detail: 'info',
-    loading: 'Laster'
-  },
   nav: {
     home: {
       echo: 'Hjem',

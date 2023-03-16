@@ -249,7 +249,7 @@ const getFileTypeIcon = (type) => {
 <template>
   <div>
     <Head>
-      <Title>{{ appConfig.filter.list }}</Title>
+      <Title>{{ v.filter.list }}</Title>
     </Head>
     <NuxtLayout name="base">
       <div class="shrink-0 px-4 sm:px-8 py-4 space-y-4 sm:sticky top-0 inset-x-0 z-10 bg-gray-50">
@@ -273,11 +273,11 @@ const getFileTypeIcon = (type) => {
                   :class="showMoreCategory ? 'rotate-90' : 'rotate-0'"
                 />
                 <p>
-                  {{ appConfig.filter.category }}
+                  {{ v.filter.category }}
                 </p>
               </button>
               <p class="px-2 py-1 sm:hidden">
-                {{ appConfig.filter.category }}
+                {{ v.filter.category }}
               </p>
               <ul class="filter-list-container" :class="showMoreCategory ? 'max-h-96' : 'max-h-8'">
                 <li class="shrink-0">
@@ -325,11 +325,11 @@ const getFileTypeIcon = (type) => {
                       :class="showMoreTag ? 'rotate-90' : 'rotate-0'"
                     />
                     <p>
-                      {{ appConfig.filter.tags }}
+                      {{ v.filter.tags }}
                     </p>
                   </button>
                   <p class="px-2 py-1 sm:hidden">
-                    {{ appConfig.filter.tags }}
+                    {{ v.filter.tags }}
                   </p>
                   <ul v-if="tagSet" class="filter-list-container" :class="showMoreTag ? 'max-h-96' : 'max-h-8'">
                     <li v-for="tag in [v.filter.all, ...tagSet as string[]]" :key="tag" class="shrink-0">
@@ -355,11 +355,11 @@ const getFileTypeIcon = (type) => {
                       :class="showMoreSeries ? 'rotate-90' : 'rotate-0'"
                     />
                     <p>
-                      {{ appConfig.filter.series }}
+                      {{ v.filter.series }}
                     </p>
                   </button>
                   <p class="px-2 py-1 sm:hidden">
-                    {{ appConfig.filter.series }}
+                    {{ v.filter.series }}
                   </p>
                   <ul v-if="seriesSet" class="filter-list-container" :class="showMoreSeries ? 'max-h-96' : 'max-h-8'">
                     <li v-for="series in [v.filter.all, ...seriesSet as string[]]" :key="series" class="shrink-0">
@@ -413,7 +413,7 @@ const getFileTypeIcon = (type) => {
         >
           <IconCustom name="ant-design:clear-outlined" class="w-5 h-5" />
           <p class="hidden sm:block">
-            {{ appConfig.filter.clear }}
+            {{ v.filter.clear }}
           </p>
         </button>
         <button
@@ -424,7 +424,7 @@ const getFileTypeIcon = (type) => {
           <IconCustom v-show="showListDetail" name="ic:round-unfold-less" class="w-5 h-5" />
           <IconCustom v-show="!showListDetail" name="ic:round-unfold-more" class="w-5 h-5" />
           <p class="hidden sm:block">
-            {{ showListDetail ? appConfig.filter.less : appConfig.filter.more }} {{ appConfig.filter.detail }}
+            {{ showListDetail ? v.filter.less : v.filter.more }} {{ v.filter.detail }}
           </p>
         </button>
       </div>
@@ -432,7 +432,7 @@ const getFileTypeIcon = (type) => {
       <div v-if="pending" class="grow flex flex-col justify-center items-center space-y-2 text-gray-400">
         <IconCustom name="eos-icons:loading" class="w-10 h-10" />
         <p class="text-xl">
-          {{ appConfig.filter.loading }}
+          {{ v.filter.loading }}
         </p>
       </div>
       <div v-if="!pending && filterArticleList" class="grow container p-4 sm:p-8 mx-auto space-y-4">

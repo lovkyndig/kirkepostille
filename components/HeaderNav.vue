@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 // import constants from '~/app/constants/constants.json'
+import { variables as constants } from '~/app/constants'
 const appConfig = useAppConfig()
 
 const props = defineProps({
@@ -111,7 +112,7 @@ const showSearchModal = useShowSearchModal()
           @mouseleave="setSubNav(false)"
           @click="showSubNav=!showSubNav"
         >
-          {{ appConfig.filter.category }}
+          {{ constants.filter.category }}
         </button>
         <!-- -->
         <NuxtLink
@@ -139,7 +140,7 @@ const showSearchModal = useShowSearchModal()
           @click="showSearchModal=true"
         >
           <IconCustom name="tabler:search" class="w-4 h-4" />
-          <span class="hidden lg:block text-sm">{{ appConfig.filter.search }}</span>
+          <span class="hidden lg:block text-sm">{{ constants.filter.search }}</span>
           <span class="hidden md:flex justify-center items-center gap-1 text-xs ">
             <code class="px-2 py-0.5 border rounded bg-gray-200">Ctrl</code>
             <code class="px-2 py-0.5 border rounded bg-gray-200">K</code>
@@ -187,7 +188,7 @@ const showSearchModal = useShowSearchModal()
           >
             <IconCustom name="material-symbols:category-rounded" class="w-8 h-8" />
             <p class="py-2 font-bold text-center">
-              {{ appConfig.filter.all }}
+              {{ constants.filter.all }}
             </p>
           </NuxtLink>
           <NuxtLink
