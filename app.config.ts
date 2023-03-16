@@ -8,7 +8,7 @@ export default defineAppConfig({
       name: 'Kirkepostil',
       description: 'Church-Postil with',
       author: 'Gudsbarn',
-      url: 'Gudsbarn'
+      url: 'https://kirkepostille.vercel.app/about'
     },
     author: 'Gudsbarn',
     avatar: '/default-avatar.png',
