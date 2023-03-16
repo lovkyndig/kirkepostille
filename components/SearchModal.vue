@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { variables as v } from '~/app/constants'
+const appConfig = useAppConfig()
+
 const pagefindPath = '/_pagefind/pagefind.js'
 
 const runtimeConfig = useRuntimeConfig()
@@ -42,7 +44,6 @@ const focusInputHandler = () => {
 
 const searchResults = ref<any[]>([])
 const inputText = ref<string>('')
-const appConfig = useAppConfig()
 
 let timer: (null | ReturnType<typeof setTimeout>) = null
 const debouncedSearch = (key: string, delay = 300) => {
@@ -61,8 +62,8 @@ const debouncedSearch = (key: string, delay = 300) => {
 
           let filterResults = []
 
-          if (appConfig?.theme?.search?.exclude && appConfig.theme.search.exclude.length > 0) {
-            filterResults = resultsData.filter(item => !appConfig.theme.search.exclude.includes(item.url))
+          if (v?.search?.exclude && v.search.exclude.length > 0) {
+            filterResults = resultsData.filter(item => !v.search.exclude.includes(item.url))
           }
 
           searchResults.value = filterResults
@@ -181,7 +182,7 @@ const checkSearchString = (str) => {
           @click="showSearchModal =false"
         >
           <IconCustom name="fluent:mail-inbox-dismiss-28-filled" class="w-12 h-12 text-purple-400" />
-          <p>{{ v.filter.search_guide }} </p>
+          <p>{{ appConfig.filter.search_guide }} </p>
         </div>
       </div>
     </div>

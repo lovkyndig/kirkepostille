@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
-import { variables as v } from '~/app/constants'
+// import { variables as v } from '~/app/constants'
+const appConfig = useAppConfig()
 
 const props = defineProps({
   footerCatalog: {
@@ -14,8 +15,6 @@ const props = defineProps({
 })
 
 // const route = useRoute()
-
-const appConfig = useAppConfig()
 
 /**
  *
@@ -122,7 +121,7 @@ const showSearchModal = useShowSearchModal()
             class="text-xs"
             :class="showMoreOptions ? (flexiMode === 'blog' ? 'text-purple-500' : 'text-green-500') : 'text-gray-500'"
           >
-            {{ v.menu.more }}
+            {{ appConfig.menu.more }}
           </p>
         </div>
       </button>
@@ -142,27 +141,27 @@ const showSearchModal = useShowSearchModal()
             :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
             @click="showMoreOptions = false"
           >
-            {{ v.nav.home.echo }}
+            {{ appConfig.nav.home.echo }}
           </NuxtLink>
           <!-- -->
           <NuxtLink
-            :to="v.nav.about.link"
+            :to="appConfig.nav.about.link"
             class="option-item"
             :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
             @click="showMoreOptions = false"
           >
-            {{ v.nav.about.echo }}
+            {{ appConfig.nav.about.echo }}
           </NuxtLink>
           <!-- -->
           <!--
           <NuxtLink
             v-if="appConfig.theme.subscribePage"
-            :to="v.nav.subscribe.link"
+            :to="appConfig.nav.subscribe.link"
             class="option-item"
             :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
             @click="showMoreOptions = false"
           >
-            {{ v.nav.subscribe.echo }}
+            {{ appConfig.nav.subscribe.echo }}
           </NuxtLink>
           -->
         </div>
@@ -178,7 +177,7 @@ const showSearchModal = useShowSearchModal()
         <div class="flex flex-col justify-center items-center gap-1">
           <IconCustom name="ic:round-category" class="w-6 h-6" />
           <p class="text-xs">
-            {{ v.filter.category }}
+            {{ appConfig.filter.category }}
           </p>
         </div>
       </button>
@@ -198,7 +197,7 @@ const showSearchModal = useShowSearchModal()
             :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
             @click="showCategoryOptions = false"
           >
-            {{ v.filter.all }}
+            {{ appConfig.filter.all }}
           </NuxtLink>
           <NuxtLink
             v-for="category in categoryArr"
@@ -223,7 +222,7 @@ const showSearchModal = useShowSearchModal()
         <div class="flex flex-col justify-center items-center gap-1">
           <IconCustom name="entypo:list" class="w-6 h-6" />
           <p class="text-xs">
-            {{ v.filter.catalog }}
+            {{ appConfig.filter.catalog }}
           </p>
         </div>
       </button>
@@ -236,7 +235,7 @@ const showSearchModal = useShowSearchModal()
         <div class="flex flex-col justify-center items-center gap-1">
           <IconCustom name="tabler:search" class="w-6 h-6" />
           <p class="text-xs">
-            {{ v.filter.search }}
+            {{ appConfig.filter.search }}
           </p>
         </div>
       </button>
@@ -244,7 +243,7 @@ const showSearchModal = useShowSearchModal()
       <button
         v-if="props.footerFlexiMode"
         v-show="!showMoreOptions && !showCategoryOptions"
-        :title="`${v.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog'}`"
+        :title="`${appConfig.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog'}`"
         class="grow flex justify-center items-center"
         @click="changeFlexiMode"
       >

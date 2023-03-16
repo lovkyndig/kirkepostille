@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
-import { variables as v } from '~/app/constants'
+// import { variables as v } from '~/app/constants'
+const appConfig = useAppConfig()
 
 const props = defineProps({
   headerFlexiMode: {
@@ -8,8 +9,6 @@ const props = defineProps({
     default: false
   }
 })
-
-const appConfig = useAppConfig()
 
 // const queryBuilder = queryContent().where({ _path: { $contains: '/article' } })
 // const { data } = await useAsyncData('articleFolder', () => fetchContentNavigation(queryBuilder))
@@ -112,25 +111,25 @@ const showSearchModal = useShowSearchModal()
           @mouseleave="setSubNav(false)"
           @click="showSubNav=!showSubNav"
         >
-          {{ v.filter.category }}
+          {{ appConfig.filter.category }}
         </button>
         <!-- -->
         <NuxtLink
-          :to="v.nav.about.link"
+          :to="appConfig.nav.about.link"
           class="btn"
           :class="flexiMode === 'blog' ? 'text-purple-500 hover:bg-purple-100' : 'text-green-500 hover:bg-green-100'"
         >
-          {{ v.nav.about.echo }}
+          {{ appConfig.nav.about.echo }}
         </NuxtLink>
         <!-- -->
         <!--
         <NuxtLink
           v-if="appConfig.theme.subscribePage"
-          :to="v.nav.subscribe.link"
+          :to="appConfig.nav.subscribe.link"
           class="btn"
           :class="flexiMode === 'blog' ? 'text-purple-500 hover:bg-purple-100' : 'text-green-500 hover:bg-green-100'"
         >
-          {{ v.nav.subscribe.echo }}
+          {{ appConfig.nav.subscribe.echo }}
         </NuxtLink>
         -->
       </div>
@@ -140,7 +139,7 @@ const showSearchModal = useShowSearchModal()
           @click="showSearchModal=true"
         >
           <IconCustom name="tabler:search" class="w-4 h-4" />
-          <span class="hidden lg:block text-sm">{{ v.filter.search }}</span>
+          <span class="hidden lg:block text-sm">{{ appConfig.filter.search }}</span>
           <span class="hidden md:flex justify-center items-center gap-1 text-xs ">
             <code class="px-2 py-0.5 border rounded bg-gray-200">Ctrl</code>
             <code class="px-2 py-0.5 border rounded bg-gray-200">K</code>
@@ -148,7 +147,7 @@ const showSearchModal = useShowSearchModal()
         </button>
         <button
           v-if="props.headerFlexiMode"
-          :title="`${v.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog' }`"
+          :title="`${appConfig.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog' }`"
           class="hidden w-10 h-10 sm:flex justify-center items-center gap-1 transition-colors duration-300 rounded-lg"
           :class="flexiMode === 'blog' ? 'flex-col bg-purple-100 hover:bg-purple-200 ' : 'flex-row bg-green-100 hover:bg-green-200 '"
           @click="changeFlexiMode"
@@ -188,7 +187,7 @@ const showSearchModal = useShowSearchModal()
           >
             <IconCustom name="material-symbols:category-rounded" class="w-8 h-8" />
             <p class="py-2 font-bold text-center">
-              {{ v.filter.all }}
+              {{ appConfig.filter.all }}
             </p>
           </NuxtLink>
           <NuxtLink

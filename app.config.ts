@@ -4,34 +4,44 @@
 
 export default defineAppConfig({
   theme: {
-    meta: {
-      name: 'Kirkepostil',
-      description: 'Church-Postil with',
-      author: 'Gudsbarn',
-      url: 'https://kirkepostille.vercel.app/about'
-    },
-    author: 'Gudsbarn',
     avatar: '/default-avatar.png',
-    favicon: '/default-favicon.ico',
-    homePage: {
-      showBlogPosts: true,
-      postItemLimit: 2
+    favicon: '/default-favicon.ico'
+  },
+  author: 'Gudsbarn',
+  filter: {
+    catalog: 'Indhold',
+    category: 'Series',
+    tags: 'Tags',
+    series: 'Season',
+    less: 'Mindre',
+    more: 'Mer',
+    search: 'Søk',
+    search_guide: 'Søg efter ord eller en frase. Fraser må være omsluttet av anførselstegn.',
+    list: 'List',
+    clear: 'Rens filter',
+    detail: 'info',
+    loading: 'Laster'
+  },
+  nav: {
+    home: {
+      echo: 'Hjem',
+      link: '/home',
+      more: 'Åpne mappe',
+      not_found: 'Ingen artikler funnet.'
     },
-    subscribePage: true,
-    articlePage: {
-      showTime: true,
-      outdated: {
-        show: true,
-        threshold: 30
-      }
+    about: {
+      echo: 'Info',
+      link: '/about'
     },
-    search: {
-      exclude: [
-        '/',
-        '/about/',
-        '/subscribe/',
-        '/list/'
-      ]
+    subscribe: {
+      echo: 'Rss',
+      link: '/subscribe',
+      rss: 'Rss',
+      sitemap: 'Sidekart'
     }
+  },
+  menu: {
+    more: 'Toggle',
+    theme: 'Endre tema til'
   }
 })

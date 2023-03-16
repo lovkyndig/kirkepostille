@@ -1,19 +1,20 @@
 <script setup lang="ts">
-import { variables as v } from '~/app/constants'
+// import { variables as v } from '~/app/constants'
+const appConfig = useAppConfig()
 const config = useRuntimeConfig()
 </script>
 
 <template>
   <div>
     <Head>
-      <Title>{{ v.nav.subscribe.echo }}</Title>
+      <Title>{{ appConfig.nav.subscribe.echo }}</Title>
     </Head>
     <NuxtLayout name="base">
       <ContentDoc class="subscribe-content-container container mx-auto lg:max-w-4xl px-6 md:px-12 py-12">
         <template #not-found>
           <div class="subscribe-content-container">
             <h1>
-              {{ v.nav.subscribe.echo }}
+              {{ appConfig.nav.subscribe.echo }}
             </h1>
             <div class="max-w-prose mx-auto p-4 space-y-4 ">
               <div class="flex items-center gap-2">
@@ -24,7 +25,7 @@ const config = useRuntimeConfig()
                   :icon-size-class="'w-6 h-6'"
                 />
                 <NuxtLink to="/rss.xml" target="_blank" class="text-blue-500 hover:text-blue-600 transition-colors duration-300">
-                  {{ v.nav.subscribe.rss }}
+                  {{ appConfig.nav.subscribe.rss }}
                 </NuxtLink>
               </div>
 
@@ -36,7 +37,7 @@ const config = useRuntimeConfig()
                   :icon-size-class="'w-6 h-6'"
                 />
                 <NuxtLink to="/sitemap.xml" target="_blank" class="text-blue-500 hover:text-blue-600 transition-colors duration-300">
-                  {{ v.nav.subscribe.sitemap }}
+                  {{ appConfig.nav.subscribe.sitemap }}
                 </NuxtLink>
               </div>
             </div>

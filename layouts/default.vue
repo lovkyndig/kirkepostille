@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const appConfig = useAppConfig()
-
+// const appConfig = useAppConfig()
+import constants from '../app/constants/constants.json'
 /**
  *
  * set head meta for almost all page
@@ -18,7 +18,7 @@ useHead({
   link: [
     {
       rel: 'icon',
-      href: appConfig.theme.favicon
+      href: constants.site.favicon
     }
   ],
   script: []

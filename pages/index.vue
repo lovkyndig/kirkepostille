@@ -2,6 +2,7 @@
 import { title } from 'process'
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { variables as v } from '~/app/constants'
+const appConfig = useAppConfig()
 
 const flexiMode = useFlexiMode()
 /**
@@ -10,7 +11,6 @@ const flexiMode = useFlexiMode()
  *
  */
 const { data: navTree } = await useAsyncData('rootFolder', () => fetchContentNavigation())
-const appConfig = useAppConfig()
 
 /**
  *
@@ -23,10 +23,10 @@ const articleFolderFiles:NavItem[] = []
 
 // render blog posts or not
 let showBlogPosts = true
-showBlogPosts = appConfig.theme.homePage.showBlogPosts
+showBlogPosts = v.homePage.showBlogPosts
 
 const queryPostsWhere = { _type: 'markdown' }
-const queryPostsLimit = appConfig.theme.homePage.postItemLimit || 2
+const queryPostsLimit = v.homePage.postItemLimit || 2
 const queryPostsOnly = ['title', 'description', '_type', '_path', 'cover', 'series', 'seriesOrder', 'tags']
 
 if (showBlogPosts && Array.isArray(navTree.value)) {
@@ -126,7 +126,7 @@ const getFileTypeIcon = (type:string) => {
 <template>
   <div>
     <Head>
-      <Title>{{ v.nav.home.echo }}</Title>
+      <Title>{{ appConfig.nav.home.echo }}</Title>
     </Head>
     <NuxtLayout name="base" :footer-flexi-mode="true" :header-flexi-mode="true">
       <div v-show="flexiMode === 'blog'" class="container px-8 mx-auto">
@@ -137,7 +137,7 @@ const getFileTypeIcon = (type:string) => {
             </template>
             <template #not-found>
               <h1 class="py-4 text-3xl sm:text-5xl font-bold text-center text-purple-500">
-                {{ appConfig.theme.meta.name }}
+                {{ appConfig.meta.name }}
               </h1>
             </template>
           </ContentDoc>
@@ -207,7 +207,7 @@ const getFileTypeIcon = (type:string) => {
                     :to="{ path: '/list', query: { category: getCategory(category._path) } }"
                     class="p-2 text-xs font-bold transition-colors duration-300 rounded-lg text-purple-500 bg-purple-100 hover:bg-purple-50"
                   >
-                    {{ v.nav.home.more }}
+                    {{ appConfig.nav.home.more }}
                   </NuxtLink>
                 </div>
                 <div
@@ -239,7 +239,7 @@ const getFileTypeIcon = (type:string) => {
                     </template>
 
                     <template #not-found>
-                      <p>{{ v.nav.home.not_found }}</p>
+                      <p>{{ appConfig.nav.home.not_found }}</p>
                     </template>
                   </ContentQuery>
                 </div>

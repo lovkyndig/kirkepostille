@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { variables as v } from '../app/constants'
+// const appConfig = useAppConfig()
 const props = defineProps<{
   data: any;
   prevArticleUrl: string;
@@ -7,8 +9,6 @@ const props = defineProps<{
 
 const showSeriesModal = useState('showSeriesModal')
 
-const appConfig = useAppConfig()
-
 /**
  *
  * show article created or last update time
@@ -16,7 +16,7 @@ const appConfig = useAppConfig()
  */
 let showTime = true
 // if ('articlePage' in appConfig.theme && 'showTime' in appConfig.theme.articlePage) {
-showTime = appConfig.theme.articlePage.showTime
+showTime = v.articlePage.showTime
 // }
 
 if ('showTime' in props.data) {
@@ -30,7 +30,7 @@ if ('showTime' in props.data) {
  */
 let showOutdatedWarningComponent = true
 // if (appConfig?.theme?.articlePage?.outdated?.show) {
-showOutdatedWarningComponent = appConfig.theme.articlePage.outdated.show
+showOutdatedWarningComponent = v.articlePage.outdated.show
 // }
 
 if ('showOutdatedWarning' in props.data) {
