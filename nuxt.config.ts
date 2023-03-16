@@ -54,7 +54,6 @@ export default defineNuxtConfig({
   css: ['~/assets/style.css'],
   typescript: {
     shim: false,
-    strict: false,
     typeCheck: true
   },
   nitro: {
