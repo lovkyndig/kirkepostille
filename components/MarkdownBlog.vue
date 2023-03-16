@@ -15,7 +15,7 @@ const showSeriesModal = useState('showSeriesModal')
  *
  */
 let showTime = true
-// if ('articlePage' in appConfig.theme && 'showTime' in appConfig.theme.articlePage) {
+// if ('articlePage' in v && 'showTime' in v.articlePage) {
 showTime = v.articlePage.showTime
 // }
 

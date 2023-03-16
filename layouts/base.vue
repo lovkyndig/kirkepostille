@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const appConfig = useAppConfig()
+import constants from '../app/constants/constants.json'
+// const appConfig = useAppConfig()
 const props = defineProps({
   headerFlexiMode: {
     type: Boolean,
@@ -34,7 +35,7 @@ useHead({
   link: [
     {
       rel: 'icon',
-      href: appConfig?.theme.favicon
+      href: constants.site.favicon
     }
   ],
   script: []

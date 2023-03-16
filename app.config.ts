@@ -4,8 +4,7 @@
 
 export default defineAppConfig({
   theme: {
-    avatar: '/default-avatar.png',
-    favicon: '/default-favicon.ico'
+    avatar: '/default-avatar.png' // favicon in constants.json
   },
   author: 'Gudsbarn',
   filter: {

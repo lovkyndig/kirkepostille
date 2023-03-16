@@ -124,7 +124,7 @@ const showSearchModal = useShowSearchModal()
         <!-- -->
         <!--
         <NuxtLink
-          v-if="appConfig.theme.subscribePage"
+          v-if="appConfig.subscribePage"
           :to="appConfig.nav.subscribe.link"
           class="btn"
           :class="flexiMode === 'blog' ? 'text-purple-500 hover:bg-purple-100' : 'text-green-500 hover:bg-green-100'"
