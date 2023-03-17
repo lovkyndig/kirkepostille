@@ -61,7 +61,7 @@ export default defineNuxtConfig({
     },
     public: {
       hostname: 'https://kirkepostille.vercel.app',
-      appEnv: process.env.APPENV || 'production'
+      appEnv: process.env.APPENV
     }
   },
   modules: [
