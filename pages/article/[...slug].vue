@@ -7,7 +7,8 @@ const appConfig = useAppConfig()
 * set head meta for article page
 *
 */
-// add CSS stylesheet for katex
+/*
+// add CSS stylesheet for katex, testing nofollow after checking the seo on https://app.ahrefs.com/
 useHead({
   link: [
     {
@@ -16,7 +17,9 @@ useHead({
     }
   ]
 })
-
+// not ussing the classes .math-inline or .math-display
+// if you want to use this try to set the style in nuxt.config (css) and check if it's working
+*/
 /**
  *
  * switch the flexiMode

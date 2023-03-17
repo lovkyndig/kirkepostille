@@ -9,6 +9,7 @@ Everyone write about the setup in the readme-file, please go away to read about 
 [MIT](./LICENSE)
 
 ## To do-list (personal)
+- Insert translate-option before search (from Norwegian to Danish)
 - Check if possibly to create Mermaid content-register?
 - Add MDC-components for use in other Mdc-compoents (tabs)
 - Add svg-image in header with text/guide to hear mp3-files with the preaches.

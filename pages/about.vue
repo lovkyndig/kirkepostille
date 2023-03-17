@@ -1,6 +1,7 @@
 <script setup lang="ts">
 // import { variables as v } from '../app/constants'
 const appConfig = useAppConfig()
+/*
 useHead({
   script: [
     {
@@ -17,7 +18,7 @@ useHead({
     }
   ]
 })
-
+*/
 </script>
 
 <template>

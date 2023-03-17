@@ -51,17 +51,6 @@ copyContentFiles('content', 'public', ['.md', '.json', '.csv'])
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  css: ['~/assets/style.css'],
-  typescript: {
-    shim: false,
-    strict: true,
-    typeCheck: true
-  },
-  nitro: {
-    prerender: {
-      routes: ['/rss.xml', '/sitemap.xml']
-    }
-  },
   runtimeConfig: {
     rss: {
       title: 'Kirkepostil',
@@ -71,7 +60,8 @@ export default defineNuxtConfig({
       copyright: `All rights reserved ${(new Date()).getFullYear()}, Gudsbarn`
     },
     public: {
-      hostname: 'https://kirkepostille.vercel.app'
+      hostname: 'https://kirkepostille.vercel.app',
+      appEnv: process.env.APPENV || 'production'
     }
   },
   modules: [
@@ -103,6 +93,20 @@ export default defineNuxtConfig({
       }
     }
   },
+  nitro: {
+    prerender: {
+      routes: ['/rss.xml', '/sitemap.xml']
+    }
+  },
+  typescript: {
+    shim: false,
+    strict: false,
+    typeCheck: true
+  },
+  css: [
+    '~/assets/style.css',
+    '~/assets/katex.min.css'
+  ],
   app: {
     head: {
       meta: [
@@ -110,7 +114,8 @@ export default defineNuxtConfig({
           name: 'google-site-verification',
           content: process.env.GSITE_VERIFICATION
         }
-      ],
+      ]
+      /*
       script: [
         {
           src: `https://www.googletagmanager.com/gtag/js?id=G-${process.env.GTAG_ID}`,
@@ -125,6 +130,7 @@ export default defineNuxtConfig({
           `
         }
       ]
+      */
     }
   }
 })

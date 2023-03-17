@@ -46,5 +46,6 @@ export const variables = {
     clear: 'Rens filter',
     detail: 'info',
     loading: 'Laster'
-  }
+  },
+  gtag: 'J0PRB7L04Q'
 }

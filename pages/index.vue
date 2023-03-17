@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { title } from 'process'
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
-import { variables as v } from '~/app/constants'
+import { variables as constants } from '~/app/constants'
 // import constants from '~/app/constants/constants.json'
 const appConfig = useAppConfig()
 
@@ -24,15 +24,15 @@ const articleFolderFiles:NavItem[] = []
 
 // render blog posts or not
 let showBlogPosts = true
-showBlogPosts = v.homePage.showBlogPosts
+showBlogPosts = constants.homePage.showBlogPosts
 
 const queryPostsWhere = { _type: 'markdown' }
-const queryPostsLimit = v.homePage.postItemLimit || 2
+const queryPostsLimit = constants.homePage.postItemLimit || 2
 const queryPostsOnly = ['title', 'description', '_type', '_path', 'cover', 'series', 'seriesOrder', 'tags']
 
 if (showBlogPosts && Array.isArray(navTree.value)) {
   articleFolder = navTree.value.find((item) => {
-    return item._path === v.article.link
+    return item._path === constants.article.link
   })
   if (articleFolder?.children && articleFolder.children.length > 0) {
     articleFolder.children.forEach((item) => {
@@ -46,7 +46,7 @@ if (showBlogPosts && Array.isArray(navTree.value)) {
 const getCategory = (path = '') => {
   let category = ''
   const pathArr = path.split('/')
-  if (pathArr.length === 3 && pathArr[1] === v.article.folder) {
+  if (pathArr.length === 3 && pathArr[1] === constants.article.folder) {
     category = pathArr[2]
   }
   return category
@@ -76,7 +76,7 @@ currentTree.value = navTree.value
 let folderNavPath:number[] = []
 const folderNavArr = ref([
   {
-    title: v.article.parent,
+    title: constants.article.parent,
     path: [] as number[]
   }
 ])
@@ -92,7 +92,7 @@ const setTreeHandler = (path: number[], type = 'drill-down') => {
   // set the root as start
   const folderNavArrTemp = [
     {
-      title: v.article.parent,
+      title: constants.article.parent,
       path: [] as number[]
     }
   ]
@@ -134,7 +134,7 @@ const getFileTypeIcon = (type:string) => {
         <div class="py-16">
           <ContentDoc>
             <template #empty>
-              <IntroCard :avatar="avatar" />
+              <IntroCard :avatar="appConfig.site.avatar" />
             </template>
             <template #not-found>
               <h1 class="py-4 text-3xl sm:text-5xl font-bold text-center text-purple-500">
