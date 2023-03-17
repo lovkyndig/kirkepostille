@@ -1,7 +1,9 @@
 export const variables = {
   site: {
     name: 'Kirkepostil',
-    copyright: 'https://kirkepostille.vercel.app/about'
+    copyright: 'https://kirkepostille.vercel.app/about',
+    avatar: '/default-avatar.png',
+    author: 'Gudsbarn'
   },
   article: {
     parent: 'Content',
@@ -9,8 +11,10 @@ export const variables = {
     link: '/article'
   },
   meta: {
+    name: 'Kirkepostil',
     description: 'Church-Postil with',
-    author: 'Gudsbarn'
+    author: 'Gudsbarn',
+    url: 'https://kirkepostille.vercel.app/about'
   },
   subscribePage: true,
   homePage: {
@@ -47,5 +51,26 @@ export const variables = {
     detail: 'info',
     loading: 'Laster'
   },
-  gtag: 'J0PRB7L04Q'
+  nav: {
+    home: {
+      echo: 'Hjem',
+      link: '/home',
+      more: 'Åpne mappe',
+      not_found: 'Ingen artikler funnet.'
+    },
+    about: {
+      echo: 'Info',
+      link: '/about'
+    },
+    subscribe: {
+      echo: 'Rss',
+      link: '/subscribe',
+      rss: 'Rss',
+      sitemap: 'Sidekart'
+    }
+  },
+  menu: {
+    more: 'Toggle',
+    theme: 'Endre tema til'
+  }
 }

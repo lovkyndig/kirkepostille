@@ -1,6 +1,6 @@
 <script setup lang="ts">
-// import { variables as v } from '../app/constants'
-const appConfig = useAppConfig()
+import { variables as constants } from '../app/constants'
+// const appConfig = useAppConfig()
 /*
 useHead({
   script: [
@@ -36,10 +36,10 @@ useHead({
             <div class="text-center max-w-prose mx-auto p-4">
               <p>
                 This website is built by website <a
-                  :href="appConfig.meta.url"
+                  :href="constants.meta.url"
                   target="_blank"
                   class="text-blue-500 hover:text-blue-600 underline font-bold transition-colors duration-300"
-                > {{ appConfig.site.author }}</a>.
+                > {{ constants.site.author }}</a>.
               </p>
               <p>
                 Replace this page with an <i>about.md</i>-file in the <i>content</i>-folder.

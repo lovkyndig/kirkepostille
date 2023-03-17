@@ -1,6 +1,6 @@
 <script setup lang="ts">
-// import { variables as v } from '~/app/constants'
-const appConfig = useAppConfig()
+import { variables as constants } from '~/app/constants'
+// const appConfig = useAppConfig()
 
 /**
 *
@@ -285,7 +285,7 @@ watch(showZoomImage, () => {
     <!-- *****************************  FIND-NEXT ********************************* -->
     <button
       v-if="!pending && data && data.articleType === 'note'"
-      :title="`${appConfig.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog'}`"
+      :title="`${constants.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog'}`"
       class="w-9 h-9 hidden sm:flex justify-center items-center gap-1 fixed bottom-4 left-4 z-20 border transition-colors duration-300 rounded-lg"
       :class="flexiMode === 'blog' ? 'flex-col bg-purple-100 hover:bg-purple-50 border-purple-200' : 'flex-row bg-green-100 hover:bg-green-50 border-green-200'"
       @click="changeFlexiMode"

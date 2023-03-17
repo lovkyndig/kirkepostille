@@ -2,7 +2,7 @@
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 // import constants from '~/app/constants/constants.json'
 import { variables as constants } from '~/app/constants'
-const appConfig = useAppConfig()
+// const appConfig = useAppConfig()
 
 const props = defineProps({
   headerFlexiMode: {
@@ -102,7 +102,7 @@ const showSearchModal = useShowSearchModal()
       :class="showSubNav ? 'border-gray-200' : 'border-gray-50 shadow-md shadow-gray-200'"
     >
       <NuxtLink to="/">
-        <img :src="appConfig.site.avatar" alt="avatar" class="w-8 h-8 rounded-full">
+        <img :src="constants.site.avatar" alt="avatar" class="w-8 h-8 rounded-full">
       </NuxtLink>
       <div class="flex justify-center items-center gap-6">
         <button
@@ -116,21 +116,21 @@ const showSearchModal = useShowSearchModal()
         </button>
         <!-- -->
         <NuxtLink
-          :to="appConfig.nav.about.link"
+          :to="constants.nav.about.link"
           class="btn"
           :class="flexiMode === 'blog' ? 'text-purple-500 hover:bg-purple-100' : 'text-green-500 hover:bg-green-100'"
         >
-          {{ appConfig.nav.about.echo }}
+          {{ constants.nav.about.echo }}
         </NuxtLink>
         <!-- -->
         <!--
         <NuxtLink
-          v-if="appConfig.subscribePage"
-          :to="appConfig.nav.subscribe.link"
+          v-if="constants.subscribePage"
+          :to="constants.nav.subscribe.link"
           class="btn"
           :class="flexiMode === 'blog' ? 'text-purple-500 hover:bg-purple-100' : 'text-green-500 hover:bg-green-100'"
         >
-          {{ appConfig.nav.subscribe.echo }}
+          {{ constants.nav.subscribe.echo }}
         </NuxtLink>
         -->
       </div>
@@ -148,7 +148,7 @@ const showSearchModal = useShowSearchModal()
         </button>
         <button
           v-if="props.headerFlexiMode"
-          :title="`${appConfig.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog' }`"
+          :title="`${constants.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog' }`"
           class="hidden w-10 h-10 sm:flex justify-center items-center gap-1 transition-colors duration-300 rounded-lg"
           :class="flexiMode === 'blog' ? 'flex-col bg-purple-100 hover:bg-purple-200 ' : 'flex-row bg-green-100 hover:bg-green-200 '"
           @click="changeFlexiMode"

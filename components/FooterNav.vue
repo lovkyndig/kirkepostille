@@ -2,7 +2,7 @@
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 // import constants from '~/app/constants/constants.json'
 import { variables as constants } from '~/app/constants'
-const appConfig = useAppConfig()
+// const appConfig = useAppConfig()
 
 const props = defineProps({
   footerCatalog: {
@@ -114,7 +114,7 @@ const showSearchModal = useShowSearchModal()
       >
         <div class="flex flex-col justify-center items-center gap-1">
           <img
-            :src="appConfig.site.avatar"
+            :src="constants.site.avatar"
             alt="avatar"
             class="w-6 h-6"
           >
@@ -122,7 +122,7 @@ const showSearchModal = useShowSearchModal()
             class="text-xs"
             :class="showMoreOptions ? (flexiMode === 'blog' ? 'text-purple-500' : 'text-green-500') : 'text-gray-500'"
           >
-            {{ appConfig.menu.more }}
+            {{ constants.menu.more }}
           </p>
         </div>
       </button>
@@ -142,27 +142,27 @@ const showSearchModal = useShowSearchModal()
             :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
             @click="showMoreOptions = false"
           >
-            {{ appConfig.nav.home.echo }}
+            {{ constants.nav.home.echo }}
           </NuxtLink>
           <!-- -->
           <NuxtLink
-            :to="appConfig.nav.about.link"
+            :to="constants.nav.about.link"
             class="option-item"
             :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
             @click="showMoreOptions = false"
           >
-            {{ appConfig.nav.about.echo }}
+            {{ constants.nav.about.echo }}
           </NuxtLink>
           <!-- -->
           <!--
           <NuxtLink
-            v-if="appConfig.subscribePage"
-            :to="appConfig.nav.subscribe.link"
+            v-if="constants.subscribePage"
+            :to="constants.nav.subscribe.link"
             class="option-item"
             :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
             @click="showMoreOptions = false"
           >
-            {{ appConfig.nav.subscribe.echo }}
+            {{ constants.nav.subscribe.echo }}
           </NuxtLink>
           -->
         </div>
@@ -244,7 +244,7 @@ const showSearchModal = useShowSearchModal()
       <button
         v-if="props.footerFlexiMode"
         v-show="!showMoreOptions && !showCategoryOptions"
-        :title="`${appConfig.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog'}`"
+        :title="`${constants.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog'}`"
         class="grow flex justify-center items-center"
         @click="changeFlexiMode"
       >

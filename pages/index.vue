@@ -3,7 +3,7 @@ import { title } from 'process'
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { variables as constants } from '~/app/constants'
 // import constants from '~/app/constants/constants.json'
-const appConfig = useAppConfig()
+// const appConfig = useAppConfig()
 
 const flexiMode = useFlexiMode()
 /**
@@ -127,18 +127,18 @@ const getFileTypeIcon = (type:string) => {
 <template>
   <div>
     <Head>
-      <Title>{{ appConfig.nav.home.echo }}</Title>
+      <Title>{{ constants.nav.home.echo }}</Title>
     </Head>
     <NuxtLayout name="base" :footer-flexi-mode="true" :header-flexi-mode="true">
       <div v-show="flexiMode === 'blog'" class="container px-8 mx-auto">
         <div class="py-16">
           <ContentDoc>
             <template #empty>
-              <IntroCard :avatar="appConfig.site.avatar" />
+              <IntroCard :avatar="constants.site.avatar" />
             </template>
             <template #not-found>
               <h1 class="py-4 text-3xl sm:text-5xl font-bold text-center text-purple-500">
-                {{ appConfig.meta.name }}
+                {{ constants.meta.name }}
               </h1>
             </template>
           </ContentDoc>
@@ -208,7 +208,7 @@ const getFileTypeIcon = (type:string) => {
                     :to="{ path: '/list', query: { category: getCategory(category._path) } }"
                     class="p-2 text-xs font-bold transition-colors duration-300 rounded-lg text-purple-500 bg-purple-100 hover:bg-purple-50"
                   >
-                    {{ appConfig.nav.home.more }}
+                    {{ constants.nav.home.more }}
                   </NuxtLink>
                 </div>
                 <div
@@ -240,7 +240,7 @@ const getFileTypeIcon = (type:string) => {
                     </template>
 
                     <template #not-found>
-                      <p>{{ appConfig.nav.home.not_found }}</p>
+                      <p>{{ constants.nav.home.not_found }}</p>
                     </template>
                   </ContentQuery>
                 </div>
