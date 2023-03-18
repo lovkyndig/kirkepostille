@@ -249,7 +249,9 @@ const getFileTypeIcon = (type) => {
 <template>
   <div>
     <Head>
-      <Title>{{ v.filter.title }}  {{ v.filter.category }}  {{ v.filter.tags }}  {{ v.filter.series }}</Title>
+      <Title v-for="item in categoryArr" :key="item._path">
+        {{ v.filter.title }} - {{ getCategory(item._path) }}
+      </Title>
     </Head>
     <NuxtLayout name="base">
       <div class="shrink-0 px-4 sm:px-8 py-4 space-y-4 sm:sticky top-0 inset-x-0 z-10 bg-gray-50">
