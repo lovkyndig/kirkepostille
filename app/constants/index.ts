@@ -21,7 +21,7 @@ export const variables = {
   subscribePage: true,
   homePage: {
     showBlogPosts: true,
-    postItemLimit: 2
+    postItemLimit: 30
   },
   articlePage: {
     showTime: true,
