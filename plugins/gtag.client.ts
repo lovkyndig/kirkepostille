@@ -2,13 +2,13 @@ import VueGtag from 'vue-gtag'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const config = useRuntimeConfig()
-  // if (config.public.production_mode) {
-  nuxtApp.vueApp.use(VueGtag, {
-    config: {
-      id: config.gtag_id
-    }
-  })
-  // }
+  if (config.public.production_mode) {
+    nuxtApp.vueApp.use(VueGtag, {
+      config: {
+        id: config.gtag_id
+      }
+    })
+  }
 })
 /*
 sources:
