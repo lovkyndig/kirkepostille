@@ -1,3 +1,4 @@
+import { isProduction } from 'std-env'
 /**
  *
  * copy asset files to public folder
@@ -61,7 +62,8 @@ export default defineNuxtConfig({
     },
     public: {
       hostname: 'https://kirkepostille.vercel.app',
-      appEnv: process.env.APPENV
+      production_mode: isProduction,
+      gtag_id: process.env.GTAG_ID
     }
   },
   modules: [
