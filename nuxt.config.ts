@@ -63,7 +63,7 @@ export default defineNuxtConfig({
     public: {
       hostname: 'https://kirkepostille.vercel.app',
       production_mode: isProduction,
-      gtag_id: process.env.GTAG_ID
+      gtag_id: `G-${process.env.GTAG_ID}`
     }
   },
   modules: [
