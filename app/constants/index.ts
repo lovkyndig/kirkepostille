@@ -4,6 +4,7 @@ export const variables = {
     title: 'Dr. Martin Luthers kirkepostille',
     copyright: 'https://kirkepostille.vercel.app/about',
     avatar: '/default-avatar.png',
+    favicon: '/default-favicon.ico',
     author: 'Gudsbarn'
   },
   article: {

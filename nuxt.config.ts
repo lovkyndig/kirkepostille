@@ -1,4 +1,6 @@
 import { isProduction } from 'std-env'
+import { variables as constants } from './app/constants'
+import pkg from './package.json'
 /**
  *
  * copy asset files to public folder
@@ -54,14 +56,14 @@ copyContentFiles('content', 'public', ['.md', '.json', '.csv'])
 export default defineNuxtConfig({
   runtimeConfig: {
     rss: {
-      title: 'Kirkepostil',
-      description: 'Church-Postil with the best search engines.',
-      image: 'https://kirkepostille.vercel.app/default-avatar.png',
-      favicon: 'https://kirkepostille.vercel.app/default-favicon.ico',
-      copyright: `All rights reserved ${(new Date()).getFullYear()}, Gudsbarn`
+      title: constants.site.title,
+      description: constants.site.title,
+      image: `${pkg.homepage}${constants.site.avatar}`,
+      favicon: `${pkg.homepage}${constants.site.favicon}`,
+      copyright: `All rights reserved ${(new Date()).getFullYear()}, ${pkg.author}`
     },
     public: {
-      hostname: 'https://kirkepostille.vercel.app',
+      hostname: pkg.homepage,
       production_mode: isProduction,
       gtag_id: `G-${process.env.GTAG_ID}`
     }
@@ -117,22 +119,6 @@ export default defineNuxtConfig({
           content: process.env.GSITE_VERIFICATION
         }
       ]
-      /*
-      script: [
-        {
-          src: `https://www.googletagmanager.com/gtag/js?id=G-${process.env.GTAG_ID}`,
-          async: true
-        },
-        {
-          innerHTML: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-${process.env.GTAG_ID}');
-          `
-        }
-      ]
-      */
     }
   }
 })
