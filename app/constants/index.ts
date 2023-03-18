@@ -1,6 +1,7 @@
 export const variables = {
   site: {
     name: 'Kirkepostil',
+    title: 'Dr. Martin Luthers kirkepostille',
     copyright: 'https://kirkepostille.vercel.app/about',
     avatar: '/default-avatar.png',
     author: 'Gudsbarn'
@@ -47,6 +48,7 @@ export const variables = {
     search: 'Søk',
     search_guide: 'Søg efter ord eller en frase. Fraser må være omsluttet av anførselstegn.',
     list: 'List',
+    title: 'Stikkord: ',
     clear: 'Rens filter',
     detail: 'info',
     loading: 'Laster'

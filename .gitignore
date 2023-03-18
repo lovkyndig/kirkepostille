@@ -2,5 +2,3 @@ node_modules
 .nuxt
 .output
 yarn.lock
-public/article
-public/_pagefind/fragment
