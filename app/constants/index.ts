@@ -48,7 +48,7 @@ export const variables = {
     search: 'Søk',
     search_guide: 'Søg efter ord eller en frase. Fraser må være omsluttet av anførselstegn.',
     list: 'List',
-    title: 'Stikkordpath: ',
+    title: 'Oversikt taler med stikkord ',
     clear: 'Rens filter',
     detail: 'info',
     loading: 'Laster'
