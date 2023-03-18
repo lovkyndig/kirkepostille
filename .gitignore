@@ -3,3 +3,4 @@ node_modules
 .output
 yarn.lock
 public/article
+public/_pagefind/fragment
