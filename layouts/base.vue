@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import constants from '../app/constants/constants.json'
+import { variables as constants } from '../app/constants'
 // const appConfig = useAppConfig()
 const props = defineProps({
   headerFlexiMode: {

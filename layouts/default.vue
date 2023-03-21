@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // const appConfig = useAppConfig()
-import constants from '../app/constants/constants.json'
+import { variables as constants } from '../app/constants'
 /**
  *
  * set head meta for almost all page

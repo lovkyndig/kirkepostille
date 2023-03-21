@@ -1,5 +1,5 @@
 ---
-series: Påske
+series: Paaske
 articleType: note
 showTime: false
 showOutdatedWarning: false

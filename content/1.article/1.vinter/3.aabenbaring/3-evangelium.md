@@ -1,5 +1,5 @@
 ---
-series: Åpenbaring
+series: Aabenbaring
 articleType: note
 showTime: false
 showOutdatedWarning: false

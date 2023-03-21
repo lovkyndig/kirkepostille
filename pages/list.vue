@@ -163,6 +163,7 @@ onMounted(() => {
   currentTags.value = tags
   const series = route.query?.series as string || v.filter.all
   currentSeries.value = series
+  echoQueryParam(route.query)
 })
 
 /**
@@ -245,22 +246,38 @@ const getFileTypeIcon = (type) => {
     return fileType.iconName
   }
 }
-const description = 'Oversikt over predikener av Dr. Martin Luther innenfor valgt serie/tag/sesong'
+const description = 'Oversikt over Dr. Martin Luthers predikener i kirkepostillen innenfor folgende valgt serie, merke og/eller sesong:'
 useHead({
   meta: [{ name: 'description', content: description }],
   link: [{ rel: 'canonical', href: pkg.homepage }]
 })
+
+const searchString = useState('searchString')
+const echoQueryParam = (queryObj) => {
+  // const cat = queryObj.category
+  // const tag = queryObj.tags
+  // const serie = queryObj.series
+  if (process.client) {
+    const querystring = window.location.search
+    if (querystring.substring(1)) {
+      searchString.value = querystring.substring(1) // set searchString.value
+    } else {
+      // console.log('No searchstring here!')
+    }
+  }
+}
+
 </script>
 
 <template>
   <div>
     <Head>
-      <Title v-for="item in categoryArr" :key="item._path">
-        {{ v.filter.title }} - {{ getCategory(item._path) }}
+      <Title>
+        {{ v.filter.title }}
       </Title>
     </Head>
     <h1 style="display: none">
-      {{ description }}
+      {{ description }} {{ searchString }}
     </h1>
     <NuxtLayout name="base">
       <div class="shrink-0 px-4 sm:px-8 py-4 space-y-4 sm:sticky top-0 inset-x-0 z-10 bg-gray-50">

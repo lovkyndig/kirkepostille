@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { variables as constants } from '~/app/constants'
+import pkg from '~/package.json'
 // import constants from '~/app/constants/constants.json'
 // const appConfig = useAppConfig()
 // const config = useRuntimeConfig()
@@ -123,9 +124,15 @@ const getFileTypeIcon = (type:string) => {
   }
 }
 
-const description = 'Dr. Martin Luthers kirkepostille tilpasset mobil og nettbrett..'
+const description = 'Dr. Martin Luthers kirkepostille med innebygd søkemotor, per dato med det mest avanserte brukergrenesnittet for mobil og nettbrett.'
 useHead({
-  meta: [{ name: 'description', content: description }]
+  meta: [
+    { name: 'description', content: description },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: pkg.homepage },
+    { property: 'og:title', content: constants.site.title },
+    { property: 'og:image', content: `${pkg.homepage}${constants.site.preview}` }
+  ]
 })
 </script>
 

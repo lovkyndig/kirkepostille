@@ -1,5 +1,5 @@
 ---
-series: Høst
+series: Host
 articleType: note
 showTime: false
 showOutdatedWarning: false

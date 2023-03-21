@@ -106,8 +106,6 @@ export const useShowSearchModal = () => useState<Boolean>('showSearchModal', () 
 declare global {
   interface Window {
     find: any,
-    URL: any
-    cloudinary: any;
     gtag: (...args: any[]) => void;
   }
 }

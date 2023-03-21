@@ -1,5 +1,5 @@
 ---
-series: Efter påske
+series: Efter-paaske
 articleType: note
 showTime: false
 showOutdatedWarning: false

@@ -1,11 +1,19 @@
 <script setup lang="ts">
 import { variables as constants } from '../app/constants'
+import pkg from '~/package.json'
 // const appConfig = useAppConfig()
 
-const description = 'Info om søking og funksjonaliteter som tilbys på nettstedet.'
+const description = 'Info om søking og hvordan det er mulig å søke med ord eller fraser gjennom hele kirkepostillen. Se også register over viktig innhold.'
 useHead({
-  meta: [{ name: 'description', content: description }]
+  meta: [
+    { name: 'description', content: description },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: pkg.homepage },
+    { property: 'og:title', content: constants.site.title },
+    { property: 'og:image', content: `${pkg.homepage}${constants.site.preview}` }
+  ]
 })
+
 </script>
 
 <template>

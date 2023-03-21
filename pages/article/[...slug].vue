@@ -13,15 +13,13 @@ import pkg from '~/package.json'
 // not ussing the classes .math-inline or .math-display
 // if you want to use this try to set the style in nuxt.config (css) and check if it's working
 
-const description = 'Dr. Martin Luthers prediken fra kirkepostillen her: https//kirkepostille/vercel.app.'
+const description = 'Dr. Martin Luthers kirkepostille med forklaring av evangelium og epistelteksten. Publisert på https//kirkepostille/vercel.app.'
 useHead({
   meta: [
     { name: 'description', content: description },
     { property: 'og:type', content: 'website' },
-    { property: 'og:locale', content: 'da' },
     { property: 'og:url', content: pkg.homepage },
     { property: 'og:title', content: constants.site.title },
-    { property: 'og:description', content: description },
     { property: 'og:image', content: `${pkg.homepage}${constants.site.preview}` }
   ]
 })
