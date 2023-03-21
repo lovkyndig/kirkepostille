@@ -227,7 +227,7 @@ const changeChildrenDivideColumns = (event:MouseEvent) => {
 <template>
   <!-- Set id to elem-card and try to fix h1-h6-width -->
   <div
-    name="colsettingchild"
+    name="parent-to-tabindex-0-who-is-parent-to-divname-in-nodemodus"
     class="elem-card"
     :class="(childrenSpanAllNum > 0 || layout === 'compact') ? 'my-2' : ''"
     :style="(childrenSpanAllNum > 0 || layout === 'compact') ? 'column-span: all' : ''"
@@ -254,16 +254,15 @@ const changeChildrenDivideColumns = (event:MouseEvent) => {
           <span>{{ props.elem.type.toUpperCase() }}</span>
         </button>
       </div>
-
+      <!-- shrink-0 font-bold text-purple-500 -->
       <ContentRendererMarkdown
-        name="h-parent"
+        name="toggle-this-content-in-notemode"
         class="shrink-0 font-bold"
         :class="headingColorMap[props.elem.type]"
         :value="{ body: { type: 'root', children: [props.elem.node] } }"
         :excerpt="false"
       />
       <div />
-      <!-- shrink-0 font-bold text-purple-500 -->
       <div
         class="shrink-0 flex justify-start items-center gap-2 opacity-30 hover:opacity-100 transition-opacity duration-300"
       >

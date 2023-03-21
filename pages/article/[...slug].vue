@@ -7,19 +7,15 @@ import { variables as constants } from '~/app/constants'
 * set head meta for article page
 *
 */
-/*
+
 // add CSS stylesheet for katex, testing nofollow after checking the seo on https://app.ahrefs.com/
-useHead({
-  link: [
-    {
-      rel: 'stylesheet',
-      href: 'style/katex.min.css'
-    }
-  ]
-})
 // not ussing the classes .math-inline or .math-display
 // if you want to use this try to set the style in nuxt.config (css) and check if it's working
-*/
+
+const description = 'Dr. Martin Luthers prædiken fra https//kirkepostille/vercel.app.'
+useHead({
+  meta: [{ name: 'description', content: description }]
+})
 /**
  *
  * switch the flexiMode

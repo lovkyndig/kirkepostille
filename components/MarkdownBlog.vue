@@ -106,7 +106,7 @@ text-gray-400 is changed to text-gray-500 and
 text-gray-300 is changed to text-gray-400
 */
 const showTags = ref(true)
-
+const flexiMode = useFlexiMode() // hide the first h1 in noteMode
 </script>
 
 <template>
@@ -116,8 +116,12 @@ const showTags = ref(true)
       class="my-4 w-full h-60 lg:h-72 xl:h-80 bg-cover bg-center bg-no-repeat"
       :style="`background-image: url('${props.data.cover}')`"
     />
-    <div class="py-8 selection:text-white selection:bg-purple-400">
-      <h1 class="py-4 text-3xl md:text-5xl font-bold text-center">
+    <div
+      class="py-8 selection:text-white selection:bg-purple-400"
+      name="h1parent-in-blogmode"
+    >
+      <!-- Hide this h1 if nodemode and hide two other h1 in blogmode -->
+      <h1 v-if="flexiMode==='blog'" class="py-4 text-3xl md:text-5xl font-bold text-center">
         {{ props.data.title || "Article" }}
       </h1>
       <div class="py-2 flex flex-wrap justify-center items-center gap-2 sm:gap-4">
@@ -241,7 +245,7 @@ const showTags = ref(true)
 }
 
 .markdown-blog-container {
-  // hide the h1 element if it's the first dom in the .markdown-blog-container
+  // hide the h1 element if it's the first dom in the .markdown-blog-container (not complete hide )
   & > h1:first-child {
     @apply hidden
   }

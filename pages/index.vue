@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { title } from 'process'
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { variables as constants } from '~/app/constants'
 // import constants from '~/app/constants/constants.json'
 // const appConfig = useAppConfig()
+// const config = useRuntimeConfig()
 
 const flexiMode = useFlexiMode()
 /**

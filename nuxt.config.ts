@@ -113,6 +113,9 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'dk'
+      },
       meta: [
         {
           name: 'google-site-verification',

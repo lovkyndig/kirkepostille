@@ -244,6 +244,10 @@ const getFileTypeIcon = (type) => {
     return fileType.iconName
   }
 }
+const description = 'Oversikt over prædikener innenfor valgt serie/tag/sesong'
+useHead({
+  meta: [{ name: 'description', content: description }]
+})
 </script>
 
 <template>

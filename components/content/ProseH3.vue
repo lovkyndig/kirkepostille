@@ -5,7 +5,7 @@ const flexiMode = useFlexiMode()
 </script>
 
 <template>
-  <h3 v-if="flexiMode==='note'" :id="id" class="notewidth" name="hnames">
+  <h3 v-if="flexiMode==='note'" :id="id" name="h1top" class="notewidth">
     <a>
       <slot />
     </a>

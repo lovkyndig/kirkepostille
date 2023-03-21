@@ -1,24 +1,11 @@
 <script setup lang="ts">
 import { variables as constants } from '../app/constants'
 // const appConfig = useAppConfig()
-/*
+
+const description = 'Info om søking og funksjonaliteter som tilbys på nettstedet.'
 useHead({
-  script: [
-    {
-      src: 'https://cse.google.com/cse.js?cx=f40c27a6fb3e54bea',
-      async: true
-    },
-    {
-      innerHTML: `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', ${process.env.GTAG_ID});
-      `
-    }
-  ]
+  meta: [{ name: 'description', content: description }]
 })
-*/
 </script>
 
 <template>

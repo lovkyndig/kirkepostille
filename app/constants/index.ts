@@ -40,9 +40,9 @@ export const variables = {
   },
   filter: {
     catalog: 'Indhold',
-    category: 'Series',
-    tags: 'Tags',
-    series: 'Season',
+    category: 'Serie',
+    tags: 'Merke',
+    series: 'Sesong',
     all: 'Alle',
     less: 'Mindre',
     more: 'Mer',
