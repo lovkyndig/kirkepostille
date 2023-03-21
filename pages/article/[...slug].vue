@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { variables as constants } from '~/app/constants'
+import pkg from '~/package.json'
 // const appConfig = useAppConfig()
 
 /**
@@ -14,8 +15,21 @@ import { variables as constants } from '~/app/constants'
 
 const description = 'Dr. Martin Luthers prædiken fra https//kirkepostille/vercel.app.'
 useHead({
-  meta: [{ name: 'description', content: description }]
+  meta: [
+    { name: 'description', content: description },
+    { property: 'og:url', content: pkg.homepage },
+    { property: 'og:title', content: constants.site.title },
+    { property: 'og:description', content: description },
+    { property: 'og:image', content: `${pkg.homepage}${constants.site.preview}` },
+    { name: 'twitter:site', content: '@lovkyndig' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:url', content: pkg.homepage },
+    { name: 'twitter:title', content: constants.site.title },
+    { name: 'twitter:description', content: constants.site.name },
+    { name: 'twitter:image', content: `${pkg.homepage}${constants.site.preview}` }
+  ]
 })
+
 /**
  *
  * switch the flexiMode

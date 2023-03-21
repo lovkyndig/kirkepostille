@@ -6,9 +6,7 @@ const flexiMode = useFlexiMode()
 
 <template>
   <h4 v-if="flexiMode==='note'" :id="id" class="notewidth" name="hnames">
-    <a>
-      <slot />
-    </a>
+    <slot />
   </h4>
   <h4 v-else :id="id">
     <a :href="`#${id}`">

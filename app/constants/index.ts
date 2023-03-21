@@ -5,6 +5,7 @@ export const variables = {
     copyright: 'https://kirkepostille.vercel.app/about',
     avatar: '/default-avatar.png',
     favicon: '/default-favicon.ico',
+    preview: '/preview.png',
     author: 'Gudsbarn'
   },
   article: {
