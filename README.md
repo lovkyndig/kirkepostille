@@ -1,4 +1,4 @@
-![Kirkepostil](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/cover.PNG)
+![Kirkepostil](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/preview.png)
 
 # Kirkepostil
 Kirkepostil is an clone of [`BlogiNote`](https://github.com/Benbinbin/BlogiNote) from [`Benbinbin`](https://github.com/Benbinbin), that is a hidden treasure, like the treasure in the Bible, hidden for the wise and prudent. Matt 11, 25.

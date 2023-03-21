@@ -122,6 +122,11 @@ const getFileTypeIcon = (type:string) => {
     return fileType.iconName
   }
 }
+
+const description = 'Dr. Martin Luthers kirkepostille tilpasset mobil og nettbrett..'
+useHead({
+  meta: [{ name: 'description', content: description }]
+})
 </script>
 
 <template>
@@ -129,6 +134,9 @@ const getFileTypeIcon = (type:string) => {
     <Head>
       <Title>{{ constants.site.title }}</Title>
     </Head>
+    <h1 style="display: none">
+      {{ description }}
+    </h1>
     <NuxtLayout name="base" :footer-flexi-mode="true" :header-flexi-mode="true">
       <div v-show="flexiMode === 'blog'" class="container px-8 mx-auto">
         <div class="py-16">

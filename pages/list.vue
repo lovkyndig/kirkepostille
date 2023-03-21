@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
 import { variables as v } from '~/app/constants'
+import pkg from '~/package.json'
 
 interface MyCustomParsedContent extends ParsedContent {
   tags: string[]
@@ -244,9 +245,10 @@ const getFileTypeIcon = (type) => {
     return fileType.iconName
   }
 }
-const description = 'Oversikt over prædikener innenfor valgt serie/tag/sesong'
+const description = 'Oversikt over predikener av Dr. Martin Luther innenfor valgt serie/tag/sesong'
 useHead({
-  meta: [{ name: 'description', content: description }]
+  meta: [{ name: 'description', content: description }],
+  link: [{ rel: 'canonical', href: pkg.homepage }]
 })
 </script>
 
