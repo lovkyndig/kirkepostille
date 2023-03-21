@@ -1,23 +1,11 @@
 export const variables = {
   site: {
     name: 'Kirkepostil',
-    title: 'Dr. Martin Luthers kirkepostille',
-    copyright: 'https://kirkepostille.vercel.app/about',
+    url: 'https://kirkepostille.vercel.app/about',
     avatar: '/default-avatar.png',
     favicon: '/default-favicon.ico',
     preview: '/preview.png',
     author: 'Gudsbarn'
-  },
-  article: {
-    parent: 'Content',
-    folder: 'article',
-    link: '/article'
-  },
-  meta: {
-    name: 'Kirkepostil',
-    description: 'Church-Postil with',
-    author: 'Gudsbarn',
-    url: 'https://kirkepostille.vercel.app/about'
   },
   subscribePage: true,
   homePage: {
@@ -30,6 +18,11 @@ export const variables = {
       show: true,
       threshold: 30
     }
+  },
+  article: {
+    parent: 'Content',
+    folder: 'article',
+    link: '/article'
   },
   search: {
     exclude: [
@@ -50,7 +43,6 @@ export const variables = {
     search: 'Søk',
     search_guide: 'Søg efter ord eller en frase. Fraser må være omsluttet av anførselstegn.',
     list: 'List',
-    title: 'Oversikt taler med stikkord ',
     clear: 'Rens filter',
     detail: 'info',
     loading: 'Laster'
@@ -76,5 +68,17 @@ export const variables = {
   menu: {
     more: 'Toggle',
     theme: 'Endre tema til'
+  },
+  description: {
+    home: 'Dr. Martin Luthers kirkepostille med innebygd søkemotor, per dato med det mest avanserte brukergrenesnittet for mobil og nettbrett.',
+    about: 'Info om søking og hvordan det er mulig å søke med ord eller fraser gjennom hele kirkepostillen. Se også register over viktig innhold.',
+    list: 'Oversikt over Dr. Martin Luthers predikener i kirkepostillen innenfor folgende valgt serie, merke og/eller sesong:',
+    slug: 'Dr. Martin Luthers kirkepostille med forklaring av evangelium og epistelteksten. Publisert på https//kirkepostille/vercel.app.'
+  },
+  title: {
+    home: 'Dr. Martin Luthers kirkepostille for mobil og nettbrett',
+    about: 'Info om å finne frem i Dr. Martin Luthers kirkepostille',
+    list: 'Liste over serier, merker, og sesonger i Dr. Martin Luthers kirkepostille:',
+    slug: 'En prediken/tale fra Dr. Martin Luthers kirkepostille.'
   }
 }

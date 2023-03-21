@@ -1,16 +1,11 @@
 <script setup lang="ts">
 import { variables as constants } from '../app/constants'
-import pkg from '~/package.json'
 // const appConfig = useAppConfig()
 
-const description = 'Info om søking og hvordan det er mulig å søke med ord eller fraser gjennom hele kirkepostillen. Se også register over viktig innhold.'
 useHead({
   meta: [
-    { name: 'description', content: description },
-    { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: pkg.homepage },
-    { property: 'og:title', content: constants.site.title },
-    { property: 'og:image', content: `${pkg.homepage}${constants.site.preview}` }
+    { name: 'description', content: constants.description.about },
+    { property: 'og:title', content: constants.title.about }
   ]
 })
 
@@ -19,10 +14,10 @@ useHead({
 <template>
   <div>
     <Head>
-      <Title>About</Title>
+      <Title>{{ constants.title.about }}</Title>
     </Head>
     <h1 style="display: none">
-      {{ description }}
+      {{ constants.description.about }}
     </h1>
     <NuxtLayout name="base">
       <ContentDoc class="about-me-content-container container mx-auto lg:max-w-4xl px-6 md:px-12 py-12">
@@ -34,7 +29,7 @@ useHead({
             <div class="text-center max-w-prose mx-auto p-4">
               <p>
                 This website is built by website <a
-                  :href="constants.meta.url"
+                  :href="constants.site.url"
                   target="_blank"
                   class="text-blue-500 hover:text-blue-600 underline font-bold transition-colors duration-300"
                 > {{ constants.site.author }}</a>.

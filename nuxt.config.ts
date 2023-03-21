@@ -56,11 +56,11 @@ copyContentFiles('content', 'public', ['.md', '.json', '.csv'])
 export default defineNuxtConfig({
   runtimeConfig: {
     rss: {
-      title: constants.site.title,
-      description: constants.site.title,
+      title: constants.title.home,
+      description: constants.description.home,
       image: `${pkg.homepage}${constants.site.avatar}`,
       favicon: `${pkg.homepage}${constants.site.favicon}`,
-      copyright: `All rights reserved ${(new Date()).getFullYear()}, ${pkg.author}`
+      copyright: `All rights reserved ${(new Date()).getFullYear()}, ${constants.site.author}`
     },
     public: {
       hostname: pkg.homepage,
@@ -109,18 +109,16 @@ export default defineNuxtConfig({
   },
   css: [
     '~/assets/style.css',
-    '~/assets/style/katex.min.css'
+    '~/assets/katex.min.css'
   ],
   app: {
     head: {
-      htmlAttrs: {
-        lang: 'da'
-      },
+      htmlAttrs: { lang: 'da' },
       meta: [
-        {
-          name: 'google-site-verification',
-          content: process.env.GSITE_VERIFICATION
-        }
+        { name: 'google-site-verification', content: process.env.GSITE_VERIFICATION },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: pkg.homepage },
+        { property: 'og:image', content: `${pkg.homepage}${constants.site.preview}` }
       ]
     }
   }

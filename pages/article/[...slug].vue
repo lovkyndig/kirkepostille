@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { variables as constants } from '~/app/constants'
-import pkg from '~/package.json'
 // const appConfig = useAppConfig()
 
 /**
@@ -13,14 +12,10 @@ import pkg from '~/package.json'
 // not ussing the classes .math-inline or .math-display
 // if you want to use this try to set the style in nuxt.config (css) and check if it's working
 
-const description = 'Dr. Martin Luthers kirkepostille med forklaring av evangelium og epistelteksten. Publisert på https//kirkepostille/vercel.app.'
 useHead({
   meta: [
-    { name: 'description', content: description },
-    { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: pkg.homepage },
-    { property: 'og:title', content: constants.site.title },
-    { property: 'og:image', content: `${pkg.homepage}${constants.site.preview}` }
+    { name: 'description', content: constants.description.slug },
+    { property: 'og:title', content: constants.title.slug }
   ]
 })
 

@@ -10,12 +10,13 @@ import { variables as constants } from '~/app/constants'
         Copyright {{ (new Date()).getFullYear() }}
 
         <a
-          v-if="constants.meta.url"
-          :href="`${constants.meta.url}`"
+          v-if="constants.site.url"
+          :href="`${constants.site.url}`"
           target="_blank"
           class="text-blue-400"
         >
-          Gudsbarn</a>
+          {{ constants.site.author }}
+        </a>
         <span v-else>{{ constants.site.author }}</span>
       </p>
     </div>

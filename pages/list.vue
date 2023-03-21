@@ -246,9 +246,9 @@ const getFileTypeIcon = (type) => {
     return fileType.iconName
   }
 }
-const description = 'Oversikt over Dr. Martin Luthers predikener i kirkepostillen innenfor folgende valgt serie, merke og/eller sesong:'
+
 useHead({
-  meta: [{ name: 'description', content: description }],
+  meta: [{ name: 'description', content: v.description.list }],
   link: [{ rel: 'canonical', href: pkg.homepage }]
 })
 
@@ -273,11 +273,11 @@ const echoQueryParam = (queryObj) => {
   <div>
     <Head>
       <Title>
-        {{ v.filter.title }}
+        {{ v.title.list }}
       </Title>
     </Head>
     <h1 style="display: none">
-      {{ description }} {{ searchString }}
+      {{ v.description.list }} {{ searchString }}
     </h1>
     <NuxtLayout name="base">
       <div class="shrink-0 px-4 sm:px-8 py-4 space-y-4 sm:sticky top-0 inset-x-0 z-10 bg-gray-50">

@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { variables as constants } from '~/app/constants'
-import pkg from '~/package.json'
-// import constants from '~/app/constants/constants.json'
 // const appConfig = useAppConfig()
 // const config = useRuntimeConfig()
 
@@ -124,14 +122,10 @@ const getFileTypeIcon = (type:string) => {
   }
 }
 
-const description = 'Dr. Martin Luthers kirkepostille med innebygd søkemotor, per dato med det mest avanserte brukergrenesnittet for mobil og nettbrett.'
 useHead({
   meta: [
-    { name: 'description', content: description },
-    { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: pkg.homepage },
-    { property: 'og:title', content: constants.site.title },
-    { property: 'og:image', content: `${pkg.homepage}${constants.site.preview}` }
+    { name: 'description', content: constants.description.home },
+    { property: 'og:title', content: constants.title.home }
   ]
 })
 </script>
@@ -139,10 +133,10 @@ useHead({
 <template>
   <div>
     <Head>
-      <Title>{{ constants.site.title }}</Title>
+      <Title>{{ constants.title.home }}</Title>
     </Head>
     <h1 style="display: none">
-      {{ description }}
+      {{ constants.description.home }}
     </h1>
     <NuxtLayout name="base" :footer-flexi-mode="true" :header-flexi-mode="true">
       <div v-show="flexiMode === 'blog'" class="container px-8 mx-auto">
@@ -153,7 +147,7 @@ useHead({
             </template>
             <template #not-found>
               <h1 class="py-4 text-3xl sm:text-5xl font-bold text-center text-purple-500">
-                {{ constants.meta.name }}
+                {{ constants.title.home }}
               </h1>
             </template>
           </ContentDoc>
