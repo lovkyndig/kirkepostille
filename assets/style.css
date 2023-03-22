@@ -102,13 +102,13 @@ See the code in MarkdownNote.vue
   }
 }
 
-/* lazy load text-content */
+/* lazy load text-content on slug, list and frontpage */
 .article-container * {
   content-visibility: auto;
 }
 ul * {
   content-visibility: auto;
 }
-a > * {
+.scroll-container * {
   content-visibility: auto;
 }

@@ -77,7 +77,7 @@ export const variables = {
   title: {
     home: 'Dr. Martin Luthers kirkepostille for mobil og nettbrett',
     about: 'Info om å finne frem i Dr. Martin Luthers kirkepostille',
-    list: 'Liste over serier, merker, og sesonger i Dr. Martin Luthers kirkepostille:',
+    list: 'Liste over kirkepostillens kategorier og stikkord mv.',
     slug: 'En prediken/tale fra Dr. Martin Luthers kirkepostille.'
   }
 }
