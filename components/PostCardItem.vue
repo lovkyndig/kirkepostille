@@ -35,9 +35,9 @@ const getCoverUrl = (relativeURL:(string)) => {
       :to="props.article._path"
       class="grow text-xl p-6 text-gray-600 hover:text-blue-400 transition-colors duration-300 space-y-4"
     >
-      <h3 class="font-bold">
-        {{ props.article.title || "This Post Hasn't Title Yet" }}
-      </h3>
+      <h2 class="font-bold">
+        {{ props.article.title || "Tittel mangler (endret fra h3 til h2)" }}
+      </h2>
       <p v-if="props.article.description" class="text-gray-600 text-sm">
         {{ props.article.description }}
       </p>

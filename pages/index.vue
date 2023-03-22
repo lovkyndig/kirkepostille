@@ -141,7 +141,7 @@ useHead({
 <template>
   <div>
     <Head>
-      <Title>Hjem</Title>
+      <Title>{{ constants.title.home }}</Title>
     </Head>
     <NuxtLayout name="base" :footer-flexi-mode="true" :header-flexi-mode="true">
       <div v-show="flexiMode === 'blog'" class="container px-8 mx-auto">
