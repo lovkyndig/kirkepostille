@@ -31,9 +31,12 @@ const getCoverUrl = (relativeURL:string) => {
     </div>
 
     <NuxtLink :to="props.article._path" class="group block py-4 transition-colors duration-300 space-y-2">
-      <h3 class="font-bold text-2xl text-gray-600 group-hover:text-blue-400 transition-colors duration-500">
-        {{ props.article.title || "This Post Hasn't Title Yet" }}
+      <h3 v-if="!props.article.title.includes('bibelen')" class="font-bold text-2xl text-gray-600 group-hover:text-blue-400 transition-colors duration-500">
+        {{ props.article.title || "Denne md-fila mangler h1-tittel" }}
       </h3>
+      <h2 v-else class="font-bold text-2xl text-gray-600 group-hover:text-blue-400 transition-colors duration-500">
+        {{ props.article.title || "Dette er tittelen i h2-tag" }}
+      </h2>
       <p v-if="props.article.description" class="text-gray-600 short-description">
         {{ props.article.description }}
       </p>
