@@ -11,18 +11,7 @@ tags:
 ---
 
 # Matt 22, 1-14 (20.søn efter trinitatis)
-Jesus tog til orde og talte igen til dem i lignelser:
-*Himmeriget ligner en konge, der holdt sin søns bryllup. Han sendte sine tjenere ud for at kalde de indbudte til brylluppet, men de ville ikke komme. Så sendte han nogle andre tjenere ud, der skulle sige til de indbudte: Nu er der dækket op til fest; mine okser og fedekalve er slagtet, og alt er rede. Kom til brylluppet! 
-Men det tog de sig ikke af og gik, én til sin mark, en anden til sin forretning, og andre igen greb hans tjenere og mishandlede dem og slog dem ihjel. 
-Men kongen blev vred og sendte sine hære ud og dræbte disse mordere og brændte deres by. 
-Så sagde han til sine tjenere: 
-Bryllupsfesten er forberedt, men de indbudte var ikke værdige. Gå derfor helt ud, hvor vejene ender, og indbyd, hvem som helst I finder, til brylluppet. 
-Og disse tjenere gik ud på vejene og samlede alle, som de fandt, både onde og gode, og bryllupssalen blev fuld af gæster. 
-Men da kongen kom ind for at hilse på sine gæster, fik han dér øje på en, der ikke havde bryllupsklæder på. 
-Han spurgte ham: 
-Min ven, hvordan er du kommet ind uden bryllupsklæder? 
-Men han tav. 
-Da sagde kongen til sine tjenere: Bind hænder og fødder på ham og kast ham ud i mørket udenfor. Dér skal der være gråd og tænderskæren. Thi mange er kaldet, men få er udvalgt.*
+_Jesus tog til orde og talte igen til dem i lignelser: Himmeriget ligner en konge, der holdt sin søns bryllup. Han sendte sine tjenere ud for at kalde de indbudte til brylluppet, men de ville ikke komme. Så sendte han nogle andre tjenere ud, der skulle sige til de indbudte: Nu er der dækket op til fest; mine okser og fedekalve er slagtet, og alt er rede. Kom til brylluppet! Men det tog de sig ikke af og gik, én til sin mark, en anden til sin forretning, og andre igen greb hans tjenere og mishandlede dem og slog dem ihjel. Men kongen blev vred og sendte sine hære ud og dræbte disse mordere og brændte deres by. Så sagde han til sine tjenere: Bryllupsfesten er forberedt, men de indbudte var ikke værdige. Gå derfor helt ud, hvor vejene ender, og indbyd, hvem som helst I finder, til brylluppet. Og disse tjenere gik ud på vejene og samlede alle, som de fandt, både onde og gode, og bryllupssalen blev fuld af gæster. Men da kongen kom ind for at hilse på sine gæster, fik han dér øje på en, der ikke havde bryllupsklæder på. Han spurgte ham: Min ven, hvordan er du kommet ind uden bryllupsklæder? Men han tav. Da sagde kongen til sine tjenere: Bind hænder og fødder på ham og kast ham ud i mørket udenfor. Dér skal der være gråd og tænderskæren. Thi mange er kaldet, men få er udvalgt._
 
 ## Kirken eller Guds folk
 Denne evangelietekst er, ligesom epistelteksten, en meget alvorlig formaning om at bruge evangeliets tid godt. Den truer tillige med den gruelige straf, som vil ramme både de sikre, hovmodige hoveder, som foragter denne nåderige tid og forfølger evange­liets prædiken, og tillige de falske, udisciplinerede ånder, som kun fører evangeliets og Kristi navn som et skin og ikke mener det seriøst. Dernæst afbilder og viser det også, hvad det er for en flok, som kaldes Guds folk eller kirken og har hans Ord på jorden, samt hvordan det går og står til i denne kirke, både efter dens indre væsen og efter dens ydre skikkelse.  

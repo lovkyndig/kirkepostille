@@ -1,6 +1,5 @@
 export const variables = {
   site: {
-    name: 'Kirkepostil',
     url: 'https://kirkepostille.vercel.app/about',
     avatar: '/default-avatar.png',
     favicon: '/default-favicon.ico',
@@ -10,7 +9,7 @@ export const variables = {
   subscribePage: true,
   homePage: {
     showBlogPosts: true,
-    postItemLimit: 30
+    postItemLimit: 55
   },
   articlePage: {
     showTime: true,

@@ -10,6 +10,11 @@ const flexiMode = useFlexiMode()
       <slot />
     </a>
   </h1>
+  <h1 v-else-if="id==='kirkepostil'">
+    <a h:href="`#${id}`">
+      <slot />
+    </a>
+  </h1>
 </template>
 <style scoped>
 /*

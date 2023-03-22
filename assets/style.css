@@ -101,3 +101,14 @@ See the code in MarkdownNote.vue
     width: 70vw
   }
 }
+
+/* lazy load text-content */
+.article-container * {
+  content-visibility: auto;
+}
+ul * {
+  content-visibility: auto;
+}
+a > * {
+  content-visibility: auto;
+}

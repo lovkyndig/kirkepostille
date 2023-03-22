@@ -11,17 +11,7 @@ tags:
 ---
 
 # Matt 22, 34-46 (18.søn. efter trinitatis)
-Da farisæerne hørte, at Jesus havde lukket munden på saddukæerne, samledes de, og en af dem, en lovkyndig, spurgte ham for at sætte ham på prøve: 
-*Mester, hvad er det største bud i loven?* 
-Han sagde til ham: 
-*Du skal elske Herren din Gud af hele dit hjerte og af hele din sjæl og af hele dit sind. Det er det største og det første bud. Men der er et andet, som står lige med det: Du skal elske din næste som dig selv. På de to bud hviler hele loven og profeterne.*
-Mens farisæerne var forsamlet, spurgte Jesus dem: 
-*Hvad mener I om Kristus? Hvis søn er han?* 
-De svarede: 
-*Davids.* 
-Han sagde til dem: 
-Hvordan kan David så ved Ånden kalde ham herre og sige: *Herren sagde til min herre: Sæt dig ved min højre hånd, indtil jeg får lagt dine fjender under dine fødder?* Når David altså kalder ham herre, hvordan kan han så være hans søn? 
-Ingen kunne svare ham et ord, og fra den dag turde heller ingen længere spørge ham om noget.
+Da farisæerne hørte, at Jesus havde lukket munden på saddukæerne, samledes de, og en af dem, en lovkyndig, spurgte ham for at sætte ham på prøve: _Mester, hvad er det største bud i loven?_ Han sagde til ham: _Du skal elske Herren din Gud af hele dit hjerte og af hele din sjæl og af hele dit sind. Det er det største og det første bud. Men der er et andet, som står lige med det: Du skal elske din næste som dig selv. På de to bud hviler hele loven og profeterne._ Mens farisæerne var forsamlet, spurgte Jesus dem: _Hvad mener I om Kristus? Hvis søn er han?_ De svarede: _Davids._ Han sagde til dem: Hvordan kan David så ved Ånden kalde ham herre og sige: _Herren sagde til min herre: Sæt dig ved min højre hånd, indtil jeg får lagt dine fjender under dine fødder?_ Når David altså kalder ham herre, hvordan kan han så være hans søn? Ingen kunne svare ham et ord, og fra den dag turde heller ingen længere spørge ham om noget.
 
 # En ny prædiken om lov og evangelium
 I denne evangelietekst svarer Kristus farisæerne på deres spørgsmål om, hvil­ket bud, der er det største i loven, og spørger så dem, hvad man skal mene om Kristus, hvis søn han er. Disse to spørgsmål fremholder det, som vi altid hører og altid skal høre, nemlig de to prædikener, der altid må holdes ved magt i kristenheden: Først, læren om loven eller de ti bud. Dernæst, læren om Kristi nåde.
