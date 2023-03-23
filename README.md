@@ -9,13 +9,13 @@ Everyone write about the setup in the readme-file, please go away to read about 
 - 100% Health Score on [ahrefs](https://app.ahrefs.com/)
 - [PageSpedd Insights](https://pagespeed.web.dev/analysis/https-kirkepostille-vercel-app/fqtfg45wc0?form_factor=mobile) gave this results:
  1. 100% on SEO, Best Practices and Accessibility.
- 2. 56% Performance:  
+ 2. 61% Performance:  
   Total DOM-elements; 3216 > 1400  
   Maximum Child Elements; 108 > 60  
   Script Evaluation 5,6 s > 
   Server Respons Time 2 s
 
-33% PWA (2 of 7) on [Lighthouse-metrics](https://lighthouse-metrics.com/lighthouse/checks/d43e16e1-4077-4160-82e5-9ef5b02cc973) 
+78% PWA (5 of 7) on [Lighthouse-metrics](https://lighthouse-metrics.com/lighthouse/checks/d43e16e1-4077-4160-82e5-9ef5b02cc973) 
 
 ## To do-list (personal notes)
 - Insert translate-option before search (from Norwegian to Danish)
