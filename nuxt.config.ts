@@ -117,6 +117,7 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'da' },
       meta: [
         { name: 'google-site-verification', content: process.env.GSITE_VERIFICATION },
+        { name: 'theme-color', content: '#f9fafb' },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: pkg.homepage },
         { property: 'og:image', content: `${pkg.homepage}${constants.site.preview}` }
@@ -126,6 +127,9 @@ export default defineNuxtConfig({
     }
   },
   pwa: {
-    /* PWA options */
+    /*
+    PWA options
+    https://stackoverflow.com/questions/71728578/nuxt-js-pwa-metadata-and-theme-color-not-working-in-nuxt-config-js
+    */
   }
 })
