@@ -139,6 +139,7 @@ const showSearchModal = useShowSearchModal()
           <NuxtLink
             to="/"
             class="option-item"
+            aria-label="option-item"
             :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
             @click="showMoreOptions = false"
           >
@@ -148,6 +149,7 @@ const showSearchModal = useShowSearchModal()
           <NuxtLink
             :to="constants.nav.about.link"
             class="option-item"
+            aria-label="constants.nav.about.link"
             :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
             @click="showMoreOptions = false"
           >
@@ -195,6 +197,7 @@ const showSearchModal = useShowSearchModal()
           <NuxtLink
             to="/list"
             class="option-item"
+            aria-label="option-item-in-footer-nav"
             :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
             @click="showCategoryOptions = false"
           >
@@ -205,6 +208,7 @@ const showSearchModal = useShowSearchModal()
             :key="category._path"
             :to="{ path: '/list', query: { category: getCategory(category._path) } }"
             class="option-item"
+            aria-label="category in categoryArr"
             :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
             @click="showCategoryOptions = false"
           >

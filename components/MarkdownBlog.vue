@@ -128,6 +128,7 @@ const flexiMode = useFlexiMode() // hide the first h1 in noteMode
         <NuxtLink
           v-if="category"
           :to="{ path: '/list', query: { category: category } }"
+          aria-label="category-list"
           target="_blank"
           class="p-2 flex items-center gap-1 text-gray-400 hover:text-white hover:bg-purple-500 focus:outline-purple-500 focus:outline-none rounded transition-colors duration-300"
         >
@@ -186,7 +187,12 @@ const flexiMode = useFlexiMode() // hide the first h1 in noteMode
           <IconCustom name="ic:round-keyboard-arrow-left" class="w-4 h-4" />
           <span>Prev Article</span>
         </NuxtLink>
-        <NuxtLink v-if="props.nextArticleUrl" :to="props.nextArticleUrl" class="p-2 flex items-center gap-1 text-xs text-gray-400 hover:text-white hover:bg-green-500 focus:outline-none rounded transition-colors duration-300">
+        <NuxtLink
+          v-if="props.nextArticleUrl"
+          :to="props.nextArticleUrl"
+          aria-label="props.nextArticleUrl"
+          class="p-2 flex items-center gap-1 text-xs text-gray-400 hover:text-white hover:bg-green-500 focus:outline-none rounded transition-colors duration-300"
+        >
           <span>Next Article</span>
           <IconCustom name="ic:round-keyboard-arrow-right" class="w-4 h-4" />
         </NuxtLink>
@@ -202,6 +208,7 @@ const flexiMode = useFlexiMode() // hide the first h1 in noteMode
           :key="tag"
           :to="{ path: '/list', query: { tags: [tag] } }"
           target="_blank"
+          aria-label="tag in props.data.tags"
           class="px-2 py-1 text-xs text-gray-400 hover:text-white hover:bg-blue-500 rounded focus:outline-blue-500 transition-colors duration-300"
         >
           #{{ tag }}

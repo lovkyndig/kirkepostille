@@ -246,6 +246,7 @@ watch(showZoomImage, () => {
         <NuxtLink
           v-if="prevArticleUrl"
           :to="prevArticleUrl"
+          aria-label="prevArticleUrl"
           class="px-4 py-6 flex justify-start items-center text-gray-600 hover:text-white hover:bg-green-500 border border-gray-400 hover:border-green-500 focus:outline-none rounded-lg transition-colors duration-300"
         >
           <div class="flex items-center gap-1">
@@ -263,6 +264,7 @@ watch(showZoomImage, () => {
         <NuxtLink
           v-if="nextArticleUrl"
           :to="nextArticleUrl"
+          aria-label="nextArticleUrl"
           class="px-4 py-6 flex justify-end items-center text-gray-600 hover:text-white hover:bg-green-500 border border-gray-400 hover:border-green-500 focus:outline-none rounded-lg transition-colors duration-300"
         >
           <div class="flex items-center gap-1">

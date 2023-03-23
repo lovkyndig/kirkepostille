@@ -13,9 +13,9 @@ Everyone write about the setup in the readme-file, please go away to read about 
 - The four different performance tests on [PageSpedd Insights](https://pagespeed.web.dev/analysis/https-kirkepostille-vercel-app) gave this results on mobile:
  1. 100% SEO
  2. 100% Best Practices
- 3. 90% Accessibility:  
+ 3. 92% Accessibility:  
   Background and foreground colors do not have a sufficient contrast ratio.
- 4. 62% Performance:  
+ 4. 57% Performance:  
   Total DOM-elements; 3216 > 1400  
   Maximum Child Elements; 108 > 60  
   Script Evaluation 5446 ms > 

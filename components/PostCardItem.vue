@@ -33,11 +33,12 @@ const getCoverUrl = (relativeURL:(string)) => {
 
     <NuxtLink
       :to="props.article._path"
+      aria-label="props.article.path"
       class="grow text-xl p-6 text-gray-600 hover:text-blue-400 transition-colors duration-300 space-y-4"
     >
-      <h3 class="font-bold">
+      <h2 class="font-bold">
         {{ props.article.title || "Tittel mangler" }}
-      </h3>
+      </h2>
       <p v-if="props.article.description" class="text-gray-600 text-sm">
         {{ props.article.description }}
       </p>
@@ -49,6 +50,7 @@ const getCoverUrl = (relativeURL:(string)) => {
           v-for="tag in props.article.tags"
           :key="tag"
           :to="{ path: '/list', query: { tags: [tag] } }"
+          aria-label="tag in props.article.tags"
           class="shrink-0 px-2 py-1 text-xs text-blue-600 hover:text-blue-900 bg-blue-50 transition-colors duration-300 rounded"
         >
           #{{ tag }}
@@ -57,6 +59,7 @@ const getCoverUrl = (relativeURL:(string)) => {
       <NuxtLink
         v-if="props.article.series"
         :to="{ path: '/list', query: { series: props.article.series } }"
+        aria-label="props.article.series"
         class="shrink-0 px-2 py-1 flex justify-center items-center text-green-600 hover:text-green-900 bg-green-50 transition-colors duration-300 rounded"
       >
         <IconCustom name="bi:collection" class="w-4 h-4" />

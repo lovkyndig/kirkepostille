@@ -473,6 +473,7 @@ const echoQueryParam = (queryObj) => {
           <li v-for="item in filterArticleList" :key="item._path" class="space-y-2">
             <NuxtLink
               :to="item._path"
+              aria-label="item._path"
               class="block px-4 py-2 text-gray-600 hover:text-blue-500 hover:bg-blue-100 transition-colors duration-300 rounded-lg space-y-2"
             >
               <div class="flex items-start">
@@ -504,7 +505,7 @@ const echoQueryParam = (queryObj) => {
               <button
                 v-if="item.series"
                 class="px-2 py-1 flex justify-center items-center space-x-1 transition-colors duration-300 rounded"
-                :class="currentSeries === item.series ? 'text-white bg-green-600 hover:bg-green-700' : 'text-green-900 hover:bg-green-200 bg-green-300'"
+                :class="currentSeries === item.series ? 'text-white bg-green-600 hover:bg-green-700' : 'text-green-900 hover:bg-green-300 bg-green-200'"
                 @click="toggleSeries(item.series)"
               >
                 <IconCustom name="bi:collection" class="shrink-0 w-4 h-4" />

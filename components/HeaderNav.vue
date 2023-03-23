@@ -101,7 +101,7 @@ const showSearchModal = useShowSearchModal()
       class="px-4 py-3 grid grid-cols-3 items-center gap-2 text-sm bg-gray-50 border-b"
       :class="showSubNav ? 'border-gray-200' : 'border-gray-50 shadow-md shadow-gray-200'"
     >
-      <NuxtLink to="/">
+      <NuxtLink to="/" aria-label="to/">
         <img :src="constants.site.avatar" alt="avatar" class="w-8 h-8 rounded-full">
       </NuxtLink>
       <div class="flex justify-center items-center gap-6">
@@ -118,6 +118,7 @@ const showSearchModal = useShowSearchModal()
         <NuxtLink
           :to="constants.nav.about.link"
           class="btn"
+          aria-label="constants.nav.about.link"
           :class="flexiMode === 'blog' ? 'text-purple-700 hover:bg-purple-100' : 'text-green-500 hover:bg-green-100'"
         >
           {{ constants.nav.about.echo }}
@@ -143,8 +144,8 @@ const showSearchModal = useShowSearchModal()
           <IconCustom name="tabler:search" class="w-4 h-4" />
           <span class="hidden lg:block text-sm">{{ constants.filter.search }}</span>
           <span class="hidden md:flex justify-center items-center gap-1 text-xs ">
-            <code class="px-2 py-0.5 border rounded bg-gray-200">Ctrl</code>
-            <code class="px-2 py-0.5 border rounded bg-gray-200">K</code>
+            <code class="px-2 py-0.5 border rounded bg-gray-100">Ctrl</code>
+            <code class="px-2 py-0.5 border rounded bg-gray-100">K</code>
           </span>
         </button>
         <button
@@ -183,6 +184,7 @@ const showSearchModal = useShowSearchModal()
         <div class="sub-nav-items-container max-w-full px-6 py-8">
           <NuxtLink
             to="/list"
+            aria-label="list"
             class="sub-nav-item-card"
             :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-100' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-100 '"
             @click="showSubNav=false"
@@ -195,6 +197,7 @@ const showSearchModal = useShowSearchModal()
           <NuxtLink
             v-for="category in categoryArr"
             :key="category._path"
+            aria-label="category in categoryArr_path"
             :to="{ path: '/list', query: { category: getCategory(category._path) } }"
             class="sub-nav-item-card"
             :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-100' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-100 '"

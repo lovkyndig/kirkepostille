@@ -82,7 +82,12 @@ onUnmounted(() => {
           class="py-2 hover:text-blue-500 hover:bg-blue-100 focus:outline-blue-500 transition-colors duration-300 rounded-md"
           :class="props.currentPath === article._path ? 'text-blue-500' : 'text-gray-600'"
         >
-          <NuxtLink :to="article._path" class="block px-4 space-y-2 " @click="showSeriesModal=false">
+          <NuxtLink
+            :to="article._path"
+            class="block px-4 space-y-2 "
+            aria-label="article._path"
+            @click="showSeriesModal=false"
+          >
             <h3 class="font-bold">
               {{ article.title }}
             </h3>

@@ -167,6 +167,7 @@ const checkSearchString = (str) => {
             <NuxtLink
               :to="`${item.url+'?searchparam='+searchString}`"
               target="_blank"
+              aria-label="searchStringParam"
               @click.exact="showSearchModal=true"
             >
               <p class="font-bold">

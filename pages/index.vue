@@ -222,6 +222,7 @@ useHead({
                   <!-- Read More -->
                   <NuxtLink
                     :to="{ path: '/list', query: { category: getCategory(category._path) } }"
+                    aria-label="Read More"
                     class="p-2 text-xs font-bold transition-colors duration-300 rounded-lg text-purple-700 bg-purple-200 hover:bg-purple-100"
                   >
                     {{ constants.nav.home.more }}
@@ -295,6 +296,7 @@ useHead({
               :to="item._path"
               :title="item.title"
               target="_blank"
+              aria-label="item._type and _path and title"
               class="self-start px-4 py-2 flex items-start gap-1 hover:text-blue-500 hover:bg-blue-100 transition-colors duration-300 rounded-lg"
             >
               <IconCustom :name="getFileTypeIcon(item._type)" class="shrink-0 w-6 h-6" />

@@ -24,7 +24,12 @@ const config = useRuntimeConfig()
                   :icon-color-class="'text-orange-400'"
                   :icon-size-class="'w-6 h-6'"
                 />
-                <NuxtLink to="/rss.xml" target="_blank" class="text-blue-500 hover:text-blue-600 transition-colors duration-300">
+                <NuxtLink
+                  to="/rss.xml"
+                  target="_blank"
+                  aria-label="rss.xml"
+                  class="text-blue-500 hover:text-blue-600 transition-colors duration-300"
+                >
                   {{ constants.nav.subscribe.rss }}
                 </NuxtLink>
               </div>
@@ -36,7 +41,12 @@ const config = useRuntimeConfig()
                   :icon-color-class="'text-purple-400'"
                   :icon-size-class="'w-6 h-6'"
                 />
-                <NuxtLink to="/sitemap.xml" target="_blank" class="text-blue-500 hover:text-blue-600 transition-colors duration-300">
+                <NuxtLink
+                  to="/sitemap.xml"
+                  target="_blank"
+                  aria-label="sitemap.xml"
+                  class="text-blue-500 hover:text-blue-600 transition-colors duration-300"
+                >
                   {{ constants.nav.subscribe.sitemap }}
                 </NuxtLink>
               </div>

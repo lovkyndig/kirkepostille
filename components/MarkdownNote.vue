@@ -323,6 +323,7 @@ provide('setActiveHeadingId', setActiveHeadingId)
           v-if="category"
           :to="{ path: '/list', query: { category: category } }"
           target="_blank"
+          aria-label="category-path-list"
           class="p-2 flex items-center gap-1 text-gray-400 hover:text-white hover:bg-purple-500 focus:outline-purple-500 focus:outline-none rounded transition-colors duration-300"
         >
           <IconCustom name="material-symbols:category-rounded" class="shrink-0 w-4 h-4" />
@@ -385,6 +386,7 @@ provide('setActiveHeadingId', setActiveHeadingId)
           :key="tag"
           :to="{ path: '/list', query: { tags: [tag] } }"
           target="_blank"
+          aria-label="tag in props.data.tags path-list"
           class="px-2 py-1 text-xs text-gray-400 hover:text-white hover:bg-blue-500 rounded focus:outline-blue-500 transition-colors duration-300"
         >
           #{{ tag }}

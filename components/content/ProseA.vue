@@ -12,7 +12,7 @@ defineProps({
 </script>
 
 <template>
-  <NuxtLink :href="href">
+  <NuxtLink :href="href" aria-label="href=href">
     <slot />
   </NuxtLink>
 </template>

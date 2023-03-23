@@ -242,6 +242,7 @@ const folderNavScrollingHandler = () => {
             :key="item._path"
             :to="item._path"
             target="_blank"
+            aria-label="item/index in currentTree"
             class="p-2 flex items-start gap-1 rounded hover:text-blue-500 active:text-white hover:bg-blue-100 active:bg-blue-500 transition-colors duration-300"
           >
             <IconCustom :name="getFileTypeIcon(item._type)" class="shrink-0 w-5 h-5" />
