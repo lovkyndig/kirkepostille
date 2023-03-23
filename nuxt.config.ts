@@ -70,7 +70,8 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/content',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@vite-pwa/nuxt'
   ],
   // https://content.nuxtjs.org
   content: {
@@ -119,7 +120,12 @@ export default defineNuxtConfig({
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: pkg.homepage },
         { property: 'og:image', content: `${pkg.homepage}${constants.site.preview}` }
-      ]
+      ],
+      link: [{ rel: 'manifest', href: 'manifest.json', crossorigin: 'use-credentials' }],
+      noscript: [{ children: 'JavaScript is required' }]
     }
+  },
+  pwa: {
+    /* PWA options */
   }
 })
