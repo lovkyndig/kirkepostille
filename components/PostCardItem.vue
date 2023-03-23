@@ -49,7 +49,7 @@ const getCoverUrl = (relativeURL:(string)) => {
           v-for="tag in props.article.tags"
           :key="tag"
           :to="{ path: '/list', query: { tags: [tag] } }"
-          class="shrink-0 px-2 py-1 text-xs text-blue-400 hover:text-blue-500 bg-blue-50 transition-colors duration-300 rounded"
+          class="shrink-0 px-2 py-1 text-xs text-blue-600 hover:text-blue-900 bg-blue-50 transition-colors duration-300 rounded"
         >
           #{{ tag }}
         </NuxtLink>
@@ -57,7 +57,7 @@ const getCoverUrl = (relativeURL:(string)) => {
       <NuxtLink
         v-if="props.article.series"
         :to="{ path: '/list', query: { series: props.article.series } }"
-        class="shrink-0 px-2 py-1 flex justify-center items-center text-green-400 hover:text-green-500 bg-green-50 transition-colors duration-300 rounded"
+        class="shrink-0 px-2 py-1 flex justify-center items-center text-green-600 hover:text-green-900 bg-green-50 transition-colors duration-300 rounded"
       >
         <IconCustom name="bi:collection" class="w-4 h-4" />
       </NuxtLink>

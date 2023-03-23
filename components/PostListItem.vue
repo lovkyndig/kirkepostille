@@ -31,9 +31,9 @@ const getCoverUrl = (relativeURL:string) => {
     </div>
 
     <NuxtLink :to="props.article._path" class="group block py-4 transition-colors duration-300 space-y-2">
-      <h3 v-if="!props.article.title.includes('bibelen')" class="font-bold text-2xl text-gray-600 group-hover:text-blue-400 transition-colors duration-500">
+      <h2 v-if="!props.article.title.includes('bibelen')" class="font-bold text-2xl text-gray-600 group-hover:text-blue-400 transition-colors duration-500">
         {{ props.article.title || "Denne md-fila mangler h1-tittel" }}
-      </h3>
+      </h2>
       <h2 v-else class="font-bold text-2xl text-gray-600 group-hover:text-blue-400 transition-colors duration-500">
         {{ props.article.title || "Dette er tittelen i h2-tag" }}
       </h2>
@@ -43,25 +43,27 @@ const getCoverUrl = (relativeURL:string) => {
     </NuxtLink>
 
     <div v-if="props.article.tags" class="grow flex flex-wrap gap-2">
+      <!-- tags on front-page -->
       <NuxtLink
         v-for="tag in props.article.tags"
         :key="tag"
         :to="{ path: '/list', query: { tags: [tag] } }"
-        class="px-2 py-1 text-xs text-blue-400 hover:text-blue-500 bg-blue-50 transition-colors duration-300 rounded"
+        class="px-2 py-1 text-xs text-blue-600 hover:text-blue-900 bg-blue-50 transition-colors duration-300 rounded"
       >
         #{{ tag }}
       </NuxtLink>
+      <!-- series on front-page -->
+      <NuxtLink
+        v-if="props.article.series"
+        :to="{ path: '/list', query: { series: props.article.series } }"
+        class="w-fit px-2 py-1 flex justify-center items-center space-x-1 text-green-600 hover:text-green-900 bg-green-50 transition-colors duration-300 rounded"
+      >
+        <IconCustom name="bi:collection" class="w-4 h-4" />
+        <p class="text-xs">
+          {{ props.article.series }}
+        </p>
+      </NuxtLink>
     </div>
-    <NuxtLink
-      v-if="props.article.series"
-      :to="{ path: '/list', query: { series: props.article.series } }"
-      class="w-fit px-2 py-1 flex justify-center items-center space-x-1 text-green-400 hover:text-green-500 bg-green-50 transition-colors duration-300 rounded"
-    >
-      <IconCustom name="bi:collection" class="w-4 h-4" />
-      <p class="text-xs">
-        {{ props.article.series }}
-      </p>
-    </NuxtLink>
   </div>
 </template>
 

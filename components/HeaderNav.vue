@@ -107,7 +107,7 @@ const showSearchModal = useShowSearchModal()
       <div class="flex justify-center items-center gap-6">
         <button
           class="btn hidden sm:block"
-          :class="flexiMode === 'blog' ? 'text-purple-500 hover:bg-purple-100' : 'text-green-500 hover:bg-green-100'"
+          :class="flexiMode === 'blog' ? 'text-purple-700 hover:bg-purple-100' : 'text-green-500 hover:bg-green-100'"
           @mouseover="setSubNav(true)"
           @mouseleave="setSubNav(false)"
           @click="showSubNav=!showSubNav"
@@ -118,7 +118,7 @@ const showSearchModal = useShowSearchModal()
         <NuxtLink
           :to="constants.nav.about.link"
           class="btn"
-          :class="flexiMode === 'blog' ? 'text-purple-500 hover:bg-purple-100' : 'text-green-500 hover:bg-green-100'"
+          :class="flexiMode === 'blog' ? 'text-purple-700 hover:bg-purple-100' : 'text-green-500 hover:bg-green-100'"
         >
           {{ constants.nav.about.echo }}
         </NuxtLink>
@@ -135,8 +135,9 @@ const showSearchModal = useShowSearchModal()
         -->
       </div>
       <div class="flex justify-end items-center gap-4">
+        <!-- top search button -->
         <button
-          class="self-stretch px-4 py-1.5 flex justify-center items-center gap-2 text-gray-600 border border-gray-400 rounded-md opacity-50 hover:opacity-100 transition-opacity duration-300"
+          class="self-stretch px-4 py-1.5 flex justify-center items-center gap-2 text-gray-900 border border-gray-400 rounded-md opacity-60 hover:opacity-100 transition-opacity duration-300"
           @click="showSearchModal=true"
         >
           <IconCustom name="tabler:search" class="w-4 h-4" />

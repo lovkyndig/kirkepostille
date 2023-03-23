@@ -6,7 +6,7 @@ const props = defineProps({
   },
   colorClass: {
     type: String,
-    default: 'text-purple-600 bg-purple-100'
+    default: 'text-purple-700 bg-purple-100'
   },
   colorStyle: {
     type: String,
@@ -22,14 +22,8 @@ const props = defineProps({
     :style="props.colorStyle"
   >
     <div class="space-y-8">
-      <slot>
-        <h1>
-          Hi
-        </h1>
-        <p>
-          This website shows my blog posts and notes.
-        </p>
-      </slot>
+      <!-- Show the index.md-page here -->
+      <slot />
     </div>
     <img v-if="props.avatar" :src="props.avatar" alt="avatar" class="hidden sm:block w-28 h-28 rounded-full">
   </div>
@@ -41,6 +35,10 @@ const props = defineProps({
 }
 
 :slotted(p), p {
-    @apply text-2xl opacity-50;
+    @apply text-2xl  opacity-100;
+    em {
+      color: #581c87
+    }
 }
+
 </style>

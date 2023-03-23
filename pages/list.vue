@@ -309,9 +309,10 @@ const echoQueryParam = (queryObj) => {
               </p>
               <ul class="filter-list-container" :class="showMoreCategory ? 'max-h-96' : 'max-h-8'">
                 <li class="shrink-0">
+                  <!-- all-buttons left -->
                   <button
                     class="px-2 py-1 flex items-center space-x-1 transition-colors duration-300 rounded"
-                    :class="currentCategory === v.filter.all ? 'text-white bg-purple-500 hover:bg-purple-400' : 'text-purple-400 hover:text-purple-500 bg-purple-100'"
+                    :class="currentCategory === v.filter.all ? 'text-white bg-purple-600 hover:bg-purple-400' : 'text-purple-600 hover:bg-purple-300 bg-purple-100'"
                     @click="toggleCategory(v.filter.all)"
                   >
                     <IconCustom name="material-symbols:category-rounded" class="w-5 h-5" />
@@ -319,9 +320,10 @@ const echoQueryParam = (queryObj) => {
                   </button>
                 </li>
                 <li v-for="item in categoryArr" :key="item._path" class="shrink-0">
+                  <!-- series button -->
                   <button
                     class="px-2 py-1 flex items-center space-x-1 transition-colors duration-300 rounded"
-                    :class="currentCategory === getCategory(item._path) ? 'text-white bg-purple-500 hover:bg-purple-400' : 'text-purple-400 hover:text-purple-500 bg-purple-100'"
+                    :class="currentCategory === getCategory(item._path) ? 'text-white bg-purple-600 hover:bg-purple-400' : 'text-purple-600 hover:bg-purple-300 bg-purple-100'"
                     @click="toggleCategory(getCategory(item._path))"
                   >
                     <IconCustom name="material-symbols:category-rounded" class="shrink-0 w-5 h-5" />
@@ -361,9 +363,10 @@ const echoQueryParam = (queryObj) => {
                   </p>
                   <ul v-if="tagSet" class="filter-list-container" :class="showMoreTag ? 'max-h-96' : 'max-h-8'">
                     <li v-for="tag in [v.filter.all, ...tagSet as string[]]" :key="tag" class="shrink-0">
+                      <!-- tags buttons -->
                       <button
                         class="px-2 py-1 flex items-center space-x-1 transition-colors duration-300 rounded disabled:opacity-30"
-                        :class="(currentTags.length === 0 && tag === v.filter.all) || currentTags.includes(tag) ? 'text-white bg-purple-500 hover:bg-purple-400' : 'text-purple-400 hover:text-purple-500 bg-purple-100'"
+                        :class="(currentTags.length === 0 && tag === v.filter.all) || currentTags.includes(tag) ? 'text-white bg-purple-600 hover:bg-purple-400' : 'text-purple-600 hover:bg-purple-300 bg-purple-100'"
                         :disabled="(tag === v.filter.all || currentCategory === v.filter.all || categoryTags[currentCategory]?.includes(tag)) ? false : true"
                         @click="toggleTag(tag)"
                       >
@@ -393,7 +396,7 @@ const echoQueryParam = (queryObj) => {
                     <li v-for="series in [v.filter.all, ...seriesSet as string[]]" :key="series" class="shrink-0">
                       <button
                         class="px-2 py-1 flex items-center space-x-1 transition-colors duration-300 rounded disabled:opacity-30"
-                        :class="currentSeries === series ? 'text-white bg-purple-500 hover:bg-purple-400' : 'text-purple-400 hover:text-purple-500 bg-purple-100'"
+                        :class="currentSeries === series ? 'text-white bg-purple-500 hover:bg-purple-400' : 'text-purple-600 hover:bg-purple-300 bg-purple-100'"
                         :disabled="(series === v.filter.all || currentCategory === v.filter.all || categorySeries[currentCategory]?.includes(series)) ? false : true"
                         @click="toggleSeries(series)"
                       >
@@ -422,7 +425,7 @@ const echoQueryParam = (queryObj) => {
               </button>
               <button
                 class="px-4 py-1 sm:hidden transition-colors duration-300 rounded"
-                :class="showListDetail ? 'text-white bg-green-500 hover:bg-green-400' : 'text-green-400 hover:text-green-500 bg-green-50 hover:bg-green-100'"
+                :class="showListDetail ? 'text-white bg-green-600 hover:bg-green-900' : 'text-green-700 hover:text-green-900 bg-green-50 hover:bg-green-300'"
                 @click="showListDetail = !showListDetail"
               >
                 <IconCustom v-show="showListDetail" name="ic:round-unfold-less" class="w-4 h-4" />
@@ -446,7 +449,7 @@ const echoQueryParam = (queryObj) => {
         </button>
         <button
           class="p-2 flex items-center transition-colors duration-300 rounded"
-          :class="showListDetail ? 'text-white bg-green-500 hover:bg-green-400' : 'text-green-400 hover:text-green-500 bg-green-50 hover:bg-green-100'"
+          :class="showListDetail ? 'text-white bg-green-600 hover:bg-green-900' : 'text-green-700 hover:text-green-900 bg-green-50 hover:bg-green-300'"
           @click="showListDetail = !showListDetail"
         >
           <IconCustom v-show="showListDetail" name="ic:round-unfold-less" class="w-5 h-5" />
@@ -487,19 +490,21 @@ const echoQueryParam = (queryObj) => {
               v-show="showListDetail"
               class="px-10 flex flex-wrap gap-2 text-xs"
             >
+              <!-- tags on list-page -->
               <button
                 v-for="tag in item.tags"
                 :key="tag"
                 class="px-2 py-1 transition-colors duration-300 rounded"
-                :class="(currentTags.length === 0 && tag === v.filter.all) || currentTags.includes(tag) ? 'text-white bg-blue-500 hover:bg-blue-400' : 'text-blue-400 hover:text-blue-500 bg-blue-100'"
+                :class="(currentTags.length === 0 && tag === v.filter.all) || currentTags.includes(tag) ? 'text-white bg-blue-500 hover:bg-blue-400' : 'text-blue-700 hover:bg-blue-200 bg-blue-100'"
                 @click="toggleTag(tag)"
               >
                 #{{ tag }}
               </button>
+              <!-- series on list-page -->
               <button
                 v-if="item.series"
                 class="px-2 py-1 flex justify-center items-center space-x-1 transition-colors duration-300 rounded"
-                :class="currentSeries === item.series ? 'text-white bg-green-500 hover:bg-green-400' : 'text-green-400 hover:text-green-500 bg-green-100'"
+                :class="currentSeries === item.series ? 'text-white bg-green-600 hover:bg-green-700' : 'text-green-900 hover:bg-green-200 bg-green-300'"
                 @click="toggleSeries(item.series)"
               >
                 <IconCustom name="bi:collection" class="shrink-0 w-4 h-4" />

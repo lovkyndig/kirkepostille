@@ -5,7 +5,7 @@ import { variables as constants } from '~/app/constants'
 
 <template>
   <div class="py-4 flex justify-center items-center">
-    <div class="flex flex-col md:flex-row gap-4 text-xs text-gray-400 text-center">
+    <div class="flex flex-col md:flex-row gap-4 text-xs text-green-800 text-center">
       <p v-if="constants.site.author">
         Copyright {{ (new Date()).getFullYear() }}
 
@@ -13,7 +13,7 @@ import { variables as constants } from '~/app/constants'
           v-if="constants.site.url"
           :href="`${constants.site.url}`"
           target="_blank"
-          class="text-blue-400"
+          class="text-cyan-800"
         >
           {{ constants.site.author }}
         </a>

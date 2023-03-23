@@ -210,17 +210,19 @@ useHead({
               <section v-if="'children' in category" :key="category._path" class="w-full sm:w-4/5 mx-auto space-y-4">
                 <div class="flex justify-between items-start">
                   <h2 class="border-l-8 border-purple-500 rounded-l-sm">
+                    <!-- Folders -->
                     <button
-                      class="p-1 font-bold text-lg text-purple-500 hover:bg-purple-100 border rounded-r-sm transition-colors duration-300 "
+                      class="p-1 font-bold text-lg text-purple-600 hover:bg-purple-100 border rounded-r-sm transition-colors duration-300 "
                       :class="hidePostCategorySections.has(category._path) ? 'border-purple-500' : 'border-transparent'"
                       @click="togglePostCategorySectionsHandler(category._path)"
                     >
                       {{ category.title }}
                     </button>
                   </h2>
+                  <!-- Read More -->
                   <NuxtLink
                     :to="{ path: '/list', query: { category: getCategory(category._path) } }"
-                    class="p-2 text-xs font-bold transition-colors duration-300 rounded-lg text-purple-500 bg-purple-100 hover:bg-purple-50"
+                    class="p-2 text-xs font-bold transition-colors duration-300 rounded-lg text-purple-700 bg-purple-200 hover:bg-purple-100"
                   >
                     {{ constants.nav.home.more }}
                   </NuxtLink>
