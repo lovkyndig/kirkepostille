@@ -10,7 +10,7 @@ import pkg from './package.json'
 const fs = require('fs')
 const path = require('path')
 
-// clean the "article" folder (copy from the "content" folder) first
+// clean the 'article' folder (copy from the 'content' folder) first
 const cleanContentFiles = (...folderPathArr:string[]) => {
   folderPathArr.forEach((folderPath) => {
     const exists = fs.existsSync(folderPath)
@@ -20,7 +20,7 @@ const cleanContentFiles = (...folderPathArr:string[]) => {
   })
 }
 
-// then copy all other type of files except .md from "content" folder to public folder
+// then copy all other type of files except .md from 'content' folder to public folder
 // so all the assets can link to inside the markdown file by relative path
 const copyContentFiles = (src:string, destFolderName:string, ignore:string[] = []) => {
   // url isn't case-sensitive but folder name is case-sensitive
@@ -112,24 +112,19 @@ export default defineNuxtConfig({
     '~/assets/style.css',
     '~/assets/katex.min.css'
   ],
-  app: {
-    head: {
-      htmlAttrs: { lang: 'da' },
-      meta: [
-        { name: 'google-site-verification', content: process.env.GSITE_VERIFICATION },
-        { name: 'theme-color', content: '#f9fafb' },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: pkg.homepage },
-        { property: 'og:image', content: `${pkg.homepage}${constants.site.preview}` }
-      ],
-      link: [{ rel: 'manifest', href: 'manifest.json', crossorigin: 'use-credentials' }],
-      noscript: [{ children: 'JavaScript is required' }]
-    }
-  },
+  app: { head: { /* app.vue */ } },
   pwa: {
+    manifest: { /* manifest.json */ },
+    workbox: { navigateFallback: '/' },
+    devOptions: {
+      enabled: true,
+      type: 'module'
+    }
     /*
-    PWA options
+    sources:
+    https://www.youtube.com/watch?v=vJ-WAAWiGNA
     https://stackoverflow.com/questions/71728578/nuxt-js-pwa-metadata-and-theme-color-not-working-in-nuxt-config-js
+    https://vite-pwa-org.netlify.app/guide/
     */
   }
 })

@@ -1,33 +1,9 @@
 <script setup lang="ts">
-// const appConfig = useAppConfig()
-import { variables as constants } from '../app/constants'
-/**
- *
- * set head meta for almost all page
- *
- */
-useHead({
-  style: [
-    {
-      children: 'html, body { scroll-behavior: smooth }'
-    },
-    {
-      children: 'body { overflow: overlay }'
-    }
-  ],
-  link: [
-    {
-      rel: 'icon',
-      href: constants.site.favicon
-    }
-  ],
-  script: []
-})
-// https://github.com/nuxt-community/google-analytics-module/issues/127
 </script>
 
 <template>
   <div>
+    <VitePwaManifest />
     <slot />
     <NuxtLoadingIndicator />
     <!-- https://nuxt.com/docs/api/components/nuxt-loading-indicator -->

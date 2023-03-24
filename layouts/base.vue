@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { variables as constants } from '../app/constants'
-// const appConfig = useAppConfig()
 const props = defineProps({
   headerFlexiMode: {
     type: Boolean,
@@ -17,30 +15,6 @@ const props = defineProps({
 })
 
 const route = useRoute()
-
-/**
- *
- * set head meta for almost all page
- *
- */
-useHead({
-  style: [
-    {
-      children: 'html, body { scroll-behavior: smooth }'
-    },
-    {
-      children: 'body { overflow: overlay }'
-    }
-  ],
-  link: [
-    {
-      rel: 'icon',
-      href: constants.site.favicon
-    }
-  ],
-  script: []
-})
-// https://github.com/nuxt-community/google-analytics-module/issues/127
 
 /**
  *

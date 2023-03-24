@@ -1,79 +1,26 @@
 {
   "name": "Kirkepostille",
-  "short_name": "kirkepostil",
-  "start_url": ".",
+  "short_name": "Kirkepostil",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#f9fafb",
   "background_color": "#f9fafb",
   "description": "Dr. Martin Luthers kirkepostille.",
+  "categories": ["books", "education", "medical"],
   "id": "/",
-  "scope": "/",
+  "orientation": "any",
   "icons": [
     {
-      "src": "/manifest/48.png",
-      "sizes": "48x48",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/manifest/72.png",
-      "sizes": "72x72",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/manifest/96.png",
-      "sizes": "96x96",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/manifest/144.png",
-      "sizes": "144x144",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/manifest/168.png",
-      "sizes": "168x168",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/manifest/192.png",
+      "src": "manifest/192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "How's weather today?",
-      "short_name": "Today",
-      "description": "View weather information for today",
-      "url": "/today?source=pwa",
-      "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
     },
     {
-      "name": "How's weather tomorrow?",
-      "short_name": "Tomorrow",
-      "description": "View weather information for tomorrow",
-      "url": "/tomorrow?source=pwa",
-      "icons": [{ "src": "/images/tomorrow.png", "sizes": "192x192" }]
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "/images/screenshot1.png",
+      "src": "manifest/512.png",
+      "sizes": "512x512",
       "type": "image/png",
-      "sizes": "540x720",
-      "form_factor": "narrow"
-    },
-    {
-      "src": "/images/screenshot2.png",
-      "type": "image/png",
-      "sizes": "720x540",
-      "form_factor": "wide"
+      "purpose": "any maskable"
     }
   ]
 }
