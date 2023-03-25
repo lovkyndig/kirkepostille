@@ -98,7 +98,7 @@ Desuden er nu hertil at føje en bøn eller et ønske, at man beder for alle dem
 &nbsp;  
 Læg derfor mærke til, at denne moder og hendes frugt bliver velsignet på to måder, legemlig og åndelig. Legemlig med munden og med ordene i Ave Maria. Det er de værste bespottere og forbandere. Åndelig med hjertet, idet jeg lover og velsigner hendes barn Kristus i alle hans ord, gerninger og lidelser, hvilket ingen gør uden den, der ret kristeligt tror. For uden sådan tro er intet hjerte godt, men det er af naturen fuldt af forbandelse og bespottelse mod Gud og alle hans hellige. Den, som derfor ikke tror, er det at råde, at man lader Ave Maria og al bøn fare. Der er skrevet om en sådan, at selv hans bøn bliver til synd. Derfra bevare Gud os! 
 
-## Amen
+### Amen
 
 [^1]: Ave Maria  
   ”Ave Maria” er en sammenskrivning af engelens ord til Maria her i Luk 1, 26 og Elisabeths hilsen til Maria i vers 42, da hun kommer på besøg:  
@@ -130,8 +130,6 @@ Læg derfor mærke til, at denne moder og hendes frugt bliver velsignet på to m
   Vær hilset, Maria, du benådede. Herren er med dig. Velsignet er du blandt kvinder og velsignet er dit moderlivs frugt, Jesus.  
   &nbsp;  
   Hellige Maria, Guds mor, bed for os syndere, nu og i vor dødstime.
-
-## Amen
 <!-- 
 Dr. Martin Luther's Church-Postil
 Original source: https://www.lutherdansk.dk

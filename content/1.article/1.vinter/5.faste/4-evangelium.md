@@ -45,7 +45,7 @@ Men Andreas, som gør opmærksom på drengen og brødene og har endnu mere tvivl
 &nbsp;  
 Endelig ser du her i evangeliet, at Kristus, som dog i højeste grad led under den evangeliske fattigdom og ikke bekymrede sig for dagen i morgen, sådan som han lærer i Matt 6, 34, dog havde et forråd, nemlig tohundrede kroner og fem brød og to fisk, så vi må lære, at denne fattigdom og at frihed fra bekymring ikke består i, at man intet har, sådan som barfodmunkenes orden foregiver og dog ikke selv holder, men at den består i et frit hjerte og en fattig ånd. For Abraham og Isak havde også meget gods og levede dog uden bekymring og i fattigdom som de bedste kristne.
 
-## End
+## Amen
 <!-- 
 Dr. Martin Luther's Church-Postil
 Original source: https://www.lutherdansk.dk

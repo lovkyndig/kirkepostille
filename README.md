@@ -5,19 +5,16 @@ Kirkepostil is an clone of [`BlogiNote`](https://github.com/Benbinbin/BlogiNote)
 
 Everyone write about the setup in the readme-file, please go away to read about it, (it's the same everywhere) or google about it - like me, when I started for some months ago on GitHub.
 
-## 100% Health Score (personal notes)
+## Page Load Analyze = 5x100%
 - 100% Health Score on [ahrefs](https://app.ahrefs.com/)
-- [PageSpedd Insights](https://pagespeed.web.dev/analysis/https-kirkepostille-vercel-app/fqtfg45wc0?form_factor=mobile) gave this results:
- 1. 100% on SEO, Best Practices and Accessibility.
- 2. 61% Performance:  
-  Total DOM-elements; 3216 > 1400  
-  Maximum Child Elements; 108 > 60  
-  Script Evaluation 5,6 s > 
-  Server Respons Time 2 s
+- Lighthouse report gave 4 x 100% on Accessibility, Best Practices, SEO and PWA (Progressive Web App)
 
-100% PWA (7 of 7) on [Lighthouse-metrics](https://lighthouse-metrics.com/lighthouse/checks/5a207e5d-b0cc-48fc-af37-e3a66fff0af6) 
+![Lighthouse-Metrics](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/lighthouse.png)
+
+This is  capture from the screen, everyone gets on keypress ` Ctrl + Shift + I`, on the frontpage in Kirkepostille. Click on the button `Analyze Page load` and see the results with your own eyes. 
 
 ## To do-list (personal notes)
+- Make the PWA offline.
 - Insert translate-option before search (from Norwegian to Danish)
 - Check if possibly to create Mermaid content-register?
 - Add MDC-components for use in other Mdc-compoents (tabs)
@@ -34,4 +31,4 @@ Everyone write about the setup in the readme-file, please go away to read about 
 ## License
 [MIT](./LICENSE)
 
-Updated 23.Mars 2023
+Updated 25.Mars 2023
