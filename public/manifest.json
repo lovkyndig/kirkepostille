@@ -8,7 +8,6 @@
   "description": "Dr. Martin Luthers kirkepostille, oppdatert 25.mars 2023.",
   "categories": ["books", "education", "medical"],
   "id": "/?standalone=true",
-  "scope": "/",
   "orientation": "any",
   "icons": [
     {
