@@ -32,16 +32,21 @@ useHead({
   noscript: [{ children: 'JavaScript is required' }],
   script: []
 })
-// https://github.com/larbish/nuxt3-pwa/blob/main/app.vue:
 
 onMounted(() => {
   if (process.client) {
     if (!('serviceWorker' in navigator)) {
       throw new Error('serviceWorker is not supported in current browser!')
     }
-    navigator.serviceWorker.register('/worker.js')
+    navigator.serviceWorker.register('/pwa/worker.js')
   }
 })
+/*
+sources:
+https://github.com/alexdeploy/nuxt-pwa-template
+https://github.com/alexdeploy/nuxt-pwa-template/tree/main/public
+https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Offline_Service_workers
+*/
 onUnmounted(() => { })
 
 </script>
