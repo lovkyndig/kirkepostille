@@ -70,8 +70,7 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/content',
-    '@nuxtjs/tailwindcss',
-    '@kevinmarrec/nuxt-pwa'
+    '@nuxtjs/tailwindcss'
   ],
   // https://content.nuxtjs.org
   content: {
@@ -114,9 +113,8 @@ export default defineNuxtConfig({
   ],
   app: { head: { /* app.vue */ } },
   pwa: {
-    workbox: {
-      enabled: false// enable in devmode
-    },
+    // workbox: { enabled: false// enable in devmode },
+    /*
     manifest: {
       name: 'Kirkepostille',
       short_name: 'Kirkepostil',
@@ -124,6 +122,7 @@ export default defineNuxtConfig({
       start_url: '/?standalone=true',
       id: '/?standalone=true'
     }
+    */
     /*
     sources:
     https://www.youtube.com/watch?v=vJ-WAAWiGNA
