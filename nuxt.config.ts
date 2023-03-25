@@ -114,7 +114,9 @@ export default defineNuxtConfig({
   ],
   app: { head: { /* app.vue */ } },
   pwa: {
-    workbox: { enabled: false }, // enable in devmode
+    workbox: {
+      enabled: false// enable in devmode
+    },
     manifest: {
       name: 'Kirkepostille',
       short_name: 'Kirkepostil',

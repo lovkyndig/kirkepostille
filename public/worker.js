@@ -1,58 +1,29 @@
-const options = JSON.stringify(options)
+console.log('Service worker file loaded.')
 
-importScripts(options.workboxUrl)
+/**
+ * * FETCH event
+ * ? It is triggered when the browser is requesting a resource
+ * TODO: Add the logic to handle the request (investigate best practices and options)
+ */
+ self.addEventListener("fetch", (event) => {
+/*     event
+      .respondWith(
+        console.log('fetching!'),
+      ); */
+  });
 
-self.addEventListener('install', () => self.skipWaiting())
-self.addEventListener('activate', () => self.clients.claim())
+/**
+ * * INSTALL event
+ * * It is triggered when the service worker has been installed
+ * ? It is the best place to cache the app
+ * TODO: Add the resources to cache
+ */
+self.addEventListener("install", (event) => {
 
-const { registerRoute } = workbox.routing
-const { NetworkFirst, StaleWhileRevalidate, CacheFirst } = workbox.strategies
-const { CacheableResponsePlugin } = workbox.cacheableResponse
-const { ExpirationPlugin } = workbox.expiration
-const { precacheAndRoute } = workbox.precaching
-
-// Cache page navigations (html) with a Network First strategy
-registerRoute(
-  ({ request }) => {
-    return request.mode === 'navigate'
-  },
-  new NetworkFirst({
-    cacheName: 'pages',
-    plugins: [
-      new CacheableResponsePlugin({ statuses: [200] })
-    ]
-  })
-)
-
-// Cache Web Manifest, CSS, JS, and Web Worker requests with a Stale While Revalidate strategy
-registerRoute(
-  ({ request }) =>
-    request.destination === 'manifest' ||
-    request.destination === 'style' ||
-    request.destination === 'script' ||
-    request.destination === 'worker',
-  new StaleWhileRevalidate({
-    cacheName: 'assets',
-    plugins: [
-      new CacheableResponsePlugin({ statuses: [200] })
-    ]
-  })
-)
-
-// Cache images with a Cache First strategy
-registerRoute(
-  ({ request }) => request.destination === 'image',
-  new CacheFirst({
-    cacheName: 'images',
-    plugins: [
-      new CacheableResponsePlugin({ statuses: [200] }),
-      // 50 entries max, 30 days max
-      new ExpirationPlugin({ maxEntries: 50, maxAgeSeconds: 60 * 60 * 24 * 30 })
-    ]
-  })
-)
-
-// Precaching
-if (options.preCaching.length) {
-  precacheAndRoute(options.preCaching, options.cacheOptions)
-}
+    console.log('Installing service worker...')
+    /*
+    event.waitUntil(
+    // ...
+    ); 
+    */
+});
