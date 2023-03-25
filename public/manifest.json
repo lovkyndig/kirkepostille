@@ -1,14 +1,14 @@
 {
   "name": "Kirkepostille",
   "short_name": "Kirkepostil",
-  "start_url": "/",
-  "display": "fullscreen",
+  "start_url": "/?standalone=true",
+  "display": "standalone",
   "theme_color": "#f9fafb",
   "background_color": "#f9fafb",
   "description": "Dr. Martin Luthers kirkepostille, oppdatert 25.mars 2023.",
   "categories": ["books", "education", "medical"],
   "id": "/",
-  "scope": "/",
+  "scope": "/?standalone=true",
   "orientation": "any",
   "icons": [
     {
