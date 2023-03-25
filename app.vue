@@ -34,17 +34,16 @@ useHead({
 })
 // https://github.com/larbish/nuxt3-pwa/blob/main/app.vue:
 
-/*
 onMounted(() => {
   if (process.client) {
     if (!('serviceWorker' in navigator)) {
       throw new Error('serviceWorker is not supported in current browser!')
     }
-    navigator.serviceWorker.register('/pwa/worker.js')
+    navigator.serviceWorker.register('/worker.js')
   }
 })
 onUnmounted(() => { })
-*/
+
 </script>
 
 <style>
