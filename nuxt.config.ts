@@ -114,6 +114,14 @@ export default defineNuxtConfig({
   ],
   app: { head: { /* app.vue */ } },
   pwa: {
+    workbox: { enabled: false }, // enable in devmode
+    manifest: {
+      name: 'Kirkepostille',
+      short_name: 'Kirkepostil',
+      description: 'Dr. Martin Luthers kirkepostille.',
+      start_url: '/?standalone=true',
+      id: '/?standalone=true'
+    }
     /*
     sources:
     https://www.youtube.com/watch?v=vJ-WAAWiGNA

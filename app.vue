@@ -34,6 +34,7 @@ useHead({
 })
 // https://github.com/larbish/nuxt3-pwa/blob/main/app.vue:
 
+/*
 onMounted(() => {
   if (process.client) {
     if (!('serviceWorker' in navigator)) {
@@ -43,7 +44,7 @@ onMounted(() => {
   }
 })
 onUnmounted(() => { })
-
+*/
 </script>
 
 <style>
