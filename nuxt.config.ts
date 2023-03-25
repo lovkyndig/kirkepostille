@@ -71,7 +71,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
-    '@vite-pwa/nuxt'
+    '@kevinmarrec/nuxt-pwa'
   ],
   // https://content.nuxtjs.org
   content: {
@@ -114,22 +114,12 @@ export default defineNuxtConfig({
   ],
   app: { head: { /* app.vue */ } },
   pwa: {
-    manifest: { /* manifest.json */ },
-    workbox: {
-      navigateFallback: '/'
-    },
-    /*
-    devOptions: {
-      enabled: true,
-      type: 'module'
-    },
-    */
-    registerWebManifestInRouteRules: true
     /*
     sources:
     https://www.youtube.com/watch?v=vJ-WAAWiGNA
     https://stackoverflow.com/questions/71728578/nuxt-js-pwa-metadata-and-theme-color-not-working-in-nuxt-config-js
     https://vite-pwa-org.netlify.app/guide/
+    https://www.npmjs.com/package/@kevinmarrec/nuxt-pwa
     */
   },
   appConfig: {}

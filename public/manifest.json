@@ -1,29 +1,30 @@
 {
   "name": "Kirkepostille",
   "short_name": "Kirkepostil",
-  "start_url": "/?source=pwa",
+  "start_url": "/",
   "display": "minimal-ui",
   "theme_color": "#f9fafb",
   "background_color": "#f9fafb",
   "description": "Dr. Martin Luthers kirkepostille.",
   "categories": ["books", "education", "medical"],
   "id": "/",
+  "scope": "/",
   "orientation": "any",
   "icons": [
     {
-      "src": "manifest/144.png",
+      "src": "pwa/icons/144.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "manifest/192.png",
+      "src": "pwa/icons/192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "manifest/512.png",
+      "src": "pwa/icons/512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

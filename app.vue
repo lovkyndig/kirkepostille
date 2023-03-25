@@ -5,6 +5,7 @@
 <script setup lang="ts">
 import { variables as constants } from '~/app/constants'
 import pkg from '~/package.json'
+// import { registerSW } from 'virtual:pwa-register'
 // const appConfig = useAppConfig()
 /**
  *
@@ -32,17 +33,17 @@ useHead({
   script: []
 })
 // https://github.com/larbish/nuxt3-pwa/blob/main/app.vue:
+
 onMounted(() => {
   if (process.client) {
     if (!('serviceWorker' in navigator)) {
       throw new Error('serviceWorker is not supported in current browser!')
     }
-    navigator.serviceWorker.register('/sw.js')
+    navigator.serviceWorker.register('/pwa/worker.js')
   }
 })
-onUnmounted(() => {
-  /* */
-})
+onUnmounted(() => { })
+
 </script>
 
 <style>
