@@ -112,24 +112,5 @@ export default defineNuxtConfig({
     '~/assets/katex.min.css'
   ],
   app: { head: { /* app.vue */ } },
-  pwa: {
-    // workbox: { enabled: false// enable in devmode },
-    /*
-    manifest: {
-      name: 'Kirkepostille',
-      short_name: 'Kirkepostil',
-      description: 'Dr. Martin Luthers kirkepostille.',
-      start_url: '/?standalone=true',
-      id: '/?standalone=true'
-    }
-    */
-    /*
-    sources:
-    https://www.youtube.com/watch?v=vJ-WAAWiGNA
-    https://stackoverflow.com/questions/71728578/nuxt-js-pwa-metadata-and-theme-color-not-working-in-nuxt-config-js
-    https://vite-pwa-org.netlify.app/guide/
-    https://www.npmjs.com/package/@kevinmarrec/nuxt-pwa
-    */
-  },
   appConfig: {}
 })
