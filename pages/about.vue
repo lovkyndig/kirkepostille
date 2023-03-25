@@ -12,7 +12,7 @@ useHead({
 </script>
 
 <template>
-  <div>
+  <div id="about_page">
     <Head>
       <Title>{{ constants.title.about }}</Title>
     </Head>

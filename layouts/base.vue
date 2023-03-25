@@ -111,36 +111,39 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="pb-20 sm:pb-0 bg-gray-50 flex flex-col min-h-screen">
-    <header class="hidden sm:block shrink-0" :class="route.path === '/' ? 'sm:sticky top-0 inset-x-0 z-30' : 'relative z-40'">
-      <HeaderNav :header-flexi-mode="props.headerFlexiMode" />
-    </header>
-    <div class="grow flex flex-col">
-      <slot />
-      <NuxtLoadingIndicator />
-      <!-- https://nuxt.com/docs/api/components/nuxt-loading-indicator -->
+  <div id="base_layout">
+    <VitePwaManifest />
+    <div class="pb-20 sm:pb-0 bg-gray-50 flex flex-col min-h-screen">
+      <header class="hidden sm:block shrink-0" :class="route.path === '/' ? 'sm:sticky top-0 inset-x-0 z-30' : 'relative z-40'">
+        <HeaderNav :header-flexi-mode="props.headerFlexiMode" />
+      </header>
+      <div class="grow flex flex-col">
+        <slot />
+        <NuxtLoadingIndicator />
+        <!-- https://nuxt.com/docs/api/components/nuxt-loading-indicator -->
+      </div>
+      <hr class="p-4 w-1/5 mx-auto">
+      <FooterContent />
+
+      <Transition
+        enter-from-class="translate-y-36 md:translate-y-10 opacity-0"
+        enter-active-class="transition-all duration-300 ease"
+        enter-to-class="translate-y-0 opacity-100"
+        leave-from-class="translate-y-0 opacity-100"
+        leave-active-class="transition-all duration-75 ease"
+        leave-to-class="translate-y-36 md:translate-y-10 opacity-0"
+      >
+        <BackToTop v-show="isShowBackBtn" />
+      </Transition>
+
+      <nav class="sm:hidden fixed bottom-0 left-0 right-0 z-50">
+        <FooterNav :footer-catalog="props.footerCatalog" :footer-flexi-mode="props.footerFlexiMode" />
+      </nav>
+
+      <ClientOnly>
+        <SearchModal v-show="showSearchModal" />
+      </ClientOnly>
     </div>
-    <hr class="p-4 w-1/5 mx-auto">
-    <FooterContent />
-
-    <Transition
-      enter-from-class="translate-y-36 md:translate-y-10 opacity-0"
-      enter-active-class="transition-all duration-300 ease"
-      enter-to-class="translate-y-0 opacity-100"
-      leave-from-class="translate-y-0 opacity-100"
-      leave-active-class="transition-all duration-75 ease"
-      leave-to-class="translate-y-36 md:translate-y-10 opacity-0"
-    >
-      <BackToTop v-show="isShowBackBtn" />
-    </Transition>
-
-    <nav class="sm:hidden fixed bottom-0 left-0 right-0 z-50">
-      <FooterNav :footer-catalog="props.footerCatalog" :footer-flexi-mode="props.footerFlexiMode" />
-    </nav>
-
-    <ClientOnly>
-      <SearchModal v-show="showSearchModal" />
-    </ClientOnly>
   </div>
 </template>
 

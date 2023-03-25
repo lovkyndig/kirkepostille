@@ -216,7 +216,7 @@ watch(showZoomImage, () => {
 </script>
 
 <template>
-  <div ref="articleContainer">
+  <div id="slug_page" ref="articleContainer">
     <Head>
       <Title>{{ data?.title || 'Article' }}</Title>
     </Head>

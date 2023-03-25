@@ -270,7 +270,7 @@ const echoQueryParam = (queryObj) => {
 </script>
 
 <template>
-  <div>
+  <div id="list_page">
     <Head>
       <Title>
         {{ v.title.list }}

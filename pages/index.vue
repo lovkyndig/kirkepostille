@@ -139,7 +139,7 @@ useHead({
 </script>
 
 <template>
-  <div>
+  <div id="index_page">
     <Head>
       <Title>{{ constants.title.home }}</Title>
     </Head>

@@ -5,7 +5,7 @@ const config = useRuntimeConfig()
 </script>
 
 <template>
-  <div>
+  <div id="subscribe_page">
     <Head>
       <Title>{{ constants.nav.subscribe.echo }}</Title>
     </Head>

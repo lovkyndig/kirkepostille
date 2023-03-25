@@ -15,7 +15,7 @@ Everyone write about the setup in the readme-file, please go away to read about 
   Script Evaluation 5,6 s > 
   Server Respons Time 2 s
 
-100% PWA (7 of 7) on [Lighthouse-metrics](https://lighthouse-metrics.com/lighthouse/checks/d43e16e1-4077-4160-82e5-9ef5b02cc973) 
+89% PWA (6 of 7) on [Lighthouse-metrics](https://lighthouse-metrics.com/lighthouse/checks/5a207e5d-b0cc-48fc-af37-e3a66fff0af6) 
 
 ## To do-list (personal notes)
 - Insert translate-option before search (from Norwegian to Danish)

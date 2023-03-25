@@ -2,8 +2,7 @@
 </script>
 
 <template>
-  <div>
-    <VitePwaManifest />
+  <div id="default_layout">
     <slot />
     <NuxtLoadingIndicator />
     <!-- https://nuxt.com/docs/api/components/nuxt-loading-indicator -->

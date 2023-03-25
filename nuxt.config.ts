@@ -115,11 +115,14 @@ export default defineNuxtConfig({
   app: { head: { /* app.vue */ } },
   pwa: {
     manifest: { /* manifest.json */ },
-    workbox: { navigateFallback: '/' },
+    workbox: {
+      navigateFallback: '/'
+    },
     devOptions: {
       enabled: true,
       type: 'module'
-    }
+    },
+    registerWebManifestInRouteRules: true
     /*
     sources:
     https://www.youtube.com/watch?v=vJ-WAAWiGNA
