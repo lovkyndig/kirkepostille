@@ -1,7 +1,7 @@
 {
   "name": "Kirkepostille",
   "short_name": "Kirkepostil",
-  "start_url": "/",
+  "start_url": "/?source=pwa",
   "display": "minimal-ui",
   "theme_color": "#f9fafb",
   "background_color": "#f9fafb",

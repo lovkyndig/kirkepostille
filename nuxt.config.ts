@@ -118,10 +118,12 @@ export default defineNuxtConfig({
     workbox: {
       navigateFallback: '/'
     },
+    /*
     devOptions: {
       enabled: true,
       type: 'module'
     },
+    */
     registerWebManifestInRouteRules: true
     /*
     sources:
@@ -129,5 +131,6 @@ export default defineNuxtConfig({
     https://stackoverflow.com/questions/71728578/nuxt-js-pwa-metadata-and-theme-color-not-working-in-nuxt-config-js
     https://vite-pwa-org.netlify.app/guide/
     */
-  }
+  },
+  appConfig: {}
 })
