@@ -248,8 +248,10 @@ const getFileTypeIcon = (type) => {
 }
 
 useHead({
-  meta: [{ name: 'description', content: v.description.list }],
-  link: [{ rel: 'canonical', href: pkg.homepage }]
+  meta: [
+    { name: 'description', content: v.description.list },
+    { property: 'og:title', content: v.title.list }
+  ]
 })
 
 const searchString = useState('searchString')

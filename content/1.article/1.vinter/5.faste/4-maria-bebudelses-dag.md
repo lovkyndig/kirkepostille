@@ -103,9 +103,9 @@ Læg derfor mærke til, at denne moder og hendes frugt bliver velsignet på to m
 [^1]: Ave Maria  
   ”Ave Maria” er en sammenskrivning af engelens ord til Maria her i Luk 1, 26 og Elisabeths hilsen til Maria i vers 42, da hun kommer på besøg:  
   &nbsp;  
-  Englen kom ind til hende og hilste hende med ordene: »Herren er med dig, du benådede!« (v. 26).  
+  Englen kom ind til hende og hilste hende med ordene: _»Herren er med dig, du benådede!«_ (v. 26).  
   &nbsp;  
-  Elisabeth blev fyldt med Helligånden og råbte med høj røst: »Velsignet er du blandt kvinder, og velsignet dit livs frugt! (v. 42).  
+  Elisabeth blev fyldt med Helligånden og råbte med høj røst: _»Velsignet er du blandt kvinder, og velsignet dit livs frugt!«_ (v. 42).  
   &nbsp;  
   **Den originale græske tekst lyder sådan:**  
   Θεοτόκε Παρθένε, χαῖρε, κεχαριτωμένη Μαρία, ὁ Κύριος μετὰ σοῦ. Eὐλογημένη, σὺ ἐν γυναιξί, καὶ εὐλογημένος ὁ καρπὸς τῆς κοιλίας σου, ὅτι Σωτήρα ἔτεκες τῶν ψυχῶν ἡμῶν.  
