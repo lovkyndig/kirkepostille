@@ -12,21 +12,21 @@
   "scope": "/",
   "icons": [
     {
-      "src": "manifest/144.jpg",
+      "src": "manifest/144.webp",
       "sizes": "144x144",
-      "type": "image/jpg",
+      "type": "image/webp",
       "purpose": "any maskable"
     },
     {
-      "src": "manifest/192.jpg",
+      "src": "manifest/192.webp",
       "sizes": "192x192",
-      "type": "image/jpg",
+      "type": "image/webp",
       "purpose": "any maskable"
     },
     {
-      "src": "manifest/512.jpg",
+      "src": "manifest/512.webp",
       "sizes": "512x512",
-      "type": "image/jpg",
+      "type": "image/webp",
       "purpose": "any maskable"
     }
   ],
