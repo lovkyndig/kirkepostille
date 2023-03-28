@@ -1,4 +1,4 @@
-![Kirkepostil](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/preview.png)
+![Kirkepostil](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/images/listview.png)
 
 # Kirkepostil
 Kirkepostil is an clone of [`BlogiNote`](https://github.com/Benbinbin/BlogiNote) from [`Benbinbin`](https://github.com/Benbinbin), that is a hidden treasure, like the treasure in the Bible, hidden for the wise and prudent. Matt 11, 25.
@@ -9,11 +9,12 @@ Everyone write about the setup in the readme-file, please go away to read about 
 - 100% Health Score on [ahrefs](https://app.ahrefs.com/)
 - Lighthouse report gave 4 x 100% on Accessibility, Best Practices, SEO and PWA (Progressive Web App)
 
-![Lighthouse-Metrics](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/lighthouse.png)
+![Lighthouse-Metrics](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/images/lighthouse.png)
 
 This is  capture from the screen, everyone gets on keypress ` Ctrl + Shift + I`, on the frontpage in Kirkepostille. Click on the button `Analyze Page load` and see the results with your own eyes. 
 
 ## To do-list (personal notes)
+- The find-function shows the first place in the modal-window, but skip the first place in the article if more than one hit.
 - Make the PWA offline.
 - Insert translate-option before search (from Norwegian to Danish)
 - Check if possibly to create Mermaid content-register?
@@ -31,4 +32,4 @@ This is  capture from the screen, everyone gets on keypress ` Ctrl + Shift + I`,
 ## License
 [MIT](./LICENSE)
 
-Updated 25.Mars 2023
+Updated 26.Mars 2023

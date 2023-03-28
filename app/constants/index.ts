@@ -1,9 +1,11 @@
 export const variables = {
   site: {
     url: 'https://kirkepostille.vercel.app/about',
-    avatar: '/default-avatar.png',
-    favicon: '/default-favicon.ico',
-    preview: '/preview.png',
+    favicon: '/images/32.ico',
+    avatar: '/images/180.jpg',
+    apple: '/images/180.jpg',
+    listview: '/images/listview.png',
+    frontpage: '/images/frontpage.png',
     author: 'Gudsbarn'
   },
   subscribePage: true,
@@ -48,7 +50,7 @@ export const variables = {
   },
   nav: {
     home: {
-      echo: 'Hjem',
+      echo: 'Front',
       link: '/home',
       more: 'Åpne mappe',
       not_found: 'Ingen artikler funnet.'
@@ -70,14 +72,14 @@ export const variables = {
   },
   description: {
     home: 'Dr. Martin Luthers kirkepostille med innebygd søkemotor, per dato med det mest avanserte brukergrenesnittet for mobil og nettbrett.',
-    about: 'Info om søking og hvordan det er mulig å søke med ord eller fraser gjennom hele kirkepostillen. Se også register over viktig innhold.',
+    about: 'Info om søking og hvordan du kan søke og finne ord eller fraser gjennom hele kirkepostillen. Se også register over viktig innhold.',
     list: 'Oversikt over Dr. Martin Luthers predikener i kirkepostillen innenfor folgende valgt serie, merke og/eller sesong:',
     slug: 'Dr. Martin Luthers kirkepostille med forklaring av evangelium og epistelteksten. Publisert på https//kirkepostille/vercel.app.'
   },
   title: {
-    home: 'Dr. Martin Luthers kirkepostille for mobil og nettbrett',
-    about: 'Info om å finne frem i Dr. Martin Luthers kirkepostille',
-    list: 'Liste over kirkepostillens kategorier og stikkord mv.',
+    home: 'Dr. Martin Luthers kirkepostille - medisin for syke sjeler!',
+    about: 'Hvordan søke etter ord i Dr. Martin Luthers kirkepostille?',
+    list: 'Liste over kirkepostillens deler, indhold og stikkord.',
     slug: 'En prediken/tale fra Dr. Martin Luthers kirkepostille.'
   }
 }

@@ -12,12 +12,18 @@ import { variables as constants } from '~/app/constants'
 // not ussing the classes .math-inline or .math-display
 // if you want to use this try to set the style in nuxt.config (css) and check if it's working
 
+useSeoMeta({
+  titleTemplate: constants.title.slug,
+  description: constants.description.slug
+}) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
+/*
 useHead({
   meta: [
     { name: 'description', content: constants.description.slug },
     { property: 'og:title', content: constants.title.slug }
   ]
 })
+*/
 
 /**
  *

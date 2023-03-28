@@ -8,6 +8,7 @@ updated: 2022-09-11
 tags:
   - Danish
   - Epistel
+  - Gal
 ---
 
 # Gal 3, 15-22 (13.søn. efter trinitatis)

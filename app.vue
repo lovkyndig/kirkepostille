@@ -1,5 +1,7 @@
 <template>
-  <NuxtPage />
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <script setup lang="ts">
@@ -12,22 +14,29 @@ import pkg from '~/package.json'
  * set head meta for all pages
  *
  */
+
+useSeoMeta({
+  ogType: 'website',
+  ogUrl: pkg.homepage,
+  ogImage: `${pkg.homepage}${constants.site.listview}`,
+  ogImageAlt: 'Eleisons kirkepostille',
+  twitterImage: `${pkg.homepage}${constants.site.frontpage}`,
+  twitterSite: '@nuxt_js',
+  twitterCreator: '@nuxt_js',
+  twitterCard: 'summary_large_image',
+  googleSiteVerification: process.env.GSITE_VERIFICATION,
+  themeColor: '#f9fafb'
+}) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
+
 useHead({
   htmlAttrs: { lang: 'da' },
-  meta: [
-    { name: 'google-site-verification', content: process.env.GSITE_VERIFICATION },
-    { name: 'theme-color', content: '#f9fafb' },
-    { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: pkg.homepage },
-    { property: 'og:image', content: `${pkg.homepage}${constants.site.preview}` }
-  ],
   style: [
     { children: 'html, body { scroll-behavior: smooth; overflow: overlay }' }
   ],
   link: [
     { rel: 'icon', href: constants.site.favicon },
     { rel: 'manifest', href: 'manifest.json', crossorigin: 'use-credentials' },
-    { rel: 'apple-touch-icon', href: 'apple-touch-icon.png' }
+    { rel: 'apple-touch-icon', href: constants.site.apple }
   ],
   noscript: [{ children: 'JavaScript is required' }],
   script: []
@@ -44,6 +53,7 @@ onMounted(() => {
 /*
 sources:
 https://github.com/alexdeploy/nuxt-pwa-template
+https://github.com/alexdeploy/nuxt-pwa-template/tree/main/public
 https://github.com/alexdeploy/nuxt-pwa-template/tree/main/public
 https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Offline_Service_workers
 */

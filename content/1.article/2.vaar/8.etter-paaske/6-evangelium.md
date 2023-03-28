@@ -6,7 +6,6 @@ showOutdatedWarning: false
 created: 2023-05-21
 updated: 2023-05-21
 tags:
-  - Norsk
   - NB
 ---
 

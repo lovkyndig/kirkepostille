@@ -122,12 +122,18 @@ const getFileTypeIcon = (type:string) => {
   }
 }
 
+useSeoMeta({
+  titleTemplate: constants.title.home,
+  description: constants.description.home
+}) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
+/*
 useHead({
   meta: [
     { name: 'description', content: constants.description.home },
     { property: 'og:title', content: constants.title.home }
   ]
 })
+*/
 /*
  <h1 style="display: none">
       {{ constants.description.home }}

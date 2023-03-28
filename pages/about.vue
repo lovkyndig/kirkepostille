@@ -2,13 +2,18 @@
 import { variables as constants } from '../app/constants'
 // const appConfig = useAppConfig()
 
+useSeoMeta({
+  titleTemplate: constants.title.about,
+  description: constants.description.about
+}) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
+/*
 useHead({
   meta: [
     { name: 'description', content: constants.description.about },
     { property: 'og:title', content: constants.title.about }
   ]
 })
-
+*/
 </script>
 
 <template>

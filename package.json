@@ -1,7 +1,7 @@
 {
   "name": "kirkepostil",
-  "version": "0.3.3",
-  "description": "⚡Nuxt content implemented with pagefind for big sites. Not an ordinary homepage.",
+  "version": "0.3.4-rc.1",
+  "description": "⚡An old book from 1888 with 1743 pages, converted to Nuxt content, implemented with pagefind.",
   "homepage": "https://kirkepostille.vercel.app",
   "author": "lovkyndig",
   "license": "MIT",

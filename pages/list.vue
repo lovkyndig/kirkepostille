@@ -247,12 +247,18 @@ const getFileTypeIcon = (type) => {
   }
 }
 
+useSeoMeta({
+  titleTemplate: v.title.list,
+  description: v.description.list
+}) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
+/*
 useHead({
   meta: [
     { name: 'description', content: v.description.list },
     { property: 'og:title', content: v.title.list }
   ]
 })
+*/
 
 const searchString = useState('searchString')
 const echoQueryParam = (queryObj) => {
