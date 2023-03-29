@@ -15,11 +15,12 @@ import pkg from '~/package.json'
  *
  */
 
-useSeoMeta({
+useServerSeoMeta({
+  ogTitle: `${pkg.version} - ${pkg.description}`,
   ogType: 'website',
   ogUrl: pkg.homepage,
   ogImage: `${pkg.homepage}${constants.site.listview}`,
-  ogImageAlt: 'Eleisons kirkepostille',
+  ogImageAlt: pkg.name,
   twitterImage: `${pkg.homepage}${constants.site.frontpage}`,
   twitterSite: '@nuxt_js',
   twitterCreator: '@nuxt_js',

@@ -79,7 +79,7 @@ export const variables = {
   title: {
     home: 'Dr. Martin Luthers kirkepostille - medisin for syke sjeler!',
     about: 'Hvordan søke etter ord i Dr. Martin Luthers kirkepostille?',
-    list: 'Liste over kirkepostillens deler, indhold og stikkord.',
+    list: 'Kirkepostillens taler med disse stikkord: ',
     slug: 'En prediken/tale fra Dr. Martin Luthers kirkepostille.'
   }
 }

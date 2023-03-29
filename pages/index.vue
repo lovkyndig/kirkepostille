@@ -122,33 +122,30 @@ const getFileTypeIcon = (type:string) => {
   }
 }
 
-useSeoMeta({
-  titleTemplate: constants.title.home,
-  description: constants.description.home
-}) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
-/*
-useHead({
-  meta: [
-    { name: 'description', content: constants.description.home },
-    { property: 'og:title', content: constants.title.home }
-  ]
+useServerSeoMeta({
+  description: constants.description.home,
+  ogDescription: constants.description.home
 })
-*/
-/*
- <h1 style="display: none">
-      {{ constants.description.home }}
-    </h1>
 
-{ { constants.title.home } }
-*/
+const title = ref(constants.title.home)
+useSeoMeta({
+  title,
+  titleTemplate: () => `${title.value}`
+})
+// https://nuxt.com/docs/getting-started/seo-meta#useseometa
+// https://nuxt.com/docs/getting-started/seo-meta
 
 </script>
 
 <template>
   <div id="index_page">
+    <!--
     <Head>
-      <Title>{{ constants.title.home }}</Title>
+      <Title>
+        {{ constants.title.home }}
+      </Title>
     </Head>
+    -->
     <NuxtLayout name="base" :footer-flexi-mode="true" :header-flexi-mode="true">
       <div v-show="flexiMode === 'blog'" class="container px-8 mx-auto">
         <div class="py-16">
@@ -227,7 +224,10 @@ useHead({
                   </h2>
                   <!-- Read More -->
                   <NuxtLink
-                    :to="{ path: '/list', query: { category: getCategory(category._path) } }"
+                    :to="{
+                      path: '/list',
+                      query: { category: getCategory(category._path) }
+                    }"
                     aria-label="Read More"
                     class="p-2 text-xs font-bold transition-colors duration-300 rounded-lg text-purple-700 bg-purple-200 hover:bg-purple-100"
                   >

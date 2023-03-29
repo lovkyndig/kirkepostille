@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
 import { variables as v } from '~/app/constants'
-import pkg from '~/package.json'
+import { search } from '~~/public/_pagefind/pagefind'
 
 interface MyCustomParsedContent extends ParsedContent {
   tags: string[]
 }
-
 const route = useRoute()
 
 /**
@@ -247,19 +246,6 @@ const getFileTypeIcon = (type) => {
   }
 }
 
-useSeoMeta({
-  titleTemplate: v.title.list,
-  description: v.description.list
-}) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
-/*
-useHead({
-  meta: [
-    { name: 'description', content: v.description.list },
-    { property: 'og:title', content: v.title.list }
-  ]
-})
-*/
-
 const searchString = useState('searchString')
 const echoQueryParam = (queryObj) => {
   // const cat = queryObj.category
@@ -275,13 +261,17 @@ const echoQueryParam = (queryObj) => {
   }
 }
 
+useSeoMeta({
+  description: v.description.list
+}) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
+
 </script>
 
 <template>
   <div id="list_page">
     <Head>
       <Title>
-        {{ v.title.list }}
+        {{ v.title.list }} {{ searchString }}
       </Title>
     </Head>
     <h1 style="display: none">
