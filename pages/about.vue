@@ -4,7 +4,8 @@ import { variables as constants } from '../app/constants'
 
 useSeoMeta({
   titleTemplate: constants.title.about,
-  description: constants.description.about
+  description: constants.description.about,
+  ogDescription: constants.description.about
 }) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
 
 </script>

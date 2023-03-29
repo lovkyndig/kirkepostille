@@ -1,14 +1,14 @@
 {
   "name": "Kirkepostille",
   "short_name": "Kirkepostil",
-  "start_url": "/?pwa=true",
+  "start_url": "/",
   "display": "minimal-ui",
   "theme_color": "#f9fafb",
   "background_color": "#f9fafb",
   "description": "Dr. Martin Luthers kirkepostille, ca. 1743 sider.",
   "categories": ["books", "education", "medical"],
   "orientation": "any",
-  "id": "/?pwa=true",
+  "id": "/",
   "scope": "/",
   "icons": [
     {

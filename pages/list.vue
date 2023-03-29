@@ -163,7 +163,16 @@ onMounted(() => {
   const series = route.query?.series as string || v.filter.all
   currentSeries.value = series
   echoQueryParam(route.query)
+  // searchStringWork()
 })
+
+const searchStringWork = () => {
+  const urlvalue = () => {
+    if (searchString.value) {
+      return searchString.value.toString()
+    }
+  }
+}
 
 /**
  *
@@ -245,12 +254,11 @@ const getFileTypeIcon = (type) => {
     return fileType.iconName
   }
 }
-
 const searchString = useState('searchString')
 const echoQueryParam = (queryObj) => {
-  // const cat = queryObj.category
-  // const tag = queryObj.tags
-  // const serie = queryObj.series
+  const cat = queryObj.category
+  const tag = queryObj.tags
+  const serie = queryObj.series
   if (process.client) {
     const querystring = window.location.search
     if (querystring.substring(1)) {
@@ -259,21 +267,29 @@ const echoQueryParam = (queryObj) => {
       // console.log('No searchstring here!')
     }
   }
+  const title = ref(`Viser taler hvor verdiene for serie, merke og sesong er: ${cat} ${tag} ${serie}`)
+  useSeoMeta({
+    title,
+    description: () => `testing ${searchString.value}`
+  }) // This shows on page load - do somethin else to update on change
 }
 
-useSeoMeta({
-  description: v.description.list
+useServerSeoMeta({
+  description: v.description.list,
+  ogDescription: v.description.list
 }) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
 
 </script>
 
 <template>
   <div id="list_page">
+    <!--
     <Head>
       <Title>
         {{ v.title.list }} {{ searchString }}
       </Title>
     </Head>
+    -->
     <h1 style="display: none">
       {{ v.description.list }} {{ searchString }}
     </h1>

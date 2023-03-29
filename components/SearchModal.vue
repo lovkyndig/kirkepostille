@@ -96,11 +96,6 @@ const checkSearchString = (str) => {
   /**
    * Using Unicode Character Categories: Other Punctuation (quatationsmark/apostrophe) and Initial Punctuation (Pi)
    */
-  /* ref:
-    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
-    https://www.compart.com/en/unicode/category
-
-  */
   const fixed = (str) => {
     const punctations = /\u0022|\u0027|\p{Pi}/gu
     str = str.replace(punctations, '') // Other Punctuation:  + Initial Punctuation (Pi)
@@ -109,6 +104,10 @@ const checkSearchString = (str) => {
   // console.log('The searchString from SearchModal is (at the end): ' + fixed(str))
   // adding this searchString below in NuxtLink, as queryparam to url
   return fixed(str)
+  /* ref:
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+    https://www.compart.com/en/unicode/category
+  */
 }
 
 </script>

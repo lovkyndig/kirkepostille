@@ -118,4 +118,4 @@ declare global {
  *
  */
 // export const useSearchString = () => useState<String>('searchString', () => { return '' })
-export const useSearchString = () => useState<String>('searchString', () => 'NOTHING')
+export const useSearchString = () => useState<String>('searchString', () => '')

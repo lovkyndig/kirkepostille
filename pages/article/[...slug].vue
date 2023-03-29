@@ -8,7 +8,8 @@ import { variables as constants } from '~/app/constants'
 *
 */
 useSeoMeta({
-  description: constants.description.slug
+  description: constants.description.slug,
+  ogDescription: constants.description.slug
 }) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
 
 // add CSS stylesheet for katex, testing nofollow after checking the seo on https://app.ahrefs.com/

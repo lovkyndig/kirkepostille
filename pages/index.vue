@@ -128,10 +128,12 @@ useServerSeoMeta({
 })
 
 const title = ref(constants.title.home)
+/*
 useSeoMeta({
   title,
   titleTemplate: () => `${title.value}`
 })
+*/
 // https://nuxt.com/docs/getting-started/seo-meta#useseometa
 // https://nuxt.com/docs/getting-started/seo-meta
 
@@ -139,13 +141,11 @@ useSeoMeta({
 
 <template>
   <div id="index_page">
-    <!--
     <Head>
       <Title>
         {{ constants.title.home }}
       </Title>
     </Head>
-    -->
     <NuxtLayout name="base" :footer-flexi-mode="true" :header-flexi-mode="true">
       <div v-show="flexiMode === 'blog'" class="container px-8 mx-auto">
         <div class="py-16">
