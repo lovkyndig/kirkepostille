@@ -163,16 +163,7 @@ onMounted(() => {
   const series = route.query?.series as string || v.filter.all
   currentSeries.value = series
   echoQueryParam(route.query)
-  // searchStringWork()
 })
-
-const searchStringWork = () => {
-  const urlvalue = () => {
-    if (searchString.value) {
-      return searchString.value.toString()
-    }
-  }
-}
 
 /**
  *
@@ -254,11 +245,18 @@ const getFileTypeIcon = (type) => {
     return fileType.iconName
   }
 }
+
+const titlefunc = (value) => { // using 5 times
+  const title = ref(value)
+  titles.value = title
+  useSeoMeta({ title: title.value })
+}
+
 const searchString = useState('searchString')
 const echoQueryParam = (queryObj) => {
-  const cat = queryObj.category
+  /* const cat = queryObj.category
   const tag = queryObj.tags
-  const serie = queryObj.series
+  const serie = queryObj.series */
   if (process.client) {
     const querystring = window.location.search
     if (querystring.substring(1)) {
@@ -267,11 +265,7 @@ const echoQueryParam = (queryObj) => {
       // console.log('No searchstring here!')
     }
   }
-  const title = ref(`Viser taler hvor verdiene for serie, merke og sesong er: ${cat} ${tag} ${serie}`)
-  useSeoMeta({
-    title,
-    description: () => `testing ${searchString.value}`
-  }) // This shows on page load - do somethin else to update on change
+  titlefunc(`${v.title.list} ${searchString.value}`)
 }
 
 useServerSeoMeta({
@@ -279,19 +273,35 @@ useServerSeoMeta({
   ogDescription: v.description.list
 }) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
 
+const getAndUseSearchparam = () => { // only on load
+  if (route.fullPath === route.path) {
+    titlefunc('Oversikt over alle talene og stikkord i kirkepostillen.')
+  } else {
+    titlefunc(`${v.title.list} ${route.fullPath.slice(6)}`)
+  }
+}
+const titles = useSearchString()
+getAndUseSearchparam()
+
+watch(() => route.fullPath, () => { // only on change after load
+  if (route.path === route.fullPath) {
+    titlefunc('Oversikt over alle talene og stikkord i kirkepostillen.')
+  } else {
+    titlefunc(`${v.title.list} ${route.fullPath.slice(6)}`)
+  }
+})
+
 </script>
 
 <template>
   <div id="list_page">
-    <!--
     <Head>
       <Title>
-        {{ v.title.list }} {{ searchString }}
+        {{ titles }}
       </Title>
     </Head>
-    -->
     <h1 style="display: none">
-      {{ v.description.list }} {{ searchString }}
+      {{ titles }}
     </h1>
     <NuxtLayout name="base">
       <div class="shrink-0 px-4 sm:px-8 py-4 space-y-4 sm:sticky top-0 inset-x-0 z-10 bg-gray-50">
