@@ -126,7 +126,6 @@ const getFileTypeIcon = (type:string) => {
 useServerSeoMeta({
   description: constants.description.home,
   ogDescription: constants.description.home
-
 })
 
 useHead({ link: [{ rel: 'canonical', href: `${pkg.homepage}/` }] })

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { variables as constants } from '~/app/constants'
+import pkg from '~/package.json'
 // const appConfig = useAppConfig()
 
 /**
@@ -7,9 +8,13 @@ import { variables as constants } from '~/app/constants'
 * set head meta for article page
 *
 */
+
+const route = useRoute()
+
 useSeoMeta({
   description: constants.description.slug,
-  ogDescription: constants.description.slug
+  ogDescription: constants.description.slug,
+  ogUrl: `${pkg.homepage}${route.fullPath}`
 }) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
 
 // add CSS stylesheet for katex, testing nofollow after checking the seo on https://app.ahrefs.com/
@@ -30,8 +35,6 @@ const changeFlexiMode = () => {
     flexiMode.value = 'blog'
   }
 }
-
-const route = useRoute()
 /**
  *
  * get article data

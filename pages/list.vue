@@ -262,7 +262,9 @@ const publishTitle = (value) => { // using this function 5 times below
   titles.value = title
   useSeoMeta({
     title: title.value,
-    description: `${v.description.list} ${route.fullPath.slice(6)}`
+    description: `${v.description.list} ${route.fullPath.slice(6)}`,
+    ogDescription: `${v.description.list} ${route.fullPath.slice(6)}`,
+    ogUrl: `${pkg.homepage}${route.fullPath}`
   })
   useHead({ link: [{ rel: 'canonical', href: `${pkg.homepage}${route.fullPath}` }] })
 }
