@@ -102,10 +102,18 @@ See the code in MarkdownNote.vue
   }
 }
 
+@media only screen and (max-width: 374px) {
+  body {
+    width: 96vw
+  }
+}
+
+/*
 @viewport {
 	zoom: 1.0;
 	width: extend-to-zoom;
 }
+*/
 
 /* lazy load text-content on slug, list and frontpage */
 /*
