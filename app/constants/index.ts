@@ -80,6 +80,7 @@ export const variables = {
     home: 'Dr. Martin Luthers kirkepostille - medisin for syke sjeler!',
     about: 'Hvordan søke etter ord i Dr. Martin Luthers kirkepostille?',
     list: 'Kirkepostille stikkord: ',
+    list_all: '"Alle" talene vises her',
     slug: 'En prediken/tale fra Dr. Martin Luthers kirkepostille.'
   }
 }

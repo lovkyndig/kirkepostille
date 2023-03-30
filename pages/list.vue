@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
 import { variables as v } from '~/app/constants'
-import { search } from '~~/public/_pagefind/pagefind'
+import pkg from '~/package.json'
 
 interface MyCustomParsedContent extends ParsedContent {
   tags: string[]
@@ -162,7 +162,7 @@ onMounted(() => {
   currentTags.value = tags
   const series = route.query?.series as string || v.filter.all
   currentSeries.value = series
-  echoQueryParam(route.query)
+  echoQueryParam(route.query) // lovkyndig coded 2023
 })
 
 /**
@@ -245,49 +245,60 @@ const getFileTypeIcon = (type) => {
     return fileType.iconName
   }
 }
-
-const titlefunc = (value) => { // using 5 times
-  const title = ref(value)
-  titles.value = title
-  useSeoMeta({ title: title.value })
-}
-
-const searchString = useState('searchString')
-const echoQueryParam = (queryObj) => {
-  /* const cat = queryObj.category
-  const tag = queryObj.tags
-  const serie = queryObj.series */
-  if (process.client) {
-    const querystring = window.location.search
-    if (querystring.substring(1)) {
-      searchString.value = querystring.substring(1) // set searchString.value
-    } else {
-      // console.log('No searchstring here!')
-    }
-  }
-  titlefunc(`${v.title.list} ${searchString.value}`)
-}
-
+/** ----------------------------------------------------------------------------- */
 useServerSeoMeta({
   description: v.description.list,
   ogDescription: v.description.list
 }) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
 
-const getAndUseSearchparam = () => { // only on load
-  if (route.fullPath === route.path) {
-    titlefunc('Oversikt over alle talene og stikkord i kirkepostillen.')
-  } else {
-    titlefunc(`${v.title.list} ${route.fullPath.slice(6)}`)
-  }
+/**
+ *
+ * Publishing the TITLE.
+ * Using route.path as argument to this function.
+ * Using this function five times below, from here to the script end.
+ *
+ */
+const publishTitle = (value) => { // using this function 5 times below
+  const title = ref(value)
+  titles.value = title
+  useSeoMeta({ title: title.value })
+  useHead({
+    link: [{
+      rel: 'canonical',
+      href: `${pkg.homepage}${route.fullPath}}`
+    }]
+  })
 }
 const titles = useSearchString()
+/**
+ * Loading echoQueryParam above onMounted
+ */
+const searchString = useState('searchString')
+const echoQueryParam = (queryObj) => {
+  /* const cat = queryObj.category; const tag = queryObj.tags; const serie = queryObj.series */
+  if (process.client) {
+    const querystring = window.location.search
+    if (querystring.substring(1)) { // set searchString.value
+      searchString.value = querystring.substring(1)
+    } else { /* console.log('No searchstring here!') */ }
+  }
+  publishTitle(`${v.title.list} ${searchString.value}`)
+}
+
+const getAndUseSearchparam = () => { // only on load
+  if (route.fullPath === route.path) {
+    publishTitle(v.title.list_all)
+  } else {
+    publishTitle(`${v.title.list} ${route.fullPath.slice(6)}`)
+  }
+}
 getAndUseSearchparam()
 
 watch(() => route.fullPath, () => { // only on change after load
   if (route.path === route.fullPath) {
-    titlefunc('Oversikt over alle talene og stikkord i kirkepostillen.')
+    publishTitle(v.title.list_all)
   } else {
-    titlefunc(`${v.title.list} ${route.fullPath.slice(6)}`)
+    publishTitle(`${v.title.list} ${route.fullPath.slice(6)}`)
   }
 })
 
