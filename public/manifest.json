@@ -24,9 +24,9 @@
       "purpose": "any maskable"
     },
     {
-      "src": "manifest/512.webp",
+      "src": "manifest/512.png",
       "sizes": "512x512",
-      "type": "image/webp",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ],

@@ -247,8 +247,7 @@ const getFileTypeIcon = (type) => {
 }
 /** ----------------------------------------------------------------------------- */
 useServerSeoMeta({
-  description: v.description.list,
-  ogDescription: v.description.list
+  ogDescription: `${v.description.list} ${route.fullPath.slice(6)}`
 }) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
 
 /**
@@ -261,13 +260,11 @@ useServerSeoMeta({
 const publishTitle = (value) => { // using this function 5 times below
   const title = ref(value)
   titles.value = title
-  useSeoMeta({ title: title.value })
-  useHead({
-    link: [{
-      rel: 'canonical',
-      href: `${pkg.homepage}${route.fullPath}}`
-    }]
+  useSeoMeta({
+    title: title.value,
+    description: `${v.description.list} ${route.fullPath.slice(6)}`
   })
+  useHead({ link: [{ rel: 'canonical', href: `${pkg.homepage}${route.fullPath}` }] })
 }
 const titles = useSearchString()
 /**

@@ -102,6 +102,11 @@ See the code in MarkdownNote.vue
   }
 }
 
+@viewport {
+	zoom: 1.0;
+	width: extend-to-zoom;
+}
+
 /* lazy load text-content on slug, list and frontpage */
 /*
 .article-container * {

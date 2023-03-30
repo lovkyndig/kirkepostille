@@ -73,14 +73,14 @@ export const variables = {
   description: {
     home: 'Dr. Martin Luthers kirkepostille med innebygd søkemotor, per dato med det mest avanserte brukergrenesnittet for mobil og nettbrett.',
     about: 'Info om søking og hvordan du kan søke og finne ord eller fraser gjennom hele kirkepostillen. Se også register over viktig innhold.',
-    list: 'Oversikt over Dr. Martin Luthers predikener i kirkepostillen innenfor folgende valgt serie, merke og/eller sesong:',
+    list: 'Liste over Dr. Martin Luthers predikener i kirkepostillen innenfor folgende valgt serie, merke og/eller sesong:',
     slug: 'Dr. Martin Luthers kirkepostille med forklaring av evangelium og epistelteksten. Publisert på https//kirkepostille/vercel.app.'
   },
   title: {
     home: 'Dr. Martin Luthers kirkepostille - medisin for syke sjeler!',
     about: 'Hvordan søke etter ord i Dr. Martin Luthers kirkepostille?',
-    list: 'Kirkepostille stikkord: ',
-    list_all: '"Alle" talene vises her',
+    list: 'Kirkepostille ord: ',
+    list_all: 'ALLE talene vises her',
     slug: 'En prediken/tale fra Dr. Martin Luthers kirkepostille.'
   }
 }

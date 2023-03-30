@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { variables as constants } from '~/app/constants'
+import pkg from '~/package.json'
 // const appConfig = useAppConfig()
 // const config = useRuntimeConfig()
 
@@ -125,10 +126,12 @@ const getFileTypeIcon = (type:string) => {
 useServerSeoMeta({
   description: constants.description.home,
   ogDescription: constants.description.home
+
 })
 
-const title = ref(constants.title.home)
+useHead({ link: [{ rel: 'canonical', href: `${pkg.homepage}/` }] })
 /*
+const title = ref(constants.title.home)
 useSeoMeta({
   title,
   titleTemplate: () => `${title.value}`
