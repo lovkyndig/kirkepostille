@@ -123,6 +123,22 @@ const showSearchModal = useShowSearchModal()
         >
           {{ constants.nav.about.echo }}
         </NuxtLink>
+        <NuxtLink
+          :to="constants.list.evangelie_list1"
+          class="btn"
+          aria-label="constants.list.evangelie_list1"
+          :class="flexiMode === 'blog' ? 'text-purple-700 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
+        >
+          Evangelier
+        </NuxtLink>
+        <NuxtLink
+          :to="constants.list.epistel_list1"
+          class="btn"
+          aria-label="constants.list.epistel_list1"
+          :class="flexiMode === 'blog' ? 'text-purple-700 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
+        >
+          Epistler
+        </NuxtLink>
         <!-- -->
         <!--
         <NuxtLink

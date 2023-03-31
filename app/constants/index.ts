@@ -82,5 +82,9 @@ export const variables = {
     list: 'Kirkepostille ord: ',
     list_all: 'ALLE talene vises her',
     slug: 'En prediken/tale fra Dr. Martin Luthers kirkepostille.'
+  },
+  list: {
+    evangelie_list1: '/list?tags=Evangelium&category=Alle&series=Alle',
+    epistel_list1: '/list?tags=Epistel&category=Alle&series=Alle'
   }
 }
