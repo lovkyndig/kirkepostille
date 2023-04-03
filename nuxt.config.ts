@@ -116,14 +116,12 @@ export default defineNuxtConfig({
   app: { head: { /* app.vue */ } },
   appConfig: {},
   pwa: {
-    strategies: 'generateSW',
-    registerType: 'autoUpdate',
-    // injectRegister: 'auto',
+    // strategies: 'generateSW',
+    // registerType: 'autoUpdate',
     devOptions: { enabled: true },
     workbox: {
       // navigateFallback: '/',
       // globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
-      /*
       runtimeCaching: [
         {
           urlPattern: ({ url }) => {
@@ -138,7 +136,6 @@ export default defineNuxtConfig({
           }
         }
       ]
-      */
     }
   }
 })

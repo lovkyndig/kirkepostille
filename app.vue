@@ -17,7 +17,7 @@ const appConfig = useAppConfig()
  */
 
 useServerSeoMeta({
-  ogTitle: appConfig.site.name,
+  ogTitle: constants.site.name,
   ogType: 'website',
   ogUrl: pkg.homepage,
   ogImage: `${pkg.homepage}${constants.site.listview}`,
