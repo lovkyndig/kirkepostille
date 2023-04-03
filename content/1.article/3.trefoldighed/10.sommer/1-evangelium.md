@@ -103,7 +103,7 @@ Ligeledes læser man om biskop Gregorius i Kappadokien, at da han rejste gennem 
 [^2]: Stikkord summa. Disse "overblik", som Luther til tider laver, er meget lærerige, og værd at bemærke. Her opsummerer han en hovedlektion for menigheden.
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

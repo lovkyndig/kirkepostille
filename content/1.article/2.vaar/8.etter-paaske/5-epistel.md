@@ -19,7 +19,7 @@ I kirkepostillen er Luthers utleggelse av 1 Kor 15, 51-57 del i to, del I omtale
 [^1]: Norsk bibeloversettelse 1930.
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

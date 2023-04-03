@@ -229,7 +229,7 @@ watch(() => route.fullPath, () => {
  *
  * show article list detail
  */
-const showListDetail = ref(true)
+const showListDetail = ref(false) // true shows tree lines from the md-file
 
 /**
  *

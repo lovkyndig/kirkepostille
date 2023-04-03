@@ -186,7 +186,7 @@ Hele dette afsnit om gerningerne viser, at de, der virkelig tror, ikke er hykler
 [^3]: Stikkord farlig2. Sitat: "... det er farligt at lære dette, nemlig at man ikke bliver fordømt, om man ikke straks overvinder de kødelige lidenskaber, man får at mærke."
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

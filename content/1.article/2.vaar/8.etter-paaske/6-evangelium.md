@@ -15,7 +15,7 @@ _Men naar den Talsmand kommer, hvilken jeg skal sende Eder fra Faderen, den Sand
 [^1]: Det er en feil på lutherdansk.dk som gjør at klikk på dagens søndag åpner evangelietektsen på 16.søndag efter trinitatis. Kirkepostillens tekst kan leses på [nb.no](https://www.nb.no/items/1ac135aafa043b78d331eaabe3acb866?page=1051){:target="_blank"}
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

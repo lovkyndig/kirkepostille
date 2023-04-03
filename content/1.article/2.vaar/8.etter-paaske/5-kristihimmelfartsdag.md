@@ -216,7 +216,7 @@ Denne Epistel er ikke andet end Historien eller beretningen om, hvorledes Kristu
 [^1]: Dette er det som står i kirkepostillen under epistelen.
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

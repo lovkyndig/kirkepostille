@@ -73,7 +73,7 @@ Det vil sige, du kommer os i forkøbet og forklarer dig selv og taler ikke læng
 ## End
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

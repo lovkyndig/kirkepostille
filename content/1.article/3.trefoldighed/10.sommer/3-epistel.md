@@ -198,7 +198,7 @@ Til ham skal du vise Djævelen, når han plager dig med alle sine anfægtelser; 
 ## Amen
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

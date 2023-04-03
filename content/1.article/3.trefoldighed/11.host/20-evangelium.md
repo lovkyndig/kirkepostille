@@ -112,7 +112,7 @@ Det kalder Paulus at iklæde sig Herren Kristus, Gal 3, 27 og Rom 13, 14, og at 
 ## Amen
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

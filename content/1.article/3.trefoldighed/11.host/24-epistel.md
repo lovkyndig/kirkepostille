@@ -182,7 +182,7 @@ Videre beskriver nu Paulus, hvem den person er, hvis blod er udgydt for os, så 
 
 <!-- 
 Dr. Martin Luther's Kirke-Postille 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by Gudsbarn 2022-2023.

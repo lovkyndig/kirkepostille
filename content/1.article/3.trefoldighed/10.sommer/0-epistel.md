@@ -132,7 +132,7 @@ Hvordan og hvorledes denne forskel på personerne finder sted fra evighed af, sk
 
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

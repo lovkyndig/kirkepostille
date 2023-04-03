@@ -89,7 +89,7 @@ Dette er jo også en stærk og klar tekst. Den priser herligt troen og af­lægg
 ## Amen
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

@@ -90,7 +90,7 @@ Verden og de falske kristne fører også stor kærlighed i munden, men når de s
 [^2]: (Oversat efter originalteksten i Weimar-udgaven 22, 5-19)
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

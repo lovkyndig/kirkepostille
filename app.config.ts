@@ -1,6 +1,7 @@
 // @ts-nocheck
 export default defineAppConfig({
   site: {
+    name: 'Dr. Martin Luthers kirkepostille',
     avatar: '/default-avatar.png',
     author: 'Gudsbarn'
   },

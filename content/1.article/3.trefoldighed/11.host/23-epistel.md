@@ -116,7 +116,7 @@ For ved dåben har han modtaget os i sine hænder, netop til den ende, at han i 
 ## End
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

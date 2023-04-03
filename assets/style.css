@@ -11,7 +11,7 @@
 }
 */
 /* 
-katex.css is loaded from public-folder in /article/[...slug].vue 
+katex.css was orginally loaded from public-folder in /article/[...slug].vue 
 */
 /*
 ProseH1-5 is changed, because of width-problem in theme NOTE (in flexiMode).
@@ -102,11 +102,17 @@ See the code in MarkdownNote.vue
   }
 }
 
+/* 
+
+Trying to solve a lighthouse-problem:
+The viewport size of 373px does not match the window size of 360px.
+
 @media only screen and (max-width: 374px) {
   body {
     width: 96vw
   }
 }
+*/
 
 /*
 @viewport {

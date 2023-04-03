@@ -1,14 +1,15 @@
+import * as fs from 'fs'
+import * as path from 'path'
+// https://nuxt.com/docs/guide/concepts/esm#default-exports
 import { isProduction } from 'std-env'
 import { variables as constants } from './app/constants'
 import pkg from './package.json'
+
 /**
  *
  * copy asset files to public folder
  *
  */
-// Refer to: https://github.com/nuxt/content/issues/106#issuecomment-1002820342
-const fs = require('fs')
-const path = require('path')
 
 // clean the 'article' folder (copy from the 'content' folder) first
 const cleanContentFiles = (...folderPathArr:string[]) => {
@@ -70,7 +71,8 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/content',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@vite-pwa/nuxt'
   ],
   // https://content.nuxtjs.org
   content: {
@@ -108,9 +110,35 @@ export default defineNuxtConfig({
     typeCheck: true
   },
   css: [
-    '~/assets/style.css',
-    '~/assets/katex.min.css'
+    '~/assets/style.css'
+    /* '~/assets/katex.min.css' */
   ],
   app: { head: { /* app.vue */ } },
-  appConfig: {}
+  appConfig: {},
+  pwa: {
+    strategies: 'generateSW',
+    registerType: 'autoUpdate',
+    // injectRegister: 'auto',
+    devOptions: { enabled: true },
+    workbox: {
+      // navigateFallback: '/',
+      // globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
+      /*
+      runtimeCaching: [
+        {
+          urlPattern: ({ url }) => {
+            return url.pathname.startsWith('/api')
+          },
+          handler: 'CacheFirst' as const,
+          options: {
+            cacheName: 'api-cache',
+            cacheableResponse: {
+              statuses: [0, 200]
+            }
+          }
+        }
+      ]
+      */
+    }
+  }
 })

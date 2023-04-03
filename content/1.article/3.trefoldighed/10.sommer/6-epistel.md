@@ -98,7 +98,7 @@ Se sådan på jer selv, siger han. Det vil sige, I skal som kristne også vide d
 ## Amen
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

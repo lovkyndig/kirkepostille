@@ -86,7 +86,7 @@ Denne ære, selv om vi ikke havde an­det deraf end et sådant navn og berømmel
 ## Amen
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

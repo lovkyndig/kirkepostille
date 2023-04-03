@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Ref } from 'vue'
+// import type { Ref } from 'vue'
 
 interface CatalogItem {
   id: string;
@@ -177,7 +177,7 @@ const activeHeadings = inject('activeHeadings', initActiveHeadings)
         v-if="props.item.children"
         v-show="expand"
         :class="(sidebarFloatForBlog || toggleBlogSidebarFloat) ?
-        (floatBlogCatalogType === 'tree' ? `border-l ${borderColorMap[props.depth].expand} space-y-2 rounded-md` : 'ml-6') : ''"
+          (floatBlogCatalogType === 'tree' ? `border-l ${borderColorMap[props.depth].expand} space-y-2 rounded-md` : 'ml-6') : ''"
       >
         <CatalogItemForBlog
           v-for="subItem in props.item.children"

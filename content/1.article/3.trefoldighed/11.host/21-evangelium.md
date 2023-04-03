@@ -171,7 +171,7 @@ Sådan skal vi undervise og lære hinanden indbyrdes, så vi må holde os til ha
 Det er den adre talen ovenfor som Benjamin Lindner har inntatt i sin utgave av kirkepostillen.
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

@@ -159,7 +159,7 @@ Men vil du få ret trøst og glæde i dit hjerte, så lær kun at indprente dig 
 [^2]: Stikkord Kristi brudekammer. Dette er en lektie, som prædikant Hjalmar Vangen fra Nord-Troms altid har været ivrig efter at minde os om, at loven ikke må komme ind i Kristi brudekammer.
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

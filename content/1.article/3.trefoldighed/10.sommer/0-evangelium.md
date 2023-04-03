@@ -220,7 +220,7 @@ Sådan har han nu fuldført hele prædikenen om den nye fødsel eller om mennesk
 [2] Sidste del af vers 11 ”som er i Himlen” findes ikke i alle gamle håndskrifter til NT.
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

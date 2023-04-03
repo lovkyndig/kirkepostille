@@ -149,7 +149,7 @@ Dette er sidste del af formaningen om rigeligt at sørge for Kirkens tjenere og 
 [^1]: Stikkord: galaterbrevsforklaring. Luthers forklaring til søndagens epistel hentet fra [Luthers Store Galaterbrevskommenter](http://www.lutherdansk.dk/Galaterbrevet%205/index.htm){:target="_blank"}. Ingressens bibeltekst er norsk, og fra 1930.
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

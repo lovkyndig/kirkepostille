@@ -23,7 +23,7 @@ Ovenstående står skrevet i [kirkepostillen](https://www.nb.no/items/1ac135aafa
 
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

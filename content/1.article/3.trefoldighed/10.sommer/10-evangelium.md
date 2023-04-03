@@ -97,7 +97,7 @@ Begyndelsen hertil er også sket, men det forhales dog endnu for nogle så fromm
 ## Amen
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

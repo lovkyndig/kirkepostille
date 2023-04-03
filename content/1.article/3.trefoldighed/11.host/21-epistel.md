@@ -24,7 +24,7 @@ Luther henviser til en trykt prædiken fra 1533 *"Von der Christen Harnisch und 
 Denne preken er inntatt i Benjamin Lindners utgave av kirkepostillen.
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

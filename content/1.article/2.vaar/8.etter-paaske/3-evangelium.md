@@ -91,7 +91,7 @@ Hvad der efter teksten endnu videre kunne siges om dette evangelium, kan du selv
 ## Amen
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

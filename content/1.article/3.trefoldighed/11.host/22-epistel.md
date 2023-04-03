@@ -94,7 +94,7 @@ Velan, det vil vel engang vise sig, om det er verden tjenligt og vil gavne den, 
 Hvad for en løben har der ikke været af vore fædre og af mange blandt os selv, fra alle lande, mange hundrede kilometer, til Jerusalem, til den hellige grav, til Jakob, til Rom, til Peter og Paulus’ hoveder. Nogle gik med bare fødder, andre i fuld rustning, som gale mennesker. Jeg vil ikke tale om utallige andre valfarter. Her har vi ofret penge i hobevis, takket Gud og været glade, når vi dermed blot kunne købe pavens løgnagtige aflad og blive værdig til at kysse eller se de afdødes ben, som de har fremvist som en helligdom, og endnu mere den allerhelligste helligdom, pavens fødder. Det vil verden have tilbage, og bedre skal det heller ikke gå den.
 <!-- 
 Dr. Martin Luther's Church-Postil 
-Original source: https://lutherdansk.dk
+Original source: https://www.lutherdansk.dk
 by Priest Finn B. Andersen.
 Copied and processed into md-format 
 by lovkyndig 2023.

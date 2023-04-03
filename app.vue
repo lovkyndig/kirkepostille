@@ -1,14 +1,15 @@
 <template>
   <NuxtLayout>
+    <!-- <VitePwaManifest /> -->
     <NuxtPage />
   </NuxtLayout>
 </template>
 
 <script setup lang="ts">
+// import { registerSW } from 'virtual:pwa-register'
 import { variables as constants } from '~/app/constants'
 import pkg from '~/package.json'
-// import { registerSW } from 'virtual:pwa-register'
-// const appConfig = useAppConfig()
+const appConfig = useAppConfig()
 /**
  *
  * set head meta for all pages
@@ -16,7 +17,7 @@ import pkg from '~/package.json'
  */
 
 useServerSeoMeta({
-  ogTitle: `${pkg.version} - ${pkg.description}`,
+  ogTitle: appConfig.site.name,
   ogType: 'website',
   ogUrl: pkg.homepage,
   ogImage: `${pkg.homepage}${constants.site.listview}`,
@@ -48,11 +49,14 @@ onMounted(() => {
     if (!('serviceWorker' in navigator)) {
       throw new Error('serviceWorker is not supported in current browser!')
     }
-    navigator.serviceWorker.register('/worker.js')
+    // navigator.serviceWorker.register('/sw.js', { scope: '/' })
+    // registerSW()
   }
 })
+
 /*
 sources:
+https://github.com/larbish/nuxt3-pwa/tree/main/public
 https://github.com/alexdeploy/nuxt-pwa-template
 https://github.com/alexdeploy/nuxt-pwa-template/tree/main/public
 https://github.com/alexdeploy/nuxt-pwa-template/tree/main/public
