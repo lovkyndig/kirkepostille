@@ -120,7 +120,7 @@ export default defineNuxtConfig({
     plugins: [
       VitePWA({
         registerType: 'autoUpdate',
-        injectRegister: 'auto',
+        injectRegister: 'auto', // auto
         devOptions: {
           enabled: true // CHANGE TO FALSE ON PRODUCTION
         },

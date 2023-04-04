@@ -6,7 +6,7 @@
 </template>
 
 <script setup lang="ts">
-import { registerSW } from 'virtual:pwa-register'
+// import { registerSW } from 'virtual:pwa-register'
 import { variables as constants } from '~/app/constants'
 import pkg from '~/package.json'
 // const appConfig = useAppConfig()
@@ -55,7 +55,7 @@ onMounted(() => {
       throw new Error('serviceWorker is not supported in current browser!')
     }
     // navigator.serviceWorker.register('/workbox-sw.js', { scope: '/' })
-    registerSW()
+    // registerSW()
   }
 })
 
