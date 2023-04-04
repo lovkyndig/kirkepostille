@@ -2,6 +2,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 // https://nuxt.com/docs/guide/concepts/esm#default-exports
 import { isProduction } from 'std-env'
+// import { VitePWA } from 'vite-plugin-pwa'
 import { variables as constants } from './app/constants'
 import pkg from './package.json'
 
@@ -101,7 +102,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: ['/rss.xml', '/sitemap.xml']
+      routes: ['/rss.xml', '/sitemap.xml', '/200.html']
     }
   },
   typescript: {
@@ -116,6 +117,18 @@ export default defineNuxtConfig({
   app: { head: { /* app.vue */ } },
   appConfig: {},
   pwa: {
-    /* pwa-options */
+    registerType: 'autoUpdate',
+    injectRegister: 'auto',
+    devOptions: {
+      enabled: false // NB CHANGE TO FALSE ON PRODUCTION
+    },
+    workbox: {
+      globPatterns: ['**/*.{js,css,html,ico,png,jpg,webp,svg,woff2}']
+    },
+    includeAssets: ['**/*.*']
+  },
+  vite: {
+    plugins: [
+    ]
   }
 })
