@@ -120,12 +120,42 @@ export default defineNuxtConfig({
     registerType: 'autoUpdate',
     injectRegister: 'auto',
     devOptions: {
-      enabled: false // NB CHANGE TO FALSE ON PRODUCTION
+      enabled: false // CHANGE TO FALSE ON PRODUCTION
     },
     workbox: {
       globPatterns: ['**/*.{js,css,html,ico,png,jpg,webp,svg,woff2}']
     },
-    includeAssets: ['**/*.*']
+    includeAssets: ['**/*.*'],
+    manifest: {
+      name: 'Kirkepostille',
+      short_name: 'Kirkepostil',
+      start_url: '/',
+      display: 'minimal-ui',
+      theme_color: '#f9fafb',
+      background_color: '#f9fafb',
+      description: 'Dr. Martin Luthers kirkepostille, ca. 1743 sider.',
+      categories: ['books', 'education', 'medical'],
+      icons: [
+        {
+          src: 'manifest/144.webp',
+          sizes: '144x144',
+          type: 'image/webp',
+          purpose: 'any maskable'
+        },
+        {
+          src: 'manifest/192.webp',
+          sizes: '192x192',
+          type: 'image/webp',
+          purpose: 'any maskable'
+        },
+        {
+          src: 'manifest/512.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'any maskable'
+        }
+      ]
+    }
   },
   vite: {
     plugins: [
