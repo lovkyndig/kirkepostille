@@ -5,5 +5,10 @@ module.exports = {
   theme: {
     extend: {
     }
+  },
+  compilerOptions: {
+    types: [
+      'vite-plugin-pwa/client'
+    ]
   }
 }

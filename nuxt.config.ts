@@ -2,6 +2,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 // https://nuxt.com/docs/guide/concepts/esm#default-exports
 import { isProduction } from 'std-env'
+import { VitePWA } from 'vite-plugin-pwa'
 // import { VitePWA } from 'vite-plugin-pwa'
 import { variables as constants } from './app/constants'
 import pkg from './package.json'
@@ -72,8 +73,7 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/content',
-    '@nuxtjs/tailwindcss',
-    '@vite-pwa/nuxt'
+    '@nuxtjs/tailwindcss'
   ],
   // https://content.nuxtjs.org
   content: {
@@ -116,49 +116,19 @@ export default defineNuxtConfig({
   ],
   app: { head: { /* app.vue */ } },
   appConfig: {},
-  pwa: {
-    registerType: 'autoUpdate',
-    injectRegister: 'auto',
-    devOptions: {
-      enabled: false // CHANGE TO FALSE ON PRODUCTION
-    },
-    workbox: {
-      globPatterns: ['**/*.{js,css,html,ico,png,jpg,webp,svg,woff2}']
-    },
-    includeAssets: ['**/*.*'],
-    manifest: {
-      name: 'Kirkepostille',
-      short_name: 'Kirkepostil',
-      start_url: '/',
-      display: 'minimal-ui',
-      theme_color: '#f9fafb',
-      background_color: '#f9fafb',
-      description: 'Dr. Martin Luthers kirkepostille, ca. 1743 sider.',
-      categories: ['books', 'education', 'medical'],
-      icons: [
-        {
-          src: 'manifest/144.webp',
-          sizes: '144x144',
-          type: 'image/webp',
-          purpose: 'any maskable'
-        },
-        {
-          src: 'manifest/192.webp',
-          sizes: '192x192',
-          type: 'image/webp',
-          purpose: 'any maskable'
-        },
-        {
-          src: 'manifest/512.png',
-          sizes: '512x512',
-          type: 'image/png',
-          purpose: 'any maskable'
-        }
-      ]
-    }
-  },
   vite: {
     plugins: [
+      VitePWA({
+        registerType: 'autoUpdate',
+        injectRegister: 'auto',
+        devOptions: {
+          enabled: true // CHANGE TO FALSE ON PRODUCTION
+        },
+        workbox: {
+          globPatterns: ['**/*.{js,css,html,ico,png,jpg,webp,svg,woff2}']
+        },
+        includeAssets: ['**/*.*']
+      })
     ]
   }
 })

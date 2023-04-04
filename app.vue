@@ -9,7 +9,7 @@
 import { registerSW } from 'virtual:pwa-register'
 import { variables as constants } from '~/app/constants'
 import pkg from '~/package.json'
-const appConfig = useAppConfig()
+// const appConfig = useAppConfig()
 /**
  *
  * set head meta for all pages
