@@ -119,10 +119,11 @@ export default defineNuxtConfig({
   vite: {
     plugins: [
       VitePWA({
-        registerType: 'autoUpdate',
+        strategies: 'generateSW',
         injectRegister: 'auto', // auto
+        registerType: 'autoUpdate',
         devOptions: {
-          enabled: true // CHANGE TO FALSE ON PRODUCTION
+          enabled: false // CHANGE TO FALSE ON PRODUCTION
         },
         includeAssets: ['**/*'],
         workbox: {
