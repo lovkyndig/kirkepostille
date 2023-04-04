@@ -38,7 +38,12 @@ useHead({
   link: [
     { rel: 'icon', href: constants.site.favicon },
     { rel: 'manifest', href: 'manifest.json', crossorigin: 'use-credentials' },
-    { rel: 'apple-touch-icon', href: constants.site.apple }
+    { rel: 'apple-touch-icon', href: constants.site.apple },
+    {
+      rel: 'manifest',
+      href: '/manifest.json',
+      crossorigin: 'anonymous'
+    }
   ],
   noscript: [{ children: 'JavaScript is required' }],
   script: []

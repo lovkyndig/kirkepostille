@@ -124,10 +124,24 @@ export default defineNuxtConfig({
         devOptions: {
           enabled: true // CHANGE TO FALSE ON PRODUCTION
         },
+        includeAssets: ['**/*'],
         workbox: {
-          globPatterns: ['**/*.{js,css,html,ico,png,jpg,webp,svg,woff2}']
-        },
-        includeAssets: ['**/*.*']
+          globPatterns: ['**/*'],
+          runtimeCaching: [
+            {
+              urlPattern: ({ url }) => {
+                return url.pathname.startsWith('/api')
+              },
+              handler: 'CacheFirst' as const,
+              options: {
+                cacheName: 'api-cache',
+                cacheableResponse: {
+                  statuses: [0, 200]
+                }
+              }
+            }
+          ]
+        }
       })
     ]
   }

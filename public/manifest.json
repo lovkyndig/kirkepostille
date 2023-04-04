@@ -15,40 +15,44 @@
       "src": "manifest/144.webp",
       "sizes": "144x144",
       "type": "image/webp",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
       "src": "manifest/192.webp",
       "sizes": "192x192",
       "type": "image/webp",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
       "src": "manifest/512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/ico",
+      "purpose": "any"
     }
   ],
    "shortcuts": [
     {
       "name": "Evangelier",
-      "url": "/evangelier"
+      "description": "Dr. Martin Luthers utleggelse av evangelieteksten.",
+      "url": "/list?tags=Evangelium&category=Alle&series=Alle",
+      "icons": [{ "src": "/manifest/96.ico", "sizes": "96x96" }]
     },
     {
       "name": "Epistler",
-      "url": "/epistler"
+      "description": "Dr. Martin Luthers utleggelse av epistelteksten.",
+      "url": "/list?tags=Epistel&category=Alle&series=Alle",
+      "icons": [{ "src": "/manifest/96.ico", "sizes": "96x96" }]
     }
   ],
   "screenshots": [
     {
-      "src": "/images/540x720.png",
+      "src": "/manifest/540x720.png",
       "sizes": "540x720",
       "type": "image/png",
       "form_factor": "narrow"
     },
     {
-      "src": "/images/720x540.png",
+      "src": "/manifest/720x540.png",
       "sizes": "720x540",
       "type": "image/png",
       "form_factor": "wide"
