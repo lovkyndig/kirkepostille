@@ -56,25 +56,6 @@ copyContentFiles('content', 'public', ['.md', '.json', '.csv'])
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  runtimeConfig: {
-    rss: {
-      title: constants.title.home,
-      description: constants.description.home,
-      image: `${pkg.homepage}${constants.site.avatar}`,
-      favicon: `${pkg.homepage}${constants.site.favicon}`,
-      copyright: `All rights reserved ${(new Date()).getFullYear()}, ${constants.site.author}`
-    },
-    public: {
-      hostname: pkg.homepage,
-      production_mode: isProduction,
-      gtag_id: `G-${process.env.GTAG_ID}`
-    }
-  },
-  modules: [
-    '@nuxt/content',
-    '@nuxtjs/tailwindcss',
-    '@vite-pwa/nuxt'
-  ],
   // https://content.nuxtjs.org
   content: {
     navigation: {
@@ -115,23 +96,28 @@ export default defineNuxtConfig({
     /* '~/assets/katex.min.css' */
   ],
   app: { head: { /* app.vue */ } },
-  appConfig: {},
+  modules: [
+    '@nuxt/content',
+    '@nuxtjs/tailwindcss',
+    '@vite-pwa/nuxt'
+  ],
   vite: {
     plugins: [
-      // VitePWA({ }) // toggle between "pwa: { }" and "VitePWA({ })"
+      // VitePWA({ }) // testing between "pwa: { * }" and "VitePWA({ * })"
     ]
   },
   pwa: {
     devOptions: {
-      enabled: false // CHANGE TO FALSE ON PRODUCTION
+      enabled: true // CHANGE TO FALSE ON PRODUCTION
     },
-    strategies: 'generateSW',
-    injectRegister: 'auto',
-    registerType: 'autoUpdate',
-    includeAssets: ['**/*'],
+    // strategies: 'generateSW',
+    // injectRegister: 'auto',
+    // registerType: 'autoUpdate',
+    // includeAssets: ['**/*'],
     workbox: {
-      globPatterns: ['**/*'],
-      cleanupOutdatedCaches: true,
+      // navigateFallback: '/',
+      // globPatterns: ['**/*.{js,css,html,svg,webp,ico,jpg,png}'],
+      // cleanupOutdatedCaches: true,
       runtimeCaching: [
         {
           urlPattern: ({ url }) => {
@@ -146,6 +132,20 @@ export default defineNuxtConfig({
           }
         }
       ]
+    }
+  },
+  runtimeConfig: {
+    rss: {
+      title: constants.title.home,
+      description: constants.description.home,
+      image: `${pkg.homepage}${constants.site.avatar}`,
+      favicon: `${pkg.homepage}${constants.site.favicon}`,
+      copyright: `All rights reserved ${(new Date()).getFullYear()}, ${constants.site.author}`
+    },
+    public: {
+      hostname: pkg.homepage,
+      production_mode: isProduction,
+      gtag_id: `G-${process.env.GTAG_ID}`
     }
   }
 })
