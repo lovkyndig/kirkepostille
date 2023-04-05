@@ -118,9 +118,8 @@ export default defineNuxtConfig({
     workbox: {
       navigateFallback: '/',
       globPatterns: ['**/*.{js,css,html,svg,webp,ico,png}'],
-      cleanupOutdatedCaches: true
-      /*
-      runtimeCaching: [
+      cleanupOutdatedCaches: true,
+      runtimeCaching: [ // testing another cache
         {
           urlPattern: ({ url }) => {
             return url.pathname.startsWith('/api')
@@ -134,7 +133,6 @@ export default defineNuxtConfig({
           }
         }
       ]
-      */
     },
     // includeAssets: ['**/*.{js,css,html,svg,webp,ico,png,jpg,woff,woff2}'],
     client: {
