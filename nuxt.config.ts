@@ -115,10 +115,10 @@ export default defineNuxtConfig({
     strategies: 'generateSW',
     injectRegister: 'auto',
     registerType: 'autoUpdate',
-    // includeAssets: ['**/*'],
+    // includeAssets: ['**/*.{jpg,woff,woff2}'],
     workbox: {
       navigateFallback: '/',
-      globPatterns: ['**/*.{js,css,html,svg,webp,ico,png,jpg,woff,woff2}'],
+      globPatterns: ['**/*.{js,css,html,svg,webp,ico,png}'],
       cleanupOutdatedCaches: true,
       runtimeCaching: [
         {
@@ -136,9 +136,9 @@ export default defineNuxtConfig({
       ]
     },
     client: {
-      installPrompt: true,
+      installPrompt: true
       // if enabling periodic sync for update use 1 hour or so (periodicSyncForUpdates: 3600)
-      periodicSyncForUpdates: 20
+      // periodicSyncForUpdates: 20 // only for testing
     }
   },
   runtimeConfig: {
