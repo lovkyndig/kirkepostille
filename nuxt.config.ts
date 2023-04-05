@@ -2,7 +2,6 @@ import * as fs from 'fs'
 import * as path from 'path'
 // https://nuxt.com/docs/guide/concepts/esm#default-exports
 import { isProduction } from 'std-env'
-import { VitePWA } from 'vite-plugin-pwa'
 // import { VitePWA } from 'vite-plugin-pwa'
 import { variables as constants } from './app/constants'
 import pkg from './package.json'
@@ -117,6 +116,11 @@ export default defineNuxtConfig({
   ],
   app: { head: { /* app.vue */ } },
   appConfig: {},
+  vite: {
+    plugins: [
+      // VitePWA({ }) // toggle between "pwa: { }" and "VitePWA({ })"
+    ]
+  },
   pwa: {
     devOptions: {
       enabled: false // CHANGE TO FALSE ON PRODUCTION
@@ -143,10 +147,5 @@ export default defineNuxtConfig({
         }
       ]
     }
-  },
-  vite: {
-    plugins: [
-      // VitePWA({ })
-    ]
   }
 })
