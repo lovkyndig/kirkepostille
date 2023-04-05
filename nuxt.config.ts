@@ -73,7 +73,8 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxt/content',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@vite-pwa/nuxt'
   ],
   // https://content.nuxtjs.org
   content: {
@@ -116,34 +117,36 @@ export default defineNuxtConfig({
   ],
   app: { head: { /* app.vue */ } },
   appConfig: {},
+  pwa: {
+    devOptions: {
+      enabled: true // CHANGE TO FALSE ON PRODUCTION
+    },
+    strategies: 'generateSW',
+    injectRegister: 'auto', // auto
+    registerType: 'autoUpdate',
+    includeAssets: ['**/*'],
+    workbox: {
+      globPatterns: ['**/*'],
+      cleanupOutdatedCaches: true,
+      runtimeCaching: [
+        {
+          urlPattern: ({ url }) => {
+            return url.pathname.startsWith('/api')
+          },
+          handler: 'CacheFirst' as const,
+          options: {
+            cacheName: 'api-cache',
+            cacheableResponse: {
+              statuses: [0, 200]
+            }
+          }
+        }
+      ]
+    }
+  },
   vite: {
     plugins: [
-      VitePWA({
-        strategies: 'generateSW',
-        injectRegister: 'auto', // auto
-        registerType: 'autoUpdate',
-        devOptions: {
-          enabled: false // CHANGE TO FALSE ON PRODUCTION
-        },
-        includeAssets: ['**/*'],
-        workbox: {
-          globPatterns: ['**/*'],
-          runtimeCaching: [
-            {
-              urlPattern: ({ url }) => {
-                return url.pathname.startsWith('/api')
-              },
-              handler: 'CacheFirst' as const,
-              options: {
-                cacheName: 'api-cache',
-                cacheableResponse: {
-                  statuses: [0, 200]
-                }
-              }
-            }
-          ]
-        }
-      })
+      // VitePWA({ })
     ]
   }
 })

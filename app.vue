@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout>
-    <VitePwaManifest />
+    <!-- <VitePwaManifest /> -->
     <NuxtPage />
   </NuxtLayout>
 </template>
@@ -41,8 +41,7 @@ useHead({
     { rel: 'apple-touch-icon', href: constants.site.apple },
     {
       rel: 'manifest',
-      href: '/manifest.json',
-      crossorigin: 'anonymous'
+      href: '/manifest.json'
     }
   ],
   noscript: [{ children: 'JavaScript is required' }],
