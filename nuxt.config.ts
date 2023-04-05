@@ -119,10 +119,10 @@ export default defineNuxtConfig({
   appConfig: {},
   pwa: {
     devOptions: {
-      enabled: true // CHANGE TO FALSE ON PRODUCTION
+      enabled: false // CHANGE TO FALSE ON PRODUCTION
     },
     strategies: 'generateSW',
-    injectRegister: 'auto', // auto
+    injectRegister: 'auto',
     registerType: 'autoUpdate',
     includeAssets: ['**/*'],
     workbox: {
