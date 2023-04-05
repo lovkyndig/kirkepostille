@@ -83,7 +83,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: ['/rss.xml', '/sitemap.xml', '/200.html']
+      routes: ['/rss.xml', '/sitemap.xml']
     }
   },
   typescript: {
@@ -107,19 +107,16 @@ export default defineNuxtConfig({
     ]
   },
   pwa: {
-    devOptions: {
-      enabled: true,
-      type: 'module',
-      navigateFallback: '/'
-    },
+    devOptions: { enabled: true },
     strategies: 'generateSW',
     injectRegister: 'auto',
     registerType: 'autoUpdate',
     workbox: {
       navigateFallback: '/',
       globPatterns: ['**/*.{js,css,html,svg,webp,ico,png}'],
-      cleanupOutdatedCaches: true,
-      runtimeCaching: [ // testing another cache
+      cleanupOutdatedCaches: true
+      /* // runtimeCaching not working on Vercel
+      runtimeCaching: [
         {
           urlPattern: ({ url }) => {
             return url.pathname.startsWith('/api')
@@ -133,6 +130,7 @@ export default defineNuxtConfig({
           }
         }
       ]
+      */
     },
     // includeAssets: ['**/*.{js,css,html,svg,webp,ico,png,jpg,woff,woff2}'],
     client: {
