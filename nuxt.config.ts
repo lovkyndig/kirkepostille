@@ -108,7 +108,7 @@ export default defineNuxtConfig({
   },
   pwa: {
     devOptions: {
-      enabled: true // CHANGE TO FALSE ON PRODUCTION
+      enabled: false // CHANGE TO FALSE ON PRODUCTION
     },
     // strategies: 'generateSW',
     // injectRegister: 'auto',

@@ -145,7 +145,7 @@ useSeoMeta({
   <div id="index_page">
     <Head>
       <Title>
-        {{ constants.title.home }}
+        {{ constants.title.home }} - {{ pkg.version }}
       </Title>
     </Head>
     <NuxtLayout name="base" :footer-flexi-mode="true" :header-flexi-mode="true">

@@ -17,7 +17,7 @@ import pkg from '~/package.json'
  */
 
 useServerSeoMeta({
-  ogTitle: constants.site.name,
+  ogTitle: `${constants.site.name} - ${pkg.version}`,
   ogType: 'website',
   ogUrl: pkg.homepage,
   ogImage: `${pkg.homepage}${constants.site.listview}`,
