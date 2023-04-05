@@ -114,7 +114,7 @@ export default defineNuxtConfig({
     workbox: {
       navigateFallback: '/',
       globPatterns: ['**/*.{js,css,html,svg,webp,ico,png}'],
-      globIgnores: ['google*.html', '/', 'manifest.webmanifest'],
+      globIgnores: ['google*.html', '^manifest.webmanifest', '/'],
       cleanupOutdatedCaches: true
       /* // runtimeCaching not working on Vercel
       runtimeCaching: [
