@@ -108,16 +108,18 @@ export default defineNuxtConfig({
   },
   pwa: {
     devOptions: {
-      enabled: false // CHANGE TO FALSE ON PRODUCTION
+      enabled: true,
+      type: 'module',
+      navigateFallback: '/'
     },
-    // strategies: 'generateSW',
-    // injectRegister: 'auto',
-    // registerType: 'autoUpdate',
+    strategies: 'generateSW',
+    injectRegister: 'auto',
+    registerType: 'autoUpdate',
     // includeAssets: ['**/*'],
     workbox: {
-      // navigateFallback: '/',
-      // globPatterns: ['**/*.{js,css,html,svg,webp,ico,jpg,png}'],
-      // cleanupOutdatedCaches: true,
+      navigateFallback: '/',
+      globPatterns: ['**/*.{js,css,html,svg,webp,ico,png,jpg,woff,woff2}'],
+      cleanupOutdatedCaches: true,
       runtimeCaching: [
         {
           urlPattern: ({ url }) => {
@@ -132,6 +134,11 @@ export default defineNuxtConfig({
           }
         }
       ]
+    },
+    client: {
+      installPrompt: true,
+      // if enabling periodic sync for update use 1 hour or so (periodicSyncForUpdates: 3600)
+      periodicSyncForUpdates: 20
     }
   },
   runtimeConfig: {
