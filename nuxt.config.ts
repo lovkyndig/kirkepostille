@@ -109,7 +109,7 @@ export default defineNuxtConfig({
   pwa: {
     devOptions: {
       enabled: true,
-      navigateFallback: 'null'
+      navigateFallback: '/'
     },
     strategies: 'generateSW',
     injectRegister: 'auto',
@@ -118,7 +118,7 @@ export default defineNuxtConfig({
     scope: '/',
     /* outDir: 'dist', */
     workbox: {
-      navigateFallback: 'null',
+      navigateFallback: '/',
       globPatterns: ['**/*.{js,css,html,svg,webp,ico,png,jpg}'],
       globIgnores: ['google*.html'],
       cleanupOutdatedCaches: true
