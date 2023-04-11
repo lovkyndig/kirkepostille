@@ -114,11 +114,13 @@ export default defineNuxtConfig({
     strategies: 'generateSW',
     injectRegister: 'auto',
     registerType: 'autoUpdate',
+    base: '/',
+    scope: '/',
     /* outDir: 'dist', */
     workbox: {
       navigateFallback: '/',
       globPatterns: ['**/*.{js,css,html,svg,webp,ico,png,jpg}'],
-      globIgnores: ['google*.html'],
+      globIgnores: ['google*.html', 'manifest.webmanifest'],
       cleanupOutdatedCaches: true
       /* globDirectory: 'dist' */
       /* // runtimeCaching not working on Vercel
