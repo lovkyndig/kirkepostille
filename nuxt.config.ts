@@ -83,7 +83,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: ['/rss.xml', '/sitemap.xml']
+      routes: ['/rss.xml', '/sitemap.xml', '/']
     }
   },
   typescript: {
@@ -107,15 +107,19 @@ export default defineNuxtConfig({
     ]
   },
   pwa: {
-    devOptions: { enabled: true },
+    devOptions: {
+      enabled: true
+    },
     strategies: 'generateSW',
     injectRegister: 'auto',
     registerType: 'autoUpdate',
+    /* outDir: 'dist', */
     workbox: {
       navigateFallback: '/',
       globPatterns: ['**/*.{js,css,html,svg,webp,ico,png}'],
       globIgnores: ['google*.html', '^manifest.webmanifest', '/'],
       cleanupOutdatedCaches: true
+      /* globDirectory: 'dist' */
       /* // runtimeCaching not working on Vercel
       runtimeCaching: [
         {
