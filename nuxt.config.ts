@@ -109,7 +109,7 @@ export default defineNuxtConfig({
   pwa: {
     devOptions: {
       enabled: true,
-      navigateFallback: '/'
+      navigateFallback: 'null'
     },
     strategies: 'generateSW',
     injectRegister: 'auto',
@@ -118,9 +118,9 @@ export default defineNuxtConfig({
     scope: '/',
     /* outDir: 'dist', */
     workbox: {
-      navigateFallback: '/',
+      navigateFallback: 'null',
       globPatterns: ['**/*.{js,css,html,svg,webp,ico,png,jpg}'],
-      globIgnores: ['google*.html', '*.webmanifest'],
+      globIgnores: ['google*.html'],
       cleanupOutdatedCaches: true
       /* globDirectory: 'dist' */
       /* // runtimeCaching not working on Vercel
