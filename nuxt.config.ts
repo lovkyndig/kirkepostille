@@ -83,7 +83,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: ['/rss.xml', '/sitemap.xml', '/', 'manifest.webmanifest']
+      routes: ['/rss.xml', '/sitemap.xml', '/']
     }
   },
   typescript: {
@@ -120,7 +120,7 @@ export default defineNuxtConfig({
     workbox: {
       navigateFallback: '/',
       globPatterns: ['**/*.{js,css,html,svg,webp,ico,png,jpg}'],
-      globIgnores: ['google*.html', '^manifest.webmanifest'],
+      globIgnores: ['google*.html', '*.webmanifest'],
       cleanupOutdatedCaches: true
       /* globDirectory: 'dist' */
       /* // runtimeCaching not working on Vercel
