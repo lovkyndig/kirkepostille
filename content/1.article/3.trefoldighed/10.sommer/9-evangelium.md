@@ -3,8 +3,8 @@ series: Sommer
 articleType: note
 showTime: false
 showOutdatedWarning: false
-created: 2022-08-14
-updated: 2022-08-14
+created: 2023-08-06
+updated: 2023-08-06
 tags:
   - Danish
   - Evangelium

@@ -3,8 +3,8 @@ series: Sommer
 articleType: note
 showTime: false
 showOutdatedWarning: false
-created: 2022-06-12
-updated: 2022-06-12
+created: 2023-06-04
+updated: 2023-06-04
 tags:
   - Danish
   - Epistel

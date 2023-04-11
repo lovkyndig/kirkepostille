@@ -3,8 +3,8 @@ series: Sommer
 articleType: note
 showTime: false
 showOutdatedWarning: false
-created: 2022-06-19
-updated: 2022-06-19
+created: 2023-06-11
+updated: 2023-06-11
 tags:
   - Danish
   - NB
