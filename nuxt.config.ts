@@ -106,41 +106,20 @@ export default defineNuxtConfig({
     ]
   },
   pwa: {
-    devOptions: {
-      enabled: true,
-      navigateFallback: '/'
-    },
     strategies: 'generateSW',
     injectRegister: 'auto',
     registerType: 'autoUpdate',
-    base: '/',
-    scope: '/',
-    /* outDir: 'dist', */
     workbox: {
       navigateFallback: '/',
       globPatterns: ['**/*.{js,css,html,svg,webp,ico,png,jpg}'],
       globIgnores: ['google*.html'],
       cleanupOutdatedCaches: true
-      /* globDirectory: 'dist' */
-      /* // runtimeCaching not working on Vercel
-      runtimeCaching: [
-        {
-          urlPattern: ({ url }) => {
-            return url.pathname.startsWith('/api')
-          },
-          handler: 'CacheFirst' as const,
-          options: {
-            cacheName: 'api-cache',
-            cacheableResponse: {
-              statuses: [0, 200]
-            }
-          }
-        }
-      ]
-      */
     },
-    writePlugin: true,
-    // includeAssets: ['**/*.{js,css,html,svg,webp,ico,png,jpg,woff,woff2}'],
+    registerWebManifestInRouteRules: true,
+    devOptions: {
+      enabled: true,
+      navigateFallback: '/'
+    },
     client: {
       installPrompt: true
       // if enabling periodic sync for update use 1 hour or so (periodicSyncForUpdates: 3600)
