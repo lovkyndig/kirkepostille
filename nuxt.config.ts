@@ -115,6 +115,7 @@ export default defineNuxtConfig({
       globIgnores: ['google*.html'],
       cleanupOutdatedCaches: true
     },
+    manifest: false,
     devOptions: {
       enabled: true,
       navigateFallback: '/'
