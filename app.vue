@@ -41,7 +41,7 @@ useHead({
     { rel: 'apple-touch-icon', href: constants.site.apple },
     {
       rel: 'manifest',
-      href: '/manifest.json'
+      href: '/manifest.webmanifest'
     }
   ],
   noscript: [{ children: 'JavaScript is required' }],
