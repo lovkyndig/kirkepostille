@@ -1,6 +1,5 @@
 <template>
   <NuxtLayout>
-    <!-- <VitePwaManifest /> -->
     <NuxtPage />
   </NuxtLayout>
 </template>
@@ -46,10 +45,11 @@ useHead({
 
 onMounted(() => {
   if (process.client) {
+    /*
     if (!('serviceWorker' in navigator)) {
       throw new Error('serviceWorker is not supported in current browser!')
     }
-    // navigator.serviceWorker.register('/workbox-sw.js', { scope: '/' })
+    */
     // registerSW()
   }
 })
