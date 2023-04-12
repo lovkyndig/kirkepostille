@@ -108,6 +108,9 @@ declare global {
     find: any,
     gtag: (...args: any[]) => void;
   }
+  interface Navigator {
+    Clipboard: Clipboard
+  }
 }
 
 /**

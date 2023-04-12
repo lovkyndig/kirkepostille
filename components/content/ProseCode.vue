@@ -90,7 +90,7 @@ const copyState = ref<CopyState>('wait')
 const clipboard = ref(null)
 
 onMounted(() => {
-  clipboard.value = navigator.clipboard
+  clipboard.value = navigator.Clipboard
 })
 
 const copyHandler = () => {

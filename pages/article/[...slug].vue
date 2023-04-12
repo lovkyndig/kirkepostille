@@ -185,7 +185,7 @@ const getAndChangeSearchparam = () => {
 getAndChangeSearchparam()
 
 onMounted(() => {
-  clipboard.value = navigator.clipboard
+  clipboard.value = navigator.Clipboard
   if (articleContainer.value && clipboard.value) {
     const mathInlineList = articleContainer.value.querySelectorAll('.math-inline')
     const mathBlockList = articleContainer.value.querySelectorAll('.math-display')

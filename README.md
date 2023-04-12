@@ -1,4 +1,4 @@
-![Kirkepostil](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/images/listview.png)
+![Kirkepostil](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/images/listview.PNG)
 
 # Kirkepostil
 Kirkepostil is an clone of [`BlogiNote`](https://github.com/Benbinbin/BlogiNote) from [`Benbinbin`](https://github.com/Benbinbin), that is a hidden treasure, like the treasure in the Bible, hidden for the wise and prudent. Matt 11, 25.
@@ -11,7 +11,7 @@ Everyone write about the setup in the readme-file, please go away to read about 
 
 ![Lighthouse-Metrics](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/images/lighthouse.PNG)
 
-This is  capture from the screen, everyone gets on keypress ` Ctrl + Shift + I`, on the frontpage in Kirkepostille. Click on the button `Analyze Page load` and see the results with your own eyes. 
+This is  capture from the screen, everyone gets on keypress ` Ctrl + Shift + I`, on the frontpage in Kirkepostille. Click on the button `Analyze Page load` and see the results with your own eyes. Notice only 1 blue issue on the frontpage.
 
 ## To do-list (personal notes)
 - The find-function shows the first place in the modal-window, but skip the first place in the article if more than one hit.
