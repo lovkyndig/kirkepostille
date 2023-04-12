@@ -81,11 +81,6 @@ export default defineNuxtConfig({
       }
     }
   },
-  nitro: {
-    prerender: {
-      routes: ['/rss.xml', '/sitemap.xml', '/']
-    }
-  },
   typescript: {
     shim: false,
     strict: false,
@@ -100,6 +95,11 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@vite-pwa/nuxt'
   ],
+  nitro: {
+    prerender: {
+      routes: ['/rss.xml', '/sitemap.xml']
+    }
+  },
   vite: {
     plugins: [
       // VitePWA({ }) // testing between "pwa: { * }" and "VitePWA({ * })"
@@ -115,7 +115,6 @@ export default defineNuxtConfig({
       globIgnores: ['google*.html'],
       cleanupOutdatedCaches: true
     },
-    registerWebManifestInRouteRules: true,
     devOptions: {
       enabled: true,
       navigateFallback: '/'
