@@ -93,7 +93,6 @@ export default defineNuxtConfig({
   },
   css: [
     '~/assets/style.css'
-    /* '~/assets/katex.min.css' */
   ],
   app: { head: { /* app.vue */ } },
   modules: [
