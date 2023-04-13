@@ -15,6 +15,10 @@ import pkg from '~/package.json'
  *
  */
 
+definePageMeta({
+  doctype: 'html'
+})
+
 useServerSeoMeta({
   ogTitle: `${constants.site.name} - ${pkg.version}`,
   ogType: 'website',
