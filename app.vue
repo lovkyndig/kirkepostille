@@ -15,9 +15,7 @@ import pkg from '~/package.json'
  *
  */
 
-definePageMeta({
-  doctype: 'html'
-})
+// definePageMeta({ doctype: 'html' })
 
 useServerSeoMeta({
   ogTitle: `${constants.site.name} - ${pkg.version}`,
@@ -34,6 +32,9 @@ useServerSeoMeta({
 }) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
 
 useHead({
+  meta: [
+    { name: 'doctype', content: 'html' }
+  ],
   htmlAttrs: { lang: 'da' },
   style: [
     { children: 'html, body { scroll-behavior: smooth; overflow: overlay }' }
