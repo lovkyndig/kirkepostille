@@ -44,9 +44,14 @@ useHead({
 })
 
 onMounted(() => {
-  window.addEventListener('resize', () => {
-    window.innerWidth = window.outerWidth
-  })
+  // pwa - Content is sized correctly for the viewport
+  if (window) {
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > window.outerWidth) {
+        window.innerWidth = window.outerWidth
+      }
+    })
+  }
   if (process.client) {
     /*
     if (!('serviceWorker' in navigator)) {
