@@ -44,6 +44,9 @@ useHead({
 })
 
 onMounted(() => {
+  window.addEventListener('resize', () => {
+    window.innerWidth = window.outerWidth
+  })
   if (process.client) {
     /*
     if (!('serviceWorker' in navigator)) {
