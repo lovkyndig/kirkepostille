@@ -49,24 +49,21 @@ useHead({
 // const windowSize = useWindowSize()
 onMounted(() => {
   // pwa - Content is sized correctly for the viewport
-
-  if (window) {
-    const widthCheck = () => {
+  const widthCheck = () => {
+    if (window) {
       if (window.innerWidth > window.outerWidth) {
         window.innerWidth = window.outerWidth
+        // windowSize.value.width = window.innerWidth
+        // widthCheck.value = false
+        return innerWidth
       }
     }
-    window.addEventListener('load', () => { widthCheck() })
-    // window.addEventListener('resize', () => { widthCheck() })
   }
-
-  /*
-  watch(() => windowSize.value.width, () => {
-    if (window.innerWidth > window.outerWidth && window.innerWidth > 500) {
-      window.innerWidth = window.outerWidth
-    }
-  })
-  */
+  if (window) {
+    window.addEventListener('load', () => { widthCheck() })
+    window.addEventListener('resize', () => { widthCheck() })
+  }
+  // watch(() => windowSize.value.width, () => { widthCheck() })
   if (process.client) {
     /*
     if (!('serviceWorker' in navigator)) {

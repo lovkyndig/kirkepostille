@@ -1,17 +1,17 @@
-![Kirkepostil](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/images/listview.PNG)
+![Kirkepostil](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/images/100.PNG)
 
 # Kirkepostil
 Kirkepostil is an clone of [`BlogiNote`](https://github.com/Benbinbin/BlogiNote) from [`Benbinbin`](https://github.com/Benbinbin), that is a hidden treasure, like the treasure in the Bible, hidden for the wise and prudent. Matt 11, 25.
 
-Everyone write about the setup in the readme-file, please go away to read about it, (it's the same everywhere) or google about it - like me, when I started for some months ago on GitHub.
+Everyone write about the setup in the readme-file, please go away to read about it, (it's the same everywhere) or google about it - like me, when I started on GitHub in 2022.
 
 ## Page Load Analyze = 5x100%
 - 100% Health Score on [ahrefs](https://app.ahrefs.com/)
-- Lighthouse report gave 4 x 100% on Accessibility, Best Practices, SEO and PWA (Progressive Web App)
+- Lighthouse report gave 4 x 100% on Accessibility, Best Practices, SEO and PWA (Progressive Web App)[^1]
 
 ![Lighthouse-Metrics](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/images/lighthouse.PNG)
 
-This is  capture from the screen, everyone gets on keypress ` Ctrl + Shift + I`, on the frontpage in Kirkepostille. Click on the button `Analyze Page load` and see the results with your own eyes. Notice only 1 blue issue on the frontpage.
+This is  capture from the screen, everyone gets on keypress ` Ctrl + Shift + I`, on the frontpage in Kirkepostille. Click on the button `Analyze Page load` and see the results with your own eyes.[^2]
 
 ## To do-list (personal notes)
 - The find-function shows the first place in the modal-window, but skip the first place in the article if more than one hit.
@@ -27,9 +27,11 @@ This is  capture from the screen, everyone gets on keypress ` Ctrl + Shift + I`,
 - Google Search Console - Add Verification methods; HTML tag
 - Load only the four newest articles.
 - Add mouse-drag-event-handler on PC
-- Add dark-light-themetoggle
+- Add dark-light-themetoggle[^3]
 
 ## License
 [MIT](./LICENSE)
 
-Updated 12.April 2023
+[^1]: Best Practices give one error on all nuxt3-homepages [per 14.04.2023](https://github.com/nuxt/nuxt/discussions/20262). Nothing wrong widt the code in the GitHub-repo.
+[^2]: Notice only 1 blue issue on the frontpage.
+[^3]: Updated 14.April 2023
