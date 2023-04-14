@@ -115,7 +115,18 @@ export default defineNuxtConfig({
       globIgnores: ['google*.html'],
       cleanupOutdatedCaches: true,
       runtimeCaching: [{
-        urlPattern: /^https:\/\/kirkepostille.vercel\.app\/.*/i,
+        urlPattern: ({ url }) => {
+          return url.pathname.startsWith('/api')
+        },
+        handler: 'CacheFirst' as const,
+        options: {
+          cacheName: 'api-cache',
+          cacheableResponse: {
+            statuses: [0, 200]
+          }
+        }
+        // urlPattern: /^https:\/\/kirkepostille.vercel\.app\/.*/i,
+        /*
         handler: 'CacheFirst',
         options: {
           cacheName: 'api-cache',
@@ -123,6 +134,7 @@ export default defineNuxtConfig({
             statuses: [0, 200]
           }
         }
+        */
       }]
     },
     manifest: false,

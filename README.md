@@ -7,11 +7,11 @@ Everyone write about the setup in the readme-file, please go away to read about 
 
 ## Page Load Analyze = 5x100%
 - 100% Health Score on [ahrefs](https://app.ahrefs.com/)
-- Lighthouse report gave 4 x 100% on Accessibility, Best Practices[^1], SEO and PWA (Progressive Web App)[^2]
+- Lighthouse report gave 4 x 100% on Accessibility, Best Practices[^1], SEO and PWA[^2] (Progressive Web App)
 
 ![Lighthouse-Metrics](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/images/lighthouse.PNG)
 
-This is  capture from the screen, everyone gets on keypress ` Ctrl + Shift + I`, on the frontpage in Kirkepostille. Click on the button `Analyze Page load` and see the results with your own eyes.[^3]
+This is the capture from the screen[^3], on keypress ` Ctrl + Shift + I`, from the frontpage in Kirkepostille. Then click on the button `Analyze Page load`, and see the results with your own eyes.
 
 ## To do-list (personal notes)
 - The find-function shows the first place in the modal-window, but skip the first place in the article if more than one hit.
