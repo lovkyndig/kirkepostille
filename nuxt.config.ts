@@ -113,7 +113,17 @@ export default defineNuxtConfig({
       navigateFallback: '/',
       globPatterns: ['**/*.{js,css,html,svg,webp,ico,png,jpg,md}'],
       globIgnores: ['google*.html'],
-      cleanupOutdatedCaches: true
+      cleanupOutdatedCaches: true,
+      runtimeCaching: [{
+        urlPattern: /^https:\/\/kirkepostille.vercel\.app\/.*/i,
+        handler: 'CacheFirst',
+        options: {
+          cacheName: 'api-cache',
+          cacheableResponse: {
+            statuses: [0, 200]
+          }
+        }
+      }]
     },
     manifest: false,
     devOptions: {
