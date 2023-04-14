@@ -109,6 +109,7 @@ export default defineNuxtConfig({
     strategies: 'generateSW',
     injectRegister: 'auto',
     registerType: 'autoUpdate',
+    includeAssets: ['**/*'], // **/*
     workbox: {
       navigateFallback: '/',
       globPatterns: ['**/*.{js,css,html,svg,webp,ico,png,jpg}'],
