@@ -15,8 +15,6 @@ import pkg from '~/package.json'
  *
  */
 
-// definePageMeta({ doctype: 'html' })
-
 useServerSeoMeta({
   ogTitle: `${constants.site.name} - ${pkg.version}`,
   ogType: 'website',
@@ -31,10 +29,10 @@ useServerSeoMeta({
   themeColor: '#f9fafb'
 }) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
 
+// definePageMeta({ doctype: 'html' })
+
 useHead({
-  meta: [
-    { name: 'doctype', content: 'html' }
-  ],
+  // meta: [{ name: 'doctype', content: 'html' }],
   htmlAttrs: { lang: 'da' },
   style: [
     { children: 'html, body { scroll-behavior: smooth; overflow: overlay }' }
@@ -48,15 +46,27 @@ useHead({
   script: []
 })
 
+// const windowSize = useWindowSize()
 onMounted(() => {
   // pwa - Content is sized correctly for the viewport
+
   if (window) {
-    window.addEventListener('resize', () => {
+    const widthCheck = () => {
       if (window.innerWidth > window.outerWidth) {
         window.innerWidth = window.outerWidth
       }
-    })
+    }
+    window.addEventListener('load', () => { widthCheck() })
+    // window.addEventListener('resize', () => { widthCheck() })
   }
+
+  /*
+  watch(() => windowSize.value.width, () => {
+    if (window.innerWidth > window.outerWidth && window.innerWidth > 500) {
+      window.innerWidth = window.outerWidth
+    }
+  })
+  */
   if (process.client) {
     /*
     if (!('serviceWorker' in navigator)) {
