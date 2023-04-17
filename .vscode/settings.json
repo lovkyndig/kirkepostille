@@ -1,4 +1,5 @@
 {
+  // refer to https://nuxt.com/docs/community/contribution#use-eslint
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -14,5 +15,6 @@
     "nuxtjs",
     "pagefind",
     "rehype"
-  ]
+  ],
+  "scss.lint.unknownAtRules": "ignore"
 }

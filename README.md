@@ -1,7 +1,7 @@
 ![Kirkepostil](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/images/100lighthouse.png)
 
 # Kirkepostil
-Kirkepostil is an clone of [`BlogiNote`](https://github.com/Benbinbin/BlogiNote) from [`Benbinbin`](https://github.com/Benbinbin), that is a hidden treasure, like the treasure in the Bible, hidden for the wise and prudent. Matt 11, 25.
+Kirkepostil is an clone of [`BlogiNote`](https://github.com/Benbinbin/BlogiNote) (per 2022) from [`Benbinbin`](https://github.com/Benbinbin), that is a hidden treasure, like the treasure in the Bible, hidden for the wise and prudent. Matt 11, 25.
 
 Everyone write about the setup in the readme-file, please go away to read about it, (it's the same everywhere) or google about it - like me, when I started on GitHub in 2022.
 
@@ -15,7 +15,7 @@ This is the capture from the screen[^3], on keypress ` Ctrl + Shift + I`, from t
 
 ## To do-list (personal notes)
 - The find-function shows the first place in the modal-window, but skip the first place in the article if more than one hit.
-- Fix pwa offline. It shows only pages create with vue, not md-files.
+- MD-files in offline-mode (in public-folder)
 - Insert translate-option before search (from Norwegian to Danish)
 - Check if possibly to create Mermaid content-register?
 - Add MDC-components for use in other Mdc-compoents (tabs)
@@ -35,4 +35,4 @@ This is the capture from the screen[^3], on keypress ` Ctrl + Shift + I`, from t
 [^1]: Best Practices give one error on all nuxt3-homepages [per 14.04.2023](https://github.com/nuxt/nuxt/discussions/20262). Nothing wrong widt the code in the GitHub-repo.
 [^2]: _Content is sized correctly for the viewport_ give somethimes error. I have tried to fix this in app.vue (width the function widthCheck), but am unsure of the effect.
 [^3]: Notice only 1 blue issue on the frontpage.
-[^4]: Updated 14.April 2023
+[^4]: Updated 15.April 2023
