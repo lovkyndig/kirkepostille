@@ -61,37 +61,43 @@
       "src": "/img/pwa/540x720.png",
       "sizes": "540x720",
       "type": "image/png",
-      "form_factor": "narrow"
+      "platform": "narrow",
+      "label": "Frontpage of Kirkepostille"
     },
     {
       "src": "/img/pwa/720x540.png",
       "sizes": "720x540",
       "type": "image/png",
-      "form_factor": "wide"
+      "platform": "wide",
+      "label": "Frontpage of Kirkepostille"
     },
     {
       "src": "/img/aab/1080x1920-front.jpg",
       "sizes": "1080x1920",
       "type": "image/jpg",
-      "form_factor": "narrow"
+      "platform": "narrow",
+      "label": "Frontpage of Kirkepostille"
     },
     {
       "src": "/img/aab/1080x1920-list.jpg",
       "sizes": "1080x1920",
       "type": "image/jpg",
-      "form_factor": "narrow"
+      "platform": "narrow",
+      "label": "List of pages from Kirkepostille"
     },
     {
       "src": "/img/aab/1920x1080-front.jpg",
       "sizes": "1920x1080",
       "type": "image/jpg",
-      "form_factor": "wide"
+      "platform": "wide",
+       "label": "Frontpage of Kirkepostille"
     },
     {
-      "src": "/img/aab/1920x1080-list.png",
+      "src": "/img/aab/1920x1080-list.jpg",
       "sizes": "1920x1080",
-      "type": "image/png",
-      "form_factor": "wide"
+      "type": "image/jpg",
+      "platform": "wide",
+      "label": "List of pages from Kirkepostille"
     }
   ]
 }

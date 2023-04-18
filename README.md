@@ -1,4 +1,4 @@
-![Kirkepostil](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/images/100lighthouse.png)
+![Kirkepostil](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/img/100lighthouse.png)
 
 # Kirkepostil
 Kirkepostil is an clone of [`BlogiNote`](https://github.com/Benbinbin/BlogiNote) (per 2022) from [`Benbinbin`](https://github.com/Benbinbin), that is a hidden treasure, like the treasure in the Bible, hidden for the wise and prudent. Matt 11, 25.
@@ -9,7 +9,7 @@ Everyone write about the setup in the readme-file, please go away to read about 
 - 100% Health Score on [ahrefs](https://app.ahrefs.com/)
 - Lighthouse report gave 4 x 100% on Accessibility, Best Practices[^1], SEO and PWA[^2] (Progressive Web App)
 
-![Lighthouse-Metrics](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/images/lighthouse.PNG)
+![Lighthouse-Metrics](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/img/lighthouse.PNG)
 
 This is the capture from the screen[^3], on keypress ` Ctrl + Shift + I`, from the frontpage in Kirkepostille. Then click on the button `Analyze Page load`, and see the results with your own eyes.
 
