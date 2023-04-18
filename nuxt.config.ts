@@ -106,6 +106,7 @@ export default defineNuxtConfig({
     ]
   },
   pwa: {
+    manifest: false, // public/manifest.webmanifest
     strategies: 'generateSW',
     injectRegister: 'auto',
     registerType: 'autoUpdate',
@@ -114,27 +115,40 @@ export default defineNuxtConfig({
       globPatterns: ['**/*.{js,css,html,svg,webp,ico,png,jpg,md}'],
       globIgnores: ['google*.html'],
       cleanupOutdatedCaches: true,
-      runtimeCaching: [{
-      // urlPattern: /^https:\/\/kirkepostille.vercel\.app\/.*/i, // not working
-        urlPattern: ({ url }) => { return url.pathname.startsWith('/api') },
-        handler: 'CacheFirst' as const,
-        options: {
-          cacheName: 'api-cache',
-          cacheableResponse: {
-            statuses: [0, 200]
+      runtimeCaching: [
+        {
+        // urlPattern: /^https:\/\/kirkepostille.vercel\.app\/.*/i, // not working
+          urlPattern: ({ url }) => { return url.pathname.startsWith('/api') },
+          handler: 'CacheFirst' as const,
+          options: {
+            cacheName: 'api-cache',
+            cacheableResponse: {
+              statuses: [0, 200]
+            }
+          }
+        },
+        { // source: https://vite-pwa-org.netlify.app/workbox/generate-sw.html
+          handler: 'NetworkOnly',
+          urlPattern: /\/api\/.*\/*.json/,
+          method: 'POST',
+          options: {
+            backgroundSync: {
+              name: 'backgroundsync',
+              options: {
+                maxRetentionTime: 24 * 60
+              }
+            }
           }
         }
-      }]
+      ]
     },
-    manifest: false,
     devOptions: {
       enabled: true,
       navigateFallback: '/'
     },
     client: {
-      installPrompt: true
-      // if enabling periodic sync for update use 1 hour or so (periodicSyncForUpdates: 3600)
-      // periodicSyncForUpdates: 20 // only for testing
+      installPrompt: true,
+      periodicSyncForUpdates: 300 // per 5 min for testing only
     }
   },
   runtimeConfig: {
