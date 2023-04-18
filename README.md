@@ -3,11 +3,11 @@
 # Kirkepostil
 Kirkepostil is an clone of [`BlogiNote`](https://github.com/Benbinbin/BlogiNote) (per 2022) from [`Benbinbin`](https://github.com/Benbinbin), that is a hidden treasure, like the treasure in the Bible, hidden for the wise and prudent. Matt 11, 25.
 
-Everyone write about the setup in the readme-file, please go away to read about it, (it's the same everywhere) or google about it - like me, when I started on GitHub in 2022.
+Everyone write about the setup in the readme-file, read about it everywhere, or google about it.
 
 ## Page Load Analyze = 5x100%
 - 100% Health Score on [ahrefs](https://app.ahrefs.com/)
-- Lighthouse report gave 4 x 100% on Accessibility, Best Practices[^1], SEO and PWA[^2] (Progressive Web App)
+- Lighthouse report gave 4 x 100% _(img above)_ on Accessibility, Best Practices[^1], SEO and PWA[^2] (Progressive Web App)
 
 ![Lighthouse-Metrics](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/img/lighthouse.PNG)
 

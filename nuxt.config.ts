@@ -110,9 +110,9 @@ export default defineNuxtConfig({
     strategies: 'generateSW',
     injectRegister: 'auto',
     registerType: 'autoUpdate',
-    outDir: 'dist', // needed for aab
+    // outDir: 'dist',
     workbox: {
-      globDirectory: 'dist', // needed for aab
+      // globDirectory: 'dist',
       navigateFallback: '/',
       globPatterns: ['**/*.{js,css,html,json,md,svg,webp,ico,png,jpg}'],
       globIgnores: ['google*.html'],
