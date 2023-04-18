@@ -77,13 +77,13 @@
       "name": "Evangelier",
       "description": "Dr. Martin Luthers utleggelse av evangelieteksten.",
       "url": "/list?tags=Evangelium&category=Alle&series=Alle",
-      "icons": [{ "src": "/img/pwa/96.ico", "sizes": "96x96" }]
+      "icons": [{ "src": "/img/pwa/96.jpg", "sizes": "96x96" }]
     },
     {
       "name": "Epistler",
       "description": "Dr. Martin Luthers utleggelse av epistelteksten.",
       "url": "/list?tags=Epistel&category=Alle&series=Alle",
-      "icons": [{ "src": "/img/pwa/96.ico", "sizes": "96x96" }]
+      "icons": [{ "src": "/img/pwa/96.jpg", "sizes": "96x96" }]
     }
   ],
   "screenshots": [
