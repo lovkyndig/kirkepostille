@@ -73,7 +73,7 @@ const InputListener = function (event: KeyboardEvent) {
       FIND
     </button>
     <img
-      src="/svg/arrow-down.svg"
+      src="/img/svg/arrow-down.svg"
       alt="find next"
       width="50"
       height="50"
