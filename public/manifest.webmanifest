@@ -17,6 +17,12 @@
       "type": "image/jpg",
       "purpose": "any"
     },
+     {
+      "src": "img/aab/64.jpg",
+      "sizes": "64x64",
+      "type": "image/jpg",
+      "purpose": "maskable"
+    },
     {
       "src": "img/aab/384.jpg",
       "sizes": "384x384",
@@ -24,22 +30,46 @@
       "purpose": "any"
     },
     {
+      "src": "img/aab/384.jpg",
+      "sizes": "384x384",
+      "type": "image/jpg",
+      "purpose": "maskable"
+    },
+    {
       "src": "img/pwa/144.webp",
       "sizes": "144x144",
       "type": "image/webp",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "img/pwa/144.webp",
+      "sizes": "144x144",
+      "type": "image/webp",
+      "purpose": "maskable"
     },
     {
       "src": "img/pwa/192.webp",
       "sizes": "192x192",
       "type": "image/webp",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "img/pwa/192.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "maskable"
     },
     {
       "src": "img/pwa/512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "img/pwa/512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
    "shortcuts": [
@@ -99,5 +129,6 @@
       "platform": "wide",
       "label": "List of pages from Kirkepostille"
     }
-  ]
+  ],
+  "lang": "dk"
 }
