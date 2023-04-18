@@ -97,7 +97,7 @@ export default defineNuxtConfig({
   ],
   nitro: {
     prerender: {
-      routes: ['/rss.xml', '/sitemap.xml', '/']
+      routes: ['/rss.xml', '/sitemap.xml', '/', '/about', '/article/vejledning']
     }
   },
   vite: {
@@ -110,7 +110,9 @@ export default defineNuxtConfig({
     strategies: 'generateSW',
     injectRegister: 'auto',
     registerType: 'autoUpdate',
+    outDir: 'dist', // needed for aab
     workbox: {
+      globDirectory: 'dist', // needed for aab
       navigateFallback: '/',
       globPatterns: ['**/*.{js,css,html,json,md,svg,webp,ico,png,jpg}'],
       globIgnores: ['google*.html'],
