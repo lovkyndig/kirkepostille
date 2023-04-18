@@ -5,7 +5,7 @@ Kirkepostil is an clone of [`BlogiNote`](https://github.com/Benbinbin/BlogiNote)
 
 Everyone write about the setup in the readme-file, read about it everywhere, or google about it.
 
-## Page Load Analyze = 5x100%
+## Page Load Analyze = 4x100%
 - 100% Health Score on [ahrefs](https://app.ahrefs.com/)
 - Lighthouse report gave 4 x 100% _(img above)_ on Accessibility, Best Practices[^1], SEO and PWA[^2] (Progressive Web App)
 

@@ -97,7 +97,7 @@ export default defineNuxtConfig({
   ],
   nitro: {
     prerender: {
-      routes: ['/rss.xml', '/sitemap.xml', '/', '/about', '/article/vejledning']
+      routes: ['/rss.xml', '/sitemap.xml', '/', '/about.md', '/article/vejledning.md']
     }
   },
   vite: {

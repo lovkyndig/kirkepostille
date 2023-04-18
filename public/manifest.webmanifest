@@ -143,8 +143,8 @@
   "scope": "/",
   "lang": "da",
   "dir": "ltr",
-  "related_applications": [],
   "prefer_related_applications": false,
+  "related_applications": [],
   "display_override": ["window-controls-overlay"],
   "categories": ["books", "education", "medical"],
   "features": ["Cross Platform", "fast", "simple"]
