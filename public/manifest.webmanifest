@@ -2,15 +2,22 @@
   "name": "Kirkepostille",
   "short_name": "Kirkepostil",
   "description": "Dr. Martin Luthers kirkepostille, ca. 1743 sider.",
-  "categories": ["books", "education", "medical"],
+  "start_url": "/",
   "theme_color": "#f9fafb",
   "background_color": "#f9fafb",
-  "display": "minimal-ui",
   "orientation": "any",
-  "start_url": "/",
-  "id": "/",
-  "scope": "/",
+  "display": "minimal-ui",
   "icons": [
+    {
+      "src": "img/aab/24.jpg",
+      "sizes": "24x24",
+      "type": "image/jpg"
+    },
+    {
+      "src": "img/aab/48.jpg",
+      "sizes": "48x48",
+      "type": "image/jpg"
+    },
     {
       "src": "img/aab/64.jpg",
       "sizes": "64x64",
@@ -75,12 +82,14 @@
    "shortcuts": [
     {
       "name": "Evangelier",
+      "short_name": "Evangelium",
       "description": "Dr. Martin Luthers utleggelse av evangelieteksten.",
       "url": "/list?tags=Evangelium&category=Alle&series=Alle",
       "icons": [{ "src": "/img/pwa/96.jpg", "sizes": "96x96" }]
     },
     {
       "name": "Epistler",
+      "short_name": "Epistel",
       "description": "Dr. Martin Luthers utleggelse av epistelteksten.",
       "url": "/list?tags=Epistel&category=Alle&series=Alle",
       "icons": [{ "src": "/img/pwa/96.jpg", "sizes": "96x96" }]
@@ -130,5 +139,12 @@
       "label": "List of pages from Kirkepostille"
     }
   ],
-  "lang": "da"
+  "id": "/",
+  "scope": "/",
+  "lang": "da",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "display_override": ["window-controls-overlay"],
+  "categories": ["books", "education", "medical"],
+  "features": ["Cross Platform", "fast", "simple"]
 }

@@ -112,7 +112,7 @@ export default defineNuxtConfig({
     registerType: 'autoUpdate',
     workbox: {
       navigateFallback: '/',
-      globPatterns: ['**/*.{js,css,html,svg,webp,ico,png,jpg,md}'],
+      globPatterns: ['**/*.{js,css,html,json,md,svg,webp,ico,png,jpg}'],
       globIgnores: ['google*.html'],
       cleanupOutdatedCaches: true,
       runtimeCaching: [
