@@ -2,3 +2,4 @@ node_modules
 .nuxt
 .output
 yarn.lock
+signing-key-info.txt
