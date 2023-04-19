@@ -1,0 +1,239 @@
+Initialized native services in: C:\Users\g9022\.gradle\native
+Found daemon DaemonInfo{pid=13208, address=[566d2292-da66-48d2-986b-cee5fe39072e port:52642, addresses:[/127.0.0.1]], state=Idle, lastBusy=1681903888280, context=DefaultDaemonContext[uid=69dc6e7f-44cf-4234-8f25-83197ae7c809,javaHome=C:\Users\g9022\.bubblewrap\jdk\jdk-11.0.9.1+1,daemonRegistryDir=C:\Users\g9022\.gradle\daemon,pid=13208,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-Xmx1536m,-Dfile.encoding=UTF-8,-Duser.country=GB,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+At least one daemon option is different.
+Wanted: DefaultDaemonContext[uid=null,javaHome=C:\Users\g9022\.bubblewrap\jdk\jdk-11.0.9.1+1,daemonRegistryDir=C:\Users\g9022\.gradle\daemon,pid=17120,idleTimeout=null,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-Xmx1536m,-Dfile.encoding=windows-1252,-Duser.country=GB,-Duser.language=en,-Duser.variant]
+Actual: DefaultDaemonContext[uid=69dc6e7f-44cf-4234-8f25-83197ae7c809,javaHome=C:\Users\g9022\.bubblewrap\jdk\jdk-11.0.9.1+1,daemonRegistryDir=C:\Users\g9022\.gradle\daemon,pid=13208,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-Xmx1536m,-Dfile.encoding=UTF-8,-Duser.country=GB,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 7332). The daemon log file: C:\Users\g9022\.gradle\daemon\6.5\daemon-7332.out.log
+Starting 5th build in daemon [uptime: 35 mins 32.725 secs, performance: 99%]
+Using 8 worker leases.
+Starting Build
+Settings evaluated using settings file 'E:\Github\kirkepostille\settings.gradle'.
+Projects loaded. Root project using build file 'E:\Github\kirkepostille\build.gradle'.
+Included projects: [root project 'kirkepostille', project ':app']
+
+> Configure project :
+Evaluating root project 'kirkepostille' using build file 'E:\Github\kirkepostille\build.gradle'.
+Invalidating in-memory cache of C:\Users\g9022\.gradle\caches\journal-1\file-access.bin
+Invalidating in-memory cache of C:\Users\g9022\.gradle\caches\6.5\fileHashes\fileHashes.bin
+Invalidating in-memory cache of C:\Users\g9022\.gradle\caches\6.5\fileHashes\resourceHashesCache.bin
+
+> Configure project :app
+Evaluating project ':app' using build file 'E:\Github\kirkepostille\app\build.gradle'.
+Creating configuration androidTestUtil
+Parsed shrinker version: 2.1.86
+All projects evaluated.
+Selected primary task 'bundleRelease' from project :
+Configuring Java sources compilation with source level 1.8 and target level 1.8.
+Tasks to be executed: [task ':app:generateShorcutsFile', task ':app:preBuild', task ':app:extractProguardFiles', task ':app:preReleaseBuild', task ':app:compileReleaseRenderscript', task ':app:generateReleaseResValues', task ':app:generateReleaseResources', task ':app:mergeReleaseResources', task ':app:createReleaseCompatibleScreenManifests', task ':app:extractDeepLinksRelease', task ':app:processReleaseMainManifest', task ':app:processReleaseManifest', task ':app:processApplicationManifestReleaseForBundle', task ':app:bundleReleaseResources', task ':app:mergeReleaseShaders', task ':app:compileReleaseShaders', task ':app:generateReleaseAssets', task ':app:mergeReleaseAssets', task ':app:checkReleaseDuplicateClasses', task ':app:compileReleaseAidl', task ':app:generateReleaseBuildConfig', task ':app:javaPreCompileRelease', task ':app:checkReleaseAarMetadata', task ':app:processReleaseManifestForPackage', task ':app:processReleaseResources', task ':app:compileReleaseJavaWithJavac', task ':app:mergeReleaseGeneratedProguardFiles', task ':app:processReleaseJavaRes', task ':app:mergeReleaseJavaResource', task ':app:minifyReleaseWithR8', task ':app:mergeReleaseJniLibFolders', task ':app:mergeReleaseNativeLibs', task ':app:stripReleaseDebugSymbols', task ':app:buildReleasePreBundle', task ':app:collectReleaseDependencies', task ':app:configureReleaseDependencies', task ':app:parseReleaseIntegrityConfig', task ':app:packageReleaseBundle', task ':app:signReleaseBundle', task ':app:bundleRelease']
+Tasks that were excluded: []
+:app:generateShorcutsFile (Thread[Execution worker for ':',5,main]) started.
+
+> Task :app:generateShorcutsFile UP-TO-DATE
+Task :app:generateShorcutsFile in app Starting
+Skipping task ':app:generateShorcutsFile' as it has no actions.
+Task :app:generateShorcutsFile in app Finished
+:app:generateShorcutsFile (Thread[Execution worker for ':',5,main]) completed. Took 0.008 secs.
+:app:preBuild (Thread[Execution worker for ':',5,main]) started.
+
+> Task :app:preBuild UP-TO-DATE
+Task :app:preBuild in app Starting
+Skipping task ':app:preBuild' as it has no actions.
+Task :app:preBuild in app Finished
+:app:preBuild (Thread[Execution worker for ':',5,main]) completed. Took 0.0 secs.
+:app:extractProguardFiles (Thread[Execution worker for ':',5,main]) started.
+
+> Task :app:extractProguardFiles UP-TO-DATE
+Task :app:extractProguardFiles in app Starting
+Caching disabled for task ':app:extractProguardFiles' because:
+  Build cache is disabled
+Skipping task ':app:extractProguardFiles' as it is up-to-date.
+Task :app:extractProguardFiles in app Finished
+:app:extractProguardFiles (Thread[Execution worker for ':',5,main]) completed. Took 0.002 secs.
+:app:preReleaseBuild (Thread[Execution worker for ':',5,main]) started.
+
+> Task :app:preReleaseBuild UP-TO-DATE
+Task :app:preReleaseBuild in app Starting
+Skipping task ':app:preReleaseBuild' as it has no actions.
+Task :app:preReleaseBuild in app Finished
+:app:preReleaseBuild (Thread[Execution worker for ':',5,main]) completed. Took 0.0 secs.
+:app:compileReleaseRenderscript (Thread[Execution worker for ':',5,main]) started.
+
+> Task :app:compileReleaseRenderscript NO-SOURCE
+Task :app:compileReleaseRenderscript in app Starting
+file or directory 'E:\Github\kirkepostille\app\src\main\rs', not found
+file or directory 'E:\Github\kirkepostille\app\src\release\rs', not found
+Skipping task ':app:compileReleaseRenderscript' as it has no source files and no previous output files.
+Task :app:compileReleaseRenderscript in app Finished
+:app:compileReleaseRenderscript (Thread[Execution worker for ':',5,main]) completed. Took 0.001 secs.
+:app:generateReleaseResValues (Thread[Execution worker for ':',5,main]) started.
+
+> Task :app:generateReleaseResValues UP-TO-DATE
+Task :app:generateReleaseResValues in app Starting
+Caching disabled for task ':app:generateReleaseResValues' because:
+  Build cache is disabled
+Skipping task ':app:generateReleaseResValues' as it is up-to-date.
+Task :app:generateReleaseResValues in app Finished
+:app:generateReleaseResValues (Thread[Execution worker for ':',5,main]) completed. Took 0.002 secs.
+:app:generateReleaseResources (Thread[Execution worker for ':',5,main]) started.
+
+> Task :app:generateReleaseResources UP-TO-DATE
+Task :app:generateReleaseResources in app Starting
+Skipping task ':app:generateReleaseResources' as it has no actions.
+Task :app:generateReleaseResources in app Finished
+:app:generateReleaseResources (Thread[Execution worker for ':',5,main]) completed. Took 0.0 secs.
+:app:mergeReleaseResources (Thread[Execution worker for ':',5,main]) started.
+
+> Task :app:mergeReleaseResources UP-TO-DATE
+Task :app:mergeReleaseResources in app Starting
+file or directory 'E:\Github\kirkepostille\app\libs', not found
+Transforming artifact browser-1.4.0.aar (androidx.browser:browser:1.4.0) with IdentityTransform
+Transforming artifact androidbrowserhelper-2.4.0.aar (com.google.androidbrowserhelper:androidbrowserhelper:2.4.0) with IdentityTransform
+Transforming artifact interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with IdentityTransform
+Transforming artifact core-1.1.0.aar (androidx.core:core:1.1.0) with IdentityTransform
+Transforming artifact lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with IdentityTransform
+Transforming artifact versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with IdentityTransform
+Caching disabled for IdentityTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\androidx.versionedparcelable\versionedparcelable\1.1.0\91acce73e00a17b524f6697f6c3893efb8ea349f\versionedparcelable-1.1.0.aar because:
+  Build cache is disabled
+Caching disabled for IdentityTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\com.google.androidbrowserhelper\androidbrowserhelper\2.4.0\b9d1fdf2c3f2824abb594cb4b5ffe8f7bb126bba\androidbrowserhelper-2.4.0.aar because:
+  Build cache is disabled
+Caching disabled for IdentityTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-runtime\2.0.0\ea27e9e79e9a0fbedfa4dbbef5ddccf0e1d9d73f\lifecycle-runtime-2.0.0.aar because:
+  Build cache is disabled
+Caching disabled for IdentityTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\androidx.browser\browser\1.4.0\403c3cf31622ec0c70b3c0633be3e903c8062104\browser-1.4.0.aar because:
+  Build cache is disabled
+Caching disabled for IdentityTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\androidx.interpolator\interpolator\1.0.0\8a01fa254a23b9388571eb6334b03707c7d122d7\interpolator-1.0.0.aar because:
+  Build cache is disabled
+Skipping IdentityTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\androidx.browser\browser\1.4.0\403c3cf31622ec0c70b3c0633be3e903c8062104\browser-1.4.0.aar as it is up-to-date.
+Caching disabled for IdentityTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\androidx.core\core\1.1.0\b9addd897d6b9c8634fe789bdb82f993171432ae\core-1.1.0.aar because:
+  Build cache is disabled
+Skipping IdentityTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\androidx.interpolator\interpolator\1.0.0\8a01fa254a23b9388571eb6334b03707c7d122d7\interpolator-1.0.0.aar as it is up-to-date.
+Skipping IdentityTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-runtime\2.0.0\ea27e9e79e9a0fbedfa4dbbef5ddccf0e1d9d73f\lifecycle-runtime-2.0.0.aar as it is up-to-date.
+Skipping IdentityTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\com.google.androidbrowserhelper\androidbrowserhelper\2.4.0\b9d1fdf2c3f2824abb594cb4b5ffe8f7bb126bba\androidbrowserhelper-2.4.0.aar as it is up-to-date.
+Skipping IdentityTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\androidx.versionedparcelable\versionedparcelable\1.1.0\91acce73e00a17b524f6697f6c3893efb8ea349f\versionedparcelable-1.1.0.aar as it is up-to-date.
+Skipping IdentityTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\androidx.core\core\1.1.0\b9addd897d6b9c8634fe789bdb82f993171432ae\core-1.1.0.aar as it is up-to-date.
+Transforming artifact interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with ExtractAarTransform
+Transforming artifact versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with ExtractAarTransform
+Transforming artifact lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with ExtractAarTransform
+Transforming artifact browser-1.4.0.aar (androidx.browser:browser:1.4.0) with ExtractAarTransform
+Transforming artifact androidbrowserhelper-2.4.0.aar (com.google.androidbrowserhelper:androidbrowserhelper:2.4.0) with ExtractAarTransform
+Transforming artifact core-1.1.0.aar (androidx.core:core:1.1.0) with ExtractAarTransform
+Caching disabled for ExtractAarTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-runtime\2.0.0\ea27e9e79e9a0fbedfa4dbbef5ddccf0e1d9d73f\lifecycle-runtime-2.0.0.aar because:
+  Build cache is disabled
+Skipping ExtractAarTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-runtime\2.0.0\ea27e9e79e9a0fbedfa4dbbef5ddccf0e1d9d73f\lifecycle-runtime-2.0.0.aar as it is up-to-date.
+Caching disabled for ExtractAarTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\androidx.interpolator\interpolator\1.0.0\8a01fa254a23b9388571eb6334b03707c7d122d7\interpolator-1.0.0.aar because:
+  Build cache is disabled
+Transforming artifact lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarTransform
+Skipping ExtractAarTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\androidx.interpolator\interpolator\1.0.0\8a01fa254a23b9388571eb6334b03707c7d122d7\interpolator-1.0.0.aar as it is up-to-date.
+Transforming artifact interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+Caching disabled for ExtractAarTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\androidx.versionedparcelable\versionedparcelable\1.1.0\91acce73e00a17b524f6697f6c3893efb8ea349f\versionedparcelable-1.1.0.aar because:
+  Build cache is disabled
+Caching disabled for AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\1fed12a61eaf3956026778ada29c2705\lifecycle-runtime-2.0.0 because:
+  Build cache is disabled
+Skipping ExtractAarTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\androidx.versionedparcelable\versionedparcelable\1.1.0\91acce73e00a17b524f6697f6c3893efb8ea349f\versionedparcelable-1.1.0.aar as it is up-to-date.
+Caching disabled for ExtractAarTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\com.google.androidbrowserhelper\androidbrowserhelper\2.4.0\b9d1fdf2c3f2824abb594cb4b5ffe8f7bb126bba\androidbrowserhelper-2.4.0.aar because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\1fed12a61eaf3956026778ada29c2705\lifecycle-runtime-2.0.0 as it is up-to-date.
+Skipping ExtractAarTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\com.google.androidbrowserhelper\androidbrowserhelper\2.4.0\b9d1fdf2c3f2824abb594cb4b5ffe8f7bb126bba\androidbrowserhelper-2.4.0.aar as it is up-to-date.
+Caching disabled for AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\722883bbeda4a23af2c332d7342ff3d3\interpolator-1.0.0 because:
+  Build cache is disabled
+Transforming artifact androidbrowserhelper-2.4.0.aar (com.google.androidbrowserhelper:androidbrowserhelper:2.4.0) with AarTransform
+Skipping AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\722883bbeda4a23af2c332d7342ff3d3\interpolator-1.0.0 as it is up-to-date.
+Transforming artifact versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with AarTransform
+Caching disabled for AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\2a4780e5ae3e94fb64dd0623d9799b3d\androidbrowserhelper-2.4.0 because:
+  Build cache is disabled
+Caching disabled for AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\90ecde5404179819368e2359ab771b50\versionedparcelable-1.1.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\2a4780e5ae3e94fb64dd0623d9799b3d\androidbrowserhelper-2.4.0 as it is up-to-date.
+Skipping AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\90ecde5404179819368e2359ab771b50\versionedparcelable-1.1.0 as it is up-to-date.
+Caching disabled for ExtractAarTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\androidx.browser\browser\1.4.0\403c3cf31622ec0c70b3c0633be3e903c8062104\browser-1.4.0.aar because:
+  Build cache is disabled
+Skipping ExtractAarTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\androidx.browser\browser\1.4.0\403c3cf31622ec0c70b3c0633be3e903c8062104\browser-1.4.0.aar as it is up-to-date.
+Transforming artifact browser-1.4.0.aar (androidx.browser:browser:1.4.0) with AarTransform
+Caching disabled for AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\b76183546e9802347e4b2c9dd5e9649b\browser-1.4.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\b76183546e9802347e4b2c9dd5e9649b\browser-1.4.0 as it is up-to-date.
+Caching disabled for ExtractAarTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\androidx.core\core\1.1.0\b9addd897d6b9c8634fe789bdb82f993171432ae\core-1.1.0.aar because:
+  Build cache is disabled
+Skipping ExtractAarTransform: C:\Users\g9022\.gradle\caches\modules-2\files-2.1\androidx.core\core\1.1.0\b9addd897d6b9c8634fe789bdb82f993171432ae\core-1.1.0.aar as it is up-to-date.
+Transforming artifact core-1.1.0.aar (androidx.core:core:1.1.0) with AarTransform
+Caching disabled for AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\e601daed4ba62929db8b322b2974c8f8\core-1.1.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\e601daed4ba62929db8b322b2974c8f8\core-1.1.0 as it is up-to-date.
+Caching disabled for task ':app:mergeReleaseResources' because:
+  Build cache is disabled
+Skipping task ':app:mergeReleaseResources' as it is up-to-date.
+Task :app:mergeReleaseResources in app Finished
+:app:mergeReleaseResources (Thread[Execution worker for ':',5,main]) completed. Took 0.076 secs.
+:app:createReleaseCompatibleScreenManifests (Thread[Execution worker for ':',5,main]) started.
+
+> Task :app:createReleaseCompatibleScreenManifests UP-TO-DATE
+Task :app:createReleaseCompatibleScreenManifests in app Starting
+Caching disabled for task ':app:createReleaseCompatibleScreenManifests' because:
+  Build cache is disabled
+Skipping task ':app:createReleaseCompatibleScreenManifests' as it is up-to-date.
+Task :app:createReleaseCompatibleScreenManifests in app Finished
+:app:createReleaseCompatibleScreenManifests (Thread[Execution worker for ':',5,main]) completed. Took 0.001 secs.
+:app:extractDeepLinksRelease (Thread[Execution worker for ':',5,main]) started.
+
+> Task :app:extractDeepLinksRelease UP-TO-DATE
+Task :app:extractDeepLinksRelease in app Starting
+Caching disabled for task ':app:extractDeepLinksRelease' because:
+  Build cache is disabled
+Skipping task ':app:extractDeepLinksRelease' as it is up-to-date.
+Task :app:extractDeepLinksRelease in app Finished
+:app:extractDeepLinksRelease (Thread[Execution worker for ':',5,main]) completed. Took 0.001 secs.
+:app:processReleaseMainManifest (Thread[Execution worker for ':',5,main]) started.
+
+> Task :app:processReleaseMainManifest UP-TO-DATE
+Task :app:processReleaseMainManifest in app Starting
+file or directory 'E:\Github\kirkepostille\app\libs', not found
+Transforming artifact androidbrowserhelper-2.4.0.aar (com.google.androidbrowserhelper:androidbrowserhelper:2.4.0) with IdentityTransform
+Transforming artifact androidbrowserhelper-2.4.0.aar (com.google.androidbrowserhelper:androidbrowserhelper:2.4.0) with ExtractAarTransform
+Transforming artifact androidbrowserhelper-2.4.0.aar (com.google.androidbrowserhelper:androidbrowserhelper:2.4.0) with AarTransform
+Transforming artifact browser-1.4.0.aar (androidx.browser:browser:1.4.0) with IdentityTransform
+Transforming artifact browser-1.4.0.aar (androidx.browser:browser:1.4.0) with ExtractAarTransform
+Transforming artifact browser-1.4.0.aar (androidx.browser:browser:1.4.0) with AarTransform
+Transforming artifact core-1.1.0.aar (androidx.core:core:1.1.0) with IdentityTransform
+Transforming artifact core-1.1.0.aar (androidx.core:core:1.1.0) with ExtractAarTransform
+Transforming artifact core-1.1.0.aar (androidx.core:core:1.1.0) with AarTransform
+Transforming artifact versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with IdentityTransform
+Transforming artifact versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with ExtractAarTransform
+Transforming artifact versionedparcelable-1.1.0.aar (androidx.versionedparcelable:versionedparcelable:1.1.0) with AarTransform
+Transforming artifact interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with IdentityTransform
+Transforming artifact interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with ExtractAarTransform
+Transforming artifact interpolator-1.0.0.aar (androidx.interpolator:interpolator:1.0.0) with AarTransform
+Transforming artifact lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with IdentityTransform
+Transforming artifact lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with ExtractAarTransform
+Transforming artifact lifecycle-runtime-2.0.0.aar (androidx.lifecycle:lifecycle-runtime:2.0.0) with AarTransform
+Caching disabled for AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\2a4780e5ae3e94fb64dd0623d9799b3d\androidbrowserhelper-2.4.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\2a4780e5ae3e94fb64dd0623d9799b3d\androidbrowserhelper-2.4.0 as it is up-to-date.
+Caching disabled for AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\722883bbeda4a23af2c332d7342ff3d3\interpolator-1.0.0 because:
+  Build cache is disabled
+Caching disabled for AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\1fed12a61eaf3956026778ada29c2705\lifecycle-runtime-2.0.0 because:
+  Build cache is disabled
+Caching disabled for AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\b76183546e9802347e4b2c9dd5e9649b\browser-1.4.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\722883bbeda4a23af2c332d7342ff3d3\interpolator-1.0.0 as it is up-to-date.
+Skipping AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\1fed12a61eaf3956026778ada29c2705\lifecycle-runtime-2.0.0 as it is up-to-date.
+Skipping AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\b76183546e9802347e4b2c9dd5e9649b\browser-1.4.0 as it is up-to-date.
+Caching disabled for AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\e601daed4ba62929db8b322b2974c8f8\core-1.1.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\e601daed4ba62929db8b322b2974c8f8\core-1.1.0 as it is up-to-date.
+Caching disabled for AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\90ecde5404179819368e2359ab771b50\versionedparcelable-1.1.0 because:
+  Build cache is disabled
+Skipping AarTransform: C:\Users\g9022\.gradle\caches\transforms-2\files-2.1\90ecde5404179819368e2359ab771b50\versionedparcelable-1.1.0 as it is up-to-date.
+file or directory 'E:\Github\kirkepostille\app\libs', not found
+Caching disabled for task ':app:processReleaseMainManifest' because:
+  Build cache is disabled
+Skipping task ':app:processReleaseMainManifest' as it is up-to-date.
+Task :app:processReleaseMainManifest in app Finished
+:app:processReleaseMainManifest (Thread[Execution worker for ':',5,main]) completed. Took 0.008 secs.
+:app:processReleaseManifest (Thread[Execution worker for ':',5,main]) started.
+
+> Task :app:processReleaseManifest FAILED
+Task :app:processReleaseManifest in app Starting
+Task :app:processReleaseManifest in app Finished
+:app:processReleaseManifest (Thread[Execution worker for ':',5,main]) completed. Took 0.001 secs.
+7 actionable tasks: 1 executed, 6 up-to-date

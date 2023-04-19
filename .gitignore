@@ -3,3 +3,17 @@ node_modules
 .output
 yarn.lock
 signing-key-info.txt
+.gradle
+app/src
+app/build
+app/build.gradle
+build.gradle
+gradle
+gradle.properties
+gradlew
+gradlew.bat
+settings.gradle
+manifest-checksum.txt
+store_icon.png
+twa-manifest.json
+.well-known/guide
