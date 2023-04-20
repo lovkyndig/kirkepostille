@@ -1,5 +1,4 @@
 node_modules
-yarn.lock
 .nuxt
 .output
 .well-known/guide
