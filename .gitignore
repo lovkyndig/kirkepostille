@@ -1,7 +1,10 @@
+logg.txt
 node_modules
+yarn.lock
 .nuxt
 .output
-.well-known/guide
+.well-known/Link2PWABuilder.url
+.well-known/bubblewrap-guide
 .gradle
 app/src
 app/build
@@ -16,3 +19,7 @@ settings.gradle
 signing-key-info.txt
 store_icon.png
 twa-manifest.json
+app-release-bundle.aab
+app-release-signed.apk
+app-release-signed.apk.idsig
+app-release-unsigned-aligned.apk
