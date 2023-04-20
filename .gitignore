@@ -1,8 +1,8 @@
 node_modules
+yarn.lock
 .nuxt
 .output
-yarn.lock
-signing-key-info.txt
+.well-known/guide
 .gradle
 app/src
 app/build
@@ -12,8 +12,8 @@ gradle
 gradle.properties
 gradlew
 gradlew.bat
-settings.gradle
 manifest-checksum.txt
+settings.gradle
+signing-key-info.txt
 store_icon.png
 twa-manifest.json
-.well-known/guide
