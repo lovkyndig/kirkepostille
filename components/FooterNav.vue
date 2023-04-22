@@ -155,6 +155,7 @@ const showSearchModal = useShowSearchModal()
           >
             {{ constants.nav.about.echo }}
           </NuxtLink>
+          <!--
           <NuxtLink
             :to="constants.list.evangelie_list1"
             class="option-item"
@@ -173,8 +174,8 @@ const showSearchModal = useShowSearchModal()
           >
             Epistler
           </NuxtLink>
+          -->
           <!-- -->
-          <!--
           <NuxtLink
             v-if="constants.subscribePage"
             :to="constants.nav.subscribe.link"
@@ -184,7 +185,6 @@ const showSearchModal = useShowSearchModal()
           >
             {{ constants.nav.subscribe.echo }}
           </NuxtLink>
-          -->
         </div>
       </Transition>
 

@@ -21,7 +21,7 @@ const config = useRuntimeConfig()
                 <CopyContent
                   :content="`${config.public.hostname}/rss.xml`"
                   :icon-name="'fa-solid:rss-square'"
-                  :icon-color-class="'text-orange-400'"
+                  :icon-color-class="'text-orange-900'"
                   :icon-size-class="'w-6 h-6'"
                 />
                 <NuxtLink
@@ -38,7 +38,7 @@ const config = useRuntimeConfig()
                 <CopyContent
                   :content="`${config.public.hostname}/sitemap.xml`"
                   :icon-name="'majesticons:sitemap'"
-                  :icon-color-class="'text-purple-400'"
+                  :icon-color-class="'text-purple-900'"
                   :icon-size-class="'w-6 h-6'"
                 />
                 <NuxtLink
@@ -49,6 +49,25 @@ const config = useRuntimeConfig()
                 >
                   {{ constants.nav.subscribe.sitemap }}
                 </NuxtLink>
+              </div>
+
+              <div class="flex items-center gap-2">
+                <!--
+                <CopyContent
+                  :content="`${config.public.hostname}/privacy.txt`"
+                  :icon-name="'iconoir:privacy-policy'"
+                  :icon-color-class="'text-purple-900'"
+                  :icon-size-class="'w-6 h-6'"
+                />
+                -->
+                <a
+                  href="/privacy.txt"
+                  target="_blank"
+                  aria-label="privacy.txt"
+                  class="text-blue-500 hover:text-blue-600 transition-colors duration-300"
+                >
+                  Privacy Policy
+                </a>
               </div>
             </div>
           </div>

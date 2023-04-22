@@ -57,6 +57,9 @@ copyContentFiles('content', 'public', ['.md', '.json', '.csv'])
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   // https://content.nuxtjs.org
+  routeRules: {
+    '/privacy.txt': { prerender: true }
+  },
   content: {
     navigation: {
       fields: ['_id', '_type', 'series', 'tags']
@@ -97,7 +100,10 @@ export default defineNuxtConfig({
   ],
   nitro: {
     prerender: {
-      routes: ['/rss.xml', '/sitemap.xml', '/', '/about.md', '/article/vejledning.md']
+      routes: [
+        '/rss.xml', '/sitemap.xml', '/robots.txt', '/privacy.txt',
+        '/', '/about.md', '/article/vejledning.md'
+      ]
     }
   },
   vite: {
@@ -114,7 +120,7 @@ export default defineNuxtConfig({
     workbox: {
       // globDirectory: 'dist',
       navigateFallback: '/',
-      globPatterns: ['**/*.{js,css,html,json,md,svg,webp,ico,png,jpg}'],
+      globPatterns: ['**/*.{js,css,html,json,md,txt,svg,webp,ico,png,jpg}'],
       globIgnores: ['google*.html'],
       cleanupOutdatedCaches: true,
       runtimeCaching: [

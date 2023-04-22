@@ -123,6 +123,7 @@ const showSearchModal = useShowSearchModal()
         >
           {{ constants.nav.about.echo }}
         </NuxtLink>
+        <!--
         <NuxtLink
           :to="constants.list.evangelie_list1"
           class="btn"
@@ -139,17 +140,16 @@ const showSearchModal = useShowSearchModal()
         >
           Epistler
         </NuxtLink>
+        -->
         <!-- -->
-        <!--
         <NuxtLink
           v-if="constants.subscribePage"
           :to="constants.nav.subscribe.link"
           class="btn"
-          :class="flexiMode === 'blog' ? 'text-purple-500 hover:bg-purple-100' : 'text-green-500 hover:bg-green-100'"
+          :class="flexiMode === 'blog' ? 'text-purple-700 hover:bg-purple-100' : 'text-green-500 hover:bg-green-100'"
         >
           {{ constants.nav.subscribe.echo }}
         </NuxtLink>
-        -->
       </div>
       <div class="flex justify-end items-center gap-4">
         <!-- top search button -->
