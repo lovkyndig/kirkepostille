@@ -14,6 +14,8 @@ Everyone write about the setup in the readme-file, read about it everywhere, or 
 This is the capture from the screen[^3], on keypress ` Ctrl + Shift + I`, from the frontpage in Kirkepostille. Then click on the button `Analyze Page load`, and see the results with your own eyes.
 
 ## To do-list (personal notes)
+- Update to the latest Bloginote-theme.
+- Move bubblewrap build from root to antoher folder.
 - The find-function shows the first place in the modal-window, but skip the first place in the article if more than one hit.
 - MD-files in offline-mode (in public-folder)
 - Insert translate-option before search (from Norwegian to Danish)
@@ -35,4 +37,4 @@ This is the capture from the screen[^3], on keypress ` Ctrl + Shift + I`, from t
 [^1]: Best Practices give one error on all nuxt3-homepages [per 14.04.2023](https://github.com/nuxt/nuxt/discussions/20262). Nothing wrong widt the code in the GitHub-repo.
 [^2]: _Content is sized correctly for the viewport_ give somethimes error. I have tried to fix this in app.vue (width the function widthCheck), but am unsure of the effect.
 [^3]: Notice only 1 blue issue on the frontpage.
-[^4]: Updated 15.April 2023
+[^4]: Updated 24.April 2023

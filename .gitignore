@@ -6,6 +6,7 @@ yarn.lock
 .well-known/Link2PWABuilder.url
 .well-known/bubblewrap-guide
 .gradle
+assetlinks.json
 app/src
 app/build
 app/build.gradle
