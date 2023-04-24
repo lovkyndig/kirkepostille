@@ -8,7 +8,7 @@ export const variables = {
     apple: '/img/180.jpg',
     listview: '/img/listview.png',
     frontpage: '/img/frontpage.png',
-    author: 'Gudsbarn'
+    author: 'Eleison'
   },
   subscribePage: true,
   homePage: {

@@ -1,6 +1,6 @@
 {
-  "name": "bibelkommentar",
-  "version": "0.3.8-rc.13",
+  "name": "kirkepostille",
+  "version": "0.3.8-rc.14",
   "description": "⚡A book from 1888 with 1743 pages, converted to Nuxt content, implemented with pagefind.",
   "homepage": "https://kirkepostille.vercel.app",
   "author": "lovkyndig",
