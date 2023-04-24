@@ -17,6 +17,7 @@ gradlew.bat
 manifest-checksum.txt
 settings.gradle
 signing-key-info.txt
+signing.keystore
 store_icon.png
 twa-manifest.json
 app-release-bundle.aab
