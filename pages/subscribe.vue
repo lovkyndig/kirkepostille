@@ -52,22 +52,20 @@ const config = useRuntimeConfig()
               </div>
 
               <div class="flex items-center gap-2">
-                <!--
                 <CopyContent
                   :content="`${config.public.hostname}/privacy.txt`"
                   :icon-name="'iconoir:privacy-policy'"
                   :icon-color-class="'text-purple-900'"
                   :icon-size-class="'w-6 h-6'"
                 />
-                -->
-                <a
-                  href="/privacy.txt"
+                <NuxtLink
+                  to="/privacy.txt"
                   target="_blank"
                   aria-label="privacy.txt"
                   class="text-blue-500 hover:text-blue-600 transition-colors duration-300"
                 >
                   Privacy Policy
-                </a>
+                </NuxtLink>
               </div>
             </div>
           </div>
