@@ -1,9 +1,8 @@
-![Kirkepostil](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/img/100lighthouse.png)
-
 # Kirkepostil
-Kirkepostil is an clone of [`BlogiNote`](https://github.com/Benbinbin/BlogiNote) (per 2022) from [`Benbinbin`](https://github.com/Benbinbin), that is a hidden treasure, like the treasure in the Bible, hidden for the wise and prudent. Matt 11, 25.
+The Theme used in Kirkepostil is [`BlogiNote`](https://github.com/Benbinbin/BlogiNote) (per 2022) from [`Benbinbin`](https://github.com/Benbinbin), that is a hidden treasure, like the treasure in the Bible, hidden for the wise and prudent. Matt 11, 25. With my repo you can move on to `Google Play Store`, and get better Page Load Analyze:
 
-Everyone write about the setup in the readme-file, read about it everywhere, or google about it.
+| BlogiNote | Kirkepostil |
+| ![Kirkepostil](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/img/100lighthouse.jpg) | ![Kirkepostil](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/img/bloginote.jpg) |
 
 ## Page Load Analyze = 4x100%
 - 100% Health Score on [ahrefs](https://app.ahrefs.com/)

@@ -1,8 +1,9 @@
 # Personvernerklæring (GDPR)
-## Årsak til appens personvernerklæring
+## "Google Play" krever personvernerklæring
 Google's regler for publisering av apper i "Google Play Store":
 - "Apper må ha personvernregler selv om de ikke har tilgang til personlige og sensitive brukerdata."
-Sitat fra de nødvendige regelkravene hos Google.
+Sitat (på norsk) fra de nødvendige regelkravene i "Google Play Console". Engelsk version:
+- "Apps that do not access any personal and sensitive user data must still submit a privacy policy. Please add or update your privacy policy,..."
 
 ## Hva slags personopplysninger behandles?
 - Brukeraktivitet: Lese- og handlingshistorikk fra app og nettsider. Samt teknisk informasjon om enhetene de bruker.
@@ -12,10 +13,10 @@ Herettter benyttes begrepet brukeraktivitet istedenfor personopplysninger, fordi
 Formålet er todelt, (1) kontroll av uønsket/ulovlig brukeraktivitet og (2) finne grunnlag for å gjøre appen bedre for brukerne.
 
 ## Om innhenting av brukeraktivitet
-Opplysningene samles inn av "Google" og finnes i "Google Search Console" og i "Google Analytics".
+Opplysningene samles inn av "Google" og finnes i "Google Search Console" og "Google Analytics".
 - Utvikleren samler ikke inn andre opplysninger enn det som samles inn og lagres av Google.
-- Utvikleren har tilgang til denne informasjonen via hans konto på Google, fordi han kan bevise eierskap til underdomenet hvor appens pwa er utplassert (se #### Url nedenfor).
-- Utvikleren lagrer ikke brukeraktiviteten som finnes på Google' på andre steder enn i sitt eget hode.
+- Utvikleren har tilgang til denne informasjonen via hans utviklerkonto på Google, som er verifisert ved eierskap til domenet hvor PWA er utplassert (se #### Url nedenfor).
+- Utvikleren kopierer eller lagrer ikke brukeraktiviteten som finnes på Google' på andre steder.
 
 ## Juridisk ansvar
 Utvikleren erkjenner å være ansvarlig for å studere den brukeraktivitet som Google' gjør tilgjengelig for utviklerne via: 
@@ -54,4 +55,4 @@ Det klargjøres at utviklerens navn på Google Play Store er det samme som hans 
 Utvikleren er den eneste i Norge med nevnte etternavn, og fornavnet kan derfor utelates.
 
 
-Redigert: April 22, 2023
+Redigert: April 25, 2023
