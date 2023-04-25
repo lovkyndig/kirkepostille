@@ -2,7 +2,8 @@
 The Theme used in Kirkepostil is [`BlogiNote`](https://github.com/Benbinbin/BlogiNote) (per 2022) from [`Benbinbin`](https://github.com/Benbinbin), that is a hidden treasure, like the treasure in the Bible, hidden for the wise and prudent. Matt 11, 25. With my repo you can move on to `Google Play Store`, and get better Page Load Analyze:
 
 | BlogiNote | Kirkepostil |
-| ![Kirkepostil](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/img/100lighthouse.jpg) | ![Kirkepostil](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/img/bloginote.jpg) |
+| --- | --- |
+| ![](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/img/bloginote.jpg =250x) | ![](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/img/100lighthouse.jpg =250x) |
 
 ## Page Load Analyze = 4x100%
 - 100% Health Score on [ahrefs](https://app.ahrefs.com/)
@@ -11,6 +12,9 @@ The Theme used in Kirkepostil is [`BlogiNote`](https://github.com/Benbinbin/Blog
 ![Lighthouse-Metrics](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/img/lighthouse.PNG)
 
 This is the capture from the screen[^3], on keypress ` Ctrl + Shift + I`, from the frontpage in Kirkepostille. Then click on the button `Analyze Page load`, and see the results with your own eyes.
+
+## Install and setup
+Read the release notes for guide to setup this project.
 
 ## To do-list (personal notes)
 - Update to the latest Bloginote-theme.
