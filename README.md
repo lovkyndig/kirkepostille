@@ -3,7 +3,7 @@ The Theme used in Kirkepostil is [`BlogiNote`](https://github.com/Benbinbin/Blog
 
 | BlogiNote | Kirkepostil |
 | --- | --- |
-| ![](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/img/bloginote.jpg =250x) | ![](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/img/100lighthouse.jpg =250x) |
+|![](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/img/bloginote.jpg) |![](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/img/100lighthouse.jpg)|
 
 ## Page Load Analyze = 4x100%
 - 100% Health Score on [ahrefs](https://app.ahrefs.com/)
