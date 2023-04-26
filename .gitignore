@@ -3,8 +3,10 @@ node_modules
 yarn.lock
 .nuxt
 .output
-.well-known/Link2PWABuilder.url
 .well-known/bubblewrap-guide
+.well-known/Link2PWABuilder.url
+.well-known/pc-api-keys.json
+.weel-known/signing-key-info.txt
 .gradle
 assetlinks.json
 app/src
@@ -17,7 +19,6 @@ gradlew
 gradlew.bat
 manifest-checksum.txt
 settings.gradle
-signing-key-info.txt
 signing.keystore
 store_icon.png
 twa-manifest.json

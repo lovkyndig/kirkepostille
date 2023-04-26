@@ -1,9 +1,10 @@
 # Kirkepostille
-The Theme used in Kirkepostil is [`BlogiNote`](https://github.com/Benbinbin/BlogiNote) (per 2022) from [`Benbinbin`](https://github.com/Benbinbin), that is a hidden treasure, like the treasure in the Bible, hidden for the wise and prudent. Matt 11, 25. With my repo you can move on to `Google Play Store`, and get better Page Load Analyze:
+The Theme used in Kirkepostille is [`BlogiNote`](https://github.com/Benbinbin/BlogiNote) (per 2022) from [`Benbinbin`](https://github.com/Benbinbin), that is a hidden treasure, like the treasure in the Bible, hidden for the wise and prudent. Matt 11, 25. With my repo you can move on to `Google Play Store`, and get better Page Load Analyze:
 
 | BlogiNote | Kirkepostille |
 | --- | --- |
-|![](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/img/bloginote.jpg) |![](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/img/100lighthouse.jpg)|
+|![](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/img/bloginote.jpg) |![](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/img/100lighthouse.jpg)|  
+
 This is the Lighthouse report on Accessibility, Best Practices[^1], SEO and PWA[^2] (Progressive Web App). Note that [ahrefs](https://app.ahrefs.com/) test gave 100% Health Score.
 
 ![Lighthouse-Metrics](https://raw.githubusercontent.com/lovkyndig/kirkepostille/main/public/img/lighthouse.PNG)
@@ -11,7 +12,7 @@ This is the Lighthouse report on Accessibility, Best Practices[^1], SEO and PWA[
 This is the capture from the screen[^3], on keypress ` Ctrl + Shift + I`, from the frontpage in Kirkepostille. Then click on the button `Analyze Page load`, and see the results with your own eyes.
 
 ## Install and setup
-Read the release notes for guide to setup this project.
+Read the release notes for guide to setup a release.
 
 ## To do-list (personal notes)
 - Update to the latest Bloginote-theme.
