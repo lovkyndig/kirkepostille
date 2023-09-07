@@ -8,6 +8,7 @@ updated: 2023-07-16
 tags:
   - Danish
   - Evangelium
+  - 5.bud
 ---
 
 # Matt 5, 20-26 (6.søn. efter trinitatis)

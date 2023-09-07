@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Dr. Martin Luthers kirkepostille - medisin for syke sjeler!</title>
-        <link></link>
+        <link>https://kirkepostille.vercel.app</link>
         <description>Dr. Martin Luthers kirkepostille med innebygd søkemotor, per dato med det mest avanserte brukergrenesnittet for mobil og nettbrett.</description>
-        <lastBuildDate>Thu, 07 Sep 2023 06:29:09 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 07 Sep 2023 07:02:21 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
             <title>Dr. Martin Luthers kirkepostille - medisin for syke sjeler!</title>
-            <url>/img/180.jpg</url>
-            <link></link>
+            <url>https://kirkepostille.vercel.app/img/180.jpg</url>
+            <link>https://kirkepostille.vercel.app</link>
         </image>
         <copyright>All rights reserved 2023, Eleison</copyright>
         <item>
             <title><![CDATA['Hvordan søke etter ord i Dr. Martin Luthers kirkepostille?]]></title>
-            <link>/about</link>
+            <link>https://kirkepostille.vercel.app/about</link>
             <guid>/about</guid>
             <content:encoded><![CDATA[this should be the full content]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Rom 13, 11-14 (1.søn. i advent)]]></title>
-            <link>/article/vinter/advent/1-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/advent/1-epistel</link>
             <guid>/article/vinter/advent/1-epistel</guid>
             <pubDate>Sun, 27 Nov 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[I kender tilmed timen og ved, at det er på tide at stå op af søvne. For nu er frelsen os nærmere, end da vi kom til tro. Natten er fremrykket, dagen er nær. Lad os da aflægge mørkets gerninger og tage lysets rustning på. Lad os leve sømmeligt, som det hører dagen til, ikke i svir og druk, ikke løsagtigt og udsvævende, ikke i kiv og misundelse, men iklæd jer Herren Jesus Kristus, og vær ikke optaget af det kødelige, så det vækker begær.]]></description>
@@ -29,7 +29,7 @@
         </item>
         <item>
             <title><![CDATA[Matt 21, 1-9 (1.søn. i advent)]]></title>
-            <link>/article/vinter/advent/1-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/advent/1-evangelium</link>
             <guid>/article/vinter/advent/1-evangelium</guid>
             <pubDate>Sun, 27 Nov 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[*Da de nærmede sig Jerusalem og kom til Betfage ved Oliebjerget, sendte Jesus to disciple af sted og sagde til dem: "Gå ind i landsbyen heroverfor, og I vil straks finde et æsel, som står bundet med sit føl. Løs dem, og kom med dem. Og hvis nogen spørger jer om noget, skal I svare: Herren har brug for dem, men vil straks sende dem tilbage. Det skete, for at det skulle opfyldes, som er talt ved profeten, der siger: Sig til Zions datter: Se, din konge kommer til dig, sagtmodig, ridende på et æsel og på et trækdyrs føl. Disciplene gik hen og gjorde, som Jesus havde pålagt dem. De kom med æslet og føllet og lagde deres kapper på dem, og han satte sig derpå. Den store folkeskare bredte deres kapper ud på vejen, andre skar grene af træerne og strøede dem på vejen. Og skarerne, som gik foran ham, og de, der fulgte efter, råbte: Hosianna, Davids søn! Velsignet være han, som kommer, i Herrens navn! Hosianna i det højeste!]]></description>
@@ -37,7 +37,7 @@
         </item>
         <item>
             <title><![CDATA[Rom 15, 4-13 (2.søn. i advent)]]></title>
-            <link>/article/vinter/advent/2-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/advent/2-epistel</link>
             <guid>/article/vinter/advent/2-epistel</guid>
             <pubDate>Sun, 04 Dec 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Alt, hvad der tidligere er skrevet, er jo skrevet, for at vi skal lære af det, så vi med udholdenhed og med den trøst, som Skrifterne giver os, kan fastholde håbet. Udholdenhedens og trøstens Gud give jer ét og samme sind, sådan som Kristus Jesus vil det, så I enigt med én mund lovpriser Gud, vor Herre Jesu Kristi fader! Tag derfor imod hinanden, ligesom Kristus har taget imod jer til Guds ære. Hvad jeg siger, er, at Kristus er blevet tjener for de omskårne for at vise, at Gud har talt sandt, og for at stadfæste løfterne til fædrene, men hedningerne skal lovprise Gud for hans barmhjertighed – som der står skrevet: Derfor vil jeg prise dig blandt folkene, jeg vil lovsynge dit navn. Igen hedder det: Glæd jer, I folkeslag, sammen med hans folk! Og igen: Lovpris Herren, alle folkeslag! Lovsyng ham, alle folk! Og igen siger Esajas: Isajs rodskud skal komme, han, som rejser sig for at herske over folkeslagene; på ham skal folkene håbe. Håbets Gud fylde jer med al glæde og fred i troen, så at I bliver rige i håbet ved Helligåndens kraft!]]></description>
@@ -45,7 +45,7 @@
         </item>
         <item>
             <title><![CDATA[Luk 21, 25-36 (2.søn. i advent)]]></title>
-            <link>/article/vinter/advent/2-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/advent/2-evangelium</link>
             <guid>/article/vinter/advent/2-evangelium</guid>
             <pubDate>Sun, 04 Dec 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Og der skal ske tegn i sol og måne og stjerner, og på jorden skal folkene gribes af angst, rådvilde over havets og brændingens brusen. Mennesker skal gå til af skræk og af frygt for det, der kommer over verden, for himlens kræfter skal rystes. Og da skal de se Menneskesønnen komme i en sky med magt og megen herlighed. Men når disse ting begynder at ske, så ret jer op og løft jeres hoved, for jeres forløsning nærmer sig.
@@ -54,7 +54,7 @@ Og han fortalte dem en lignelse: "Se på figentræet og alle de andre træer. S�
         </item>
         <item>
             <title><![CDATA[1 Kor 4, 1-5 (3.søn. i advent)]]></title>
-            <link>/article/vinter/advent/3-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/advent/3-epistel</link>
             <guid>/article/vinter/advent/3-epistel</guid>
             <pubDate>Sun, 11 Dec 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Sådan skal man betragte os: som Kristi tjenere og som forvaltere af Guds hemmeligheder; her kræves det så af forvaltere, at de findes tro. Men mig er det ligegyldigt, om jeg bliver bedømt af jer eller af nogen menneskelig domstol, ja, jeg bedømmer ikke engang mig selv; for jeg er mig ikke noget bevidst, men dermed er jeg ikke frikendt. Den, der bedømmer mig, er Herren. Fæld derfor ikke dom før tiden, før Herren kommer! Han skal bringe for lyset, hvad der er skjult i mørket, og åbenbare, hvad hjerterne vil. Og da skal enhver få sin ros fra Gud.]]></description>
@@ -62,7 +62,7 @@ Og han fortalte dem en lignelse: "Se på figentræet og alle de andre træer. S�
         </item>
         <item>
             <title><![CDATA[Matt 11, 2-10 (3.søn. i advent)]]></title>
-            <link>/article/vinter/advent/3-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/advent/3-evangelium</link>
             <guid>/article/vinter/advent/3-evangelium</guid>
             <pubDate>Sun, 11 Dec 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Da Johannes i fængslet hørte om Kristi gerninger, sendte han bud med sine disciple og spurgte ham: «Er du den, som kommer, eller skal vi vente en anden?»
@@ -72,7 +72,7 @@ Da de var gået, begyndte Jesus at tale til folkeskarerne om Johannes:«Hvad gik
         </item>
         <item>
             <title><![CDATA[Fil 4, 4-7 (4.søn. i advent)]]></title>
-            <link>/article/vinter/advent/4-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/advent/4-epistel</link>
             <guid>/article/vinter/advent/4-epistel</guid>
             <pubDate>Sun, 18 Dec 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Glæd jer altid i Herren! Jeg siger atter: Glæd jer! Lad jeres mildhed blive kendt af alle mennesker. Herren er nær. Vær ikke bekymrede for noget, men bring i alle forhold jeres ønsker frem for Gud i bøn og påkaldelse med tak. Og Guds fred, som overgår al forstand, vil bevare jeres hjerter og tanker i Kristus Jesus.]]></description>
@@ -80,7 +80,7 @@ Da de var gået, begyndte Jesus at tale til folkeskarerne om Johannes:«Hvad gik
         </item>
         <item>
             <title><![CDATA[Joh. 1, 19-28 (4.søn. i advent)]]></title>
-            <link>/article/vinter/advent/4-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/advent/4-evangelium</link>
             <guid>/article/vinter/advent/4-evangelium</guid>
             <pubDate>Sun, 18 Dec 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Dette er Johannes' vidnesbyrd, da jøderne fra Jerusalem sendte præster og levitter ud til ham for at spørge ham: »Hvem er du?« v20 Da bekendte han og benægtede ikke, han bekendte: »Jeg er ikke Kristus.« v21 »Hvad er du da?« spurgte de ham, »er du Elias?« »Det er jeg ikke,« svarede han. »Er du Profeten?« »Nej,« svarede han. v22 Så sagde de til ham: »Hvem er du da? Vi skal have svar med til dem, der har sendt os; hvad siger du om dig selv?« v23 Han svarede: »Jeg er ›en, der råber i ørkenen: Jævn Herrens vej!‹ som profeten Esajas har sagt.«
@@ -89,7 +89,7 @@ v24 De var udsendt af farisæerne, v25 og de spurgte ham: »Hvorfor døber du s�
         </item>
         <item>
             <title><![CDATA[Titus 2, 11-15 (Julaften)]]></title>
-            <link>/article/vinter/jul/julaften-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/jul/julaften-epistel</link>
             <guid>/article/vinter/jul/julaften-epistel</guid>
             <pubDate>Sat, 24 Dec 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[For Guds nåde er blevet åbenbaret til frelse for alle mennesker og opdrager os til at sige nej til ugudelighed og verdslige lyster og leve besindigt og retskaffent og gudfrygtigt i denne verden, mens vi venter på, at vort salige håb skal opfyldes og vor store Gud og frelser, Jesus Kristus, komme til syne i herlighed. Han gav sig selv hen for os for at løskøbe os fra al slags lovløshed og skaffe sig et rent folk som sin ejendom, ivrigt efter at gøre gode gerninger. Tal sådan, og forman og tilrettevis, og gør det med eftertryk. Lad ingen ringeagte dig!]]></description>
@@ -97,7 +97,7 @@ v24 De var udsendt af farisæerne, v25 og de spurgte ham: »Hvorfor døber du s�
         </item>
         <item>
             <title><![CDATA[Luk 2, 1-14 (Julaften)]]></title>
-            <link>/article/vinter/jul/julaften-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/jul/julaften-evangelium</link>
             <guid>/article/vinter/jul/julaften-evangelium</guid>
             <pubDate>Sat, 24 Dec 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Og det skete i de dage, at der udgik en befaling fra kejser Augustus om at holde folketælling i hele verden. Det var den første folketælling, mens Kvirinius var statholder i Syrien. Og alle drog hen for at lade sig indskrive, hver til sin by. Også Josef drog op fra byen Nazaret i Galilæa til Judæa, til Davids by, som hedder Betlehem, fordi han var af Davids hus og slægt, for at lade sig indskrive sammen med Maria, sin forlovede, som ventede et barn. Og mens de var dér, kom tiden, da hun skulle føde; og hun fødte sin søn, den førstefødte, og svøbte ham og lagde ham i en krybbe, for der var ikke plads til dem i herberget. I den samme egn var der hyrder, som lå ude på marken og holdt nattevagt over deres hjord. Da stod Herrens engel for dem, og Herrens herlighed strålede om dem, og de blev grebet af stor frygt. Men englen sagde til dem: »Frygt ikke! Se, jeg forkynder jer en stor glæde, som skal være for hele folket: I dag er der født jer en frelser i Davids by; han er Kristus, Herren. Og dette er tegnet, I får: I skal finde et barn, som er svøbt og ligger i en krybbe.« Og med ét var der sammen med englen en himmelsk hærskare, som lovpriste Gud og sang: Ære være Gud i det højeste og på jorden! Fred til mennesker med Guds velbehag!]]></description>
@@ -105,7 +105,7 @@ v24 De var udsendt af farisæerne, v25 og de spurgte ham: »Hvorfor døber du s�
         </item>
         <item>
             <title><![CDATA[Titus 3, 4-7 (1.Juledag 1.ep.)]]></title>
-            <link>/article/vinter/jul/juledag-1-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/jul/juledag-1-epistel</link>
             <guid>/article/vinter/jul/juledag-1-epistel</guid>
             <pubDate>Sun, 25 Dec 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Men da Guds, vor frelsers, godhed og kærlighed til mennesker blev åbenbaret, frelste han os, ikke fordi vi havde gjort retfærdige gerninger, men fordi han er barmhjertig; det gjorde han ved det bad, der genføder og fornyer ved Helligånden, som han i rigt mål udgød over os ved Jesus Kristus, vor frelser, for at vi, gjort retfærdige ved hans nåde, i håbet skulle blive arvinger til evigt liv.]]></description>
@@ -113,7 +113,7 @@ v24 De var udsendt af farisæerne, v25 og de spurgte ham: »Hvorfor døber du s�
         </item>
         <item>
             <title><![CDATA[Luk 2, 15-20 (1.Juledag 1.ev.)]]></title>
-            <link>/article/vinter/jul/juledag-1-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/jul/juledag-1-evangelium</link>
             <guid>/article/vinter/jul/juledag-1-evangelium</guid>
             <pubDate>Sun, 25 Dec 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Og da englene havde forladt dem og var vendt tilbage til himlen, sagde hyrderne til hinanden: ”Lad os gå ind til Betlehem og se det, som er sket, og som Herren har forkyndt os.” De skyndte sig derhen og fandt Maria og Josef sammen med barnet, som lå i krybben. Da de havde set det, fortalte de, hvad der var blevet sagt til dem om dette barn, og alle, der hørte det, undrede sig over, hvad hyrderne fortalte dem; men Maria gemte alle disse ord i sit hjerte og grundede over dem. Så vendte hyrderne tilbage og priste og lovede Gud for alt, hvad de havde hørt og set, sådan som det var blevet sagt til dem.]]></description>
@@ -121,7 +121,7 @@ v24 De var udsendt af farisæerne, v25 og de spurgte ham: »Hvorfor døber du s�
         </item>
         <item>
             <title><![CDATA[Hebr 1, 1-12 (1.Juledag 2.ep.)]]></title>
-            <link>/article/vinter/jul/juledag-2-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/jul/juledag-2-epistel</link>
             <guid>/article/vinter/jul/juledag-2-epistel</guid>
             <pubDate>Sun, 25 Dec 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Mangfoldige gange og på mangfoldige måder har Gud i fortiden talt til fædrene gennem profeterne, men nu ved dagenes ende har han talt til os gennem sin søn, hvem han har indsat som arving til alle ting, ved hvem han også har skabt verden. Han er Guds herligheds glans og hans væsens udtrykte billede, og han bærer alt med sit mægtige ord. Da han havde skaffet renselse for vore synder, tog han sæde ved den Højestes højre hånd i det høje, og han er blevet så meget mægtigere end englene, som det navn, han har arvet, overgår deres. For til hvem af englene har Gud nogen sinde sagt: Du er min søn, jeg har født dig i dag, og et andet sted: Jeg vil være hans fader, og han skal være min søn? Og når han igen fører sin førstefødte ind i verden, siger han: Alle Guds engle skal kaste sig ned for ham. Om englene hedder det: Han gør sine engle til vinde og sine tjenere til flammende ild, men til Sønnen: Din trone, Gud, står til evig tid, dit kongescepter er retfærdighedens scepter. Du elskede ret og hadede uret, derfor har Gud, din Gud, salvet dig med glædens olie frem for dine lige. Endvidere: Du, Herre, grundlagde i begyndelsen jorden, himlen er dine hænders værk. De går til grunde, men du består, de slides alle op som klæder, du ruller dem sammen som en klædning. De skiftes ud som klæder, men du er den samme, dine år får aldrig ende.]]></description>
@@ -129,7 +129,7 @@ v24 De var udsendt af farisæerne, v25 og de spurgte ham: »Hvorfor døber du s�
         </item>
         <item>
             <title><![CDATA[Joh 1, 1-14 (1.Juledag 2.ev.)]]></title>
-            <link>/article/vinter/jul/juledag-2-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/jul/juledag-2-evangelium</link>
             <guid>/article/vinter/jul/juledag-2-evangelium</guid>
             <pubDate>Sun, 25 Dec 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[I begyndelsen var Ordet, og Ordet var hos Gud, og Ordet var Gud. Han var i begyndelsen hos Gud. Alt blev til ved ham, og uden ham blev intet til af det, som er. I ham var liv, og livet var menneskers lys. Og lyset skinner i mørket, og mørket greb det ikke. Der kom et menneske, udsendt af Gud, hans navn var Johannes. Han kom for at aflægge vidnesbyrd, han skulle vidne om lyset, for at alle skulle komme til tro ved ham. Selv var han ikke lyset, men han skulle vidne om lyset. Lyset, det sande lys, som oplyser ethvert menneske, var ved at komme til verden. Han var i verden, og verden var blevet til ved ham, og verden kendte ham ikke. Han kom til sit eget, og hans egne tog ikke imod ham. Men alle dem, der tog imod ham, gav han ret til at blive Guds børn, dem, der tror på hans navn; de er ikke født af blod, ikke af køds vilje, ikke af mands vilje, men af Gud. Og Ordet blev kød og tog bolig iblandt os, og vi så hans herlighed, en herlighed, som den Enbårne har den fra Faderen, fuld af nåde og sandhed.]]></description>
@@ -137,7 +137,7 @@ v24 De var udsendt af farisæerne, v25 og de spurgte ham: »Hvorfor døber du s�
         </item>
         <item>
             <title><![CDATA[Apg 6, 8-15 & 7, 54-60 (2.Juledag)]]></title>
-            <link>/article/vinter/jul/2-juledag-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/jul/2-juledag-epistel</link>
             <guid>/article/vinter/jul/2-juledag-epistel</guid>
             <pubDate>Mon, 26 Dec 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[ApG 6, 8-15 (Stefanus for Rådet)Fuld af nåde og kraft gjorde Stefanus store undere og tegn blandt folket. Da trådte der nogle frem af dem fra den synagoge, der hed De Frigivnes, Kyrenæernes og Alexandrinernes Synagoge, og nogle fra Kilikien og provinsen Asien, og de kom i diskussion med Stefanus. De kunne dog ikke modstå den visdom og ånd, som han talte med. Så fik de i al hemmelighed nogle mænd til at sige: »Vi har hørt ham tale spottende om Moses og Gud.« De ophidsede folket og de ældste og de skriftkloge og kastede sig over ham, slæbte ham med og førte ham for Rådet, og de stillede med falske vidner, som sagde: »Denne mand taler ustandselig imod dette hellige sted og imod loven. Vi har nemlig hørt ham sige: Denne Jesus fra Nazaret vil bryde dette sted ned og forandre de skikke, som Moses har overleveret os.« Alle, der sad i Rådet, stirrede på ham, og for dem at se var hans ansigt som en engels ansigt.1ApG 7, 54-60 (Steningen af Stefanus)Da de hørte dette, blev de ramt i deres hjerter og skar tænder imod ham. Men fuld af Helligånden stirrede Stefanus mod himlene, og han så Guds herlighed og Jesus stående ved Guds højre side. Og han sagde: »Nu ser jeg himlen åben og Menneskesønnen stå ved Guds højre side.« Da skreg de højt, holdt sig for ørerne og fór alle som én løs på ham. De drev ham uden for byen og begyndte at stene ham. Vidnerne lagde deres kapper ved fødderne af en ung mand, der hed Saulus. Så stenede de Stefanus, mens han bad: »Herre Jesus, tag imod min ånd!« Han faldt på knæ og råbte med høj røst: »Herre, tilregn dem ikke denne synd!« Og da han havde sagt dette, sov han hen.]]></description>
@@ -145,7 +145,7 @@ v24 De var udsendt af farisæerne, v25 og de spurgte ham: »Hvorfor døber du s�
         </item>
         <item>
             <title><![CDATA[Matt 23, 34-39 (2.Juledag)]]></title>
-            <link>/article/vinter/jul/2-juledag-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/jul/2-juledag-evangelium</link>
             <guid>/article/vinter/jul/2-juledag-evangelium</guid>
             <pubDate>Mon, 26 Dec 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[”Se, jeg sender profeter og vise og skriftkloge til jer; nogle af dem vil I slå ihjel og korsfæste, andre vil I piske i jeres synagoger og forfølge fra by til by. For over jer må alt det retfærdige blod komme, der er udgydt på jorden, lige fra den retfærdige Abels blod til blodet af Zakarias, Barakias' søn, som I dræbte mellem templet og alteret. Sandelig siger jeg jer: Det skal alt sammen komme over denne slægt. Jerusalem, Jerusalem! du, som slår profeterne ihjel og stener dem, der er sendt til dig. Hvor ofte ville jeg ikke samle dine børn, som en høne samler sine kyllinger under vingerne, men I ville ikke. Se, jeres hus bliver overladt til jer selv, øde og tomt. For jeg siger jer: Fra nu af skal I ikke se mig, før I siger: Velsignet være han, som kommer, i Herrens navn!”]]></description>
@@ -153,7 +153,7 @@ v24 De var udsendt af farisæerne, v25 og de spurgte ham: »Hvorfor døber du s�
         </item>
         <item>
             <title><![CDATA[Sirak 15, 1-6 (3.Juledag)]]></title>
-            <link>/article/vinter/jul/3-juledag-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/jul/3-juledag-epistel</link>
             <guid>/article/vinter/jul/3-juledag-epistel</guid>
             <pubDate>Tue, 27 Dec 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Sådan handler den, der frygter Herren; den, der er hjemme i loven, finder visdommen. v2 Hun vil møde ham som en moder og tage imod ham som en brud. v3 Hun vil give ham indsigts brød at spise og visdoms vand at drikke. v4 Han støtter sig til hende og vil aldrig bøje af; han holder sig til hende og vil aldrig blive til skamme. v5 Hun vil ophøje ham over hans omgivelser og få ham til at tage ordet i forsamlingen. v6 Glæde og festkrans og et evigt navn får han i eje.]]></description>
@@ -161,7 +161,7 @@ v24 De var udsendt af farisæerne, v25 og de spurgte ham: »Hvorfor døber du s�
         </item>
         <item>
             <title><![CDATA[Joh 21, 19-23 (3.Juledag)]]></title>
-            <link>/article/vinter/jul/3-juledag-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/jul/3-juledag-evangelium</link>
             <guid>/article/vinter/jul/3-juledag-evangelium</guid>
             <pubDate>Tue, 27 Dec 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Jesus sagde til Peter: »Følg mig!« v20 Da Peter vendte sig om, ser han den discipel følge efter, som Jesus elskede, og som ved måltidet havde siddet lige ved siden af ham og spurgt: Herre, hvem er det, der skal forråde dig? v21 Da nu Peter så ham, sagde han til Jesus: »Herre, hvad så med ham?« v22 Jesus sagde til Peter: »Hvis jeg vil, at han skal leve, til jeg kommer, hvad angår det så dig? Følg du mig!« v23 Da kom det forlydende ud blandt brødrene, at den discipel ikke skulle dø. Men Jesus havde ikke sagt, at han ikke skulle dø, men: Hvis jeg vil, at han skal leve, til jeg kommer, hvad angår det så dig?
@@ -173,7 +173,7 @@ Men en fortræffelig og speciel lærdom har han givet os heri. Den indeholdes i 
         </item>
         <item>
             <title><![CDATA[Gal 4, 1-7 (Julesøndag)]]></title>
-            <link>/article/vinter/jul/julesondag-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/jul/julesondag-epistel</link>
             <guid>/article/vinter/jul/julesondag-epistel</guid>
             <pubDate>Wed, 28 Dec 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Hvad jeg mener, er: Så længe en arving er umyndig, adskiller han sig ikke fra en træl, skønt han er herre over alt; v2 han står under formyndere og forvaltere indtil den tid, hans far forud har fastsat. v3 På samme måde med os: Da vi var umyndige, trællede vi under verdens magter. v4 Men da tidens fylde kom, sendte Gud sin søn, født af en kvinde, født under loven, v5 for at han skulle løskøbe dem, der var under loven, for at vi skulle få barnekår. v6 Og fordi I er børn, har Gud sendt sin søns ånd i vore hjerter, og den råber: Abba, fader! v7 Så er du da ikke længere træl, men barn. Og er du barn, har Gud også gjort dig til arving.]]></description>
@@ -181,7 +181,7 @@ Men en fortræffelig og speciel lærdom har han givet os heri. Den indeholdes i 
         </item>
         <item>
             <title><![CDATA[Luk 2, 33-40 (Julesøndag)]]></title>
-            <link>/article/vinter/jul/julesondag-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/jul/julesondag-evangelium</link>
             <guid>/article/vinter/jul/julesondag-evangelium</guid>
             <pubDate>Wed, 28 Dec 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Hans far og mor undrede sig over det, der blev sagt om ham. v34 Og Simeon velsignede dem og sagde til Maria, hans mor: »Se, dette barn er bestemt til fald og oprejsning for mange i Israel og til at være et tegn, som modsiges v35 – ja, også din egen sjæl skal et sværd gennemtrænge – for at mange hjerters tanker kan komme for en dag.« v36 Der var også en profetinde ved navn Anna, en datter af Fanuel, af Ashers stamme. Hun var højt oppe i årene; som ung jomfru var hun blevet gift og havde levet syv år med sin mand, v37 og hun var nu en enke på fireogfirs. Hun forlod aldrig templet, men tjente Gud nat og dag med faste og bøn. v38 Hun trådte frem i samme stund, priste Gud og talte om barnet til alle, der ventede Jerusalems forløsning. v39 Da de havde udført alt i overensstemmelse med Herrens lov, vendte de tilbage til Galilæa, til deres egen by Nazaret. v40 Og drengen voksede op, blev stærk og fyldt med visdom, og Guds nåde var over ham.]]></description>
@@ -189,7 +189,7 @@ Men en fortræffelig og speciel lærdom har han givet os heri. Den indeholdes i 
         </item>
         <item>
             <title><![CDATA[Gal 3, 23-29 (Nytårsdag)]]></title>
-            <link>/article/vinter/jul/nyttaarsdag-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/jul/nyttaarsdag-epistel</link>
             <guid>/article/vinter/jul/nyttaarsdag-epistel</guid>
             <pubDate>Sun, 01 Jan 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Før troen kom, blev vi bevogtet under loven og spærret inde, indtil troen skulle åbenbares, v24 så at loven var vores opdrager, indtil Kristus kom, for at vi kunne blive gjort retfærdige af tro. v25 Men efter at troen er kommet, er vi ikke længere under en opdrager. v26 For I er alle Guds børn ved troen, i Kristus Jesus. v27 Alle I, der er døbt til Kristus, har jo iklædt jer Kristus. v28 Her kommer det ikke an på at være jøde eller græker, på at være træl eller fri, på at være mand og kvinde, for I er alle én i Kristus Jesus, v29 og hører I Kristus til, er I også Abrahams afkom, arvinger i kraft af Guds løfte.]]></description>
@@ -197,7 +197,7 @@ Men en fortræffelig og speciel lærdom har han givet os heri. Den indeholdes i 
         </item>
         <item>
             <title><![CDATA[Luk 2, 21 (Nytårsdag)]]></title>
-            <link>/article/vinter/jul/nyttaarsdag-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/jul/nyttaarsdag-evangelium</link>
             <guid>/article/vinter/jul/nyttaarsdag-evangelium</guid>
             <pubDate>Sun, 01 Jan 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Da otte dage var gået, og han skulle omskæres, fik han navnet Jesus, som han var blevet kaldt af englen, før han blev undfanget i moders liv.]]></description>
@@ -205,7 +205,7 @@ Men en fortræffelig og speciel lærdom har han givet os heri. Den indeholdes i 
         </item>
         <item>
             <title><![CDATA[Esajas 60, 1-6 (Helligtrekonger)]]></title>
-            <link>/article/vinter/jul/helligtrekonger-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/jul/helligtrekonger-epistel</link>
             <guid>/article/vinter/jul/helligtrekonger-epistel</guid>
             <pubDate>Fri, 06 Jan 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Rejs dig, bliv lys, for dit lys er kommet, Herrens herlighed er brudt frem over dig. V2 For se, mørket dækker jorden, mulmet dækker folkene. Men over dig bryder Herren frem, hans herlighed viser sig over dig. V3 Folkeslag skal komme til dit lys og konger til din stråleglans. V4 Løft blikket, og se dig omkring: De samles alle og kommer til dig, dine sønner kommer fra det fjerne, dine døtre bæres ved hoften. V5 Da stråler du af glæde, når du ser det, dit hjerte banker og svulmer, når havets skatte bringes til dig og folkenes rigdom kommer til dig. V6 Kameler i mængde flokkes hos dig, dromedarer fra Midjan og Efa, fra Saba kommer de alle sammen, de bærer guld og røgelse. De forkynder Herrens pris.]]></description>
@@ -213,7 +213,7 @@ Men en fortræffelig og speciel lærdom har han givet os heri. Den indeholdes i 
         </item>
         <item>
             <title><![CDATA[Matt 2, 1-12 (Helligtrekonger)]]></title>
-            <link>/article/vinter/jul/helligtrekonger-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/jul/helligtrekonger-evangelium</link>
             <guid>/article/vinter/jul/helligtrekonger-evangelium</guid>
             <pubDate>Fri, 06 Jan 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Da Jesus var født i Betlehem i Judæa i kong Herodes' dage, se, da kom der nogle vise mænd fra Østerland til Jerusalem v2 og spurgte: »Hvor er jødernes nyfødte konge? For vi har set hans stjerne gå op og er kommet for at tilbede ham.« v3 Da kong Herodes hørte det, blev han forfærdet, og hele Jerusalem med ham. v4 Og han sammenkaldte alle ypperstepræsterne og folkets skriftkloge og spurgte dem, hvor Kristus skulle fødes. v5 De svarede ham: »I Betlehem i Judæa. For sådan er der skrevet ved profeten: v6 Du, Betlehem i Judas land, du er på ingen måde den mindste blandt Judas fyrster. Fra dig skal der udgå en hersker, som skal vogte mit folk, Israel.«v7 Så tilkaldte Herodes i al hemmelighed de vise mænd og forhørte dem indgående om, hvornår stjernen havde vist sig. v8 Og han sendte dem til Betlehem og sagde: »Gå hen og spørg jer nøje for om barnet; og når I har fundet det, så giv mig besked, for at også jeg kan komme og tilbede det.« v9 Da de havde hørt på kongen, tog de af sted, og se, stjernen, som de havde set gå op, gik foran dem, indtil den stod stille over det sted, hvor barnet var. v10 Da de så stjernen, var deres glæde meget stor. v11 Og de gik ind i huset og så barnet hos dets mor Maria, og de faldt ned og tilbad det, og de åbnede for deres gemmer og frembar gaver til det, guld, røgelse og myrra. v12 Men i drømme fik de en åbenbaring om ikke at tage tilbage til Herodes, og de vendte hjem til deres land ad en anden vej.]]></description>
@@ -221,7 +221,7 @@ Men en fortræffelig og speciel lærdom har han givet os heri. Den indeholdes i 
         </item>
         <item>
             <title><![CDATA[Rom 12, 1-5 (1.søn. efter helligtrekonger)]]></title>
-            <link>/article/vinter/aabenbaring/1-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/aabenbaring/1-epistel</link>
             <guid>/article/vinter/aabenbaring/1-epistel</guid>
             <pubDate>Sun, 08 Jan 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Så formaner jeg jer, brødre, ved Guds barmhjertighed, til at bringe jeres legemer som et levende og helligt offer, der er Gud til behag – det skal være jeres åndelige gudstjeneste. Og tilpas jer ikke denne verden, men lad jer forvandle, ved at sindet fornyes, så I kan skønne, hvad der er Guds vilje: det gode, det som behager ham, det fuldkomne.
@@ -230,7 +230,7 @@ I kraft af den nåde, jeg har fået, siger jeg til hver eneste af jer: Hav ikke 
         </item>
         <item>
             <title><![CDATA[Luk 2, 41-52 (1.søn. efter helligtrekonger)]]></title>
-            <link>/article/vinter/aabenbaring/1-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/aabenbaring/1-evangelium</link>
             <guid>/article/vinter/aabenbaring/1-evangelium</guid>
             <pubDate>Sun, 08 Jan 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Hvert år tog Jesu forældre til Jerusalem til påskefesten. Også da han var blevet tolv år, drog de derop, som det var skik ved festen. Da påskedagene var omme, og de skulle hjem, blev drengen Jesus i Jerusalem, uden at hans forældre vidste det. I den tro, at han var i rejsefølget, kom de en dags rejse frem og ledte efter ham blandt familie og bekendte. Da de ikke fandt ham, vendte de tilbage til Jerusalem for at lede efter ham dér; og efter tre dage fandt de ham i templet, hvor han sad midt blandt lærerne, lyttede til dem og stillede dem spørgsmål. Alle, der hørte det, undrede sig meget over hans indsigt og de svar, han gav. Da forældrene fik øje på ham, blev de slået af forundring, og hans mor sagde til ham: »Barn, hvorfor gjorde du sådan mod os? Din far og jeg har ledt efter dig og været ængstelige.« Men han sagde til dem: »Hvorfor ledte I efter mig? Vidste I ikke, at jeg bør være hos min fader?« Men de forstod ikke, hvad han sagde til dem. Så fulgte han med dem tilbage til Nazaret, og han var lydig mod dem. Hans mor gemte alle ordene i sit hjerte. Og Jesus gik frem i visdom og vækst og yndest hos Gud og mennesker.]]></description>
@@ -238,7 +238,7 @@ I kraft af den nåde, jeg har fået, siger jeg til hver eneste af jer: Hav ikke 
         </item>
         <item>
             <title><![CDATA[Rom 12, 6-21 (2. & 3.søn. efter helligtrekonger)]]></title>
-            <link>/article/vinter/aabenbaring/2-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/aabenbaring/2-epistel</link>
             <guid>/article/vinter/aabenbaring/2-epistel</guid>
             <pubDate>Sun, 15 Jan 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Vi har forskellige nådegaver, alt efter den nåde, vi har fået: Den, der har profetisk gave, skal bruge den i overensstemmelse med troen; v7 den, der har en tjeneste, skal passe sin tjeneste; den, der underviser, sin undervisning; v8 den, der formaner, sin formaning; den, der giver, skal give rundhåndet. Den, der er forstander, skal være det med iver, og den, der øver barmhjertighed, skal gøre det glad og gerne.
@@ -247,7 +247,7 @@ v9 Kærligheden skal være oprigtig. Afsky det onde, hold jer til det gode. v10 
         </item>
         <item>
             <title><![CDATA[Joh 2, 1-11 (2.søn. efter helligtrekonger)]]></title>
-            <link>/article/vinter/aabenbaring/2-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/aabenbaring/2-evangelium</link>
             <guid>/article/vinter/aabenbaring/2-evangelium</guid>
             <pubDate>Sun, 15 Jan 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Den tredje dag var der bryllup i Kana i Galilæa, og dér var Jesu mor med; v2 også Jesus og hans disciple var indbudt til brylluppet. v3 Men vinen slap op, og Jesu mor sagde til ham: »De har ikke mere vin.« v4 Jesus sagde til hende: »Hvad vil du mig, kvinde? Min time er endnu ikke kommet.« v5 Hans mor sagde til tjenerne: »Gør, hvad som helst han siger til jer.« v6 Der var dér seks vandkar af sten; de stod der efter jødernes regler for renselse og rummede hver to til tre spande. v7 Jesus sagde til dem: »Fyld karrene med vand.« Og de fyldte dem helt op. v8 Og han sagde til dem: »Øs nu op og bær det hen til skafferen.« Det gjorde de så. v9 Men da skafferen havde smagt på vandet, der var blevet til vin – han vidste ikke, hvor den kom fra, men det vidste de tjenere, som havde øst vandet op – kaldte han på brudgommen v10 og sagde til ham: »Man sætter ellers den gode vin frem først, og når folk har drukket godt, så den ringere. Du har gemt den gode vin til nu.« v11 Dette gjorde Jesus i Kana i Galilæa som begyndelsen på sine tegn og åbenbarede sin herlighed, og hans disciple troede på ham.]]></description>
@@ -255,7 +255,7 @@ v9 Kærligheden skal være oprigtig. Afsky det onde, hold jer til det gode. v10 
         </item>
         <item>
             <title><![CDATA[Matt 8, 1-13 (3.søn. efter helligtrekonger)]]></title>
-            <link>/article/vinter/aabenbaring/3-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/aabenbaring/3-evangelium</link>
             <guid>/article/vinter/aabenbaring/3-evangelium</guid>
             <pubDate>Sun, 22 Jan 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Da Jesus var kommet ned fra bjerget, fulgte store folkeskarer ham. Og se, en spedalsk kom og kastede sig ned for ham og sagde: »Herre, hvis du vil, kan du gøre mig ren.« Jesus rakte hånden ud, rørte ved ham og sagde: »Jeg vil, bliv ren!« Og straks blev han renset for sin spedalskhed. Men Jesus sagde til ham: »Se til, at du ikke siger det til nogen; men gå hen og bliv undersøgt af præsten, og bring den offergave, Moses har fastsat, som et vidnesbyrd for dem.« Da Jesus gik ind i Kapernaum, kom en officer hen og bad ham: »Herre, min tjener ligger lammet derhjemme og lider forfærdeligt.« Han sagde til ham: »Jeg vil komme og helbrede ham.« Men officeren sagde: »Herre, jeg er for ringe til, at du går ind under mit tag. Men sig blot et ord, så vil min tjener blive helbredt. Jeg er jo selv en mand under kommando og har soldater under mig. Siger jeg til én: Gå! så går han, og til en anden: Kom! så kommer han, og til min tjener: Gør det og det! så gør han det.« Da Jesus hørte det, undrede han sig og sagde til dem, der fulgte ham: »Sandelig siger jeg jer: Så stor en tro har jeg ikke fundet hos nogen i Israel. Jeg siger jer: Mange skal komme fra øst og vest og sidde til bords med Abraham og Isak og Jakob i Himmeriget, men Rigets egne børn skal kastes ud i mørket udenfor. Dér skal der være gråd og tænderskæren.« Men til officeren sagde Jesus: »Gå, det skal ske dig, som du troede!« Og hans tjener blev helbredt i samme time.]]></description>
@@ -263,7 +263,7 @@ v9 Kærligheden skal være oprigtig. Afsky det onde, hold jer til det gode. v10 
         </item>
         <item>
             <title><![CDATA[Rom 13, 8-10 (4.søn. efter helligtrekonger)]]></title>
-            <link>/article/vinter/aabenbaring/4-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/aabenbaring/4-epistel</link>
             <guid>/article/vinter/aabenbaring/4-epistel</guid>
             <pubDate>Sun, 29 Jan 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Vær ingen noget andet skyldig end at elske hinanden; for den, der elsker andre, har opfyldt loven. v9 Budene: »Du må ikke bryde et ægteskab; du må ikke begå drab; du må ikke stjæle; du må ikke begære,« og et hvilket som helst andet bud, sammenfattes jo i dette bud: »Du skal elske din næste som dig selv.« v10 Kærligheden gør ikke næsten noget ondt. Kærligheden er altså lovens fylde.]]></description>
@@ -271,7 +271,7 @@ v9 Kærligheden skal være oprigtig. Afsky det onde, hold jer til det gode. v10 
         </item>
         <item>
             <title><![CDATA[Matt 8, 23-27 (4.søn. efter helligtrekonger)]]></title>
-            <link>/article/vinter/aabenbaring/4-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/aabenbaring/4-evangelium</link>
             <guid>/article/vinter/aabenbaring/4-evangelium</guid>
             <pubDate>Sun, 29 Jan 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Jesus gik om bord i en båd, og hans disciple fulgte ham. v24 Da blev der et voldsomt uvejr på søen, så båden skjultes af bølgerne. Men han sov. v25 Og de kom hen og vækkede ham og sagde: »Herre, frels os! Vi går under!« v26 Men han sagde til dem: »Hvorfor er I bange, I lidettroende?« Da rejste han sig og truede ad storm og sø, og det blev helt blikstille. v27 Men folk undrede sig og sagde: »Hvem er han, siden både storm og sø adlyder ham?«]]></description>
@@ -279,7 +279,7 @@ v9 Kærligheden skal være oprigtig. Afsky det onde, hold jer til det gode. v10 
         </item>
         <item>
             <title><![CDATA[Kol 3, 12-17 (5.søn. efter helligtrekonger)]]></title>
-            <link>/article/vinter/aabenbaring/5-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/aabenbaring/5-epistel</link>
             <guid>/article/vinter/aabenbaring/5-epistel</guid>
             <pubDate>Sat, 04 Feb 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Ifør jer da, som Guds udvalgte, hellige og elskede, inderlig barmhjertighed, godhed, ydmyghed, mildhed, tålmodighed. v13 Bær over med hinanden og tilgiv hinanden, hvis den ene har noget at bebrejde den anden. Som Herren tilgav jer, skal I også gøre. v14 Men over alt dette skal I iføre jer kærligheden, som er fuldkommenhedens bånd. v15 Kristi fred skal råde i jeres hjerter; til den blev I jo kaldet som lemmer på ét legeme. Og vær taknemlige. v16 Lad Kristi ord bo i rigt mål hos jer. Undervis og forman med al visdom hinanden med salmer, hymner og åndelige sange, syng med tak i jeres hjerte til Gud. v17 Hvad I end gør i ord eller gerning, gør det alt sammen i Herren Jesu navn, og sig Gud Fader tak ved ham!]]></description>
@@ -287,7 +287,7 @@ v9 Kærligheden skal være oprigtig. Afsky det onde, hold jer til det gode. v10 
         </item>
         <item>
             <title><![CDATA[Matt 13, 24-30 (5.søn. efter helligtrekonger)]]></title>
-            <link>/article/vinter/aabenbaring/5-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/aabenbaring/5-evangelium</link>
             <guid>/article/vinter/aabenbaring/5-evangelium</guid>
             <pubDate>Sat, 04 Feb 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Han fortalte dem en anden lignelse: »Himmeriget ligner en mand, der såede god sæd i sin mark. v25 Mens folkene sov, kom hans fjende og såede ukrudt i hveden og gik sin vej. v26 Da kornet skød op og satte kerne, kom også ukrudtet frem. v27 Husbondens folk kom så og spurgte: Herre, såede du ikke god sæd i din mark? Hvor kommer da ukrudtet fra? v28 Han svarede: Det har en fjende gjort. Folkene spørger ham så: Vil du have, at vi skal gå ud og luge det væk? v29 Han svarer dem: Nej, for når I luger ukrudtet væk, kommer I til at rykke hveden op sammen med det. v30 Lad blot begge dele gro side om side indtil høsten. Ved høsttid vil jeg så sige til høstfolkene: Tag først ukrudtet fra og bind det i knipper, så det kan brændes, men saml hveden i min lade.«]]></description>
@@ -295,7 +295,7 @@ v9 Kærligheden skal være oprigtig. Afsky det onde, hold jer til det gode. v10 
         </item>
         <item>
             <title><![CDATA[1 Kor 9, 24 – 10, 5 (Septuagesima)]]></title>
-            <link>/article/vinter/for-faste/septuagesima-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/for-faste/septuagesima-epistel</link>
             <guid>/article/vinter/for-faste/septuagesima-epistel</guid>
             <pubDate>Sun, 05 Feb 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Ved I ikke, at de, der er med i et løb på stadion, alle løber, men kun én får sejrsprisen? Løb sådan, at I vinder den! v25 Men enhver idrætsmand er afholdende i alt – de andre for at få en sejrskrans, der visner, men vi for at få en, der ikke visner. v26 Jeg løber derfor ikke hid og did, og jeg er ikke som en bokser, der slår i luften. v27 Jeg er hård ved min krop og tvinger den til at lystre, for at jeg, der har prædiket for andre, ikke selv skal blive forkastet.
@@ -304,7 +304,7 @@ v1 Det skal I vide, brødre: Vel var vore fædre alle under skyen og gik alle ge
         </item>
         <item>
             <title><![CDATA[Matt 20, 1-16 (Vingårdsøndagen)]]></title>
-            <link>/article/vinter/for-faste/septuagesima-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/for-faste/septuagesima-evangelium</link>
             <guid>/article/vinter/for-faste/septuagesima-evangelium</guid>
             <pubDate>Sun, 05 Feb 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Jesus sagde: “Himmeriget ligner en vingårdsejer, der tidligt om morgenen gik ud for at leje arbejdere til sin vingård. Da han var blevet enig med dem om en dagløn på en denar, sendte han dem hen i sin vingård. Ved den tredje time gik han ud og så nogle andre stå ledige på torvet, og han sagde til dem: Gå I også hen i min vingård, så skal jeg betale, hvad I har ret til. De gik derhen. Igen ved den sjette og den niende time gik han ud og gjorde det samme. Ved den ellevte time gik han derhen og fandt endnu nogle stående dér, og han spurgte dem: Hvorfor har I stået ledige her hele dagen? De svarede ham: Fordi ingen har lejet os. Han sagde til dem: Gå I også hen i min vingård. Da det blev aften, sagde vingårdens ejer til sin forvalter: Kald arbejderne sammen og betal dem deres løn, men sådan, at du begynder med de sidste og ender med de første. Og de, der var blevet lejet i den ellevte time, kom og fik hver en denar. Da de første kom, troede de, at de ville få mere; men også de fik hver en denar. Da de fik den, gav de ondt af sig over for vingårdsejeren og sagde: De sidste dér har kun arbejdet én time, og du har stillet dem lige med os, der har båret dagens byrde og hede. Men han sagde til en af dem: Min ven, jeg gør dig ikke uret. Blev du ikke enig med mig om en denar? Tag det, der er dit, og gå! Jeg vil give den sidste her det samme som dig. Eller har jeg ikke lov til at gøre, hvad jeg vil, med det, der er mit? Eller er dit øje ondt, fordi jeg er god? Sådan skal de sidste blive de første, og de første de sidste.”]]></description>
@@ -312,7 +312,7 @@ v1 Det skal I vide, brødre: Vel var vore fædre alle under skyen og gik alle ge
         </item>
         <item>
             <title><![CDATA[2 Kor 11, 19 – 12,9 (Seksagesima)]]></title>
-            <link>/article/vinter/for-faste/sexagesima-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/for-faste/sexagesima-epistel</link>
             <guid>/article/vinter/for-faste/sexagesima-epistel</guid>
             <pubDate>Sun, 12 Feb 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[I finder jer jo gladeligt i de vanvittige, skønt I er så kloge. v20 I finder jer i, at man gør jer til slaver, at man udsuger jer, at man baster og binder jer, behandler jer nedladende og slår jer i synet. v21 Jeg må med skam tilstå, at så har vi været magtesløse! Men hvad en anden drister sig til – jeg taler i vanvid – det drister jeg mig også til.v22 Er de hebræere? Det er jeg også! Er de Israelitter? Det er jeg også! Er de af Abrahams slægt? Det er jeg også! v23 Er de Kristi tjenere? Jeg taler rent afsindigt: Jeg overgår dem! Jeg har slidt og slæbt, tit været i fængsel, fået slag i massevis, jeg har været i livsfare mange gange. v24 Af jøderne har jeg fem gange fået fyrre slag minus ét, v25 jeg har fået pisk tre gange, er blevet stenet én gang, har lidt skibbrud tre gange, jeg har drevet rundt på det åbne hav et helt døgn. v26 Ofte på rejser, i fare på floder, i fare blandt røvere, i fare fra mit eget folk, i fare fra hedninger, i fare i byer, i fare i ørkener, i fare på havet, i fare blandt falske brødre. v27 Jeg har arbejdet og slidt, ofte haft søvnløse nætter, lidt sult og tørst, ofte fastet, døjet kulde og manglet klæder. v28 Hertil kommer det, som dagligt trykker mig: bekymringen for alle menighederne. v29 Hvem er magtesløs, uden at jeg også er magtesløs? Hvem falder fra, uden at det svier i mig?v30 Hvis jeg skal være stolt, vil jeg være stolt af min magtesløshed. v31 Gud, Herren Jesu fader, som skal prises til evig tid, han ved, at jeg ikke lyver. v32 I Damaskus holdt kong Aretas' statholder damaskenernes by bevogtet for at gribe mig, v33 men jeg blev firet ned i en kurv gennem en åbning i muren og slap ud af hans hænder.2 Kor 12
@@ -321,7 +321,7 @@ v1 Stolt vil jeg være, selv om det ikke nytter, og nu kommer jeg til syner og �
         </item>
         <item>
             <title><![CDATA[Luk 8, 5-15 (Sædemandens søn.)]]></title>
-            <link>/article/vinter/for-faste/sexagesima-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/for-faste/sexagesima-evangelium</link>
             <guid>/article/vinter/for-faste/sexagesima-evangelium</guid>
             <pubDate>Sun, 12 Feb 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[»En sædemand gik ud for at så sit korn. Og da han såede, faldt noget på vejen, og der blev trådt på det, og himlens fugle åd det op. v6 Noget faldt på klippen, og da det var vokset frem, visnede det, fordi det ikke havde væde. v7 Noget faldt mellem tidsler, og tidslerne groede helt sammen og kvalte det. v8 Men noget faldt i god jord, og det voksede op og gav hundrede fold.« Da han havde sagt det, råbte han: »Den, der har ører at høre med, skal høre!«v9 Hans disciple spurgte ham, hvad denne lignelse skulle betyde. v10 Han svarede: »Jer er det givet at kende Guds riges hemmeligheder, men de andre bliver det givet i lignelser, for at de skal se, men intet se, og høre, men intet fatte.v11 Men dette er meningen med lignelsen: Sæden er Guds Ord. v12 De på vejen er dem, der har hørt Ordet; derefter kommer Djævelen og tager Ordet bort fra deres hjerte, for at de ikke skal tro og blive frelst. v13 De på klippen er dem, som med glæde tager imod Ordet, når de har hørt det; men de har ikke rod, de tror kun til en tid og falder fra, når prøvelser sætter ind. v14 Det, som faldt mellem tidslerne, det er dem, der har hørt Ordet, men kvæles af livets bekymringer og rigdomme og nydelser, så de ikke bærer moden frugt. v15 Men det i den gode jord, det er dem, der hører Ordet og bevarer det i et smukt og godt hjerte, er udholdende og bærer frugt.]]></description>
@@ -329,7 +329,7 @@ v1 Stolt vil jeg være, selv om det ikke nytter, og nu kommer jeg til syner og �
         </item>
         <item>
             <title><![CDATA[1 Kor 13,1-13 (Fastelavenssøn.)]]></title>
-            <link>/article/vinter/for-faste/fastelaven-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/for-faste/fastelaven-epistel</link>
             <guid>/article/vinter/for-faste/fastelaven-epistel</guid>
             <pubDate>Sun, 19 Feb 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Om jeg så taler med menneskers og engles tunger, men ikke har kærlighed, er jeg et rungende malm og en klingende bjælde. v2 Og om jeg så har profetisk gave og kender alle hemmeligheder og ejer al kundskab og har al tro, så jeg kan flytte bjerge, men ikke har kærlighed, er jeg intet. v3 Og om jeg så uddeler alt, hvad jeg ejer, og giver mit legeme hen til at brændes, men ikke har kærlighed, gavner det mig intet.
@@ -340,7 +340,7 @@ v13 Så bliver da tro, håb, kærlighed, disse tre. Men størst af dem er kærli
         </item>
         <item>
             <title><![CDATA[Luk 18, 31-43 (Fastelavenssøn.)]]></title>
-            <link>/article/vinter/for-faste/fastelaven-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/for-faste/fastelaven-evangelium</link>
             <guid>/article/vinter/for-faste/fastelaven-evangelium</guid>
             <pubDate>Sun, 19 Feb 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[(Jesus forudsiger sin lidelse og død og opstandelse)
@@ -351,7 +351,7 @@ v35 Da Jesus nærmede sig Jeriko, sad der en blind mand ved vejen og tiggede. v3
         </item>
         <item>
             <title><![CDATA[2 Kor 6, 1-10 (1.søn. i faste)]]></title>
-            <link>/article/vinter/faste/1-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/faste/1-epistel</link>
             <guid>/article/vinter/faste/1-epistel</guid>
             <pubDate>Sun, 26 Feb 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Som hans medarbejdere formaner vi jer da til ikke forgæves at have taget imod Guds nåde. v2 Det hedder jo:
@@ -361,7 +361,7 @@ Se, nu er det den nåderige tid, se, nu er det frelsens dag! v3 Vi volder ikke a
         </item>
         <item>
             <title><![CDATA[Matt 4, 1-11 (1.søn. i faste)]]></title>
-            <link>/article/vinter/faste/1-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/faste/1-evangelium</link>
             <guid>/article/vinter/faste/1-evangelium</guid>
             <pubDate>Sun, 26 Feb 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Så blev Jesus af Ånden ført ud i ørkenen for at fristes af Djævelen. v2 Og da han havde fastet i fyrre dage og fyrre nætter, led han til sidst sult. v3 Og fristeren kom og sagde til ham: »Hvis du er Guds søn, så sig, at stenene her skal blive til brød.« v4 Men han svarede: »Der står skrevet: ›Mennesket skal ikke leve af brød alene, men af hvert ord, der udgår af Guds mund.‹ « v5 Da tog Djævelen ham med til den hellige by, stillede ham på templets tinde v6 og sagde til ham: »Hvis du er Guds søn, så styrt dig ned. For der står skrevet: Han vil give sine engle befaling, og de skal bære dig på hænder, så du ikke støder din fod på nogen sten.« v7 Jesus sagde til ham: »Der står også skrevet: ›Du må ikke udæske Herren din Gud.‹ « v8 Igen tog Djævelen ham med sig, denne gang til et meget højt bjerg, og viste ham alle verdens riger og deres herlighed v9 og sagde til ham: »Alt dette vil jeg give dig, hvis du vil kaste dig ned og tilbede mig.« v10 Da svarede Jesus ham: »Vig bort, Satan! For der står skrevet: ›Du skal tilbede Herren din Gud og tjene ham alene.‹ « v11 Da forlod Djævelen ham, og se, der kom engle og sørgede for ham.]]></description>
@@ -369,7 +369,7 @@ Se, nu er det den nåderige tid, se, nu er det frelsens dag! v3 Vi volder ikke a
         </item>
         <item>
             <title><![CDATA[1 Thess 4, 1-7 (2.søn. i faste)]]></title>
-            <link>/article/vinter/faste/2-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/faste/2-epistel</link>
             <guid>/article/vinter/faste/2-epistel</guid>
             <pubDate>Sun, 05 Mar 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[I øvrigt, brødre, beder vi jer om og formaner jer i Herren Jesus til at gøre endnu mere fremgang i at leve sådan, som I lærte af os, Gud til behag, hvad I da også gør. v2 I ved jo, hvilke påbud vi gav jer ved Herren Jesus. v3 For dette er Guds vilje, at I skal helliges, så I afholder jer fra utugt, v4 sørger for hver især at have jeres hustru i hellighed og ære v5 og ikke i sanseligt begær som hedningerne, der ikke kender Gud, v6 og så I ikke foruretter eller udbytter jeres broder i forretning. For Herren straffer al den slags, som vi også tidligere har sagt til jer og har forsikret jer om, v7 og Gud kaldte os ikke til urenhed, men til hellighed. v8 Derfor, hvis nogen forkaster dette, er det ikke et menneske, han forkaster, men Gud, som giver jer sin hellige ånd.]]></description>
@@ -377,7 +377,7 @@ Se, nu er det den nåderige tid, se, nu er det frelsens dag! v3 Vi volder ikke a
         </item>
         <item>
             <title><![CDATA[Matt 15, 21-28 (2.søn. i faste)]]></title>
-            <link>/article/vinter/faste/2-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/faste/2-evangelium</link>
             <guid>/article/vinter/faste/2-evangelium</guid>
             <pubDate>Sun, 05 Mar 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Jesus gik bort derfra og drog til områderne ved Tyrus og Sidon. v22 Og se, en kana'anæisk kvinde kom fra den samme egn og råbte: »Forbarm dig over mig, Herre, Davids søn! Min datter plages slemt af en dæmon.« v23 Men han svarede hende ikke et ord. Og hans disciple kom hen og bad ham: »Send hende væk! Hun råber efter os.« v24 Han svarede: »Jeg er ikke sendt til andre end til de fortabte får af Israels hus.« v25 Men hun kom og kastede sig ned for ham og bad: »Herre, hjælp mig!« v26 Han sagde: »Det er ikke rigtigt at tage børnenes brød og give det til de små hunde.« v27 Men hun svarede: »Jo, Herre, for de små hunde spiser da af de smuler, som falder fra deres herres bord.« v28 Da sagde Jesus til hende: »Kvinde, din tro er stor. Det skal ske dig, som du vil.« Og i samme øjeblik blev hendes datter rask.]]></description>
@@ -385,7 +385,7 @@ Se, nu er det den nåderige tid, se, nu er det frelsens dag! v3 Vi volder ikke a
         </item>
         <item>
             <title><![CDATA[Ef 5, 1-9 (3.søn. i faste)]]></title>
-            <link>/article/vinter/faste/3-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/faste/3-epistel</link>
             <guid>/article/vinter/faste/3-epistel</guid>
             <pubDate>Sun, 12 Mar 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[I skal ligne Gud som hans kære børn v2 og vandre i kærlighed, ligesom Kristus elskede os og gav sig selv hen for os som en gave og et offer til Gud, en liflig duft. v3 Men utugt og al slags urenhed og griskhed må end ikke nævnes iblandt jer; det sømmer sig ikke for hellige. v4 Heller ikke skamløshed og tåbelig snak eller overfladisk vid; det passer sig ikke, men derimod taksigelse. v5 For det skal I vide, at ingen utugtig eller uren eller grisk – det er det samme som en afgudsdyrker – har lod og del i Kristi og Guds rige. v6 Lad ingen føre jer bag lyset med tomme ord; for det er den slags, der nedkalder Guds vrede over ulydighedens børn. v7 Gør derfor ikke fælles sag med dem! v8 For engang var I mørke, men nu er I lys i Herren; lev som lysets børn, v9 for lysets frugt er lutter godhed, retfærdighed og sandhed;]]></description>
@@ -393,7 +393,7 @@ Se, nu er det den nåderige tid, se, nu er det frelsens dag! v3 Vi volder ikke a
         </item>
         <item>
             <title><![CDATA[Luk 11, 14-28 (3.søn. i faste)]]></title>
-            <link>/article/vinter/faste/3-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/faste/3-evangelium</link>
             <guid>/article/vinter/faste/3-evangelium</guid>
             <pubDate>Sun, 12 Mar 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[(Jesus og Beelzebul)
@@ -406,7 +406,7 @@ v27 Mens han sagde det, var der en kvinde i skaren, der råbte: »Saligt er det 
         </item>
         <item>
             <title><![CDATA[Gal 4, 21-31 (Midtfaste søndag)]]></title>
-            <link>/article/vinter/faste/4-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/faste/4-epistel</link>
             <guid>/article/vinter/faste/4-epistel</guid>
             <pubDate>Sun, 19 Mar 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Sig mig, I, som vil være under loven, hører I ikke loven? V22 Der er jo skrevet, at Abraham havde to sønner, en med tjenestekvinden og en med den frie kvinde. V23 Men tjenestekvindens søn er avlet efter kødet, den frie kvindes ved forjættelsen. V24 Dette har en billedlig betydning. For disse kvinder er to pagter, den ene fra Sinaj bjerg, som føder til trældom: den er Hagar. V25 For »Hagar« er Sinaj bjerg i Arabien, men (Hagar) svarer til det nuværende Jeru­salem; for det er i trældom med sine børn. V26 Men Jerusalem her oventil er frit, og hun er vor moder. V27 Thi der er skrevet: »Fryd dig, du ufrugtbare, du som ikke føder! bryd ud og råb, du, som ikke har fødselsveer! For mange er den enliges børn frem for hendes, som har manden.« V28 Men vi, brødre! er forjættelsens børn i lighed med Isak. V29 Men ligesom dengang han, som var avlet efter kødet, forfulgte ham, som var avlet efter Ånden, således også nu. V30 Men hvad siger Skriften? »Uddriv tjeneste­kvinden og hendes søn; thi tjenestekvindens søn skal ingenlunde arve med den frie kvindes søn!« V31 Derfor brødre! er vi ikke tjenestekvindens børn, men den frie kvindes.]]></description>
@@ -414,7 +414,7 @@ v27 Mens han sagde det, var der en kvinde i skaren, der råbte: »Saligt er det 
         </item>
         <item>
             <title><![CDATA[Joh 6, 1-15 (Midtfaste søndag)]]></title>
-            <link>/article/vinter/faste/4-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/faste/4-evangelium</link>
             <guid>/article/vinter/faste/4-evangelium</guid>
             <pubDate>Sun, 19 Mar 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Derefter tog Jesus over til den anden side af Galilæas Sø, Tiberias Sø. v2 En stor folkeskare fulgte ham, fordi de så de tegn, han gjorde ved at helbrede de syge. v3 Men Jesus gik op på bjerget, og dér satte han sig sammen med sine disciple. v4 Påsken, jødernes fest, var nær.v5 Da Jesus løftede blikket og så, at en stor skare kom hen imod ham, sagde han til Filip: »Hvor skal vi købe brød, så disse folk kan få noget at spise?« v6 Men det sagde han for at sætte ham på prøve, for selv vidste han, hvad han ville gøre. v7 Filip svarede ham: »Brød for to hundrede denarer slår ikke til, så de kan få bare en lille smule hver.« v8 En af hans disciple, Andreas, Simon Peters bror, sagde til ham: v9 »Der er en lille dreng her, han har fem bygbrød og to fisk; men hvad er det til så mange?« v10 Jesus sagde: »Få folk til at sætte sig.« Der var meget græs på stedet. Mændene satte sig; de var omkring fem tusind. v11 Så tog Jesus brødene, takkede og delte ud til dem, der sad der; på samme måde også af fiskene, så meget de ville have. v12 Da de var blevet mætte, sagde han til sine disciple: »Saml de stykker sammen, som er tilovers, så intet går til spilde.« v13 Så samlede de dem sammen og fyldte tolv kurve med de stykker af de fem bygbrød, som var tilovers efter dem, der havde spist.v14 Da folk havde set det tegn, han havde gjort, sagde de: »Han er sandelig Profeten, som skal komme til verden.« v15 Jesus forstod nu, at de ville komme og tvinge ham med sig for at gøre ham til konge, og han trak sig atter tilbage til bjerget, helt alene.]]></description>
@@ -422,7 +422,7 @@ v27 Mens han sagde det, var der en kvinde i skaren, der råbte: »Saligt er det 
         </item>
         <item>
             <title><![CDATA[Luk 1, 26-38 (Maria bebudelses dag)]]></title>
-            <link>/article/vinter/faste/4-maria-bebudelses-dag</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/faste/4-maria-bebudelses-dag</link>
             <guid>/article/vinter/faste/4-maria-bebudelses-dag</guid>
             <pubDate>Fri, 24 Mar 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Da Elisabeth var i sjette måned, blev englen Gabriel sendt fra Gud til en by i Galilæa, der hedder Nazaret, v27 til en jomfru, der var forlovet med en mand, som hed Josef og var af Davids hus. Jomfruens navn var Maria. v28 Og englen kom ind til hende og hilste hende med ordene: »Herren er med dig, du benådede!« v29 Hun blev forfærdet over de ord og spurgte sig selv, hvad denne hilsen skulle betyde. v30 Da sagde englen til hende: »Frygt ikke, Maria! For du har fundet nåde for Gud. v31 Se, du skal blive med barn og føde en søn, og du skal give ham navnet Jesus. v32 Han skal blive stor og kaldes den Højestes søn, og Gud Herren skal give ham hans fader Davids trone; v33 han skal være konge over Jakobs hus til evig tid, og der skal ikke være ende på hans rige.« v34 Maria sagde til englen: »Hvordan skal det gå til? Jeg har jo aldrig været sammen med en mand.« v35 Englen svarede hende: »Helligånden skal komme over dig, og den Højestes kraft skal overskygge dig. Derfor skal det barn, der bliver født, også kaldes helligt, Guds søn. v36 Også din slægtning Elisabeth har undfanget en søn, nu i sin alderdom. Hun, om hvem man siger, at hun er ufrugtbar, er i sjette måned; v37 thi intet er umuligt for Gud.« v38 Da sagde Maria: »Se, jeg er Herrens tjenerinde. Lad det ske mig efter dit ord!« Så forlod englen hende.]]></description>
@@ -430,7 +430,7 @@ v27 Mens han sagde det, var der en kvinde i skaren, der råbte: »Saligt er det 
         </item>
         <item>
             <title><![CDATA[Hebr 9, 11-15 (5.søn. i faste)]]></title>
-            <link>/article/vinter/faste/5-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/faste/5-epistel</link>
             <guid>/article/vinter/faste/5-epistel</guid>
             <pubDate>Sun, 26 Mar 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Men Kristus er kommet som ypperstepræst for de goder, som nu er blevet til. Han er gået gennem det større og mere fuldkomne telt, som ikke er gjort med hænder, det vil sige, som ikke hører denne skabte verden til; v12 og ikke med blod af bukke og kalve, men med sit eget blod, gik han én gang for alle ind i det Allerhelligste og vandt evig forløsning. v13 Når nu blodet af bukke og tyre og asken af en ung ko ved at stænkes på mennesker, som er blevet urene, helliger dem og gør dem rene i det ydre, v14 så må Kristus, der i kraft af en evig ånd frembar sig selv som et lydefrit offer til Gud, med sit blod langt bedre kunne rense vor samvittighed fra døde gerninger, så vi kan tjene den levende Gud. v15 Derfor er Kristus formidler af en ny pagt, for at de kaldede kan få den evige arv, der er lovet, ved at han er død til forløsning fra overtrædelserne under den første pagt.]]></description>
@@ -438,7 +438,7 @@ v27 Mens han sagde det, var der en kvinde i skaren, der råbte: »Saligt er det 
         </item>
         <item>
             <title><![CDATA[Joh 8, 46-59 (5.søn. i faste)]]></title>
-            <link>/article/vinter/faste/5-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/faste/5-evangelium</link>
             <guid>/article/vinter/faste/5-evangelium</guid>
             <pubDate>Sun, 26 Mar 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Hvem af jer kan påvise nogen synd hos mig? Når jeg siger sandheden, hvorfor tror I mig da ikke? v47 Den, der er af Gud, hører Guds ord; men I hører ikke, fordi I ikke er af Gud.« v48 Jøderne sagde til ham: »Har vi ikke ret i at sige, at du er en samaritaner og besat af en dæmon?« v49 Jesus svarede: »Jeg er ikke besat af en dæmon, jeg ærer derimod min fader, men I vanærer mig. v50 Jeg søger ikke min egen ære; der er en, der søger den, og han dømmer. v51 Sandelig, sandelig siger jeg jer: Den, der holder fast ved mit ord, skal aldrig i evighed se døden.« v52 Da sagde jøderne til ham: »Nu ved vi, at du er besat af en dæmon. Abraham døde, og profeterne døde, og så siger du: Den, der holder fast ved mit ord, skal aldrig i evighed smage døden. v53 Du er vel ikke større end vor fader Abraham, som jo døde? Også profeterne døde. Hvem tror du, du er?« v54 Jesus svarede: »Hvis jeg ærer mig selv, er min ære intet værd. Det er min fader, som ærer mig, ham som I siger om: Han er vores Gud; v55 og I har ikke kendt ham, men jeg kender ham. Og siger jeg, at jeg ikke kender ham, så bliver jeg en løgner ligesom I; men jeg kender ham, og jeg holder fast ved hans ord. v56 Abraham, jeres fader, jublede over at skulle se min dag, og han fik den at se og glædede sig.« v57 Da sagde jøderne til ham: »Du er endnu ikke halvtreds år, og du har set Abraham?« v58 Jesus sagde til dem: »Sandelig, sandelig siger jeg jer: Jeg er, før Abraham blev født.« v59 Da tog de sten op for at kaste dem på ham; men Jesus forsvandt og forlod tempelpladsen.]]></description>
@@ -446,7 +446,7 @@ v27 Mens han sagde det, var der en kvinde i skaren, der råbte: »Saligt er det 
         </item>
         <item>
             <title><![CDATA[Fil 2, 5-11 (Palmesøndag)]]></title>
-            <link>/article/vinter/paaskeuge/palmesondag</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/paaskeuge/palmesondag</link>
             <guid>/article/vinter/paaskeuge/palmesondag</guid>
             <pubDate>Sun, 02 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[v5 I skal have det sind over for hinanden, som var i Kristus Jesus, v6 han, som havde Guds skikkelse, regnede det ikke for et rov at være lige med Gud, v7 men gav afkald på det, tog en tjeners skikkelse på og blev mennesker lig; og da han var trådt frem som et menneske, v8 ydmygede han sig og blev lydig indtil døden, ja, døden på et kors. v9 Derfor har Gud højt ophøjet ham og skænket ham navnet over alle navne, v10 for at i Jesu navn hvert knæ skal bøje sig, i himlen og på jorden og under jorden, v11 og hver tunge bekende: Jesus Kristus er Herre, til Gud Faders ære.1]]></description>
@@ -454,7 +454,7 @@ v27 Mens han sagde det, var der en kvinde i skaren, der råbte: »Saligt er det 
         </item>
         <item>
             <title><![CDATA[Om skrifte og nadver (Skærtorsdag)]]></title>
-            <link>/article/vinter/paaskeuge/skjaertorsdag</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/paaskeuge/skjaertorsdag</link>
             <guid>/article/vinter/paaskeuge/skjaertorsdag</guid>
             <pubDate>Thu, 06 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Skønt jeg ofte har prædiket og skrevet om nadveren, så må vi dog i en kort sum gentage det samme og atter tale om det, fordi denne højtid vender tilbage hvert år. Det er bestemt, at man skal prædike om dette på grund af dem, som skal modtage nadveren.
@@ -464,7 +464,7 @@ Derfor har Djævelen hidtil regeret med fuld magt og vælde gennem paven, som ha
         </item>
         <item>
             <title><![CDATA[Om Kristi lidelse (Langfredag)]]></title>
-            <link>/article/vinter/paaskeuge/palmesondag</link>
+            <link>https://kirkepostille.vercel.app/article/vinter/paaskeuge/palmesondag</link>
             <guid>/article/vinter/paaskeuge/palmesondag</guid>
             <pubDate>Fri, 07 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Innledende om tre forkerte betragninger av kristi lidelse, deretter om den rette betragning og til slutt om trøsten af Kristi lidelse.]]></description>
@@ -472,7 +472,7 @@ Derfor har Djævelen hidtil regeret med fuld magt og vælde gennem paven, som ha
         </item>
         <item>
             <title><![CDATA[1 Kor 5, 7-8 (1.Påskedag)]]></title>
-            <link>/article/vaar/1-4.paaskedag/1-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/1-4.paaskedag/1-epistel</link>
             <guid>/article/vaar/1-4.paaskedag/1-epistel</guid>
             <pubDate>Sun, 09 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Rens den gamle surdej ud, for at I kan være en ny dej. I er jo usyret brød, for også vort påskelam er slagtet, Kristus. v8 Lad os derfor fejre festen, ikke med gammel surdej, ikke med en slet og ond surdej, men med rene og sande usyrede brød.]]></description>
@@ -480,7 +480,7 @@ Derfor har Djævelen hidtil regeret med fuld magt og vælde gennem paven, som ha
         </item>
         <item>
             <title><![CDATA[Mark 16, 1-8 (1.Påskedag)]]></title>
-            <link>/article/vaar/1-4.paaskedag/1-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/1-4.paaskedag/1-evangelium</link>
             <guid>/article/vaar/1-4.paaskedag/1-evangelium</guid>
             <pubDate>Sun, 09 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Da sabbatten var forbi, købte Maria Magdalene og Maria, Jakobs mor, og Salome vellugtende salver for at gå ud og salve ham. v2 Meget tidligt om morgenen den første dag i ugen kommer de til graven, da solen var stået op. v3 Og de sagde til hinanden: »Hvem skal vi få til at vælte stenen fra indgangen til graven?« v4 Men da de så derhen, opdagede de, at stenen var væltet fra. For den var meget stor. v5 Og da de kom ind i graven, så de en ung mand i hvide klæder sidde i den højre side, og de blev forfærdede. v6 Men han sagde til dem: »Vær ikke forfærdede! I søger efter Jesus fra Nazaret, den korsfæstede. Han er opstået, han er ikke her. Se, dér er stedet, hvor de lagde ham! v7 Men gå hen og sig til hans disciple og til Peter, at han går i forvejen for jer til Galilæa. Dér skal I se ham, som han har sagt jer det.« v8 Og de gik ud og flygtede fra graven, for de var rystede og ude af sig selv. Og de sagde ikke noget til nogen, for de var bange.]]></description>
@@ -488,7 +488,7 @@ Derfor har Djævelen hidtil regeret med fuld magt og vælde gennem paven, som ha
         </item>
         <item>
             <title><![CDATA[ApG 10, 34-43 (2.Påskedag)]]></title>
-            <link>/article/vaar/1-4.paaskedag/2-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/1-4.paaskedag/2-epistel</link>
             <guid>/article/vaar/1-4.paaskedag/2-epistel</guid>
             <pubDate>Mon, 10 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Så tog Peter ordet og sagde: »Nu forstår jeg, at Gud ikke gør forskel på nogen, v35 men at han i et hvilket som helst folk tager imod den, der frygter ham og øver retfærdighed. v36 Det er det ord, Gud sendte til Israels børn, da han forkyndte fred ved Jesus Kristus; han er alles Herre. v37 I ved, hvad der er sket i hele Judæa, det der begyndte i Galilæa efter den dåb, Johannes prædikede: v38 hvordan Gud salvede Jesus fra Nazaret med Helligånd og kraft, og hvordan Jesus færdedes overalt og gjorde vel og helbredte alle, der var under Djævelens herredømme; for Gud var med ham. v39 Og vi er vidner om alt det, han gjorde i jødernes land såvel som i Jerusalem. Ham, som de slog ihjel ved at hænge ham på et træ, v40 ham oprejste Gud på den tredje dag og lod ham træde synlig frem, v41 ikke for hele folket, men for os, der i forvejen var udvalgt af Gud til at være vidner, vi som spiste og drak sammen med ham, efter at han var opstået fra de døde. v42 Og han befalede os at prædike for folket og vidne om, at det er ham, Gud har bestemt til at være dommer over levende og døde. v43 Om ham vidner alle profeterne, at enhver, som tror på ham, skal få syndsforladelse ved hans navn.«]]></description>
@@ -496,7 +496,7 @@ Derfor har Djævelen hidtil regeret med fuld magt og vælde gennem paven, som ha
         </item>
         <item>
             <title><![CDATA[Luk 24, 13-35 (2.Påskedag)]]></title>
-            <link>/article/vaar/1-4.paaskedag/2-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/1-4.paaskedag/2-evangelium</link>
             <guid>/article/vaar/1-4.paaskedag/2-evangelium</guid>
             <pubDate>Mon, 10 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Men samme dag var to af disciplene på vej til en landsby, som ligger tres stadier fra Jerusalem og hedder Emmaus; v14 de talte med hinanden om alt det, som var sket. v15 Og det skete, mens de gik og talte sammen og drøftede det indbyrdes, kom Jesus selv og slog følge med dem. v16 Men deres øjne holdtes til, så de ikke genkendte ham. v17 Han spurgte dem: »Hvad er det, I går og drøfter med hinanden?« De standsede og så bedrøvede ud, v18 og den ene af dem, Kleofas hed han, svarede: »Er du den eneste tilrejsende i Jerusalem, der ikke ved, hvad der er sket i byen i disse dage?« v19 »Hvad da?« spurgte han. De svarede: »Det med Jesus fra Nazaret, som var en profet, mægtig i gerning og ord over for Gud og hele folket v20 – hvordan vore ypperstepræster og rådsherrer har udleveret ham til dødsstraf og korsfæstet ham. v21 Og vi havde håbet, at det var ham, der skulle forløse Israel. Men til alt dette kommer, at det i dag er tredje dag, siden det skete. v22 Og nu har nogle af kvinderne iblandt os forfærdet os; de var tidligt i morges ude ved graven, v23 men fandt ikke hans legeme og kom tilbage og fortalte, at de i et syn havde set engle, som sagde, at han lever. v24 Nogle af dem, der er sammen med os, gik så ud til graven og fandt det sådan, som kvinderne havde sagt, men ham selv så de ikke.«v25 Da sagde han til dem: »I uforstandige, så tungnemme til at tro på alt det, profeterne har talt. v26 Skulle Kristus ikke lide dette og gå ind til sin herlighed?« v27 Og han begyndte med Moses og alle profeterne og udlagde for dem, hvad der stod om ham i alle Skrifterne.v28 De var næsten fremme ved den landsby, de var på vej til, og Jesus lod, som om han ville gå videre. v29 Men de holdt ham tilbage og sagde: »Bliv hos os! Det er snart aften, og dagen er allerede gået på hæld.« Så gik han med ind for at blive hos dem. v30 Og mens han sad til bords sammen med dem, tog han brødet, velsignede og brød det og gav dem det. v31 Da åbnedes deres øjne, og de genkendte ham; men så blev han usynlig for dem. v32 De sagde til hinanden: »Brændte vore hjerter ikke i os, mens han talte til os på vejen og åbnede Skrifterne for os?«v33 Og de brød op med det samme og vendte tilbage til Jerusalem, hvor de fandt de elleve og alle de andre forsamlet, v34 som sagde: »Herren er virkelig opstået, og han er set af Simon.« v35 Selv fortalte de, hvad der var sket på vejen, og hvordan de havde genkendt ham, da han brød brødet.]]></description>
@@ -504,7 +504,7 @@ Derfor har Djævelen hidtil regeret med fuld magt og vælde gennem paven, som ha
         </item>
         <item>
             <title><![CDATA[ApG 13, 26-39 (3.Påskedag)]]></title>
-            <link>/article/vaar/1-4.paaskedag/3-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/1-4.paaskedag/3-epistel</link>
             <guid>/article/vaar/1-4.paaskedag/3-epistel</guid>
             <pubDate>Tue, 11 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Brødre, I som er børn af Abrahams slægt, og I andre her, som frygter Gud! Det er til os, ordet om denne frelse er blevet sendt. v27 For Jerusalems indbyggere og deres ledere kendte ham ikke, de dømte ham og opfyldte derved profeternes ord, som læses op hver sabbat. v28 Og selv om de ikke fandt noget grundlag for dødsdom, bad de Pilatus om at lade ham henrette. v29 Da de havde udført alt det, der står skrevet om ham, tog de ham ned fra korset og lagde ham i en grav. v30 Men Gud oprejste ham fra de døde, v31 og i mange dage viste han sig for dem, der var fulgt med ham fra Galilæa til Jerusalem, og de er nu hans vidner over for folket. v32 Og vi forkynder jer det evangelium, at løftet, der blev givet til fædrene, v33 har Gud opfyldt for os, deres børn, da han lod Jesus opstå, sådan som der står skrevet i den anden salme: ›Du er min søn, jeg har født dig i dag. ‹ v34 Og at Gud lod ham opstå fra de døde, så han ikke nogen sinde skal vende tilbage til forrådnelse, har han sagt således: ›For jeg vil opfylde de urokkelige løfter til David for jer!‹ v35 Derfor siger han også et andet sted: ›Din hellige vil du ikke lade se forrådnelse.‹ v36 For da David havde tjent sit slægtled, sov han hen efter Guds vilje og blev lagt hos sine fædre og så forrådnelse. v37 Men han, som Gud oprejste, så ikke forrådnelse. v38 Det skal I altså vide, brødre, at det er ved ham, der forkyndes jer syndsforladelse; og i alt det, hvori I ikke kunne gøres retfærdige ved Moseloven, v39 bliver enhver, der tror, gjort retfærdig ved ham.]]></description>
@@ -512,7 +512,7 @@ Derfor har Djævelen hidtil regeret med fuld magt og vælde gennem paven, som ha
         </item>
         <item>
             <title><![CDATA[Luk 24, 36-47 (3.Påskedag - 1.prædiken)]]></title>
-            <link>/article/vaar/1-4.paaskedag/3-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/1-4.paaskedag/3-evangelium</link>
             <guid>/article/vaar/1-4.paaskedag/3-evangelium</guid>
             <pubDate>Tue, 11 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Mens de talte om dette, stod han midt iblandt dem, og han siger til dem: »Fred være med jer!« v37 De blev bange og forfærdede og troede, det var en ånd, de så. v38 Men han sagde til dem: »Hvorfor er I rystede, og hvorfor kommer der tvivl i jeres hjerte? v39 Se på mine hænder og fødder – det er mig. Føl på mig og se; en ånd har ikke kød og knogler, som I ser, jeg har.« v40 Da han havde sagt det, viste han dem sine hænder og fødder. v41 Og da de af bare glæde stadig ikke kunne tro, men undrede sig, spurgte han dem: »Har I noget at spise her?« v42 De gav ham et stykke stegt fisk, v43 og det tog han og spiste, mens de så det. v44 Så sagde han til dem: »Dette er, hvad jeg sagde til jer, mens jeg endnu var hos jer: Alt det må opfyldes, som står skrevet om mig i Moseloven, hos profeterne og i salmerne.« v45 Da åbnede han deres sind, så de kunne forstå Skrifterne, v46 og han sagde til dem: »Således står der skrevet: Kristus skal lide og opstå fra de døde på den tredje dag, v47 og i hans navn skal der prædikes omvendelse til syndernes forladelse for alle folkeslag. I skal begynde i Jerusalem.«]]></description>
@@ -520,7 +520,7 @@ Derfor har Djævelen hidtil regeret med fuld magt og vælde gennem paven, som ha
         </item>
         <item>
             <title><![CDATA[Luk 24, 36-47 (3.Påskedag - 2.prædiken)]]></title>
-            <link>/article/vaar/1-4.paaskedag/3-evangelium2</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/1-4.paaskedag/3-evangelium2</link>
             <guid>/article/vaar/1-4.paaskedag/3-evangelium2</guid>
             <pubDate>Tue, 11 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Mens de talte om dette, stod han midt iblandt dem, og han siger til dem: »Fred være med jer!« v37 De blev bange og forfærdede og troede, det var en ånd, de så. v38 Men han sagde til dem: »Hvorfor er I rystede, og hvorfor kommer der tvivl i jeres hjerte? v39 Se på mine hænder og fødder – det er mig. Føl på mig og se; en ånd har ikke kød og knogler, som I ser, jeg har.« v40 Da han havde sagt det, viste han dem sine hænder og fødder. v41 Og da de af bare glæde stadig ikke kunne tro, men undrede sig, spurgte han dem: »Har I noget at spise her?« v42 De gav ham et stykke stegt fisk, v43 og det tog han og spiste, mens de så det. v44 Så sagde han til dem: »Dette er, hvad jeg sagde til jer, mens jeg endnu var hos jer: Alt det må opfyldes, som står skrevet om mig i Moseloven, hos profeterne og i salmerne.« v45 Da åbnede han deres sind, så de kunne forstå Skrifterne, v46 og han sagde til dem: »Således står der skrevet: Kristus skal lide og opstå fra de døde på den tredje dag, v47 og i hans navn skal der prædikes omvendelse til syndernes forladelse for alle folkeslag. I skal begynde i Jerusalem.«]]></description>
@@ -528,7 +528,7 @@ Derfor har Djævelen hidtil regeret med fuld magt og vælde gennem paven, som ha
         </item>
         <item>
             <title><![CDATA[Kol 3, 1-7 (4.Påskedag)]]></title>
-            <link>/article/vaar/1-4.paaskedag/4-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/1-4.paaskedag/4-epistel</link>
             <guid>/article/vaar/1-4.paaskedag/4-epistel</guid>
             <pubDate>Wed, 12 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Når I nu er oprejst med Kristus, så søg det, som er i himlen, dér hvor Kristus sidder ved Guds højre hånd. v2 Tænk på det, som er i himlen, og ikke på det jordiske. v3 I er jo døde, og jeres liv er skjult med Kristus i Gud. v4 Når Kristus, jeres liv, bliver åbenbaret, da skal også I blive åbenbaret sammen med ham i herlighed. v5 Så lad da det jordiske i jer dø: utugt, urenhed, lidenskaber og onde lyster, og griskhed, for det er afgudsdyrkelse. v6 Det nedkalder Guds vrede over ulydighedens børn. v7 Den slags hengav også I jer til, dengang I levede sådan.]]></description>
@@ -536,7 +536,7 @@ Derfor har Djævelen hidtil regeret med fuld magt og vælde gennem paven, som ha
         </item>
         <item>
             <title><![CDATA[1 Joh 5, 4-12 (1.søn. efter påske)]]></title>
-            <link>/article/vaar/etter-paaske/1-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/etter-paaske/1-epistel</link>
             <guid>/article/vaar/etter-paaske/1-epistel</guid>
             <pubDate>Sun, 16 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Enhver, som tror, at Jesus er Kristus, er født af Gud. Og enhver, som elsker den, der har født ham, elsker også den, der er født af ham; v2 og deraf ved vi, at vi elsker Guds børn: at vi elsker Gud og handler efter hans bud. v3 For dette er kærligheden til Gud: at vi holder hans bud; og hans bud er ikke tunge. v4 For alt, hvad der er født af Gud, overvinder verden; og den sejr, som har overvundet verden, er vor tro. v5 Og hvem andre kan overvinde verden end den, som tror, at Jesus er Guds søn?Guds vidnesbyrd om Sønnen
@@ -545,7 +545,7 @@ v6 Han er den, der er kommet gennem vand og blod, Jesus Kristus. Han kom ikke ku
         </item>
         <item>
             <title><![CDATA[Joh 20, 19-31 (1.søn. efter påske - 1.prædiken)]]></title>
-            <link>/article/vaar/etter-paaske/1-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/etter-paaske/1-evangelium</link>
             <guid>/article/vaar/etter-paaske/1-evangelium</guid>
             <pubDate>Sun, 16 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Om aftenen den samme dag, den første dag i ugen, mens disciplene holdt sig inde bag lukkede døre af frygt for jøderne, kom Jesus og stod midt iblandt dem og sagde til dem: »Fred være med jer!« v20 Da han havde sagt det, viste han dem sine hænder og sin side. Disciplene blev glade, da de så Herren. v21 Jesus sagde igen til dem: »Fred være med jer! Som Faderen har udsendt mig, sender jeg også jer.« v22 Da han havde sagt det, blæste han ånde i dem og sagde: »Modtag Helligånden! v23 Forlader I nogen deres synder, er de dem forladt, nægter I at forlade nogen deres synder, er de ikke forladt.«
@@ -555,7 +555,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[Joh 20, 19-31 (1.søn. efter påske - 2.prædiken)]]></title>
-            <link>/article/vaar/etter-paaske/1-evangelium2</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/etter-paaske/1-evangelium2</link>
             <guid>/article/vaar/etter-paaske/1-evangelium2</guid>
             <pubDate>Sun, 16 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Om aftenen den samme dag, den første dag i ugen, mens disciplene holdt sig inde bag lukkede døre af frygt for jøderne, kom Jesus og stod midt iblandt dem og sagde til dem: »Fred være med jer!« v20 Da han havde sagt det, viste han dem sine hænder og sin side. Disciplene blev glade, da de så Herren. v21 Jesus sagde igen til dem: »Fred være med jer! Som Faderen har udsendt mig, sender jeg også jer.« v22 Da han havde sagt det, blæste han ånde i dem og sagde: »Modtag Helligånden! v23 Forlader I nogen deres synder, er de dem forladt, nægter I at forlade nogen deres synder, er de ikke forladt.«
@@ -565,7 +565,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[1 Pet 2, 20-25 (2.søn. efter påske)]]></title>
-            <link>/article/vaar/etter-paaske/2-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/etter-paaske/2-epistel</link>
             <guid>/article/vaar/etter-paaske/2-epistel</guid>
             <pubDate>Sun, 23 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Det er ingen ros, at I tåler mishandling, når I fejler. Men hvis I tåler lidelser, når I gør det gode, så er det tak værd for Gud. v21 Det blev I kaldet til, for også Kristus led for jeres skyld og efterlod jer et eksempel, for at I skal følge i hans fodspor: v22 Han gjorde ikke synd, og der fandtes ikke svig i hans mund, v23 han svarede ikke med skældsord, da han blev skældt ud, under sine lidelser truede han ikke, men overgav sin sag til ham, der dømmer retfærdigt; v24 på sit legeme bar han selv vore synder op på korset, for at vi, døde fra synden, skal leve for retfærdigheden. Ved hans sår blev I helbredt. v25 For I fór vild som får, men er nu vendt om til jeres sjæles hyrde og tilsynsmand.]]></description>
@@ -573,7 +573,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[Joh 10, 11-16 (2.søn. efter påske)]]></title>
-            <link>/article/vaar/etter-paaske/2-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/etter-paaske/2-evangelium</link>
             <guid>/article/vaar/etter-paaske/2-evangelium</guid>
             <pubDate>Sun, 23 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Jeg er den gode hyrde. Den gode hyrde sætter sit liv til for fårene. v12 Den, der er daglejer og ikke er hyrde og ikke selv ejer fårene, ser ulven komme og lader fårene i stikken og flygter, og ulven går på rov iblandt dem og jager dem fra hinanden; v13 for han er daglejer og er ligeglad med fårene.v14 Jeg er den gode hyrde. Jeg kender mine får, og mine får kender mig, v15 ligesom Faderen kender mig, og jeg kender Faderen; og jeg sætter mit liv til for fårene. v16 Jeg har også andre får, som ikke hører til denne fold; også dem skal jeg lede, og de skal høre min røst, og der skal blive én hjord, én hyrde.v17 Derfor elsker Faderen mig, fordi jeg sætter mit liv til for at få det tilbage. v18 Ingen tager det fra mig, men jeg sætter det til af mig selv. Jeg har magt til at sætte det til, og jeg har magt til at få det tilbage. Og det har min fader påbudt mig at gøre.«]]></description>
@@ -581,7 +581,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[1 Pet 2, 11-20 (3.søn. efter påske)]]></title>
-            <link>/article/vaar/etter-paaske/3-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/etter-paaske/3-epistel</link>
             <guid>/article/vaar/etter-paaske/3-epistel</guid>
             <pubDate>Sun, 30 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[I kære, jeg formaner jer til som udlændinge og fremmede at holde jer fra kødets lyster, som fører krig mod sjælen. v12 Lev jeres liv blandt hedningerne sådan, at de netop ved det, de bagtaler jer for som forbrydere, kan få syn for jeres gode gerninger og prise Gud for dem på hjemsøgelsens dag. v13 For Herrens skyld skal I underordne jer under enhver menneskelig ordning, hvad enten det er kongen som magthaver v14 eller statholdere, som sendes af ham for at straffe forbrydere og rose dem, der gør det gode. v15 For det er Guds vilje, at I ved at gøre det gode skal stoppe munden på tåbelige og uforstandige mennesker; v16 I er jo frie, ikke til at bruge friheden som et dække for ondskab, men som Guds trælle. v17 Ær alle, elsk brødrene, frygt Gud og ær kongen! v18 I, som er tjenestefolk, skal underordne jer under jeres herrer med al ærefrygt, ikke kun de gode og milde, men også de urimelige. v19 For det er tak værd, når man med Gud for øje tåler uforskyldte lidelser. v20 Det er ingen ros, at I tåler mishandling, når I fejler. Men hvis I tåler lidelser, når I gør det gode, så er det tak værd for Gud.]]></description>
@@ -589,7 +589,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[Joh 16, 16-22 (3.søn. efter påske)]]></title>
-            <link>/article/vaar/etter-paaske/3-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/etter-paaske/3-evangelium</link>
             <guid>/article/vaar/etter-paaske/3-evangelium</guid>
             <pubDate>Sun, 30 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[En kort tid, så ser I mig ikke længere, og atter en kort tid, så skal I se mig.« v17 Da sagde nogle af hans disciple til hinanden: »Hvad er meningen med det, han siger til os: En kort tid, så ser I mig ikke, og atter en kort tid, så skal I se mig? og: Jeg går til Faderen?« v18 De sagde altså: »Hvad mener han med at sige: En kort tid? Vi forstår ikke, hvad han taler om.«v19 Jesus vidste, at de ville spørge ham, så han sagde til dem: »I spørger hinanden, hvad jeg mente, da jeg sagde: En kort tid, så ser I mig ikke, og atter en kort tid, så skal I se mig? v20 Sandelig, sandelig siger jeg jer: I skal græde og klage, men verden skal glæde sig. I skal sørge, men jeres sorg skal blive til glæde. v21 Når kvinden skal føde, har hun det svært, fordi hendes time er kommet; men når hun har født sit barn, husker hun ikke mere sin trængsel af glæde over, at et menneske er født til verden. v22 Også I sørger nu, men jeg skal se jer igen, og da skal jeres hjerte glæde sig, og ingen skal tage jeres glæde fra jer.]]></description>
@@ -597,7 +597,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[Jak 1, 17-21 (4.søn. efter påske)]]></title>
-            <link>/article/vaar/etter-paaske/4-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/etter-paaske/4-epistel</link>
             <guid>/article/vaar/etter-paaske/4-epistel</guid>
             <pubDate>Sun, 07 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Alle gode og fuldkomne gaver kommer ned fra oven, fra lysenes fader, hos hvem der ikke findes forandring eller skiftende skygge. v18 Efter sin vilje fødte han os ved sandhedens ord til at være en førstegrøde af hans skabninger. v19 Det skal I vide, mine kære brødre: Enhver skal være snar til at høre, men sen til at tale, sen til vrede, v20 for et menneskes vrede udretter intet, der er retfærdigt for Gud. v21 Aflæg derfor al urenhed og al den megen ondskab, og tag med sagtmodighed imod det ord, som er indplantet i jer, og som kan frelse jeres sjæle.]]></description>
@@ -605,7 +605,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[Joh 16, 5-15 (4.søn. efter påske)]]></title>
-            <link>/article/vaar/etter-paaske/4-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/etter-paaske/4-evangelium</link>
             <guid>/article/vaar/etter-paaske/4-evangelium</guid>
             <pubDate>Sun, 07 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Nu går jeg til ham, som har sendt mig, og ingen af jer spørger mig: Hvor går du hen? v6 Men fordi jeg har talt sådan til jer, er jeres hjerte fyldt af sorg. v7 Men jeg siger jer sandheden: Det er det bedste for jer, at jeg går bort. For går jeg ikke bort, vil Talsmanden ikke komme til jer; men når jeg går herfra, vil jeg sende ham til jer. v8 Og når han kommer, skal han overbevise verden om synd og om retfærdighed og om dom. v9 Om synd: at de ikke tror på mig; v10 om retfærdighed: at jeg går til Faderen, og I ser mig ikke længere; v11 om dom: at denne verdens fyrste er dømt. v12 Jeg har endnu meget at sige jer, men det kan I ikke bære nu. v13 Men når han kommer, sandhedens ånd, skal han vejlede jer i hele sandheden; for han skal ikke tale af sig selv, men alt, hvad han hører, skal han tale, og hvad der kommer, skal han forkynde for jer. v14 Han skal herliggøre mig, for han skal tage af mit og forkynde det for jer. v15 Alt, hvad Faderen har, er mit; derfor sagde jeg, at han skal tage af mit og forkynde det for jer.]]></description>
@@ -613,7 +613,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[1.Kor 15, 51-57 (5.søn. efter påske)]]></title>
-            <link>/article/vaar/etter-paaske/5-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/etter-paaske/5-epistel</link>
             <guid>/article/vaar/etter-paaske/5-epistel</guid>
             <pubDate>Sun, 14 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Se, jeg sier eder en hemmelighet: Vi skal ikke alle hensove, men vi skal alle forvandles, v52 i et nu, i et øieblikk, ved den siste basun. For basunen skal lyde, og de døde skal opstå uforgjengelige, og vi skal forvandles. v53 For dette forgjengelige skal bli iklædd uforgjengelighet, og dette dødelige bli iklædd udødelighet. v54 Og når dette forgjengelige er iklædd uforgjengelighet, og dette dødelige er iklædd udødelighet, da opfylles det ord som er skrevet: Døden er opslukt til seier. v55 Død, hvor er din brodd? Død, hvor er din seier? v56 Men dødens brodd er synden, og syndens kraft er loven; v57 men Gud være takk, som gir oss seier ved vår Herre Jesus Kristus!1]]></description>
@@ -621,7 +621,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[Joh 16, 23-30 (5.søn. efter påske)]]></title>
-            <link>/article/vaar/etter-paaske/5-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/etter-paaske/5-evangelium</link>
             <guid>/article/vaar/etter-paaske/5-evangelium</guid>
             <pubDate>Sun, 14 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Den dag skal I ikke spørge mig om noget. Sandelig, sandelig siger jeg jer: Beder I Faderen om noget i mit navn, skal han give jer det. v24 Indtil nu har I ikke bedt om noget i mit navn. Bed, og I skal få, så jeres glæde kan være fuldkommen. v25 Sådan har jeg talt til jer i billeder; der kommer en tid, da jeg ikke mere skal tale til jer i billeder, men ligeud forkynde for jer om Faderen. v26 Den dag skal I bede i mit navn, og jeg siger ikke til jer, at jeg vil bede til Faderen for jer, v27 for Faderen selv elsker jer, fordi I elsker mig og tror, at jeg er udgået fra Faderen. v28 Jeg er udgået fra Faderen, og jeg er kommet til verden; jeg forlader verden igen, og jeg går til Faderen.« v29 Hans disciple sagde: »Nu taler du ligeud, og du bruger ikke billeder. v30 Nu ved vi, at du ved alt og ikke har brug for, at nogen spørger dig. Derfor tror vi, at du er udgået fra Gud.«]]></description>
@@ -629,7 +629,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[Mark 16, 14-20 (Kristi himmelfartsdag)]]></title>
-            <link>/article/vaar/etter-paaske/5-kristihimmelfartsdag</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/etter-paaske/5-kristihimmelfartsdag</link>
             <guid>/article/vaar/etter-paaske/5-kristihimmelfartsdag</guid>
             <pubDate>Thu, 18 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Til sidst viste han sig for de elleve selv, mens de sad til bords, og han bebrejdede dem deres vantro og hårdhjertethed, fordi de ikke havde troet dem, der havde set ham efter hans opstandelse. v15 Så sagde han til dem: »Gå ud i alverden og prædik evangeliet for hele skabningen. v16 Den, der tror og bliver døbt, skal frelses; men den, der ikke tror, skal dømmes. v17 Og disse tegn skal følge dem, der tror: I mit navn skal de uddrive dæmoner, de skal tale med nye tunger, v18 og de skal tage på slanger med deres hænder, og drikker de dødbringende gift, skal det ikke skade dem; de skal lægge hænderne på syge, så de bliver raske.«v19 Da Herren Jesus havde talt til dem, blev han taget op til himlen, og han satte sig ved Guds højre hånd. v20 Men de drog ud og prædikede alle vegne, og Herren virkede med og stadfæstede ordet ved de tegn, som fulgte med.]]></description>
@@ -637,7 +637,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[1 Pet 4, 7-11 (6.søn. efter påske)]]></title>
-            <link>/article/vaar/etter-paaske/6-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/etter-paaske/6-epistel</link>
             <guid>/article/vaar/etter-paaske/6-epistel</guid>
             <pubDate>Sun, 21 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Men alle tings ende er nær. Vær derfor besindige og årvågne, så I kan bede; v8 først og fremmest skal I holde fast ved den indbyrdes kærlighed, for kærlighed skjuler mange synder. v9 Vær gæstfrie mod hinanden uden tværhed. v10 Som gode forvaltere af Guds mangfoldige nåde skal enhver af jer tjene de andre med den nådegave, han har fået. v11 Den, der taler, skal tale med ord fra Gud; den, der tjener, skal tjene med den kraft, Gud giver, for at Gud i alle ting må blive herliggjort ved Jesus Kristus. Æren og magten er hans i evighedernes evigheder! Amen.]]></description>
@@ -645,7 +645,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[Joh 15, 26 - 16, 4 (6.søn. efter påske)]]></title>
-            <link>/article/vaar/etter-paaske/6-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/etter-paaske/6-evangelium</link>
             <guid>/article/vaar/etter-paaske/6-evangelium</guid>
             <pubDate>Sun, 21 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Men naar den Talsmand kommer, hvilken jeg skal sende Eder fra Faderen, den Sandheds Aand, som udgaar ffra Faderen, han skal vidne om mig. Men og I skulle vidne; thi I vare med mig fra begyndelsen af. Disse Ting haver jeg taler til Eder, at I ikke skulle forarges. De skulle udelukke Eder af Synagogerne; ja den Tid skal komme, at hver den, som ihjelslaar Eder, skal mene, han viser Gud en Dyrkelse. Og dette skulle de gjøre Eder, fordi de hverken kjende Faderen, ei heller mig. Men disse Ting haver jeg taler til Eder, paadet, naar Timen kommer, I skulle komme ihu, at jeg sagde Eder dem; men disse Ting sagde jeg Eder ikke i Begyndelsen, fordi jeg var hos Eder.1]]></description>
@@ -653,7 +653,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[ApG 2, 1-13 (1.Pinsedag)]]></title>
-            <link>/article/vaar/pinse/1-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/pinse/1-epistel</link>
             <guid>/article/vaar/pinse/1-epistel</guid>
             <pubDate>Sat, 28 May 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Da pinsedagen kom, var de alle forsamlet. v2 Og med ét kom der fra himlen en lyd som af et kraftigt vindstød, og den fyldte hele huset, hvor de sad. v3 Og tunger som af ild viste sig for dem, fordelte sig og satte sig på hver enkelt af dem. v4 Da blev de alle fyldt af Helligånden, og de begyndte at tale på andre tungemål, alt efter hvad Ånden indgav dem at sige. v5 I Jerusalem boede der fromme jøder fra alle folkeslag under himlen. v6 Da nu denne lyd hørtes, stimlede folk sammen, og de blev forvirret, fordi hver enkelt hørte dem tale på sit eget modersmål. v7 De var ude af sig selv af forundring og spurgte: »Hør, er de ikke galilæere, alle de, der taler? v8 Hvordan kan vi så hver især høre det på vort eget modersmål? v9 Vi parthere, medere og elamitter, vi der bor i Mesopotamien, Judæa og Kappadokien, Pontus og provinsen Asien, v10 Frygien og Pamfylien, Egypten og Kyrene i Libyen, vi tilflyttede romere, v11 jøder og proselytter, kretere og arabere – vi hører dem tale om Guds storværker på vore egne tungemål.« v12 Alle var ude af sig selv, og i deres vildrede spurgte de hinanden: »Hvad skal det betyde?« v13 Men andre spottede og sagde: »De har drukket sig fulde i sød vin.«]]></description>
@@ -661,7 +661,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[Joh 14, 23-31 (1.Pinsedag)]]></title>
-            <link>/article/vaar/pinse/1-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/pinse/1-evangelium</link>
             <guid>/article/vaar/pinse/1-evangelium</guid>
             <pubDate>Sun, 28 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Jesus svarede: »Den, der elsker mig, vil holde fast ved mit ord, og min Fader vil elske ham, og vi skal komme til ham og tage bolig hos ham. v24 Den, der ikke elsker mig, holder ikke fast ved mine ord. Og det ord, I hører, er ikke mit, men Faderens, som har sendt mig. v25 Sådan har jeg talt til jer, mens jeg endnu var hos jer. v26 Men Talsmanden, Helligånden, som Faderen vil sende i mit navn, han skal lære jer alt og minde jer om alt, hvad jeg har sagt til jer. v27 Fred efterlader jeg jer, min fred giver jeg jer; jeg giver jer ikke, som verden giver. Jeres hjerte må ikke forfærdes og ikke være modløst! v28 I har hørt, at jeg har sagt til jer: Jeg går bort, og jeg kommer til jer. Hvis I elskede mig, ville I glæde jer over, at jeg går til Faderen, for Faderen er større end jeg. v29 Nu har jeg sagt det til jer, før det sker, for at I skal tro, når det sker. v30 Jeg skal ikke tale meget med jer mere, for verdens fyrste kommer; og mig kan han intet gøre, v31 men det sker, for at verden skal forstå, at jeg elsker Faderen og gør sådan, som Faderen har påbudt mig. Rejs jer, lad os gå herfra!]]></description>
@@ -669,7 +669,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[Joh 3, 16-21 (2.Pinsedag)]]></title>
-            <link>/article/vaar/pinse/2-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/pinse/2-evangelium</link>
             <guid>/article/vaar/pinse/2-evangelium</guid>
             <pubDate>Mon, 29 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[For således elskede Gud verden, at han gav sin enbårne søn, for at enhver, som tror på ham, ikke skal fortabes, men have evigt liv. v17 For Gud sendte ikke sin søn til verden for at dømme verden, men for at verden skal frelses ved ham. v18 Den, der tror på ham, dømmes ikke; den, der ikke tror, er allerede dømt, fordi han ikke har troet på Guds enbårne søns navn. v19 Og dette er dommen, at lyset er kommet til verden, og menneskene elskede mørket frem for lyset, fordi deres gerninger var onde. v20 For enhver, som øver ondt, hader lyset og kommer ikke til lyset, for at hans gerninger ikke skal afsløres. v21 Men den, der gør sandheden, kommer til lyset, for at det skal blive åbenbart, at hans gerninger er gjort i Gud.]]></description>
@@ -677,7 +677,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[Joh 10, 1-10 (3.Pinsedag)]]></title>
-            <link>/article/vaar/pinse/3-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/vaar/pinse/3-evangelium</link>
             <guid>/article/vaar/pinse/3-evangelium</guid>
             <pubDate>Tue, 30 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Sandelig, sandelig siger jeg jer: Den, der ikke går ind i fårefolden gennem døren, men klatrer over et andet sted, han er en tyv og en røver. v2 Men den, der går ind gennem døren, er fårenes hyrde. v3 For ham lukker dørvogteren op, og fårene hører hans røst, og han kalder sine egne får ved navn og fører dem ud. v4 Når han har fået alle sine får ud, går han foran dem, og de følger ham, fordi de kender hans røst. v5 Men en fremmed vil de aldrig følge; de vil tværtimod flygte fra ham, fordi de ikke kender de fremmedes røst.« v6 Med dette billede talte Jesus til dem, men de forstod ikke, hvad det var, han talte til dem om. v7 Jesus sagde da igen: »Sandelig, sandelig siger jeg jer: Jeg er døren til fårene. v8 Alle de, der er kommet før mig, er tyve og røvere, men fårene hørte ikke på dem. v9 Jeg er døren. Den, der går ind gennem mig, skal blive frelst; han skal gå ind og gå ud og finde græsgange. v10 Tyven kommer kun for at stjæle og slagte og ødelægge. Jeg er kommet, for at de skal have liv og have i overflod.]]></description>
@@ -685,7 +685,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[Rom 11, 33-36 (Trefoldighedssøndag)]]></title>
-            <link>/article/trefoldighed/sommer/0-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/0-epistel</link>
             <guid>/article/trefoldighed/sommer/0-epistel</guid>
             <pubDate>Sun, 04 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[O dyb af Guds rigdom og visdom og kundskab! Hvor uransagelige er hans domme, og hvor usporlige hans veje! For »hvem kender Herrens tanker, eller hvem kan være hans rådgiver? Hvem har givet ham noget først, så han må gøre gengæld?« Thi fra ham og ved ham og til ham er alle ting. Ham være ære til evig tid! Amen.]]></description>
@@ -693,7 +693,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[Joh 3, 1-15 (Trefoldighedssøndag)]]></title>
-            <link>/article/trefoldighed/sommer/0-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/0-evangelium</link>
             <guid>/article/trefoldighed/sommer/0-evangelium</guid>
             <pubDate>Sun, 04 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Der var et menneske, en af farisæerne, ved navn Nikodemus, medlem af jødernes råd. v2 Han kom til Jesus om natten og sagde til ham: »Rabbi, vi ved, du er en lærer, der er kommet fra Gud; for ingen kan gøre de tegn, du gør, uden at Gud er med ham.« v3 Jesus svarede ham: »Sandelig, sandelig siger jeg dig: Den, der ikke bliver født på ny, kan ikke se Guds rige.« v4 Nikodemus sagde til ham: »Hvordan kan et menneske fødes, når det er gammelt? Det kan da ikke for anden gang komme ind i sin mors liv og fødes?« v5 Jesus svarede: »Sandelig, sandelig siger jeg dig: Den, der ikke bliver født af vand og ånd, kan ikke komme ind i Guds rige. v6 Det, der er født af kødet, er kød, og det, der er født af Ånden, er ånd. v7 Du skal ikke undre dig over, at jeg sagde til dig: I må fødes på ny. v8 Vinden blæser, hvorhen den vil, og du hører den suse, men du ved ikke, hvor den kommer fra, og hvor den farer hen. Sådan er det med enhver, som er født af Ånden.« v9 Nikodemus spurgte ham: »Hvordan kan det gå til?« v10 Jesus svarede: »Du er lærer i Israel og forstår ikke det? v11 Sandelig, sandelig siger jeg dig: Vi taler om det, vi ved, og vi vidner om det, vi har set, men I tager ikke imod vort vidnesbyrd. v12 Tror I ikke, når jeg har talt til jer om det jordiske, hvordan skal I så tro, når jeg taler til jer om det himmelske? v13 Ingen er steget op til Himlen undtagen den, der steg ned fra Himlen, Menneskesønnen.]]></description>
@@ -701,7 +701,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[1 Joh 4, 16-21 (1.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/1-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/1-epistel</link>
             <guid>/article/trefoldighed/sommer/1-epistel</guid>
             <pubDate>Sun, 11 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Denne epistel er udførligen forklaret og særskilt trykt blandt utleggelserne af nogle af Apostlenes breve, hvor enhver, som vil, kan læse dem og for sig og sit huusfolk tage een eller flere prædikener deraf; thi det vilde være for langt at hidsætte dem her i sin heelhed.]]></description>
@@ -709,7 +709,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[Luk 16, 19-31 (1.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/1-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/1-evangelium</link>
             <guid>/article/trefoldighed/sommer/1-evangelium</guid>
             <pubDate>Sun, 11 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[v19 Der var en rig mand, som klædte sig i purpur og fint linned og hver dag levede i fest og pragt. v20 Men en fattig mand ved navn Lazarus lå ved hans port, fuld af sår, v21 og ønskede kun at spise sig mæt i det, der faldt fra den riges bord, og hundene kom tilmed og slikkede hans sår. v22 Så døde den fattige, og han blev af englene båret hen i Abrahams skød. Også den rige døde og blev begravet. v23 Da han slog øjnene op i dødsriget, hvor han pintes, ser han Abraham langt borte og Lazarus i hans skød. v24 Fader Abraham! råbte han, forbarm dig over mig og send Lazarus, så han kan dyppe spidsen af sin finger i vand og læske min tunge, for jeg pines i disse luer. v25 Men Abraham svarede: Barn, husk på, at du fik dit gode, mens du levede, og Lazarus på samme måde det onde; nu trøstes han her, mens du pines. v26 Desuden er der lagt en dyb kløft mellem os og jer, for at de, som vil herfra over til jer, ikke skal kunne det, og de heller ikke skal komme over til os derovrefra. v27 Da sagde han: Så beder jeg dig, fader, at du vil sende ham til min fars hus, v28 for jeg har fem brødre, for at han kan advare dem, så ikke også de kommer til dette pinested. v29 Men Abraham svarede: De har Moses og profeterne, dem kan de høre. v30 Nej, fader Abraham! sagde han, men kommer der en til dem fra de døde, vil de omvende sig. v31 Abraham svarede: Hvis de ikke hører Moses og profeterne, vil de heller ikke lade sig overbevise, selv om en står op fra de døde.«]]></description>
@@ -717,7 +717,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[1 Joh 3, 13-18 (2.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/2-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/2-epistel</link>
             <guid>/article/trefoldighed/sommer/2-epistel</guid>
             <pubDate>Sun, 18 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[I må ikke undre jer, brødre, hvis verden hader jer. Vi ved, at vi er gået over fra døden til livet; for vi elsker brødrene. Den, der ikke elsker, bliver i døden. Enhver, som hader sin bror, er en morder, og I ved, at ingen morder har evigt liv i sig. Derpå kender vi kærligheden: at han satte sit liv til for os; så skylder også vi at sætte livet til for brødrene. Den, der har jordisk gods og ser sin bror lide nød, men lukker sit hjerte for ham – hvordan kan Guds kærlighed blive i ham? Kære børn, lad os ikke elske med ord eller tunge, men i gerning og sandhed.]]></description>
@@ -725,7 +725,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[Luk 14, 16-24 (2.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/2-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/2-evangelium</link>
             <guid>/article/trefoldighed/sommer/2-evangelium</guid>
             <pubDate>Sun, 18 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Efter at have hørt det sagde en af gæsterne til ham: »Salig er den, som sidder til bords i Guds rige!« Jesus svarede: »Der var en mand, som ville holde et stort festmåltid og indbød mange. Da festen skulle begynde, sendte han sin tjener ud for at sige til de indbudte: Kom, nu er alt rede! Men de gav sig alle som én til at undskylde sig. Den første sagde til ham: Jeg har købt en mark og bliver nødt til at gå ud og se til den. Jeg beder dig, hav mig undskyldt. En anden sagde: Jeg har købt fem par okser og skal ud at prøve dem. Jeg beder dig, hav mig undskyldt. Og en tredje sagde: Jeg har lige giftet mig, og derfor kan jeg ikke komme. Tjeneren kom tilbage og fortalte sin Herre dette. Da blev husets Herre vred og sagde til tjeneren: Gå straks ud på byens gader og stræder og hent de fattige, vanføre, blinde og lamme herind. Og tjeneren meldte: Herre, det er sket, som du befalede, men der er stadig plads. Så sagde Herren til tjeneren: Gå ud på vejene og langs gærderne og nød dem til at komme, så mit hus kan blive fyldt. For jeg siger jer: Ingen af de mænd, som var indbudt, skal smage mit måltid.«]]></description>
@@ -733,7 +733,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[1 Pet 5, 5-11 (3.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/3-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/3-epistel</link>
             <guid>/article/trefoldighed/sommer/3-epistel</guid>
             <pubDate>Sun, 25 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[I unge skal underordne jer under de ældste; I skal alle være klædt i ydmyghed over for hinanden, for Gud står de hovmodige imod, de ydmyge viser han nåde. Ydmyg jer derfor under Guds stærke hånd, så vil han ophøje jer, når tiden kommer, og kast al jeres bekymring på ham, for han har omsorg for jer. Vær årvågne og på vagt! Jeres modstander, Djævelen, går omkring som en brølende løve og leder efter nogen at sluge; stå ham imod, faste i troen, I ved jo, at de samme lidelser rammer jeres brødre her i verden. Og når I må lide her en kort tid, vil al nådes Gud, som har kaldet jer til sin evige herlighed ved Kristus Jesus, selv udruste, støtte, styrke, grundfæste jer. Magten er hans i al evighed! Amen.]]></description>
@@ -741,7 +741,7 @@ v30 Jesus gjorde også mange andre tegn, som hans disciple så; dem er der ikke 
         </item>
         <item>
             <title><![CDATA[Luk 15, 1-10 (3.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/3-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/3-evangelium</link>
             <guid>/article/trefoldighed/sommer/3-evangelium</guid>
             <pubDate>Sun, 25 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[v1 Alle toldere og syndere holdt sig nær til Jesus for at høre ham, v2 og farisæerne og de skriftkloge gav ondt af sig og sagde: Den mand tager imod syndere og spiser sammen med dem.« v3 Men han fortalte dem denne lignelse: v4 Hvis en af jer har hundrede får og mister et af dem, lader han så ikke de nioghalvfems blive i ødemarken og går ud efter det, han har mistet, indtil han finder det? v5 Og når han har fundet det, lægger han det glad på sine skuldre, v6 og når han kommer hjem, kalder han sine venner og naboer sammen og siger til dem: Glæd jer med mig, for jeg har fundet det får, jeg havde mistet. v7 Jeg siger jer: Sådan bliver der større glæde i himlen over én synder, der omvender sig, end over nioghalvfems retfærdige, som ikke har brug for omvendelse.
@@ -750,7 +750,7 @@ v8 Eller hvis en kvinde har ti drakmer og taber én af dem, tænder hun så ikke
         </item>
         <item>
             <title><![CDATA[Rom 8, 18-22 (4.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/4-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/4-epistel</link>
             <guid>/article/trefoldighed/sommer/4-epistel</guid>
             <pubDate>Sun, 02 Jul 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[v18 Jeg mener nemlig, at lidelserne i den tid, der nu er inde, er for intet at regne mod den herlighed, som skal åbenbares på os. v19 For skabningen venter med længsel på, at Guds børn skal åbenbares. v20 Skabningen blev jo underlagt tomheden, ikke fordi den selv ville, men på grund af ham, der gjorde det, og med det håb, v21 at også skabningen selv vil blive befriet fra trældommen under forgængeligheden og nå til den frihed, som Guds børn får i herligheden. v22 Vi ved, at hele skabningen endnu sukker og vånder sig sammen. v23 Og ikke alene det: også vi, der har Ånden som førstegrøde, sukker selv i forventning om barnekår, vort legemes forløsning.]]></description>
@@ -758,7 +758,7 @@ v8 Eller hvis en kvinde har ti drakmer og taber én af dem, tænder hun så ikke
         </item>
         <item>
             <title><![CDATA[Luk 6, 36-42 (4.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/4-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/4-evangelium</link>
             <guid>/article/trefoldighed/sommer/4-evangelium</guid>
             <pubDate>Sun, 02 Jul 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Vær barmhjertige, som jeres fader er barmhjertig. v37 Døm ikke, så skal I ikke selv dømmes; fordøm ikke, så skal I ikke fordømmes. Tilgiv, så skal I få tilgivelse. v38 Giv, så skal der gives jer. Et godt, presset, rystet, topfyldt mål skal man give jer i favnen. For det mål, I måler med, skal I selv få tilmålt med.«  v39 Han fortalte dem også en lignelse: »Kan en blind lede en blind? Vil de ikke begge falde i grøften? v40 En discipel står ikke over sin mester; men enhver, der er udlært, skal være som sin mester. v41 Hvorfor ser du splinten i din broders øje, men lægger ikke mærke til bjælken i dit eget øje? v42 Hvordan kan du sige til din broder: Broder, lad mig tage den splint ud, som er i dit øje! når du ikke ser bjælken i dit eget øje? Hykler, tag først bjælken ud af dit eget øje; så kan du se klart nok til at tage den splint ud, som er i din broders øje.]]></description>
@@ -766,7 +766,7 @@ v8 Eller hvis en kvinde har ti drakmer og taber én af dem, tænder hun så ikke
         </item>
         <item>
             <title><![CDATA[1 Pet 3, 8-15a (5.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/5-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/5-epistel</link>
             <guid>/article/trefoldighed/sommer/5-epistel</guid>
             <pubDate>Sun, 09 Jul 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Og til slut: Lev alle i enighed, og vis medfølelse, broderkærlighed, barmhjertighed og ydmyghed. v9 Gengæld ikke ondt med ondt eller skældsord med skældsord, men tværtimod med velsignelse, for I er kaldet til at arve velsignelse. v10 Den, som vil elske livet og se lykkelige dage, han skal vogte sin tunge for ondskab og sine læber for at tale svig; v11 han skal holde sig fra det onde og gøre det gode, søge freden og stræbe efter den. v12 For Herrens øjne hviler på de retfærdige, hans ører hører deres råb om hjælp. Herrens ansigt er vendt mod dem, der øver ondt.v13 Hvem kan skade jer, når I er ivrige efter at gøre det gode? v14 Men skulle I også komme til at lide for retfærdigheden, er I salige. Frygt ikke, hvad de frygter, nær ingen rædsel; v15 men I skal hellige Herren Kristus i jeres hjerte.]]></description>
@@ -774,7 +774,7 @@ v8 Eller hvis en kvinde har ti drakmer og taber én af dem, tænder hun så ikke
         </item>
         <item>
             <title><![CDATA[Luk 5, 1-11 (5.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/5-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/5-evangelium</link>
             <guid>/article/trefoldighed/sommer/5-evangelium</guid>
             <pubDate>Sun, 09 Jul 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Engang da Jesus stod ved Genesaret Sø, og folkeskaren trængtes om ham for at høre Guds ord, v2 fik han øje på to både, der lå ved søen. Fiskerne var gået fra dem og var ved at skylle garnene. v3 Så gik han op i en af bådene, den der tilhørte Simon, og bad ham lægge lidt fra land. Så satte han sig og underviste skarerne fra båden. v4 Da han holdt op med at tale, sagde han til Simon: »Læg ud på dybet, og kast jeres garn ud til fangst!« v5 Men Simon svarede: »Mester, vi har slidt hele natten og ingenting fået; men på dit ord vil jeg kaste garnene ud.« v6 Det gjorde de, og de fangede en stor mængde fisk, så deres garn var ved at sprænges. v7 De gjorde tegn til deres kammerater i den anden båd, at de skulle komme dem til hjælp, og de kom og fyldte begge både, så de var lige ved at synke. v8 Da Simon Peter så det, faldt han ned for Jesu knæ og sagde: »Gå bort fra mig, Herre, for jeg er en syndig mand.« v9 For han og alle de, som var med ham, var grebet af rædsel på grund af den fangst, de havde fået v10 – ligeså Jakob og Johannes, Zebedæus' sønner, som fiskede sammen med Simon. Men Jesus sagde til Simon: »Frygt ikke! Fra nu af skal du fange mennesker.« v11 Og de lagde bådene til land og forlod alt og fulgte ham.]]></description>
@@ -782,7 +782,7 @@ v8 Eller hvis en kvinde har ti drakmer og taber én af dem, tænder hun så ikke
         </item>
         <item>
             <title><![CDATA[Rom 6, 3-11 (6.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/6-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/6-epistel</link>
             <guid>/article/trefoldighed/sommer/6-epistel</guid>
             <pubDate>Sun, 16 Jul 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Dåb i Wittenberg bykirkeEller ved I ikke, at alle vi, som er blevet døbt til Kristus Jesus, er døbt til hans død? Vi blev altså begravet sammen med ham ved dåben til døden, for at også vi, sådan som Kristus blev oprejst fra de døde ved Faderens herlighed, skal leve et nyt liv. For er vi vokset sammen med ham ved en død, der ligner hans, skal vi også være det ved en opstandelse, der ligner hans. Vi ved, at vort gamle menneske er blevet korsfæstet sammen med ham, for at det legeme, som ligger under for synden, skulle tilintetgøres, så vi ikke mere er trælle for synden; den, der er død, er jo frigjort fra synden. Men er vi døde med Kristus, tror vi, at vi også skal leve med ham. Og vi ved, at Kristus er opstået fra de døde og ikke mere dør; døden er ikke herre over ham mere. For den død, han døde, døde han fra synden én gang for alle. Det liv, han lever, lever han for Gud. Sådan skal også I se på jer selv: I er døde for synden, men levende for Gud i Kristus Jesus.]]></description>
@@ -790,7 +790,7 @@ v8 Eller hvis en kvinde har ti drakmer og taber én af dem, tænder hun så ikke
         </item>
         <item>
             <title><![CDATA[Matt 5, 20-26 (6.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/6-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/6-evangelium</link>
             <guid>/article/trefoldighed/sommer/6-evangelium</guid>
             <pubDate>Sun, 16 Jul 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[v20 For jeg siger jer: Hvis jeres retfærdighed ikke langt overgår de skriftkloges og farisæernes, kommer I slet ikke ind i Himmeriget. v21 I har hørt, at der er sagt til de gamle: ›Du må ikke begå drab,‹ og: ›Den, der begår drab, skal kendes skyldig af domstolen.‹ v22 Men jeg siger jer: Enhver, som bliver vred på sin bror, skal kendes skyldig af domstolen; den, der siger: Raka! til sin bror, skal kendes skyldig af Det store Råd; den, der siger: Tåbe! skal dømmes til Helvedes ild. v23 Når du derfor bringer din gave til alteret og dér kommer i tanker om, at din bror har noget mod dig, v24 så lad din gave blive ved alteret og gå først hen og forlig dig med din bror; så kan du komme og bringe din gave. v25 Skynd dig at blive enig med din modpart, mens du er på vej sammen med ham, så din modpart ikke overgiver dig til dommeren og dommeren igen til fangevogteren, og du kastes i fængsel. v26 Sandelig siger jeg dig: Du slipper ikke ud derfra, før du har betalt den sidste øre.]]></description>
@@ -798,7 +798,7 @@ v8 Eller hvis en kvinde har ti drakmer og taber én af dem, tænder hun så ikke
         </item>
         <item>
             <title><![CDATA[Rom 6, 19-23 (7.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/7-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/7-epistel</link>
             <guid>/article/trefoldighed/sommer/7-epistel</guid>
             <pubDate>Sun, 23 Jul 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Jeg bruger et udtryk fra dagliglivet, fordi I er skrøbelige mennesker. For ligesom I lod jeres lemmer trælle for urenheden og lovløsheden, så I blev lovløse, skal I nu lade dem trælle for retfærdigheden, så I helliges. Dengang I var syndens trælle, var I frie over for retfærdigheden. Hvad fik I da? Frugter, som I nu skammer jer over; de ender jo med død. Men nu, da I er blevet befriet fra synden og er blevet trælle for Gud, får I den frugt, at I helliges, og til sidst evigt liv. For syndens løn er død, men Guds nådegave er evigt liv i Kristus Jesus, vor Herre.]]></description>
@@ -806,7 +806,7 @@ v8 Eller hvis en kvinde har ti drakmer og taber én af dem, tænder hun så ikke
         </item>
         <item>
             <title><![CDATA[Mark 8, 1-9 (7.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/7-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/7-evangelium</link>
             <guid>/article/trefoldighed/sommer/7-evangelium</guid>
             <pubDate>Sun, 23 Jul 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[I de dage var der igen en stor skare, som ikke havde noget at spise, og Jesus kaldte disciplene til sig og sagde til dem: v2 »Jeg ynkes over skaren, for de har allerede været hos mig i tre dage og har ikke noget at spise; v3 og sender jeg dem sultne hjem, vil de blive udmattet undervejs, og nogle af dem er kommet langvejsfra.« v4 Hans disciple svarede ham: »Hvorfra skal nogen få brød til at mætte dem her i ødemarken?« v5 Han spurgte dem: »Hvor mange brød har I?« »Syv,« svarede de. v6 Så lod han skaren sætte sig på jorden; og han tog de syv brød, takkede, brød dem og gav sine disciple dem, for at de skulle dele dem ud; og de delte dem ud til skaren. v7 De havde også et par småfisk; og han velsignede dem og sagde, at de også skulle dele dem ud. v8 Og de spiste og blev mætte, og de samlede de stykker sammen, som var tilovers, syv kurve fulde. v9 Der var omkring fire tusind til stede. Og han sendte dem bort.]]></description>
@@ -814,7 +814,7 @@ v8 Eller hvis en kvinde har ti drakmer og taber én af dem, tænder hun så ikke
         </item>
         <item>
             <title><![CDATA[Rom 8, 12-17 (8.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/8-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/8-epistel</link>
             <guid>/article/trefoldighed/sommer/8-epistel</guid>
             <pubDate>Sun, 30 Jul 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Brødre, så skylder vi da ikke kødet at leve i lydighed mod det. Hvis I lever i lydighed mod kødet, skal I dø, men hvis I ved Åndens hjælp dræber legemets gerninger, skal I leve. For alle, som drives af Guds ånd, er Guds børn. I har jo ikke fået en ånd, som giver trællekår, så I atter skulle leve i frygt, men I har fået den ånd, som giver barnekår, og i den råber vi: Abba, fader! Ånden selv vidner sammen med vores ånd om, at vi er Guds børn. Men når vi er børn, er vi også arvinger, Guds arvinger og Kristi medarvinger, så sandt som vi lider med ham for også at herliggøres med ham.]]></description>
@@ -822,7 +822,7 @@ v8 Eller hvis en kvinde har ti drakmer og taber én af dem, tænder hun så ikke
         </item>
         <item>
             <title><![CDATA[Matt 7, 15-23 (8.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/8-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/8-evangelium</link>
             <guid>/article/trefoldighed/sommer/8-evangelium</guid>
             <pubDate>Sun, 30 Jul 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Tag jer i agt for de falske profeter, der kommer til jer i fåreklæder, men indeni er glubske ulve. På deres frugter kan I kende dem. Plukker man druer af tjørn eller figner af tidsler? Sådan bærer ethvert godt træ gode frugter, og det dårlige træ dårlige frugter. Et godt træ kan ikke bære dårlige frugter, og et dårligt træ kan ikke bære gode frugter. Ethvert træ, som ikke bærer god frugt, hugges om og kastes i ilden. I kan altså kende dem på deres frugter. Ikke enhver, som siger: Herre, Herre! til mig, skal komme ind i Himmeriget, men kun den, der gør min himmelske faders vilje. Mange vil den dag sige til mig: Herre, Herre! Har vi ikke profeteret i dit navn, og har vi ikke uddrevet dæmoner i dit navn, og har vi ikke gjort mange mægtige gerninger i dit navn? Og da vil jeg sige dem, som det er: Jeg har aldrig kendt jer. Bort fra mig, I som begår lovbrud!]]></description>
@@ -830,7 +830,7 @@ v8 Eller hvis en kvinde har ti drakmer og taber én af dem, tænder hun så ikke
         </item>
         <item>
             <title><![CDATA[1 Kor 10, 6-13 (9.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/9-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/9-epistel</link>
             <guid>/article/trefoldighed/sommer/9-epistel</guid>
             <pubDate>Sun, 06 Aug 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Derved blev de advarende eksempler for os, for at vi ikke skal få lyst til det onde, sådan som de fik det. Bliv heller ikke afgudsdyrkere, sådan som nogle af dem blev det – som der står skrevet: »Folket satte sig ned og spiste og drak; og de rejste sig for at danse.« Lad os heller ikke bedrive utugt, sådan som nogle af dem gjorde det, og på én dag blev der dræbt treogtyve tusind. Lad os heller ikke udæske Kristus, sådan som nogle af dem gjorde det, og de blev dræbt af slanger. Giv heller ikke ondt af jer, sådan som nogle af dem gjorde det, og de blev dræbt af dødsenglen. Alt dette skete med dem, for at de skulle være advarende eksempler, og det blev skrevet for at vejlede os, til hvem tidernes ende er nået. Derfor skal den, som tror, at han står, se til, at han ikke falder. De fristelser, der har mødt jer, er kun menneskelige. Og Gud er trofast; han vil ikke tillade, at I fristes over evne, men vil sammen med fristelsen også skabe udvej, så I ikke bukker under.]]></description>
@@ -838,7 +838,7 @@ v8 Eller hvis en kvinde har ti drakmer og taber én af dem, tænder hun så ikke
         </item>
         <item>
             <title><![CDATA[Luk 16, 1-9 (9.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/9-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/9-evangelium</link>
             <guid>/article/trefoldighed/sommer/9-evangelium</guid>
             <pubDate>Sun, 06 Aug 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Jesus sagde også til disciplene: »Der var en rig mand, som havde en godsforvalter; om ham fik han underhånden at vide, at han ødslede hans ejendom bort. Så tilkaldte han forvalteren og spurgte: Hvad er det, jeg hører om dig? Aflæg regnskab for din forvaltning, for du kan ikke længere være forvalter. Men forvalteren spurgte sig selv: Hvad skal jeg gøre, nu da min herre tager min stilling fra mig? Grave har jeg ikke kræfter til, tigge skammer jeg mig ved. Nu ved jeg, hvad jeg vil gøre, for at folk skal tage imod mig i deres huse, når jeg bliver sat fra bestillingen. Han kaldte så sin herres skyldnere til sig én for én og spurgte den første: Hvor meget skylder du min herre? Hundrede ankre olie, svarede han. Forvalteren sagde: Her er dit gældsbevis, sæt dig straks ned og skriv halvtreds! Derefter spurgte han en anden: Og du, hvor meget skylder du? Hundrede tønder hvede, svarede han. Til ham sagde forvalteren: Her er dit gældsbevis, skriv firs!« Og Herren roste den uærlige forvalter, fordi han havde handlet klogt. For denne verdens børn handler langt klogere over for deres egne, end lysets børn gør. »Jeg siger jer: Skaf jer venner ved hjælp af den uærlige mammon, for at de, når den slipper op, kan tage imod jer i de evige boliger.]]></description>
@@ -846,7 +846,7 @@ v8 Eller hvis en kvinde har ti drakmer og taber én af dem, tænder hun så ikke
         </item>
         <item>
             <title><![CDATA[1 Kor 12, 1-11 (10.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/10-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/10-epistel</link>
             <guid>/article/trefoldighed/sommer/10-epistel</guid>
             <pubDate>Sun, 13 Aug 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Om Åndens gaver, brødre, vil jeg ikke holde jer i uvidenhed. I ved, hvordan I viljeløst blev drevet med til de stumme afguder, dengang I var hedninger. Derfor vil jeg gøre jer bekendt med, at ingen, som taler ved Guds ånd, kan sige: Forbandet er Jesus! og ingen kan sige: Jesus er Herre! undtagen ved Helligånden. Der er forskel på nådegaver, men Ånden er den samme. Der er forskel på tjenester, men Herren er den samme. Der er forskel på kraftige gerninger, men Gud er den samme, som virker alt i alle. Det, som Ånden åbenbarer, får hver enkelt til fælles gavn. Én får gennem Ånden den gave at meddele visdom, en anden kan ved den samme ånd meddele kundskab. Én får tro ved den samme ånd, en anden nådegaver til at helbrede ved den ene og samme ånd, og igen en anden får kraft til at gøre mægtige gerninger. Én får den gave at tale profetisk, en anden evnen til at bedømme ånder; én får forskellige slags tungetale, en anden evnen til at tolke tungetale. Alt dette virker den ene og samme ånd, der deler ud til hver enkelt, som den selv vil.]]></description>
@@ -854,7 +854,7 @@ v8 Eller hvis en kvinde har ti drakmer og taber én af dem, tænder hun så ikke
         </item>
         <item>
             <title><![CDATA[Luk 19, 41-48 (10.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/10-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/10-evangelium</link>
             <guid>/article/trefoldighed/sommer/10-evangelium</guid>
             <pubDate>Sun, 13 Aug 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Da han kom nærmere og så byen, græd han over den og sagde: »Vidste blot også du på denne dag, hvad der tjener til din fred. Men nu er det skjult for dine øjne. For der skal komme dage over dig, da dine fjender skal kaste en vold op omkring dig, belejre dig og trænge ind på dig fra alle sider. De skal jævne dig med jorden og dine børn sammen med dig, og de skal ikke lade sten på sten tilbage i dig, fordi du ikke kendte din besøgelsestid.« Så kom han ind på tempelpladsen, og han gav sig til at jage dem ud, som drev handel dér, og han sagde til dem: »Der står skrevet: ›Mit hus skal være et bedehus.‹ Men I har gjort det til en røverkule.« Han underviste hver dag på tempelpladsen. Ypperstepræsterne og de skriftkloge, ja, alle folkets ledere søgte at få ham ryddet af vejen; men de kunne ikke finde ud af, hvad de skulle gør, for hele folket hang ved ham for at høre ham.]]></description>
@@ -862,7 +862,7 @@ v8 Eller hvis en kvinde har ti drakmer og taber én af dem, tænder hun så ikke
         </item>
         <item>
             <title><![CDATA[1 Kor 15, 1-10 (11.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/11-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/11-epistel</link>
             <guid>/article/trefoldighed/sommer/11-epistel</guid>
             <pubDate>Sun, 20 Aug 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Men jeg minder eder, brødre! om det evangelium, som jeg forkyndte eder, hvilket I og annammede, utde hvilket og I ere vedblevne, ved hvilket I og blive salige, dersom I beholde det efter den måde, på hvilket jeg forkyndte eder det, såfremt I ikke have troet forgjæves. Thi jeg overantvorderde eder iblandt de første ting det, som og jeg annammede, at Kristus døde for vore synder, efter skrifterne, og at han blev begraven, og at han blev seet af Kephas, derefter af de tolv. Derefter ble han seet af mere end fem hundrede brødre på eengang, af hvilke de fleste er endnu i live, men nogle ere og hensovede. Derefter blev han seet af Jakobus, dernæst af mig som det utidige foster; thi jeg er den ringeste af Apostlerne, som ikke er værd at kaldes en Apostel, fordi jeg haver forfulgt Guds menighed. Men af Guds naade er jeg det, jeg er; og hans naade mod mig haver ikke været forgjæves, men jeg haver arbeidet mere end de alle; dog ikke jeg, men Guds naade, som er med mig.]]></description>
@@ -870,7 +870,7 @@ v8 Eller hvis en kvinde har ti drakmer og taber én af dem, tænder hun så ikke
         </item>
         <item>
             <title><![CDATA[Luk 18, 9-14 (11.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/11-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/11-evangelium</link>
             <guid>/article/trefoldighed/sommer/11-evangelium</guid>
             <pubDate>Sun, 20 Aug 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Lignelsen om farisæeren og tolderenTil nogle, som stolede på, at de selv var retfærdige, og som foragtede alle andre, fortalte Jesus denne lignelse: v10 »To mænd gik op til templet for at bede. Den ene var en farisæer, den anden en tolder. v11 Farisæeren stillede sig op og bad således for sig selv: Gud, jeg takker dig, fordi jeg ikke er som andre mennesker, røvere, uretfærdige, ægteskabsbrydere, eller som tolderen dér. v12 Jeg faster to gange om ugen, og jeg giver tiende af hele min indtægt. v13 Men tolderen stod afsides og ville ikke engang løfte sit blik mod himlen, men slog sig for brystet og sagde: Gud, vær mig synder nådig! v14 Jeg siger jer: Det var ham, der gik hjem som retfærdig, ikke den anden. For enhver, som ophøjer sig selv, skal ydmyges, og den, der ydmyger sig selv, skal ophøjes.«]]></description>
@@ -878,7 +878,7 @@ v8 Eller hvis en kvinde har ti drakmer og taber én af dem, tænder hun så ikke
         </item>
         <item>
             <title><![CDATA[2 Kor 3, 4-11 (12.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/12-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/12-epistel</link>
             <guid>/article/trefoldighed/sommer/12-epistel</guid>
             <pubDate>Sun, 27 Aug 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[En sådan tillid har vi til Gud ved Kristus. Ikke at vi af os selv duer til at udtænke noget, som kom det fra os selv; at vi duer til noget, skyldes Gud, som også har gjort os duelige til at være tjenere for en ny pagt, ikke bogstavens, men Åndens; for bogstaven slår ihjel, men Ånden gør levende. Men når dødens tjeneste, indhugget i sten med bogstaver, havde sin herlighed, så at Israels børn ikke kunne se på Moses' ansigt på grund af hans ansigts stråleglans, der dog forsvandt, hvor meget mere vil så ikke Åndens tjeneste have sin herlighed. Når den tjeneste, der fører til fordømmelse, havde sin herlighed, så er den tjeneste, der fører til retfærdighed, langt mere rig på herlighed. Det, der var herligt, har jo i dette tilfælde ingen herlighed sammenlignet med den alt overvældende herlighed. For når det, der forsvandt, havde sin herlighed, så skal det, der bliver ved med at bestå, have endnu større herlighed.]]></description>
@@ -886,7 +886,7 @@ v8 Eller hvis en kvinde har ti drakmer og taber én af dem, tænder hun så ikke
         </item>
         <item>
             <title><![CDATA[Mark 7, 31-37 (12.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/sommer/12-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/sommer/12-evangelium</link>
             <guid>/article/trefoldighed/sommer/12-evangelium</guid>
             <pubDate>Sun, 27 Aug 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Helbredelsen af den døve og stummev31 Jesus drog igen bort fra egnen ved Tyrus og kom over Sidon til Galilæas Sø midt igennem Dekapolis. v32 Og folk kom til ham med en, der var døv og havde svært ved at tale, og de bad ham om at lægge hånden på ham. v33 Jesus tog ham afsides, væk fra skaren, stak sine fingre i hans ører, spyttede og rørte ved hans tunge; v34 og han så op mod himlen, sukkede og sagde til ham: »Effatha!« – det betyder: »Luk dig op!« v35 Og straks lukkede hans ører sig op, og det bånd, der bandt hans tunge, blev løst, og han kunne tale rigtigt. v36 Jesus forbød dem at sige det til nogen; men jo mere han forbød dem det, jo ivrigere fortalte de om det. v37 Og de var overvældede af forundring og sagde: »Han har gjort alting vel. Han får både de døve til at høre og de stumme til at tale.«]]></description>
@@ -894,7 +894,7 @@ v8 Eller hvis en kvinde har ti drakmer og taber én af dem, tænder hun så ikke
         </item>
         <item>
             <title><![CDATA[Gal 3, 15-22 (13.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/13-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/13-epistel</link>
             <guid>/article/trefoldighed/host/13-epistel</guid>
             <pubDate>Sun, 03 Sep 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Brødre, jeg bruger et eksempel fra menneskelivet: ingen kan ophæve eller føje noget til et testamente, når det først er retsgyldigt, selv om det kun er et menneskes. Men hvad Abraham angår, blev løfterne givet til ham og til hans afkom. Det hedder ikke: »og til dine afkom« i flertal, men i ental: »og til dit afkom«, og det er Kristus. Hvad jeg mener, er dette: Et testamente, som Gud allerede har gjort retsgyldigt, kan loven, som kom 430 år senere, ikke gøre ugyldigt, så at den dermed skulle sætte løftet ud af kraft. Hvis arven fås på grund af loven, fås den ikke mere på grund af løftet. Men det var ved et løfte, Gud gav Abraham arven. Hvad skulle så loven? Den blev føjet til for overtrædelsernes skyld, men den skulle kun være gyldig, indtil det afkom, som havde fået løftet, var kommet. Den blev givet ved engle, gennem en formidler. En formidler står ikke kun for den ene part. Men Gud er én. Er loven da imod Guds løfter? Aldeles ikke! For var der blevet givet en lov, som kunne gøre levende, så ville retfærdigheden også komme af loven. Men Skriften har indesluttet alt under synd, for at løftet ved tro på Jesus Kristus kunne gives dem, som tror.]]></description>
@@ -902,7 +902,7 @@ v8 Eller hvis en kvinde har ti drakmer og taber én af dem, tænder hun så ikke
         </item>
         <item>
             <title><![CDATA[Luk 10, 23-37 (13.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/13-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/13-evangelium</link>
             <guid>/article/trefoldighed/host/13-evangelium</guid>
             <pubDate>Sun, 03 Sep 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Så vendte han sig til disciplene og sagde til dem alene: »Salige er de øjne, som ser det, I ser. v24 For jeg siger jer: Mange profeter og konger har ønsket at se det, I ser, og fik det ikke at se, og at høre det, I hører, og fik det ikke at høre.«
@@ -911,7 +911,7 @@ v25 Da rejste en lovkyndig sig og ville sætte Jesus på prøve og spurgte ham: 
         </item>
         <item>
             <title><![CDATA[Gal 5, 16-24 (14.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/14-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/14-epistel</link>
             <guid>/article/trefoldighed/host/14-epistel</guid>
             <pubDate>Sun, 10 Sep 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Men jeg sier: Vandre i Ånden, så skal I ikke fullbyrde kjødets begjæring. v17 For kjødet begjærer imot Ånden, og Ånden imot kjødet; de står hverandre imot, så I ikke skal gjøre det I vil. v18 Men dersom I drives av Ånden, da er I ikke under loven. v19 Men kjødets gjerninger er åpenbare, såsom: utukt, urenhet, skamløshet, v20 avgudsdyrkelse, trolldom, fiendskap, kiv, avind, vrede, stridigheter, tvedrakt, partier, v21 misunnelse, mord, drikk, svir og annet slikt; om dette sier jeg eder forut, likesom jeg og forut har sagt, at de som gjør sådant, skal ikke arve Guds rike. v22 Men Åndens frukt er kjærlighet, glede, fred, langmodighet, mildhet, godhet, trofasthet, saktmodighet, avholdenhet; v23 mot slike er loven ikke. v24 Men de som hører Kristus Jesus til, har korsfestet kjødet med dets lyster og begjæringer.1]]></description>
@@ -919,7 +919,7 @@ v25 Da rejste en lovkyndig sig og ville sætte Jesus på prøve og spurgte ham: 
         </item>
         <item>
             <title><![CDATA[Luk 17, 11-19 (14.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/14-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/14-evangelium</link>
             <guid>/article/trefoldighed/host/14-evangelium</guid>
             <pubDate>Sun, 10 Sep 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Under sin vandring mod Jerusalem fulgte han grænsen mellem Samaria og Galilæa. v12 Da han var på vej ind i en landsby, mødte han ti spedalske; de blev stående langt fra ham v13 og råbte: »Jesus, Mester, forbarm dig over os!« v14 Da han så dem, sagde han: »Gå hen og bliv undersøgt af præsterne!« Og mens de var på vej derhen, blev de rene. v15 Men én af dem vendte tilbage, da han så, at han var blevet helbredt. Han priste Gud med høj røst v16 og kastede sig på sit ansigt for Jesu fødder og takkede ham; og det var en samaritaner. v17 Jesus spurgte: »Var der ikke ti, der blev rene? Hvor er de ni? v18 Er det kun denne fremmede, der er vendt tilbage for at give Gud æren?« v19 Og han sagde til ham: »Stå op og gå herfra! Din tro har frelst dig.«]]></description>
@@ -927,7 +927,7 @@ v25 Da rejste en lovkyndig sig og ville sætte Jesus på prøve og spurgte ham: 
         </item>
         <item>
             <title><![CDATA[Gal 5, 25 - 6, 10 (15.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/15-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/15-epistel</link>
             <guid>/article/trefoldighed/host/15-epistel</guid>
             <pubDate>Sun, 17 Sep 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Dersom vi lever i Ånden, da la oss og vandre i Ånden! v26 La oss ikke ha lyst til tom ære, så vi egger hverandre og bærer avind imot hverandre!
@@ -936,7 +936,7 @@ v1 Brødre! om også et menneske blir overlistet av nogen synd, da hjelp ham til
         </item>
         <item>
             <title><![CDATA[Matt 6, 24-34 (15.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/15-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/15-evangelium</link>
             <guid>/article/trefoldighed/host/15-evangelium</guid>
             <pubDate>Sun, 17 Sep 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Ingen kan tjene to herrer. Han vil enten hade den ene og elske den anden eller holde sig til den ene og ringeagte den anden. I kan ikke tjene både Gud og mammon. v25 Derfor siger jeg jer: Vær ikke bekymrede for jeres liv, hvordan I får noget at spise og drikke, eller for, hvordan I får tøj på kroppen. Er livet ikke mere end maden, og legemet mere end klæderne? v26 Se himlens fugle; de sår ikke og høster ikke og samler ikke i lade, og jeres himmelske fader giver dem føden. Er I ikke langt mere værd end de? v27 Hvem af jer kan lægge en dag til sit liv ved at bekymre sig? v28 Og hvorfor bekymrer I jer for klæder? Læg mærke til, hvordan markens liljer gror; de arbejder ikke og spinder ikke. v29 Men jeg siger jer: End ikke Salomo i al sin pragt var klædt som en af dem. v30 Klæder Gud sådan markens græs, som står i dag og i morgen kastes i ovnen, hvor meget snarere så ikke jer, I lidettroende? v31 I må altså ikke være bekymrede og spørge: Hvordan får vi noget at spise og drikke? Eller: Hvordan får vi tøj på kroppen? v32 Alt dette søger hedningerne jo efter, og jeres himmelske fader ved, at I trænger til alt dette. v33 Men søg først Guds rige og hans retfærdighed, så skal alt det andet gives jer i tilgift. v34 Så vær da ikke bekymrede for dagen i morgen; dagen i morgen skal bekymre sig for det, der hører den til. Hver dag har nok i sin plage.]]></description>
@@ -944,7 +944,7 @@ v1 Brødre! om også et menneske blir overlistet av nogen synd, da hjelp ham til
         </item>
         <item>
             <title><![CDATA[Ef 3, 13-21 (16.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/16-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/16-epistel</link>
             <guid>/article/trefoldighed/host/16-epistel</guid>
             <pubDate>Sun, 24 Sep 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Derfor beder jeg om, at I ikke taber modet over mine trængsler for jeres skyld. De er en ære for jer. v14 Derfor bøjer jeg mine knæ for Faderen, v15 efter hvem hvert fædrenehus i himlene og på jorden har navn, v16 og beder om, at han i sin herligheds rigdom med kraft vil give jer at styrkes i det indre menneske ved hans ånd, v17 at Kristus ved troen må bo i jeres hjerter og I være rodfæstede og grundfæstede i kærlighed, v18 så at I sammen med alle de hellige får styrke til at fatte, hvor stor bredden og længden og højden og dybden er, v19 og til at kende Kristi kærlighed, som overgår al erkendelse, så I fyldes, til hele Guds fylde nås. v20 Ham, som formår med sin kraft, der virker i os, at gøre langt ud over alt, hvad vi beder om eller forstår, v21 ham være ære i kirken og i Kristus Jesus i alle slægtled i evighedernes evighed! Amen.]]></description>
@@ -952,7 +952,7 @@ v1 Brødre! om også et menneske blir overlistet av nogen synd, da hjelp ham til
         </item>
         <item>
             <title><![CDATA[Luk 7, 11-17 (16.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/16-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/16-evangelium</link>
             <guid>/article/trefoldighed/host/16-evangelium</guid>
             <pubDate>Sun, 24 Sep 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Derefter gik Jesus til en by, som hedder Nain, og hans disciple og en stor skare gik sammen med ham. v12 Men da han nærmede sig byporten, se, da blev der båret en død ud, som var sin mors eneste søn, og hun var enke; og en stor skare fra byen fulgte med hende. v13 Da Herren så hende, ynkedes han over hende og sagde: »Græd ikke!« v14 Og han gik hen og rørte ved båren. Bærerne stod stille, og han sagde: »Unge mand, jeg siger dig: Rejs dig op!« v15 Da satte den døde sig op og begyndte at tale, og Jesus gav ham til hans mor. v16 Alle blev fyldt af frygt og priste Gud og sagde: »En stor profet er fremstået iblandt os, og Gud har besøgt sit folk.« v17 Og det ord om ham nåede ud over hele Judæa og i hele omegnen.]]></description>
@@ -960,7 +960,7 @@ v1 Brødre! om også et menneske blir overlistet av nogen synd, da hjelp ham til
         </item>
         <item>
             <title><![CDATA[Ef 4, 1-6 (17.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/17-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/17-epistel</link>
             <guid>/article/trefoldighed/host/17-epistel</guid>
             <pubDate>Sun, 01 Oct 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Jeg, der er fange for Herrens skyld, formaner jer da til at leve, så det svarer til det kald, I fik, med al ydmyghed og mildhed, med tålmodighed, så I bærer over med hinanden i kærlighed og stræber efter at fastholde Åndens enhed med fredens bånd: ét legeme og én ånd, ligesom I jo også blev kaldet til ét håb; én Herre, én tro, én dåb; én Gud og alles fader, som er over alle, gennem alle og i alle.]]></description>
@@ -968,7 +968,7 @@ v1 Brødre! om også et menneske blir overlistet av nogen synd, da hjelp ham til
         </item>
         <item>
             <title><![CDATA[Luk 14, 1-11 (17.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/17-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/17-evangelium</link>
             <guid>/article/trefoldighed/host/17-evangelium</guid>
             <pubDate>Sun, 01 Oct 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Helbredelsen af manden med vand i kroppen
@@ -978,7 +978,7 @@ v7 Da Jesus lagde mærke til, hvordan de indbudte udvalgte sig de øverste plads
         </item>
         <item>
             <title><![CDATA[1 Kor 1, 4-9 (4-8) (18.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/18-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/18-epistel</link>
             <guid>/article/trefoldighed/host/18-epistel</guid>
             <pubDate>Sun, 08 Oct 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Jeg takker altid min Gud for jer, for den nåde, som han har givet jer i Kristus Jesus. For i ham er I blevet rige på alt, på al tale og på al kundskab, eftersom vidnesbyrdet om Kristus er blevet grundfæstet hos jer, så I ikke mangler nogen nådegave, mens I venter på, at vor Herre Jesus Kristus skal åbenbares. Han vil også grundfæste jer til det sidste, så I ikke kan anklages på vor Herre Jesu Kristi dag. Trofast er Gud, som kaldte jer til fællesskab med sin søn, Jesus Kristus, vor Herre.]]></description>
@@ -986,7 +986,7 @@ v7 Da Jesus lagde mærke til, hvordan de indbudte udvalgte sig de øverste plads
         </item>
         <item>
             <title><![CDATA[Matt 22, 34-46 (18.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/18-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/18-evangelium</link>
             <guid>/article/trefoldighed/host/18-evangelium</guid>
             <pubDate>Sun, 08 Oct 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Da farisæerne hørte, at Jesus havde lukket munden på saddukæerne, samledes de, og en af dem, en lovkyndig, spurgte ham for at sætte ham på prøve: Mester, hvad er det største bud i loven? Han sagde til ham: Du skal elske Herren din Gud af hele dit hjerte og af hele din sjæl og af hele dit sind. Det er det største og det første bud. Men der er et andet, som står lige med det: Du skal elske din næste som dig selv. På de to bud hviler hele loven og profeterne. Mens farisæerne var forsamlet, spurgte Jesus dem: Hvad mener I om Kristus? Hvis søn er han? De svarede: Davids. Han sagde til dem: Hvordan kan David så ved Ånden kalde ham herre og sige: Herren sagde til min herre: Sæt dig ved min højre hånd, indtil jeg får lagt dine fjender under dine fødder? Når David altså kalder ham herre, hvordan kan han så være hans søn? Ingen kunne svare ham et ord, og fra den dag turde heller ingen længere spørge ham om noget.]]></description>
@@ -994,7 +994,7 @@ v7 Da Jesus lagde mærke til, hvordan de indbudte udvalgte sig de øverste plads
         </item>
         <item>
             <title><![CDATA[Ef 4, 22-28 (19.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/19-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/19-epistel</link>
             <guid>/article/trefoldighed/host/19-epistel</guid>
             <pubDate>Sun, 08 Oct 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[I skal aflægge det gamle menneske, som hører til jeres hidtidige levned, og som ødelægges af sine forføreriske lyster, og I skal fornyes i sind og ånd og iføre jer det nye menneske, skabt i Guds billede med sandhedens retfærdighed og fromhed. Læg derfor løgnen bort og tal sandhed med hinanden, for vi er hinandens lemmer. Bliv blot vrede, men synd ikke. Lad ikke solen gå ned over jeres vrede, og giv ikke plads for Djævelen. Den, der stjæler, må ikke mere stjæle, men skal tværtimod slide i det og selv frembringe noget godt med sine hænder, så han har noget at give af til den, der har behov for det.]]></description>
@@ -1002,7 +1002,7 @@ v7 Da Jesus lagde mærke til, hvordan de indbudte udvalgte sig de øverste plads
         </item>
         <item>
             <title><![CDATA[Matt 9, 1-8 (19.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/19-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/19-evangelium</link>
             <guid>/article/trefoldighed/host/19-evangelium</guid>
             <pubDate>Sun, 08 Oct 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Og Jesus gik om bord i en båd og satte over til sin egen by. Og se, der kom nogle til ham med en lam, der lå på en seng. Da Jesus så deres tro, sagde han til den lamme: vær frimodig, søn, dine synder tilgives dig.« Men nogle af de skriftkloge sagde ved sig selv: »han spotter Gud. Jesus så, hvad de tænkte, og sagde: hvorfor tænker i ondt i jeres hjerte? hvad er det letteste, at sige: dine synder tilgives dig, eller at sige: rejs dig og gå? men for at i kan vide, at menneskesønnen har myndighed på jorden til at tilgive synder – da siger han til den lamme: rejs dig, tag din seng og gå hjem! og han rejste sig og gik hjem. da folkeskarerne så det, blev de grebet af frygt og priste Gud, der havde givet mennesker en sådan myndighed.]]></description>
@@ -1010,7 +1010,7 @@ v7 Da Jesus lagde mærke til, hvordan de indbudte udvalgte sig de øverste plads
         </item>
         <item>
             <title><![CDATA[Ef 5, 15-21 (20.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/20-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/20-epistel</link>
             <guid>/article/trefoldighed/host/20-epistel</guid>
             <pubDate>Sun, 15 Oct 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Se derfor til, hvordan I lever, ikke som uvise, men som vise. Brug det gunstige øjeblik, for dagene er onde. Vær derfor ikke tåbelige, men forstå, hvad der er Herrens vilje. Drik jer ikke berusede i vin, det fører til udskejelser, men lad jer fylde af Ånden, tal til hinanden med salmer, hymner og åndelige sange, syng og spil af hjertet for Herren, og sig altid Gud Fader tak for alt i vor Herre Jesu Kristi navn. I skal underordne jer under hinanden i ærefrygt for Kristus.]]></description>
@@ -1018,7 +1018,7 @@ v7 Da Jesus lagde mærke til, hvordan de indbudte udvalgte sig de øverste plads
         </item>
         <item>
             <title><![CDATA[Matt 22, 1-14 (20.søn efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/20-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/20-evangelium</link>
             <guid>/article/trefoldighed/host/20-evangelium</guid>
             <pubDate>Sun, 15 Oct 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Jesus tog til orde og talte igen til dem i lignelser: Himmeriget ligner en konge, der holdt sin søns bryllup. Han sendte sine tjenere ud for at kalde de indbudte til brylluppet, men de ville ikke komme. Så sendte han nogle andre tjenere ud, der skulle sige til de indbudte: Nu er der dækket op til fest; mine okser og fedekalve er slagtet, og alt er rede. Kom til brylluppet! Men det tog de sig ikke af og gik, én til sin mark, en anden til sin forretning, og andre igen greb hans tjenere og mishandlede dem og slog dem ihjel. Men kongen blev vred og sendte sine hære ud og dræbte disse mordere og brændte deres by. Så sagde han til sine tjenere: Bryllupsfesten er forberedt, men de indbudte var ikke værdige. Gå derfor helt ud, hvor vejene ender, og indbyd, hvem som helst I finder, til brylluppet. Og disse tjenere gik ud på vejene og samlede alle, som de fandt, både onde og gode, og bryllupssalen blev fuld af gæster. Men da kongen kom ind for at hilse på sine gæster, fik han dér øje på en, der ikke havde bryllupsklæder på. Han spurgte ham: Min ven, hvordan er du kommet ind uden bryllupsklæder? Men han tav. Da sagde kongen til sine tjenere: Bind hænder og fødder på ham og kast ham ud i mørket udenfor. Dér skal der være gråd og tænderskæren. Thi mange er kaldet, men få er udvalgt.]]></description>
@@ -1026,7 +1026,7 @@ v7 Da Jesus lagde mærke til, hvordan de indbudte udvalgte sig de øverste plads
         </item>
         <item>
             <title><![CDATA[Ef 6, 10-17 (21.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/21-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/21-epistel</link>
             <guid>/article/trefoldighed/host/21-epistel</guid>
             <pubDate>Sun, 22 Oct 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[I øvrigt, vær stærke i Herren og i hans mægtige styrke. Ifør jer Guds fulde rustning, så I kan holde stand mod Djævelens snigløb. Thi for os står kampen ikke mod kød og blod, men mod myndigheder og magter, mod verdensherskerne i dette mørke, mod ondskabens åndemagter i himmelrummet.
@@ -1035,7 +1035,7 @@ Tag derfor Guds fulde rustning på, for at I kan stå imod på den onde dag, ove
         </item>
         <item>
             <title><![CDATA[Joh 4, 46-54 (21.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/21-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/21-evangelium</link>
             <guid>/article/trefoldighed/host/21-evangelium</guid>
             <pubDate>Sun, 22 Oct 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Han kom nu atter til Kana i Galilæa, hvor han havde gjort vand til vin. Der var en kongelig embedsmand, hvis søn lå syg i Kapernaum. Da han hørte, at Jesus var kommet fra Judæa til Galilæa, tog han hen til ham og bad ham om at komme med derned og helbrede hans søn; for han lå for døden. Da sagde Jesus til ham: Hvis I ikke får tegn og undere at se, tror I ikke. Den kongelige embedsmand svarede: Herre, kom med derned, før mit barn dør. Jesus sagde til ham: Gå hjem, din søn lever. Manden troede Jesus på hans ord og gik; og allerede mens han var på vej hjem, kom hans tjenere ham i møde og fortalte, at hans dreng var i live. Han spurgte dem så ud om, i hvilken time han havde fået det bedre, og de svarede: I går ved den syvende time forlod feberen ham. Da forstod faderen, at det var sket netop i den time, da Jesus havde sagt: Din søn lever. Og han og hele hans husstand kom til tro. Dette sit andet tegn gjorde Jesus, efter at han var kommet fra Judæa til Galilæa.]]></description>
@@ -1043,7 +1043,7 @@ Tag derfor Guds fulde rustning på, for at I kan stå imod på den onde dag, ove
         </item>
         <item>
             <title><![CDATA[Fil 1, 3-11 (22.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/22-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/22-epistel</link>
             <guid>/article/trefoldighed/host/22-epistel</guid>
             <pubDate>Sun, 29 Oct 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Jeg takker min Gud, hver gang jeg mindes jer, og i alle mine bønner beder jeg altid for jer alle i glæde over, at I har været med i det fælles arbejde for evangeliet lige fra den første dag indtil nu, og i tillid til, at han, som har begyndt sin gode gerning i jer, vil fuldføre den indtil Kristi Jesu dag. Det er kun rimeligt, at jeg tænker sådan om jer alle. For I er i mit hjerte, både når jeg er i lænker, og når jeg forsvarer og underbygger evangeliet. I er jo alle fælles med mig om nåden. Gud er mit vidne på, hvor meget jeg længes efter jer alle med Kristi Jesu inderlige kærlighed. Og det beder jeg om, at jeres kærlighed stadig må vokse og blive rig på indsigt og dømmekraft, så at I kan skønne, hvad der er væsentligt, og være renfærdige og uden anstød på Kristi dag, fyldt af retfærdigheds frugt, som skyldes Jesus Kristus, Gud til pris og ære.]]></description>
@@ -1051,7 +1051,7 @@ Tag derfor Guds fulde rustning på, for at I kan stå imod på den onde dag, ove
         </item>
         <item>
             <title><![CDATA[Matt 18, 23-35 (22.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/22-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/22-evangelium</link>
             <guid>/article/trefoldighed/host/22-evangelium</guid>
             <pubDate>Sun, 29 Oct 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Derfor: Himmeriget ligner en konge, der ville gøre regnskab med sine tjenere. Da han begyndte på regnskaberne, blev en, der skyldte ti tusind talenter, ført frem for ham. Da han ikke havde noget at betale med, befalede hans herre, at han og hans kone og børn og alt, hvad han ejede, skulle sælges og gælden betales. Men tjeneren kastede sig ned for ham og bad: Hav tålmodighed med mig, så skal jeg betale dig det alt sammen. Så fik den tjeners herre medynk med ham og lod ham gå og eftergav ham gælden. Men da den tjener gik ud, traf han en af sine medtjenere, som skyldte ham hundrede denarer. Og han greb ham i struben og sagde: Betal, hvad du skylder! Hans medtjener kastede sig ned for ham og bad: Hav tålmodighed med mig, så skal jeg betale dig. Det ville han ikke, men gik hen og lod ham kaste i fængsel, indtil han fik betalt, hvad han skyldte. Da hans medtjenere nu så, hvad der var sket, blev de meget bedrøvede og gik hen og forklarede deres herre alt, hvad der var sket. Da kaldte hans herre ham for sig og sagde: Du onde tjener, al den gæld eftergav jeg dig, da du bad mig om det. Burde du så ikke også forbarme dig over din medtjener, ligesom jeg forbarmede mig over dig? Og hans herre blev vred og overlod ham til bødlerne, indtil han fik betalt alt, hvad han skyldte. Sådan vil også min himmelske fader gøre med hver eneste af jer, der ikke af hjertet tilgiver sin broder.]]></description>
@@ -1059,7 +1059,7 @@ Tag derfor Guds fulde rustning på, for at I kan stå imod på den onde dag, ove
         </item>
         <item>
             <title><![CDATA[Fil 3, 17-21 (23.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/23-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/23-epistel</link>
             <guid>/article/trefoldighed/host/23-epistel</guid>
             <pubDate>Sun, 05 Nov 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Efterlign mig, brødre, og se hen til dem, der lever efter det forbillede, I har i os. For der er mange – jeg har ofte nævnt dem for jer, og nu nævner jeg dem også med gråd – der lever som fjender af Kristi kors. De ender i fortabelse, bugen er deres gud, de sætter en ære i deres skam, de tænker kun på det jordiske. Men vort borgerskab er i himlene; derfra venter vi også Herren Jesus Kristus som frelser. Han skal forvandle vort fornedrede legeme og give det skikkelse som hans herliggjorte legeme med den kraft, hvormed han kan underlægge sig alt.]]></description>
@@ -1067,7 +1067,7 @@ Tag derfor Guds fulde rustning på, for at I kan stå imod på den onde dag, ove
         </item>
         <item>
             <title><![CDATA[Matt 22, 15-22 (23.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/23-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/23-evangelium</link>
             <guid>/article/trefoldighed/host/23-evangelium</guid>
             <pubDate>Sun, 05 Nov 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Da gik farisæerne hen og besluttede at fange Jesus i ord. De sendte deres disciple hen til ham sammen med herodianerne, og de sagde: "Mester, vi ved, at du er sanddru og lærer sandt om Guds vej og ikke retter dig efter andre, for du gør ikke forskel på folk. Sig os, hvad du mener: Er det tilladt at give kejseren skat eller ej?" Men Jesus gennemskuede deres ondskab og sagde: "Hvorfor sætter I mig på prøve, I hyklere? Vis mig skattens mønt!" De rakte ham en denar. Og han spurgte dem: "Hvis billede og indskrift er det?" "Kejserens", svarede de. Da sagde han til dem: "Så giv kejseren, hvad kejserens er, og Gud, hvad Guds er!" Da de hørte det, undrede de sig og forlod ham og gik deres vej.]]></description>
@@ -1075,7 +1075,7 @@ Tag derfor Guds fulde rustning på, for at I kan stå imod på den onde dag, ove
         </item>
         <item>
             <title><![CDATA[Kol 1, 3-14 (24.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/24-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/24-epistel</link>
             <guid>/article/trefoldighed/host/24-epistel</guid>
             <pubDate>Sun, 12 Nov 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Vi takker altid Gud, vor Herre Jesu Kristi fader, når vi beder for jer; for vi har hørt om jeres tro på Kristus Jesus og om jeres kærlighed til alle de hellige, udsprunget af det håb, som venter jer i himlene. Det har I hørt om i sandhedens ord, evangeliet, som nu er hos jer, sådan som det i hele verden bærer frugt og vokser, ligesom også hos jer, fra den dag I hørte det og lærte Guds nåde at kende i sandhed. Sådan har I lært det af vor kære medtjener, Epafras, som er en trofast Kristi tjener for jer, og han har også fortalt os om jeres kærlighed i Ånden. Derfor har vi heller ikke, siden den dag vi hørte om det, holdt op med at bede for jer. Vi beder om, at I med al visdom og åndelig indsigt må få fuld kundskab om Guds vilje, så I kan leve, som Herren vil det, på alle måder ham til behag, og bære frugt med alle gode gerninger, vokse i kundskab om Gud v11 og styrkes med al kraft ved hans herlige magt til al udholdenhed og tålmodighed. Tak med glæde vor Fader, som har gjort jer duelige til at få del i de helliges arv i lyset. Han friede os ud af mørkets magt og flyttede os over i sin elskede søns rige; i ham har vi forløsningen, syndernes forladelse.]]></description>
@@ -1083,7 +1083,7 @@ Tag derfor Guds fulde rustning på, for at I kan stå imod på den onde dag, ove
         </item>
         <item>
             <title><![CDATA[Matt 9, 18-26 (24.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/24-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/24-evangelium</link>
             <guid>/article/trefoldighed/host/24-evangelium</guid>
             <pubDate>Sun, 12 Nov 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Mens han talte til dem om dette, kom der en synagogeforstander og kastede sig ned for ham og sagde: »Min datter er lige død. Men kom og læg din hånd på hende, så vil hun leve.« v19 Jesus rejste sig og fulgte med ham sammen med sine disciple.v20 Men se, en kvinde, der i tolv år havde lidt af blødninger, nærmede sig Jesus bagfra og rørte ved kvasten på hans kappe. v21 For hun sagde ved sig selv: »Bare jeg rører ved hans kappe, bliver jeg frelst.« v22 Jesus vendte sig om, så hende og sagde: »Vær frimodig, datter, din tro har frelst dig.« Og fra det øjeblik var kvinden frelst.v23 Da Jesus kom til synagogeforstanderens hus og så fløjtespillerne og skaren, der larmede, v24 sagde han: »Gå væk! Pigen er ikke død, hun sover.« De lo ad ham; v25 men da skaren var jaget bort, gik han ind og tog hendes hånd, og pigen rejste sig op. v26 Og rygtet derom kom ud over hele den del af landet.]]></description>
@@ -1091,7 +1091,7 @@ Tag derfor Guds fulde rustning på, for at I kan stå imod på den onde dag, ove
         </item>
         <item>
             <title><![CDATA[1 Thess 4, 13-18 (25.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/25-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/25-epistel</link>
             <guid>/article/trefoldighed/host/25-epistel</guid>
             <pubDate>Sun, 19 Nov 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Brødre, vi vil ikke, at I skal være uvidende om dem, der sover hen, for at I ikke skal sørge som de andre, der ikke har noget håb. v14 For så sandt som vi tror, at Jesus døde og opstod, vil Gud også ved Jesus føre de hensovede sammen med ham. v15 For det siger vi jer med et ord af Herren: Vi, der lever og endnu er her, når Herren kommer, skal ikke gå forud for de hensovede. v16 For Herren selv vil, når befalingen lyder, når ærkeenglen kalder og Guds basun gjalder, stige ned fra himlen, og de, der er døde i Kristus, skal opstå først. v17 Så skal vi, der lever og endnu er her, rykkes bort i skyerne sammen med dem for at møde Herren i luften, og så skal vi altid være sammen med Herren. v18 Trøst derfor hinanden med disse ord.]]></description>
@@ -1099,7 +1099,7 @@ Tag derfor Guds fulde rustning på, for at I kan stå imod på den onde dag, ove
         </item>
         <item>
             <title><![CDATA[Matt 24, 15-28 (25.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/25-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/25-evangelium</link>
             <guid>/article/trefoldighed/host/25-evangelium</guid>
             <pubDate>Sun, 19 Nov 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Når I derfor ser Ødelæggelsens Vederstyggelighed, som der er talt om ved profeten Daniel, stå på hellig grund – den, der læser dette, skal mærke sig det! – v16 da skal de, der er i Judæa, flygte ud i bjergene; v17 den, der er på taget, skal ikke gå ned og hente noget i huset; v18 og den, der er ude på marken, skal ikke gå hjem og hente sin kappe. v19 Ve dem, der skal føde, og dem, der giver bryst i de dage. v20 Bed til, at jeres flugt ikke skal ske om vinteren eller på en sabbat. v21 For da skal der være en stor trængselstid, som der ikke har været magen til fra verdens begyndelse indtil nu og heller aldrig vil komme. v22 Og hvis de dage ikke afkortedes, blev intet menneske frelst; men for de udvalgtes skyld vil de dage blive afkortet. v23 Hvis nogen da siger til jer: Se, her er Kristus! eller: Her er han! så tro det ikke; v24 for der skal fremstå falske kristus'er og falske profeter, og de skal gøre store tegn og undere for om muligt at føre selv de udvalgte vild. v25 Nu har jeg sagt jer det forud. v26 Siger de derfor til jer: Se, han er i ørkenen! så gå ikke derud. Eller: Se, han er i kamrene! så tro det ikke. v27 For som lynet kommer fra øst og lyser helt om i vest, sådan skal også Menneskesønnens komme være. v28 Hvor ådslet er, dér vil gribbene flokkes.]]></description>
@@ -1107,7 +1107,7 @@ Tag derfor Guds fulde rustning på, for at I kan stå imod på den onde dag, ove
         </item>
         <item>
             <title><![CDATA[2 Thess 1, 3-10 (26.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/26-epistel</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/26-epistel</link>
             <guid>/article/trefoldighed/host/26-epistel</guid>
             <pubDate>Sun, 26 Nov 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Vi bør altid takke Gud for jer, brødre, som ret er, fordi jeres tro stadig vokser, og jeres kærlighed til hinanden tager til hos hver eneste af jer. v4 Derfor kan vi selv tale med stolthed i Guds menigheder om jeres udholdenhed og tro under alle de forfølgelser og trængsler, I må udstå. v5 Det er et varsel om Guds retfærdige dom, for at I skal kendes værdige til Guds rige, som I nu lider for, v6 så sandt som det er retfærdigt for Gud at gengælde dem, der volder jer trængsel, med trængsel, v7 og at gengælde jer, der lider trængsel, med lindring sammen med os, når Herren Jesus, fulgt af sine mægtige engle, åbenbares fra himlen v8 med flammende ild og bringer straf over dem, der ikke kender Gud og ikke er lydige mod evangeliet om vor Herre Jesus. v9 De skal straffes med evig undergang fjernt fra Herrens ansigt og fra hans herlighed og magt, v10 når han på den dag kommer for at blive herliggjort blandt sine hellige og blive hyldet blandt alle, som kom til tro; for hvad vi har vidnet for jer, har I troet.]]></description>
@@ -1115,7 +1115,7 @@ Tag derfor Guds fulde rustning på, for at I kan stå imod på den onde dag, ove
         </item>
         <item>
             <title><![CDATA[Matt 25, 31-46 (26.søn. efter trinitatis)]]></title>
-            <link>/article/trefoldighed/host/26-evangelium</link>
+            <link>https://kirkepostille.vercel.app/article/trefoldighed/host/26-evangelium</link>
             <guid>/article/trefoldighed/host/26-evangelium</guid>
             <pubDate>Sun, 26 Nov 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Når Menneskesønnen kommer i sin herlighed og alle englene med ham, da skal han tage sæde på sin herligheds trone. v32 Og alle folkeslagene skal samles foran ham, og han skal skille dem, som en hyrde skiller fårene fra bukkene; v33 fårene skal han stille ved sin højre side og bukkene ved sin venstre. v34 Da skal kongen sige til dem ved sin højre side: Kom, I som er min faders velsignede, og tag det rige i arv, som er bestemt for jer, siden verden blev grundlagt. v35 For jeg var sulten, og I gav mig noget at spise, jeg var tørstig, og I gav mig noget at drikke, jeg var fremmed, og I tog imod mig, v36 jeg var nøgen, og I gav mig tøj, jeg var syg, og I tog jer af mig, jeg var i fængsel, og I besøgte mig. v37 Da skal de retfærdige sige: Herre, hvornår så vi dig sulten og gav dig noget at spise, eller tørstig og gav dig noget at drikke? v38 Hvornår så vi dig som en fremmed og tog imod dig eller så dig nøgen og gav dig tøj? v39 Hvornår så vi dig syg eller i fængsel og besøgte dig? v40 Og kongen vil svare dem: Sandelig siger jeg jer: Alt, hvad I har gjort mod en af disse mine mindste brødre, det har I gjort mod mig. v41 Da skal han også sige til dem ved sin venstre side: Gå bort fra mig, I forbandede, til den evige ild, som er bestemt for Djævelen og hans engle. v42 For jeg var sulten, og I gav mig ikke noget at spise, jeg var tørstig, og I gav mig ikke noget at drikke, v43 jeg var fremmed, og I tog ikke imod mig, jeg var nøgen, og I gav mig ikke tøj, jeg var syg og i fængsel, og I så ikke til mig. v44 Da skal også de sige til ham: Herre, hvornår så vi dig sulten eller tørstig eller fremmed eller nøgen eller syg eller i fængsel, uden at vi hjalp dig? v45 Da skal han svare dem: Sandelig siger jeg jer: Alt, hvad I ikke har gjort mod en af disse mindste, det har I heller ikke gjort mod mig! v46 Og de skal gå bort til evig straf, men de retfærdige til evigt liv.«]]></description>
@@ -1123,7 +1123,7 @@ Tag derfor Guds fulde rustning på, for at I kan stå imod på den onde dag, ove
         </item>
         <item>
             <title><![CDATA[Matt 5, 1-12 (Allehelgensdag)]]></title>
-            <link>/article/festpostille/allehelgensdag</link>
+            <link>https://kirkepostille.vercel.app/article/festpostille/allehelgensdag</link>
             <guid>/article/festpostille/allehelgensdag</guid>
             <pubDate>Wed, 01 Nov 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Da Jesus så skarerne, gik han op på bjerget og satte sig, og hans disciple kom hen til ham. Og han tog til orde og lærte dem:Salige er de fattige i ånden, for Himmeriget er deres.
@@ -1138,7 +1138,7 @@ Salige er de, som forfølges på grund af retfærdighed, for Himmeriget er deres
         </item>
         <item>
             <title><![CDATA[Joh 3, 1-15 (Trefoldighedssøndag)]]></title>
-            <link>/article/festpostille/trefoldighetssondag</link>
+            <link>https://kirkepostille.vercel.app/article/festpostille/trefoldighetssondag</link>
             <guid>/article/festpostille/trefoldighetssondag</guid>
             <pubDate>Sun, 04 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Der var et menneske, en af farisæerne, ved navn Nikodemus, medlem af jødernes råd. Han kom til Jesus om natten og sagde til ham: »Rabbi, vi ved, du er en lærer, der er kommet fra Gud; for ingen kan gøre de tegn, du gør, uden at Gud er med ham.« Jesus svarede ham: »Sandelig, sandelig siger jeg dig: Den, der ikke bliver født på ny, kan ikke se Guds rige.« Nikodemus sagde til ham: »Hvordan kan et menneske fødes, når det er gammelt? Det kan da ikke for anden gang komme ind i sin mors liv og fødes?« Jesus svarede: »Sandelig, sandelig siger jeg dig: Den, der ikke bliver født af vand og ånd, kan ikke komme ind i Guds rige. Det, der er født af kødet, er kød, og det, der er født af Ånden, er ånd. Du skal ikke undre dig over, at jeg sagde til dig: I må fødes på ny. Vinden blæser, hvorhen den vil, og du hører den suse, men du ved ikke, hvor den kommer fra, og hvor den farer hen. Sådan er det med enhver, som er født af Ånden.« Nikodemus spurgte ham: »Hvordan kan det gå til?« Jesus svarede: »Du er lærer i Israel og forstår ikke det? Sandelig, sandelig siger jeg dig: Vi taler om det, vi ved, og vi vidner om det, vi har set, men I tager ikke imod vort vidnesbyrd. Tror I ikke, når jeg har talt til jer om det jordiske, hvordan skal I så tro, når jeg taler til jer om det himmelske? Ingen er steget op til himlen undtagen den, der steg ned fra himlen, Menneskesønnen. Og ligesom Moses ophøjede slangen i ørkenen, sådan skal Menneskesønnen ophøjes, for at enhver, som tror, skal have evigt liv i ham.]]></description>
@@ -1146,14 +1146,14 @@ Salige er de, som forfølges på grund af retfærdighed, for Himmeriget er deres
         </item>
         <item>
             <title><![CDATA[Læsevejledning bibelen]]></title>
-            <link>/article/vejledning</link>
+            <link>https://kirkepostille.vercel.app/article/vejledning</link>
             <guid>/article/vejledning</guid>
             <description><![CDATA[Det er almindeligt, at man tæller og nævner evangelierne efter de enkelte evangelietekster i Ny Testamente og siger, at der er fire evangelier. En af følgerne af det er, at man ikke ved noget om, hvad Paulus og Peter siger i deres breve. Man betragter kun deres lære som tilføjelser til evangelierne, som det også fremgår i en fortale af Hieronymus. Men endnu værre er det, at man anser evangelierne og brevene for at være en slags lovbøger, der blot lærer os, hvad vi skal gøre og fremstiller Kristi gerninger som forbilleder for os. Hvor man fejlagtig har disse to opfattelser i hjertet, kan man hverken læse evangelierne eller brevene på en kristen måde og med udbytte, men man bliver ved med at være en hedning som før.]]></description>
             <content:encoded><![CDATA[this should be the full content]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Dr. Martin Luthers kirkepostille]]></title>
-            <link>/</link>
+            <link>https://kirkepostille.vercel.app/</link>
             <guid>/</guid>
             <content:encoded><![CDATA[this should be the full content]]></content:encoded>
         </item>
