@@ -23,6 +23,7 @@ export default defineEventHandler(async (event) => {
     })
   }
 
+  //
   sitemap.end()
 
   return streamToPromise(sitemap)

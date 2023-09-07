@@ -194,13 +194,13 @@ useSeoMeta({
                 >
                   <template #default="{ data }">
                     <PostListItem
-                      v-for="article in data"
+                      v-for="article in (data as any)"
                       :key="article._path"
                       :article="article"
                       class="hidden sm:block"
                     />
                     <PostCardItem
-                      v-for="article in data"
+                      v-for="article in (data as any)"
                       :key="article._path"
                       :article="article"
                       :list-len="articleFolderFiles.length"
@@ -250,13 +250,13 @@ useSeoMeta({
                   >
                     <template #default="{ data }">
                       <PostListItem
-                        v-for="article in data"
+                        v-for="article in (data as any)"
                         :key="article._path"
                         :article="article"
                         class="hidden sm:block"
                       />
                       <PostCardItem
-                        v-for="article in data"
+                        v-for="article in (data as any)"
                         :key="article._path"
                         :article="article"
                         :list-len="data.length"

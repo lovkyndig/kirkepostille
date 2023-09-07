@@ -2,7 +2,7 @@ export const variables = {
   site: {
     name: 'Kirkepostille',
     description: 'Dr. Martin Luthers Kirkepostille',
-    url: 'https://kirkepostille.vercel.app/about',
+    url: '/about',
     favicon: '/img/32.ico',
     avatar: '/img/180.jpg',
     apple: '/img/180.jpg',

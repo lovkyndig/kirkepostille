@@ -10,12 +10,13 @@ const config = useRuntimeConfig()
       <Title>{{ constants.nav.subscribe.echo }}</Title>
     </Head>
     <NuxtLayout name="base">
-      <ContentDoc class="subscribe-content-container container mx-auto lg:max-w-4xl px-6 md:px-12 py-12">
-        <template #not-found>
-          <div class="subscribe-content-container">
-            <h1>
-              {{ constants.nav.subscribe.echo }}
-            </h1>
+      <!-- <ContentDoc class="subscribe-content-container container mx-auto lg:max-w-4xl px-6 md:px-12 py-12"> -->
+      <template #not-found>
+        <div class="subscribe-content-container">
+          <h1>
+            {{ constants.nav.subscribe.echo }}
+          </h1>
+          <!--
             <div class="max-w-prose mx-auto p-4 space-y-4 ">
               <div class="flex items-center gap-2">
                 <CopyContent
@@ -33,7 +34,6 @@ const config = useRuntimeConfig()
                   {{ constants.nav.subscribe.rss }}
                 </NuxtLink>
               </div>
-
               <div class="flex items-center gap-2">
                 <CopyContent
                   :content="`${config.public.hostname}/sitemap.xml`"
@@ -50,7 +50,8 @@ const config = useRuntimeConfig()
                   {{ constants.nav.subscribe.sitemap }}
                 </NuxtLink>
               </div>
-
+              -->
+          <!--
               <div class="flex items-center gap-2">
                 <CopyContent
                   :content="`${config.public.hostname}/privacy.txt`"
@@ -67,11 +68,11 @@ const config = useRuntimeConfig()
                   Privacy Policy
                 </NuxtLink>
               </div>
-            </div>
-          </div>
-        </template>
-      </ContentDoc>
-    </NuxtLayout>
+              -->
+        </div>
+      </template>
+      <!-- </contentdoc> -->
+    </nuxtlayout>
   </div>
 </template>
 
