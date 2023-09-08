@@ -1,35 +1,34 @@
 <script lang="ts">
-import { defineComponent, h, nextTick, ref } from '#imports'
 import TabGroupHeader from './TabGroupHeader.vue'
+import { defineComponent, h, nextTick, ref } from '#imports'
 
 // refer to @nuxt-themes/docus-edge module component: components/content/CodeGroup.vue
 export default defineComponent({
-  setup(props, { slots }) {
-
+  setup (props, { slots }) {
     /**
      *
      * change active tab index
      *
      */
-    const tabGroupContainer = ref(null)
+    const tabGroupContainer = ref<null | HTMLElement>(null)
     const activeTabIndex = ref(0)
 
-    const changeActiveTabIndexHandler = (index) => {
+    const changeActiveTabIndexHandler = (index: number) => {
       activeTabIndex.value = index
 
-      if (tabGroupContainer.value) {
-          nextTick(() => {
-            tabGroupContainer.value.scrollIntoView({ block: "nearest" })
-          })
-      }
+      nextTick(() => {
+        if (tabGroupContainer.value) {
+          tabGroupContainer.value.scrollIntoView({ block: 'nearest' })
+        }
+      })
     }
 
     return () => {
-      const slotArr = slots.default()
+      const slotArr = slots.default?.() || []
 
-      const tabNameArr = []
+      const tabNameArr: string[] = []
       const tabNodes = slotArr.filter((slot: any) => {
-        if (slot?.type?.tag === 'tab-item') {
+        if (slot?.type?.tag === 'TabItem') {
           if (slot.props.name) {
             tabNameArr.push(slot.props.name)
           } else {
@@ -40,20 +39,19 @@ export default defineComponent({
         return false
       })
 
-
       return h(
         'div',
         {
           ref: tabGroupContainer,
-          class: 'my-4 border border-gray-200 rounded',
+          class: 'my-4 border border-gray-200 rounded'
         },
         [
           h(
             TabGroupHeader,
             {
               activeTabIndex: activeTabIndex.value,
-              tabNameArr: tabNameArr,
-              'onUpdate:activeTabIndex': changeActiveTabIndexHandler,
+              tabNameArr,
+              'onUpdate:activeTabIndex': changeActiveTabIndexHandler
             }
           ),
           h(
@@ -61,6 +59,7 @@ export default defineComponent({
             {
               class: 'p-2'
             },
+
             // map tabs to content children
             tabNodes.map((node: any, index) => {
               return h(
@@ -73,7 +72,7 @@ export default defineComponent({
                 },
                 [h(
                   'div',
-                  [node.children?.default?.() || h('div')],
+                  [node.children?.default?.() || h('div')]
                 )]
               )
             })
