@@ -34,7 +34,6 @@ Hvad skal man da nu gøre, og hvorfra skal man tage prædikanter og præster, s�
 ## Gud straffer manglende kirkeskat
 For hvis enhver kun vil betænke sit eget hus og alene tragte efter at ernære sig selv, og sådan ingen bekymrer sig om, hvor Guds ord og prædikeembedet bliver af, så vil Gud hertil sige, hvad han siger hos profeten Haggaj 1, 4-11, da folket lod Guds hus ligge øde, så Guds ord og tjeneste i templet ophørte, og præsterne og tjenerne måtte drive agerbrug og lære andre ting, hvormed de kunne ernære sig, fordi der ikke blev givet dem nogen løn for deres embede og tjeneste. Derfor siger Gud her:
 
-```
 - v4 Er det tiden til,
 at I selv bor under tag i jeres huse,
 når dette hus ligger i ruiner?
@@ -65,7 +64,6 @@ over kornet, vinen og olien,
 over alt, hvad jorden lader vokse,
 over mennesker og dyr,
 over alt, hvad hænder frembringer.
-```
 
 Se, det er den nådigste straf for en sådan foragt for prædikeembedet, sådan som den endnu var på den tid, og give Gud, at det blev dermed. Men når man sætter Guds ord så aldeles til side og underholder præsterne eller prædikanterne så dårligt, at de må lade sit embede fare og søge sit brød ved andet arbejde, og at også andre afskrækkes fra embedet, som ellers var duelige til det, så sender han ikke alene dyrtid og andre store landeplager, sådan som vi nu erfare, så der snart ikke er penge i nogens pung og ingen velsignelse eller noget forråd findes, men han tager også ordet og den rette lære helt bort og lader i stedet partiånder og falske lærere fremstå, af hvem man, før man tænker derpå, bliver forført og bedraget både på sjæl og gods, og til løn må give dem deres rigelige underhold.  
 &nbsp;  
@@ -133,8 +131,6 @@ Når dødens nød og fare er for hånden, tænker og slutter den straks, at det 
 &nbsp;  
 Det kommer deraf, at vi er sådanne dårer, at vi vil beregne og måle det, som Gud skal gøre med os, efter vor egen formue og kraft. Og når så denne slår fejl, da må vi vel fortvivle ligesom apostlene her, når de efter forstanden beregner og sammenligner deres forråd med den store hob, og nøden med deres formue. Da kan det ikke gå anderledes, end at de må sige: Her er intet andet råd, end at vi lader dem fare, for at de kan gå hen, hvor de véd, at de kan købe mad. Det må imidlertid gå dem, som det kan, enten de nu lider nød eller bliver i live.
 
-
-
 ## Disciplene som et billede på vores vantro
 Sådan ser du også hos Kristi disciple og apostle vor store og dybe vantro, og hvor aldeles uforstandige og store dårer, vi er lige over for Guds råd og gerninger, så vi slet ikke har nogen tro, når det ikke går efter vor tanke og mening. Vi mener, at heller ikke han véd noget råd, og at han heller ikke udretter noget hos os, når vi ikke forud kan se og udregne, hvordan det er muligt. Skønt han dog netop af den grund handler sådan med os, at han vil vise os, hvor vort råd, vor visdom og formue ophører, og at han gør langt over det, som vi kan tænke og holde for muligt eller endog tør bede om og ønske. Ja, når han ikke skulle handle anderledes med os end efter vore tanker og råd, så ville han aldrig kunne gøre eller bevise os nogen guddommelig gerning, og vi måtte uden Gud hvert øjeblik fortvivle, gå til grunde og fordærves.  
 &nbsp;  
@@ -166,28 +162,26 @@ Derimod, siger Paulus, kaldes den rimeligvis en rig mand, som frygter Gud og lev
 Sådan som Sl 127, 2 siger: Det er forgæves, at I fra tidlig morgen til sent om aftenen slider for det daglige brød; for den, Herren elsker, får det, mens han sover.” Og Kristus siger selv i Luk 12, 15: ”Et menneskes liv afhænger ikke af, hvad det ejer, selv om det har overflod.” Derfor bør en kristen lade én krone, som Gud giver ham, være sig langt kærere end alle de store skatte, som de rige gerrigknarke på jorden besidder. For han har den skønne skat i huset, som hedder gudsfrygt og nøjsomhed. Det vil sige, han har et stille og roligt hjerte i Gud.  
 &nbsp;  
 Om et sådant fromt og gudfrygtigt menneske taler også Sl 112:
-```
+
 - v1 Lykkelig den, der frygter Herren
 og elsker hans bud højt.
 - v2 Hans afkom bliver mægtigt i landet,
 retskafnes slægt velsignes.
-_ v3 Rigdom og velstand fylder hans hus,
+- v3 Rigdom og velstand fylder hans hus,
 og hans retfærdighed består til evig tid.
-_ v4 For de retskafne bryder lys frem i mørket,
+- v4 For de retskafne bryder lys frem i mørket,
 han er nådig, barmhjertig og retfærdig.
-_ v5 Lykkelig den, der låner gavmildt ud
+- v5 Lykkelig den, der låner gavmildt ud
 og sørger for sin ejendom på rette måde,
-_ v6 for han skal aldrig vakle.
+- v6 for han skal aldrig vakle.
 Altid skal den retfærdige huskes.
-_ v7 Han frygter ikke budskab om ulykke,
+- v7 Han frygter ikke budskab om ulykke,
 hans hjerte er trygt i tillid til Herren.
-_ v8 Med fasthed i sindet frygter han ikke,
+- v8 Med fasthed i sindet frygter han ikke,
 han får sine fjenders nederlag at se.
-_ v9 Han strør ud, han giver til de fattige,
+- v9 Han strør ud, han giver til de fattige,
 hans retfærdighed består til evig tid,
-
 hans horn løfter sig herligt.
-```
 
 Hvad er det for en rigdom, herlighed og overflod? siger den ugudelige verden. Hvad er et par kroner i en fattig kristens hus, som dertil har huset fuldt af børn, imod den, som har ti, tyve eller halvtreds tusinde kroner?  
 &nbsp;  
@@ -218,7 +212,7 @@ For vi får aldrig nok til at fylde dette umættelige helvedesgab, som vor gerri
 Med ét ord, man kan nu ikke mere siges at nyde Guds gaver, skønt han dog dertil giver dem rigeligt og overflødigt, ja, selv om Elben og Rhinen flød med guld, og herrer og fyrster kunne gøre alle sine områder til idel sølvbjerge. For man vil heller ikke bruge dem til Gud, til tak og sig selv til gavn, men alene til gudsforagt og de modtagne gavers misbrug. Ingen tænker at spare noget til vore efterkommere, men vi lever sådan, som ville vi gerne gøre ende på alt sammen på én gang; dertil skal han vel også hjælpe os, fordi vi ikke ville have det anderledes.
 
 ## Den hemmelige betydning
-Denne histories hemmelige betydning er behandlet tilstrækkeligt i [prædikenen på midfaste søndag](../../vinter/faste/4-epistel), hvor du kan læse den igen.
+Denne histories hemmelige betydning er behandlet tilstrækkeligt i [prædikenen på midfaste søndag]<!-- (../../vinter/faste/4-epistel) -->, hvor du kan læse den igen.
 
 ## Amen
 <!-- 

@@ -52,7 +52,7 @@ const copyContentFiles = (src:string, destFolderName:string, ignore:string[] = [
 }
 
 cleanContentFiles('public/article')
-copyContentFiles('content', 'public', ['.md', '.json', '.csv'])
+copyContentFiles('content', 'public', ['.md', '.json', '.csv', '.txt'])
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
@@ -60,7 +60,15 @@ export default defineNuxtConfig({
   routeRules: {
     '/privacy.txt': { prerender: true }
   },
+  // ssr: false,
   content: {
+    /*
+    experimental: {
+      clientDB: true,
+      stripQueryParameters: true,
+      advanceQuery: true
+    },
+    */
     navigation: {
       fields: ['_id', '_type', 'series', 'tags']
     },
@@ -84,6 +92,7 @@ export default defineNuxtConfig({
       }
     }
   },
+
   typescript: {
     shim: false,
     strict: false,
@@ -96,14 +105,16 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
-    '@vite-pwa/nuxt'
+    '@vite-pwa/nuxt',
+    '~/modules/sitemap'
   ],
+  sitemap: {
+    hostname: 'http://localhost:3000'
+  },
   nitro: {
     prerender: {
       routes: [
-        '/rss.xml', '/sitemap.xml', '/robots.txt', '/privacy.txt',
-        '/', '/about.md', '/article/vejledning.md'
-      ]
+        '/rss.xml', '/sitemap.xml', '/']
     }
   },
   vite: {

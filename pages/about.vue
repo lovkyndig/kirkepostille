@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { variables as constants } from '../app/constants'
-// const appConfig = useAppConfig()
+const appConfig = useAppConfig()
 
 useSeoMeta({
   titleTemplate: constants.title.about,
   description: constants.description.about,
   ogDescription: constants.description.about,
-  ogUrl: constants.site.url
+  ogUrl: appConfig.site.url
 }) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
 
 </script>
@@ -25,11 +25,13 @@ useSeoMeta({
             </h1>
             <div class="text-center max-w-prose mx-auto p-4">
               <p>
-                This website is built by website <a
-                  :href="constants.site.url"
+                This website is built by website
+                <a
+                  :href="appConfig.site.url"
                   target="_blank"
                   class="text-blue-500 hover:text-blue-600 underline font-bold transition-colors duration-300"
-                > {{ constants.site.author }}</a>.
+                > {{ constants.site.author }}
+                </a>.
               </p>
               <p>
                 Replace this page with an <i>about.md</i>-file in the <i>content</i>-folder.

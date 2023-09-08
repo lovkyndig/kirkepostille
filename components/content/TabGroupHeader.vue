@@ -95,7 +95,10 @@ const tabsHeaderScrollingHandler = () => {
         {{ tab }}
       </button>
     </div>
-    <div v-show="showScrollBtn" class="shrink-0 pl-2 hidden sm:flex items-center gap-0.5">
+    <div
+      v-show="showScrollBtn"
+      class="shrink-0 pl-2 hidden sm:flex items-center gap-0.5"
+    >
       <button
         v-show="showScrollBtn"
         :disabled="scrollPos === 'start'"
@@ -103,7 +106,10 @@ const tabsHeaderScrollingHandler = () => {
         :class="scrollPos === 'start' ? 'opacity-30' : ''"
         @click="scrollTabsHeaderHandler('left')"
       >
-        <IconCustom name="ic:round-keyboard-arrow-left" class="w-4 h-4" />
+        <IconCustom
+          name="ic:round-keyboard-arrow-left"
+          class="w-4 h-4"
+        />
       </button>
       <button
         v-show="showScrollBtn"
@@ -112,7 +118,10 @@ const tabsHeaderScrollingHandler = () => {
         :class="scrollPos === 'end' ? 'opacity-30' : ''"
         @click="scrollTabsHeaderHandler('right')"
       >
-        <IconCustom name="ic:round-keyboard-arrow-right" class="w-4 h-4" />
+        <IconCustom
+          name="ic:round-keyboard-arrow-right"
+          class="w-4 h-4"
+        />
       </button>
     </div>
   </div>

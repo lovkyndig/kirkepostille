@@ -1,9 +1,11 @@
 // @ts-nocheck
 export default defineAppConfig({
   site: {
-    name: 'Dr. Martin Luthers kirkepostille',
-    avatar: '/default-avatar.png',
-    author: 'Gudsbarn'
+    url: 'https://kirkepostille.vercel.app/',
+    name: 'Kirkepostil',
+    description: 'Dr. Martin Luthers kirkepostille',
+    author: 'lovkyndig',
+    avatar: '/default-avatar.png'
   },
   nav: {
     home: {
@@ -26,9 +28,5 @@ export default defineAppConfig({
   menu: {
     more: 'Toggle',
     theme: 'Endre tema til'
-  },
-  meta: {
-    name: 'Kirkepostil',
-    url: 'https://kirkepostille.vercel.app/about'
   }
 })
