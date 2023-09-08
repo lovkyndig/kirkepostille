@@ -4,8 +4,8 @@ export default defineAppConfig({
     url: 'https://kirkepostille.vercel.app/',
     name: 'Kirkepostil',
     description: 'Dr. Martin Luthers kirkepostille',
-    avatar: '/default-avatar.png',
-    author: 'Gudsbarn'
+    author: 'lovkyndig',
+    avatar: '/default-avatar.png'
   },
   nav: {
     home: {
