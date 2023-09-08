@@ -8,7 +8,7 @@
 // import { registerSW } from 'virtual:pwa-register'
 import { variables as constants } from '~/app/constants'
 import pkg from '~/package.json'
-// const appConfig = useAppConfig()
+const appConfig = useAppConfig()
 /**
  *
  * set head meta for all pages
@@ -16,7 +16,7 @@ import pkg from '~/package.json'
  */
 
 useServerSeoMeta({
-  ogTitle: `${constants.site.name} - v${pkg.version}`,
+  ogTitle: `${appConfig.site.name} - v${pkg.version}`,
   ogType: 'website',
   ogUrl: pkg.homepage,
   ogImage: `${pkg.homepage}${constants.site.listview}`,

@@ -1,0 +1,1 @@
+import{_ as o}from"./_plugin-vue_export-helper.c27b6911.js";import{o as a,c as s,a as t,O as r}from"./entry.88b089c0.js";const c={},l={class:"max-w-full overflow-x-auto"};function n(e,f){return a(),s("div",l,[t("table",null,[r(e.$slots,"default")])])}const m=o(c,[["render",n]]);export{m as default};

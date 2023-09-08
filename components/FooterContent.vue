@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { variables as constants } from '~/app/constants'
-// const appConfig = useAppConfig()
+const appConfig = useAppConfig()
 </script>
 
 <template>
@@ -10,8 +10,8 @@ import { variables as constants } from '~/app/constants'
         Copyright {{ (new Date()).getFullYear() }}
 
         <a
-          v-if="constants.site.url"
-          :href="`${constants.site.url}`"
+          v-if="appConfig.site.url"
+          :href="`${appConfig.site.url}`"
           target="_blank"
           class="text-cyan-800"
         >
