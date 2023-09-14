@@ -1,1 +1,0 @@
-import{_ as o}from"./nuxt-loading-indicator.7da373cd.js";import{_}from"./_plugin-vue_export-helper.c27b6911.js";import{c as n,O as a,b as c,o as r}from"./entry.baa83a19.js";const s={},d={id:"default_layout"};function l(e,f){const t=o;return r(),n("div",d,[a(e.$slots,"default"),c(t)])}const p=_(s,[["render",l]]);export{p as default};
