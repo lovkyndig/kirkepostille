@@ -103,6 +103,7 @@ export default defineNuxtConfig({
   ],
   app: { head: { /* app.vue */ } },
   modules: [
+    '@vueuse/nuxt',
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
     '@vite-pwa/nuxt',
