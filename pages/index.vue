@@ -2,8 +2,15 @@
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { variables as constants } from '~/app/constants'
 import pkg from '~/package.json'
-// const appConfig = useAppConfig()
+const appConfig = useAppConfig()
 // const config = useRuntimeConfig()
+
+useSeoMeta({
+  titleTemplate: 'Dr. Martin Luthers kirkepostille - medisin for syke sjeler!',
+  description: 'Dr. Martin Luthers kirkepostille med innebygd søkemotor, per dato med det mest avanserte brukergrenesnittet for mobil og nettbrett.',
+  ogDescription: 'Dr. Martin Luthers kirkepostille med innebygd søkemotor, per dato med det mest avanserte brukergrenesnittet for mobil og nettbrett.',
+  ogUrl: appConfig.site.url
+}) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
 
 const flexiMode = useFlexiMode()
 /**
