@@ -177,13 +177,13 @@ const showSearchModal = useShowSearchModal()
           -->
           <!-- -->
           <NuxtLink
-            v-if="constants.subscribePage"
-            :to="constants.nav.subscribe.link"
+            v-if="constants.privacyPage"
+            :to="constants.nav.privacy.link"
             class="option-item"
             :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
             @click="showMoreOptions = false"
           >
-            {{ constants.nav.subscribe.echo }}
+            {{ constants.nav.privacy.echo }}
           </NuxtLink>
         </div>
       </Transition>

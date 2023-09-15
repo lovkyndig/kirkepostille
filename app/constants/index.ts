@@ -10,7 +10,7 @@ export const variables = {
     frontpage: '/img/frontpage.png',
     author: 'Eleison'
   },
-  subscribePage: true,
+  privacyPage: true,
   homePage: {
     showBlogPosts: true,
     postItemLimit: 55
@@ -31,7 +31,7 @@ export const variables = {
     exclude: [
       '/',
       '/about/',
-      '/subscribe/',
+      '/privacy/',
       '/list/'
     ]
   },
@@ -61,9 +61,9 @@ export const variables = {
       echo: 'Info',
       link: '/about'
     },
-    subscribe: {
+    privacy: {
       echo: 'Privacy',
-      link: '/subscribe',
+      link: '/privacy',
       rss: 'Rss',
       sitemap: 'Sidekart'
     }

@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import { variables as constants } from '../app/constants'
 const appConfig = useAppConfig()
+// console.log('Testing assets/constants-updating : ' + constants.title.about)
 
 useSeoMeta({
-  titleTemplate: constants.title.about,
-  description: constants.description.about,
-  ogDescription: constants.description.about,
-  ogUrl: appConfig.site.url
+  titleTemplate: 'Om kirkepostillen og dens fantastiske søkefunksjoner.',
+  description: 'Les om Luthers kirkepostille, tilrettelagt for mobil og nettbrett, med søkefunksjon som i nettbibler.',
+  ogDescription: 'Les om Luthers kirkepostille, tilrettelagt for mobil og nettbrett, med søkefunksjon som i nettbibler.',
+  ogUrl: constants.site.url
 }) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
 
 </script>

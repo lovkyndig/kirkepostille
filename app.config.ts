@@ -18,9 +18,9 @@ export default defineAppConfig({
       echo: 'Info',
       link: '/about'
     },
-    subscribe: {
+    privacy: {
       echo: 'Rss',
-      link: '/subscribe',
+      link: '/privacy',
       rss: 'Rss',
       sitemap: 'Sidekart'
     }
