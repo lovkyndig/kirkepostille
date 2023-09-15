@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
-import { variables as v } from '~/app/constants'
 import pkg from '~/package.json'
+const appConfig = useAppConfig()
 
 interface MyCustomParsedContent extends ParsedContent {
   tags: string[]
@@ -18,7 +18,7 @@ let articleFolder
 const categoryArr = []
 
 if (Array.isArray(navTree.value)) {
-  articleFolder = navTree.value.find(item => item._path === v.article.link)
+  articleFolder = navTree.value.find(item => item._path === appConfig.article.link)
   if (articleFolder?.children && articleFolder.children.length > 0) {
     articleFolder.children.forEach((item) => {
       if ('children' in item) {
@@ -31,23 +31,23 @@ if (Array.isArray(navTree.value)) {
 const getCategory = (path = '') => {
   let category = ''
   const pathArr = path.split('/')
-  if (pathArr.length === 3 && pathArr[1] === v.article.folder) {
+  if (pathArr.length === 3 && pathArr[1] === appConfig.article.folder) {
     category = pathArr[2]
   }
   return category
 }
 
-const currentCategory = ref(v.filter.all)
+const currentCategory = ref(appConfig.filter.all)
 const showMoreCategory = ref(false)
 
 const toggleCategory = (category) => {
   if (currentCategory.value === category) {
-    currentCategory.value = v.filter.all
+    currentCategory.value = appConfig.filter.all
   } else {
     currentCategory.value = category
   }
   currentTags.value = []
-  currentSeries.value = v.filter.all
+  currentSeries.value = appConfig.filter.all
   changeURLHash()
 }
 
@@ -107,7 +107,7 @@ const currentTags = ref([])
 const showMoreTag = ref(false)
 
 const toggleTag = (tag) => {
-  if (tag === v.filter.all) {
+  if (tag === appConfig.filter.all) {
     currentTags.value = []
     changeURLHash()
     return
@@ -126,12 +126,12 @@ const toggleTag = (tag) => {
 }
 
 // set current series
-const currentSeries = ref(v.filter.all)
+const currentSeries = ref(appConfig.filter.all)
 const showMoreSeries = ref(false)
 
 const toggleSeries = (series) => {
   if (currentSeries.value === series) {
-    currentSeries.value = v.filter.all
+    currentSeries.value = appConfig.filter.all
   } else {
     currentSeries.value = series
   }
@@ -151,7 +151,7 @@ const changeURLHash = () => {
 
 // get the init current value after Mounted
 onMounted(() => {
-  const category = route.query?.category as string || v.filter.all
+  const category = route.query?.category as string || appConfig.filter.all
   currentCategory.value = category
   let tags = []
   if (typeof route.query?.tags === 'string') {
@@ -160,7 +160,7 @@ onMounted(() => {
     tags = route.query.tags
   }
   currentTags.value = tags
-  const series = route.query?.series as string || v.filter.all
+  const series = route.query?.series as string || appConfig.filter.all
   currentSeries.value = series
   echoQueryParam(route.query) // lovkyndig coded 2023
 })
@@ -171,8 +171,8 @@ onMounted(() => {
  *
  */
 // get all articles data
-const { pending, data: articleList } = await useAsyncData(`${v.article.folder} +'s'`, () => {
-  return queryContent<MyCustomParsedContent>(v.article.folder)
+const { pending, data: articleList } = await useAsyncData(`${appConfig.article.folder} +'s'`, () => {
+  return queryContent<MyCustomParsedContent>(appConfig.article.folder)
     .only(['title', 'description', '_type', '_path', 'contentType', '_type', 'series', 'seriesOrder', 'tags'])
     .sort({ created: 1 })
     .find()
@@ -185,7 +185,7 @@ const filterArticleList = ref([])
 watch(() => route.fullPath, () => {
   if (route.path !== '/list' || articleList.value.length === 0) { return }
   let currentArticleList = articleList.value
-  if (route.query?.category && route.query.category !== v.filter.all) {
+  if (route.query?.category && route.query.category !== appConfig.filter.all) {
     currentArticleList = currentArticleList.filter((item) => {
       const pathArr = item._path.split('/')
       if (pathArr.length >= 3) {
@@ -215,7 +215,7 @@ watch(() => route.fullPath, () => {
       })
     }
   }
-  if (route.query?.series && route.query.series !== v.filter.all) {
+  if (route.query?.series && route.query.series !== appConfig.filter.all) {
     currentArticleList = currentArticleList.filter((item) => {
       return item.series === route.query.series
     })
@@ -247,7 +247,7 @@ const getFileTypeIcon = (type) => {
 }
 /** ----------------------------------------------------------------------------- */
 useServerSeoMeta({
-  ogDescription: `${v.description.list} ${route.fullPath.slice(6)}`
+  ogDescription: `${appConfig.description.list} ${route.fullPath.slice(6)}`
 }) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
 
 /**
@@ -262,8 +262,8 @@ const publishTitle = (value) => { // using this function 5 times below
   titles.value = title
   useSeoMeta({
     title: title.value,
-    description: `${v.description.list} ${route.fullPath.slice(6)}`,
-    ogDescription: `${v.description.list} ${route.fullPath.slice(6)}`,
+    description: `${appConfig.description.list} ${route.fullPath.slice(6)}`,
+    ogDescription: `${appConfig.description.list} ${route.fullPath.slice(6)}`,
     ogUrl: `${pkg.homepage}${route.fullPath}`
   })
   useHead({ link: [{ rel: 'canonical', href: `${pkg.homepage}${route.fullPath}` }] })
@@ -281,23 +281,23 @@ const echoQueryParam = (queryObj) => {
       searchString.value = querystring.substring(1)
     } else { /* console.log('No searchstring here!') */ }
   }
-  publishTitle(`${v.title.list} ${searchString.value}`)
+  publishTitle(`${appConfig.title.list} ${searchString.value}`)
 }
 
 const getAndUseSearchparam = () => { // only on load
   if (route.fullPath === route.path) {
-    publishTitle(v.title.list_all)
+    publishTitle(appConfig.title.list_all)
   } else {
-    publishTitle(`${v.title.list} ${route.fullPath.slice(6)}`)
+    publishTitle(`${appConfig.title.list} ${route.fullPath.slice(6)}`)
   }
 }
 getAndUseSearchparam()
 
 watch(() => route.fullPath, () => { // only on change after load
   if (route.path === route.fullPath) {
-    publishTitle(v.title.list_all)
+    publishTitle(appConfig.title.list_all)
   } else {
-    publishTitle(`${v.title.list} ${route.fullPath.slice(6)}`)
+    publishTitle(`${appConfig.title.list} ${route.fullPath.slice(6)}`)
   }
 })
 
@@ -337,22 +337,22 @@ watch(() => route.fullPath, () => { // only on change after load
                   :class="showMoreCategory ? 'rotate-90' : 'rotate-0'"
                 />
                 <p>
-                  {{ v.filter.category }}
+                  {{ appConfig.filter.category }}
                 </p>
               </button>
               <p class="px-2 py-1 sm:hidden">
-                {{ v.filter.category }}
+                {{ appConfig.filter.category }}
               </p>
               <ul class="filter-list-container" :class="showMoreCategory ? 'max-h-96' : 'max-h-8'">
                 <li class="shrink-0">
                   <!-- all-buttons left -->
                   <button
                     class="px-2 py-1 flex items-center space-x-1 transition-colors duration-300 rounded"
-                    :class="currentCategory === v.filter.all ? 'text-white bg-purple-600 hover:bg-purple-400' : 'text-purple-600 hover:bg-purple-300 bg-purple-100'"
-                    @click="toggleCategory(v.filter.all)"
+                    :class="currentCategory === appConfig.filter.all ? 'text-white bg-purple-600 hover:bg-purple-400' : 'text-purple-600 hover:bg-purple-300 bg-purple-100'"
+                    @click="toggleCategory(appConfig.filter.all)"
                   >
                     <IconCustom name="material-symbols:category-rounded" class="w-5 h-5" />
-                    <p>{{ v.filter.all }}</p>
+                    <p>{{ appConfig.filter.all }}</p>
                   </button>
                 </li>
                 <li v-for="item in categoryArr" :key="item._path" class="shrink-0">
@@ -391,19 +391,19 @@ watch(() => route.fullPath, () => { // only on change after load
                       :class="showMoreTag ? 'rotate-90' : 'rotate-0'"
                     />
                     <p>
-                      {{ v.filter.tags }}
+                      {{ appConfig.filter.tags }}
                     </p>
                   </button>
                   <p class="px-2 py-1 sm:hidden">
-                    {{ v.filter.tags }}
+                    {{ appConfig.filter.tags }}
                   </p>
                   <ul v-if="tagSet" class="filter-list-container" :class="showMoreTag ? 'max-h-96' : 'max-h-8'">
-                    <li v-for="tag in [v.filter.all, ...tagSet as string[]]" :key="tag" class="shrink-0">
+                    <li v-for="tag in [appConfig.filter.all, ...tagSet as string[]]" :key="tag" class="shrink-0">
                       <!-- tags buttons -->
                       <button
                         class="px-2 py-1 flex items-center space-x-1 transition-colors duration-300 rounded disabled:opacity-30"
-                        :class="(currentTags.length === 0 && tag === v.filter.all) || currentTags.includes(tag) ? 'text-white bg-purple-600 hover:bg-purple-400' : 'text-purple-600 hover:bg-purple-300 bg-purple-100'"
-                        :disabled="(tag === v.filter.all || currentCategory === v.filter.all || categoryTags[currentCategory]?.includes(tag)) ? false : true"
+                        :class="(currentTags.length === 0 && tag === appConfig.filter.all) || currentTags.includes(tag) ? 'text-white bg-purple-600 hover:bg-purple-400' : 'text-purple-600 hover:bg-purple-300 bg-purple-100'"
+                        :disabled="(tag === appConfig.filter.all || currentCategory === appConfig.filter.all || categoryTags[currentCategory]?.includes(tag)) ? false : true"
                         @click="toggleTag(tag)"
                       >
                         <p>#{{ tag }}</p>
@@ -422,18 +422,18 @@ watch(() => route.fullPath, () => { // only on change after load
                       :class="showMoreSeries ? 'rotate-90' : 'rotate-0'"
                     />
                     <p>
-                      {{ v.filter.series }}
+                      {{ appConfig.filter.series }}
                     </p>
                   </button>
                   <p class="px-2 py-1 sm:hidden">
-                    {{ v.filter.series }}
+                    {{ appConfig.filter.series }}
                   </p>
                   <ul v-if="seriesSet" class="filter-list-container" :class="showMoreSeries ? 'max-h-96' : 'max-h-8'">
-                    <li v-for="series in [v.filter.all, ...seriesSet as string[]]" :key="series" class="shrink-0">
+                    <li v-for="series in [appConfig.filter.all, ...seriesSet as string[]]" :key="series" class="shrink-0">
                       <button
                         class="px-2 py-1 flex items-center space-x-1 transition-colors duration-300 rounded disabled:opacity-30"
                         :class="currentSeries === series ? 'text-white bg-purple-500 hover:bg-purple-400' : 'text-purple-600 hover:bg-purple-300 bg-purple-100'"
-                        :disabled="(series === v.filter.all || currentCategory === v.filter.all || categorySeries[currentCategory]?.includes(series)) ? false : true"
+                        :disabled="(series === appConfig.filter.all || currentCategory === appConfig.filter.all || categorySeries[currentCategory]?.includes(series)) ? false : true"
                         @click="toggleSeries(series)"
                       >
                         <IconCustom name="bi:collection" class="shrink-0 w-5 h-5" />
@@ -448,7 +448,7 @@ watch(() => route.fullPath, () => { // only on change after load
             <div class="flex items-center space-x-2">
               <button
                 class="px-4 py-1 sm:hidden text-red-400 hover:text-red-500 bg-red-50 hover:bg-red-100 transition-colors duration-300 rounded"
-                @click="toggleCategory(v.filter.all)"
+                @click="toggleCategory(appConfig.filter.all)"
               >
                 <IconCustom name="ant-design:clear-outlined" class="w-4 h-4" />
               </button>
@@ -476,11 +476,11 @@ watch(() => route.fullPath, () => { // only on change after load
       <div class="shrink-0 mx-4 sm:mx-8 hidden sm:flex justify-between items-center text-sm">
         <button
           class="p-2 flex items-center text-red-400 hover:text-red-500 bg-red-50 hover:bg-red-100 transition-colors duration-300 rounded"
-          @click="toggleCategory(v.filter.all)"
+          @click="toggleCategory(appConfig.filter.all)"
         >
           <IconCustom name="ant-design:clear-outlined" class="w-5 h-5" />
           <p class="hidden sm:block">
-            {{ v.filter.clear }}
+            {{ appConfig.filter.clear }}
           </p>
         </button>
         <button
@@ -491,7 +491,7 @@ watch(() => route.fullPath, () => { // only on change after load
           <IconCustom v-show="showListDetail" name="ic:round-unfold-less" class="w-5 h-5" />
           <IconCustom v-show="!showListDetail" name="ic:round-unfold-more" class="w-5 h-5" />
           <p class="hidden sm:block">
-            {{ showListDetail ? v.filter.less : v.filter.more }} {{ v.filter.detail }}
+            {{ showListDetail ? appConfig.filter.less : appConfig.filter.more }} {{ appConfig.filter.detail }}
           </p>
         </button>
       </div>
@@ -499,7 +499,7 @@ watch(() => route.fullPath, () => { // only on change after load
       <div v-if="pending" class="grow flex flex-col justify-center items-center space-y-2 text-gray-400">
         <IconCustom name="eos-icons:loading" class="w-10 h-10" />
         <p class="text-xl">
-          {{ v.filter.loading }}
+          {{ appConfig.filter.loading }}
         </p>
       </div>
       <div v-if="!pending && filterArticleList" class="grow container p-4 sm:p-8 mx-auto space-y-4">
@@ -532,7 +532,7 @@ watch(() => route.fullPath, () => { // only on change after load
                 v-for="tag in item.tags"
                 :key="tag"
                 class="px-2 py-1 transition-colors duration-300 rounded"
-                :class="(currentTags.length === 0 && tag === v.filter.all) || currentTags.includes(tag) ? 'text-white bg-blue-500 hover:bg-blue-400' : 'text-blue-700 hover:bg-blue-200 bg-blue-100'"
+                :class="(currentTags.length === 0 && tag === appConfig.filter.all) || currentTags.includes(tag) ? 'text-white bg-blue-500 hover:bg-blue-400' : 'text-blue-700 hover:bg-blue-200 bg-blue-100'"
                 @click="toggleTag(tag)"
               >
                 #{{ tag }}

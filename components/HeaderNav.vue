@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
-import { variables as constants } from '~/app/constants'
+import { logos } from '~/assets/logos'
 const appConfig = useAppConfig()
 
 const props = defineProps({
@@ -101,7 +101,7 @@ const showSearchModal = useShowSearchModal()
       :class="showSubNav ? 'border-gray-200' : 'border-gray-50 shadow-md shadow-gray-200'"
     >
       <NuxtLink to="/" aria-label="to/">
-        <img :src="constants.site.avatar" alt="avatar" class="w-8 h-8 rounded-full">
+        <img :src="logos.avatar" alt="avatar" class="w-8 h-8 rounded-full">
       </NuxtLink>
       <div class="flex justify-center items-center gap-6">
         <button

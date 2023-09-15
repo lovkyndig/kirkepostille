@@ -1,14 +1,6 @@
 <script setup lang="ts">
-/*
-const el = ref<HTMLElement | null>(null)
-// https://vueuse.org/core/useDraggable/
-// `style` will be a helper computed for `left: ?px; top: ?px;`
-const { x, y, style } = useDraggable(el, {
-  initialValue: { x: xpos, y: ypos }
-})
-*/
-
 const searchString = useState('searchString')
+
 const findNext = () => {
   const divElement = document.querySelector('#findNext')
   const text = searchString.value
@@ -45,32 +37,21 @@ const inputText = ref<string>('')
 
 const inputHandler = (event: Event) => {
   const target = event.target as HTMLInputElement
-  // Not using this. The inputvalue is saved in searchInput, defined above
-}
-const InputListener = function (event: KeyboardEvent) {
-  if (event.keyCode === 13) {
-    /*
-    Have to make code to remove the queryparam from the old url
-    and insert the new queryparam in the new url
-    before the page will search for the new queryparam
-    After this is doing have to reload with
-    window.location.reload()
-    */
-  }
+  // Not using this. The inputvalue is saved in "searchInput", defined below as ref.
 }
 
-// draggable scool
-// https://www.w3schools.com/howto/howto_js_draggable.asp
-
+/**
+ * Draggable search-box
+ * Source:
+ * https://www.w3schools.com/howto/howto_js_draggable.asp
+ */
 onMounted(() => {
-  const xpos = innerWidth >= 640 ? 50 : 100
-  const ypos = innerWidth >= 640 ? 21 : 2
   dragElement(document.getElementById('findNext'))
   function dragElement (elmnt) {
-    let pos1 = xpos
-    let pos2 = ypos
-    let pos3 = xpos
-    let pos4 = ypos
+    let pos1 = 0
+    let pos2 = 0
+    let pos3 = 0
+    let pos4 = 0
     if (document.getElementById(elmnt.id + 'Header')) {
       // if present, the header is where you move the DIV from:
       document.getElementById(elmnt.id + 'Header').onmousedown = dragMouseDown
@@ -110,11 +91,6 @@ onMounted(() => {
     }
   }
 })
-
-/*
- top: 1px;
-  right: -250px
-*/
 
 </script>
 
@@ -164,7 +140,7 @@ onMounted(() => {
 @media only screen and (min-width: 640px) {
   #findNext {
     top: 45px;
-    right: 8px
+    right: 7px
   }
 }
 

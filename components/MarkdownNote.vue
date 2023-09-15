@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { variables as v } from '../app/constants'
-// const appConfig = useAppConfig()
+const appConfig = useAppConfig()
 const props = defineProps<{ data: any }>()
 const showSeriesModal = useState('showSeriesModal')
 
@@ -21,7 +20,7 @@ if (props.data.body.children.length > 0 && props.data.body.children[0].tag === '
  *
  */
 let showTime = true
-showTime = v.articlePage.showTime
+showTime = appConfig.articlePage.showTime
 
 if ('showTime' in props.data) {
   showTime = props.data.showTime
@@ -33,7 +32,7 @@ if ('showTime' in props.data) {
  *
  */
 let showOutdatedWarningComponent = false
-showOutdatedWarningComponent = v.articlePage.outdated.show
+showOutdatedWarningComponent = appConfig.articlePage.outdated.show
 
 if ('showOutdatedWarning' in props.data) {
   showOutdatedWarningComponent = props.data.showOutdatedWarning

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
-import { variables as constants } from '~/app/constants'
+import { logos } from '~/assets/logos'
 import pkg from '~/package.json'
 const appConfig = useAppConfig()
 // const config = useRuntimeConfig()
@@ -137,7 +137,7 @@ useServerSeoMeta({
 
 useHead({ link: [{ rel: 'canonical', href: `${pkg.homepage}/` }] })
 /*
-const title = ref(constants.title.home)
+const title = ref(appConfig.title.home)
 useSeoMeta({
   title,
   titleTemplate: () => `${title.value}`
@@ -160,7 +160,7 @@ useSeoMeta({
         <div class="py-16">
           <ContentDoc>
             <template #empty>
-              <IntroCard :avatar="constants.site.avatar" />
+              <IntroCard :avatar="logos.avatar" />
             </template>
             <template #not-found>
               <h1 class="py-4 text-3xl sm:text-5xl font-bold text-center text-purple-500">

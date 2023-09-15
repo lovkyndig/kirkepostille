@@ -2,16 +2,16 @@ import { Feed } from 'feed'
 import { defineEventHandler, appendHeader } from 'h3'
 import pkg from '~/package.json'
 import { serverQueryContent } from '#content/server'
-import { variables as constants } from '~/app/constants'
+import { logos } from '~/assets/logos'
 
 // refer to https://mokkapps.de/blog/create-an-rss-feed-with-nuxt-3-and-nuxt-content-v2/
 export default defineEventHandler(async (event) => {
   const config = useRuntimeConfig()
   // feed information
   const feed = new Feed({
-    title: constants.site.name,
-    description: constants.site.description,
-    image: constants.site.avatar,
+    title: config.site.title,
+    description: config.site.description,
+    image: logos.avatar,
     copyright: pkg.author,
     id: config.public.hostname,
     link: config.public.hostname

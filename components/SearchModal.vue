@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { variables as constants } from '~/app/constants'
 const appConfig = useAppConfig()
 
 const pagefindPath = '/_pagefind/pagefind.js'

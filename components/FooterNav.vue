@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
-import { variables as constants } from '~/app/constants'
+import { logos } from '~/assets/logos'
 const appConfig = useAppConfig()
 
 const props = defineProps({
@@ -113,7 +113,7 @@ const showSearchModal = useShowSearchModal()
       >
         <div class="flex flex-col justify-center items-center gap-1">
           <img
-            :src="constants.site.avatar"
+            :src="logos.avatar"
             alt="avatar"
             class="w-6 h-6"
           >
