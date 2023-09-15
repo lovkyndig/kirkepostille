@@ -3,7 +3,7 @@ import * as path from 'path'
 // https://nuxt.com/docs/guide/concepts/esm#default-exports
 import { isProduction } from 'std-env'
 // import { VitePWA } from 'vite-plugin-pwa'
-import { variables as constants } from './app/constants'
+import { logos } from './assets/logos'
 import pkg from './package.json'
 
 /**
@@ -172,12 +172,12 @@ export default defineNuxtConfig({
     }
   },
   runtimeConfig: {
-    rss: {
-      title: constants.title.home,
-      description: constants.description.home,
-      image: `${pkg.homepage}${constants.site.avatar}`,
-      favicon: `${pkg.homepage}${constants.site.favicon}`,
-      copyright: `All rights reserved ${(new Date()).getFullYear()}, ${constants.site.author}`
+    site: {
+      title: 'Kirkepostille',
+      description: 'Dr. Martin Luthers Kirkepostille',
+      image: `${pkg.homepage}${logos.avatar}`,
+      favicon: `${pkg.homepage}${logos.favicon}`,
+      copyright: `All rights reserved ${(new Date()).getFullYear()}, ${pkg.author}`
     },
     public: {
       hostname: pkg.homepage,

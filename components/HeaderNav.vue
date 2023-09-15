@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
-// import constants from '~/app/constants/constants.json'
-import { variables as constants } from '~/app/constants'
-// const appConfig = useAppConfig()
+import { logos } from '~/assets/logos'
+const appConfig = useAppConfig()
 
 const props = defineProps({
   headerFlexiMode: {
@@ -102,7 +101,7 @@ const showSearchModal = useShowSearchModal()
       :class="showSubNav ? 'border-gray-200' : 'border-gray-50 shadow-md shadow-gray-200'"
     >
       <NuxtLink to="/" aria-label="to/">
-        <img :src="constants.site.avatar" alt="avatar" class="w-8 h-8 rounded-full">
+        <img :src="logos.avatar" alt="avatar" class="w-8 h-8 rounded-full">
       </NuxtLink>
       <div class="flex justify-center items-center gap-6">
         <button
@@ -112,30 +111,30 @@ const showSearchModal = useShowSearchModal()
           @mouseleave="setSubNav(false)"
           @click="showSubNav=!showSubNav"
         >
-          {{ constants.filter.category }}
+          {{ appConfig.filter.category }}
         </button>
         <!-- -->
         <NuxtLink
-          :to="constants.nav.about.link"
+          :to="appConfig.nav.about.link"
           class="btn"
-          aria-label="constants.nav.about.link"
+          aria-label="appConfig.nav.about.link"
           :class="flexiMode === 'blog' ? 'text-purple-700 hover:bg-purple-100' : 'text-green-500 hover:bg-green-100'"
         >
-          {{ constants.nav.about.echo }}
+          {{ appConfig.nav.about.echo }}
         </NuxtLink>
         <!--
         <NuxtLink
-          :to="constants.list.evangelie_list1"
+          :to="appConfig.list.evangelie_list1"
           class="btn"
-          aria-label="constants.list.evangelie_list1"
+          aria-label="appConfig.list.evangelie_list1"
           :class="flexiMode === 'blog' ? 'text-purple-700 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
         >
           Evangelier
         </NuxtLink>
         <NuxtLink
-          :to="constants.list.epistel_list1"
+          :to="appConfig.list.epistel_list1"
           class="btn"
-          aria-label="constants.list.epistel_list1"
+          aria-label="appConfig.list.epistel_list1"
           :class="flexiMode === 'blog' ? 'text-purple-700 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
         >
           Epistler
@@ -143,12 +142,12 @@ const showSearchModal = useShowSearchModal()
         -->
         <!-- -->
         <NuxtLink
-          v-if="constants.privacyPage"
-          :to="constants.nav.privacy.link"
+          v-if="appConfig.privacyPage"
+          :to="appConfig.nav.privacy.link"
           class="btn"
           :class="flexiMode === 'blog' ? 'text-purple-700 hover:bg-purple-100' : 'text-green-500 hover:bg-green-100'"
         >
-          {{ constants.nav.privacy.echo }}
+          {{ appConfig.nav.privacy.echo }}
         </NuxtLink>
       </div>
       <div class="flex justify-end items-center gap-4">
@@ -158,7 +157,7 @@ const showSearchModal = useShowSearchModal()
           @click="showSearchModal=true"
         >
           <IconCustom name="tabler:search" class="w-4 h-4" />
-          <span class="hidden lg:block text-sm">{{ constants.filter.search }}</span>
+          <span class="hidden lg:block text-sm">{{ appConfig.filter.search }}</span>
           <span class="hidden md:flex justify-center items-center gap-1 text-xs ">
             <code class="px-2 py-0.5 border rounded bg-gray-100">Ctrl</code>
             <code class="px-2 py-0.5 border rounded bg-gray-100">K</code>
@@ -166,7 +165,7 @@ const showSearchModal = useShowSearchModal()
         </button>
         <button
           v-if="props.headerFlexiMode"
-          :title="`${constants.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog' }`"
+          :title="`${appConfig.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog' }`"
           class="hidden w-10 h-10 sm:flex justify-center items-center gap-1 transition-colors duration-300 rounded-lg"
           :class="flexiMode === 'blog' ? 'flex-col bg-purple-100 hover:bg-purple-200 ' : 'flex-row bg-green-100 hover:bg-green-200 '"
           @click="changeFlexiMode"
@@ -207,7 +206,7 @@ const showSearchModal = useShowSearchModal()
           >
             <IconCustom name="material-symbols:category-rounded" class="w-8 h-8" />
             <p class="py-2 font-bold text-center">
-              {{ constants.filter.all }}
+              {{ appConfig.filter.all }}
             </p>
           </NuxtLink>
           <NuxtLink

@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { variables as v } from '../app/constants'
-// const appConfig = useAppConfig()
+const appConfig = useAppConfig()
 const props = defineProps<{
   data: any;
   prevArticleUrl: string;
@@ -15,8 +14,8 @@ const showSeriesModal = useState('showSeriesModal')
  *
  */
 let showTime = true
-// if ('articlePage' in v && 'showTime' in v.articlePage) {
-showTime = v.articlePage.showTime
+// if ('articlePage' in v && 'showTime' in appConfig.articlePage) {
+showTime = appConfig.articlePage.showTime
 // }
 
 if ('showTime' in props.data) {
@@ -30,7 +29,7 @@ if ('showTime' in props.data) {
  */
 let showOutdatedWarningComponent = true
 // if (appConfig?.theme?.articlePage?.outdated?.show) {
-showOutdatedWarningComponent = v.articlePage.outdated.show
+showOutdatedWarningComponent = appConfig.articlePage.outdated.show
 // }
 
 if ('showOutdatedWarning' in props.data) {

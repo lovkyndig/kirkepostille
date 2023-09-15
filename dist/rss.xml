@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>Dr. Martin Luthers kirkepostille - medisin for syke sjeler!</title>
+        <title>Kirkepostille</title>
         <link>https://kirkepostille.vercel.app</link>
-        <description>Dr. Martin Luthers kirkepostille med innebygd søkemotor, per dato med det mest avanserte brukergrenesnittet for mobil og nettbrett.</description>
-        <lastBuildDate>Fri, 15 Sep 2023 04:36:58 GMT</lastBuildDate>
+        <description>Dr. Martin Luthers Kirkepostille</description>
+        <lastBuildDate>Fri, 15 Sep 2023 22:46:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
-            <title>Dr. Martin Luthers kirkepostille - medisin for syke sjeler!</title>
-            <url>https://kirkepostille.vercel.app/img/180.jpg</url>
+            <title>Kirkepostille</title>
+            <url>/img/180.jpg</url>
             <link>https://kirkepostille.vercel.app</link>
         </image>
-        <copyright>All rights reserved 2023, Eleison</copyright>
+        <copyright>lovkyndig</copyright>
         <item>
             <title><![CDATA['Hvordan søke etter ord i Dr. Martin Luthers kirkepostille?]]></title>
             <link>https://kirkepostille.vercel.app/about</link>

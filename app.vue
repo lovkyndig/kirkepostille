@@ -6,9 +6,10 @@
 
 <script setup lang="ts">
 // import { registerSW } from 'virtual:pwa-register'
-import { variables as constants } from '~/app/constants'
+import { logos } from './assets/logos'
 import pkg from '~/package.json'
 const appConfig = useAppConfig()
+const config = useRuntimeConfig()
 /**
  *
  * set head meta for all pages
@@ -16,12 +17,12 @@ const appConfig = useAppConfig()
  */
 
 useServerSeoMeta({
-  ogTitle: `${appConfig.site.name} - v${pkg.version}`,
+  ogTitle: `${config.site.title} - v${pkg.version}`,
   ogType: 'website',
   ogUrl: pkg.homepage,
-  ogImage: `${pkg.homepage}${constants.site.listview}`,
+  ogImage: `${pkg.homepage}${appConfig.site.listview}`,
   ogImageAlt: pkg.name,
-  twitterImage: `${pkg.homepage}${constants.site.frontpage}`,
+  twitterImage: `${pkg.homepage}${appConfig.site.frontpage}`,
   twitterSite: '@nuxt_js',
   twitterCreator: '@nuxt_js',
   twitterCard: 'summary_large_image',
@@ -38,8 +39,8 @@ useHead({
     { children: 'html, body { scroll-behavior: smooth; overflow: overlay }' }
   ],
   link: [
-    { rel: 'icon', href: constants.site.favicon },
-    { rel: 'apple-touch-icon', href: constants.site.apple },
+    { rel: 'icon', href: logos.favicon },
+    { rel: 'apple-touch-icon', href: logos.apple },
     { rel: 'manifest', href: 'manifest.webmanifest', crossorigin: 'use-credentials' }
   ],
   noscript: [{ children: 'JavaScript is required' }],

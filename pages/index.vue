@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
-import { variables as constants } from '~/app/constants'
+import { logos } from '~/assets/logos'
 import pkg from '~/package.json'
 const appConfig = useAppConfig()
 // const config = useRuntimeConfig()
 
 useSeoMeta({
-  titleTemplate: 'Dr. Martin Luthers kirkepostille - medisin for syke sjeler!',
-  description: 'Dr. Martin Luthers kirkepostille med innebygd søkemotor, per dato med det mest avanserte brukergrenesnittet for mobil og nettbrett.',
-  ogDescription: 'Dr. Martin Luthers kirkepostille med innebygd søkemotor, per dato med det mest avanserte brukergrenesnittet for mobil og nettbrett.',
-  ogUrl: appConfig.site.url
+  titleTemplate: appConfig.title.home,
+  description: appConfig.description.home,
+  ogDescription: appConfig.description.home,
+  ogUrl: pkg.homepage
 }) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
 
 const flexiMode = useFlexiMode()
@@ -31,15 +31,15 @@ const articleFolderFiles:NavItem[] = []
 
 // render blog posts or not
 let showBlogPosts = true
-showBlogPosts = constants.homePage.showBlogPosts
+showBlogPosts = appConfig.homePage.showBlogPosts
 
 const queryPostsWhere = { _type: 'markdown' }
-const queryPostsLimit = constants.homePage.postItemLimit || 2
+const queryPostsLimit = appConfig.homePage.postItemLimit || 2
 const queryPostsOnly = ['title', 'description', '_type', '_path', 'cover', 'series', 'seriesOrder', 'tags']
 
 if (showBlogPosts && Array.isArray(navTree.value)) {
   articleFolder = navTree.value.find((item) => {
-    return item._path === constants.article.link
+    return item._path === appConfig.article.link
   })
   if (articleFolder?.children && articleFolder.children.length > 0) {
     articleFolder.children.forEach((item) => {
@@ -53,7 +53,7 @@ if (showBlogPosts && Array.isArray(navTree.value)) {
 const getCategory = (path = '') => {
   let category = ''
   const pathArr = path.split('/')
-  if (pathArr.length === 3 && pathArr[1] === constants.article.folder) {
+  if (pathArr.length === 3 && pathArr[1] === appConfig.article.folder) {
     category = pathArr[2]
   }
   return category
@@ -83,7 +83,7 @@ currentTree.value = navTree.value
 let folderNavPath:number[] = []
 const folderNavArr = ref([
   {
-    title: constants.article.parent,
+    title: appConfig.article.parent,
     path: [] as number[]
   }
 ])
@@ -99,7 +99,7 @@ const setTreeHandler = (path: number[], type = 'drill-down') => {
   // set the root as start
   const folderNavArrTemp = [
     {
-      title: constants.article.parent,
+      title: appConfig.article.parent,
       path: [] as number[]
     }
   ]
@@ -131,13 +131,13 @@ const getFileTypeIcon = (type:string) => {
 }
 
 useServerSeoMeta({
-  description: constants.description.home,
-  ogDescription: constants.description.home
+  description: appConfig.description.home,
+  ogDescription: appConfig.description.home
 })
 
 useHead({ link: [{ rel: 'canonical', href: `${pkg.homepage}/` }] })
 /*
-const title = ref(constants.title.home)
+const title = ref(appConfig.title.home)
 useSeoMeta({
   title,
   titleTemplate: () => `${title.value}`
@@ -152,7 +152,7 @@ useSeoMeta({
   <div id="index_page">
     <Head>
       <Title>
-        {{ constants.title.home }} - {{ pkg.version }}
+        {{ appConfig.title.home }} - {{ pkg.version }}
       </Title>
     </Head>
     <NuxtLayout name="base" :footer-flexi-mode="true" :header-flexi-mode="true">
@@ -160,11 +160,11 @@ useSeoMeta({
         <div class="py-16">
           <ContentDoc>
             <template #empty>
-              <IntroCard :avatar="constants.site.avatar" />
+              <IntroCard :avatar="logos.avatar" />
             </template>
             <template #not-found>
               <h1 class="py-4 text-3xl sm:text-5xl font-bold text-center text-purple-500">
-                {{ constants.title.home }}
+                {{ appConfig.title.home }}
               </h1>
             </template>
           </ContentDoc>
@@ -240,7 +240,7 @@ useSeoMeta({
                     aria-label="Read More"
                     class="p-2 text-xs font-bold transition-colors duration-300 rounded-lg text-purple-700 bg-purple-200 hover:bg-purple-100"
                   >
-                    {{ constants.nav.home.more }}
+                    {{ appConfig.nav.home.more }}
                   </NuxtLink>
                 </div>
                 <div
@@ -272,7 +272,7 @@ useSeoMeta({
                     </template>
 
                     <template #not-found>
-                      <p>{{ constants.nav.home.not_found }}</p>
+                      <p>{{ appConfig.nav.home.not_found }}</p>
                     </template>
                   </ContentQuery>
                 </div>

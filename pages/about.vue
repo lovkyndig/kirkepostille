@@ -1,13 +1,12 @@
 <script setup lang="ts">
-import { variables as constants } from '../app/constants'
+import pkg from '~/package.json'
 const appConfig = useAppConfig()
-// console.log('Testing assets/constants-updating : ' + constants.title.about)
 
 useSeoMeta({
-  titleTemplate: 'Om kirkepostillen og dens fantastiske søkefunksjoner.',
-  description: 'Les om Luthers kirkepostille, tilrettelagt for mobil og nettbrett, med søkefunksjon som i nettbibler.',
-  ogDescription: 'Les om Luthers kirkepostille, tilrettelagt for mobil og nettbrett, med søkefunksjon som i nettbibler.',
-  ogUrl: constants.site.url
+  titleTemplate: appConfig.title.about,
+  description: appConfig.description.about,
+  ogDescription: appConfig.description.about,
+  ogUrl: pkg.homepage
 }) // https://nuxt.com/docs/getting-started/seo-meta#useseometa
 
 </script>
@@ -15,7 +14,7 @@ useSeoMeta({
 <template>
   <div id="about_page">
     <h1 style="display: none">
-      {{ constants.description.about }}
+      {{ appConfig.description.about }}
     </h1>
     <NuxtLayout name="base">
       <ContentDoc class="about-me-content-container container mx-auto lg:max-w-4xl px-6 md:px-12 py-12">
@@ -28,10 +27,10 @@ useSeoMeta({
               <p>
                 This website is built by website
                 <a
-                  :href="appConfig.site.url"
+                  :href="pkg.homepage"
                   target="_blank"
                   class="text-blue-500 hover:text-blue-600 underline font-bold transition-colors duration-300"
-                > {{ constants.site.author }}
+                > {{ pkg.author }}
                 </a>.
               </p>
               <p>
