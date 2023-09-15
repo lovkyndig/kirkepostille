@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { variables as constants } from '../app/constants'
 const appConfig = useAppConfig()
+// console.log('Testing assets/constants-updating : ' + constants.title)
 
 useSeoMeta({
   titleTemplate: constants.title.about,

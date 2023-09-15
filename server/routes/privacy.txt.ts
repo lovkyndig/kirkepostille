@@ -50,23 +50,23 @@ export default defineEventHandler(async (event) => {
   - [kirkepostille.vercel.app](https://kirkepostille.vercel.app)
   
   #### Appnavn
-  Appnavnet er:
-  - "Kirkepostil"
+  Appnavnet på Google Play er:
+  - "Kirkepostille"
   
   #### Aapen kildekode
   Kildekode for pwa som ligger til grunn for bygging av appen (med @bubblewrap) er aapen og offentlig:
-  - [GitHub](https://github.com/lovkyndig/eleison)
+  - [GitHub](https://github.com/lovkyndig/kirkepostille)
   
   #### GitHub
   Oversikt over utviklerens aapen kildekode-programmering er offentlig tilgjengelig paa uviklerens konto paa GitHub:
   - [github.com/lovkyndig](https://github.com/lovkyndig).
   
   #### Google Play
-  Naermere info om denne appen finnes paa Google Play med oøk på google ved søkeordene "Google Play Eleison". Direktelink:
-  - [Eleison](https://play.google.com/store/apps/details?id=app.vercel.eleison.twa).
+  Naermere info om denne appen finnes paa Google Play med oøk på google ved søkeordene "Google Play Kirkepostille". Direktelink:
+  - [Kirkepostille](https://play.google.com/store/apps/details?id=app.vercel.kirkepostille.twa).
   
   
-  _Redigert: Sept 08, 2023_
+  _Redigert: Sept 15, 2023_
   
   [//]: # (Dette er en kopi av teksten i ~/server/routes/privacy.txt.ts)
   `

@@ -143,12 +143,12 @@ const showSearchModal = useShowSearchModal()
         -->
         <!-- -->
         <NuxtLink
-          v-if="constants.subscribePage"
-          :to="constants.nav.subscribe.link"
+          v-if="constants.privacyPage"
+          :to="constants.nav.privacy.link"
           class="btn"
           :class="flexiMode === 'blog' ? 'text-purple-700 hover:bg-purple-100' : 'text-green-500 hover:bg-green-100'"
         >
-          {{ constants.nav.subscribe.echo }}
+          {{ constants.nav.privacy.echo }}
         </NuxtLink>
       </div>
       <div class="flex justify-end items-center gap-4">

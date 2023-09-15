@@ -10,7 +10,7 @@ export const variables = {
     frontpage: '/img/frontpage.png',
     author: 'Eleison'
   },
-  subscribePage: true,
+  privacyPage: true,
   homePage: {
     showBlogPosts: true,
     postItemLimit: 55
@@ -31,7 +31,7 @@ export const variables = {
     exclude: [
       '/',
       '/about/',
-      '/subscribe/',
+      '/privacy/',
       '/list/'
     ]
   },
@@ -61,9 +61,9 @@ export const variables = {
       echo: 'Info',
       link: '/about'
     },
-    subscribe: {
+    privacy: {
       echo: 'Privacy',
-      link: '/subscribe',
+      link: '/privacy',
       rss: 'Rss',
       sitemap: 'Sidekart'
     }
@@ -72,18 +72,18 @@ export const variables = {
     more: 'Toggle',
     theme: 'Endre tema til'
   },
-  description: {
-    home: 'Dr. Martin Luthers kirkepostille med innebygd søkemotor, per dato med det mest avanserte brukergrenesnittet for mobil og nettbrett.',
-    about: 'Info om søking og hvordan du kan søke og finne ord eller fraser gjennom hele kirkepostillen. Se også register over viktig innhold.',
-    list: 'Liste over Dr. Martin Luthers predikener i kirkepostillen innenfor folgende valgt serie, merke og/eller sesong:',
-    slug: 'Dr. Martin Luthers kirkepostille med forklaring av evangelium og epistelteksten. Publisert på https//kirkepostille/vercel.app.'
-  },
   title: {
     home: 'Dr. Martin Luthers kirkepostille - medisin for syke sjeler!',
     about: 'Hvordan søke etter ord i Dr. Martin Luthers kirkepostille?',
     list: 'Kirkepostille ord: ',
     list_all: 'ALLE talene vises her',
     slug: 'En prediken/tale fra Dr. Martin Luthers kirkepostille.'
+  },
+  description: {
+    home: 'Dr. Martin Luthers kirkepostille med innebygd søkemotor, per dato med det mest avanserte brukergrenesnittet for mobil og nettbrett.',
+    about: 'Info om søking og hvordan du kan søke og finne ord eller fraser gjennom hele kirkepostillen. Se også register over viktig innhold.',
+    list: 'Liste over Dr. Martin Luthers predikener i kirkepostillen innenfor folgende valgt serie, merke og/eller sesong:',
+    slug: 'Dr. Martin Luthers kirkepostille med forklaring av evangelium og epistelteksten. Publisert på https//kirkepostille/vercel.app.'
   },
   list: {
     evangelie_list1: '/list?tags=Evangelium&category=Alle&series=Alle',
