@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
-import { variables as constants } from '~/app/constants'
-// const appConfig = useAppConfig()
+const appConfig = useAppConfig()
 const config = useRuntimeConfig()
 const base = config.public.hostname
 
@@ -17,12 +16,12 @@ useSeoMeta({
 <template>
   <div id="subscribe_page">
     <Head>
-      <Title>{{ constants.nav.privacy.echo }}</Title>
+      <Title>{{ appConfig.nav.privacy.echo }}</Title>
     </Head>
     <NuxtLayout name="base">
       <div class="subscribe-content-container">
         <h1>
-          {{ constants.nav.privacy.echo }}
+          {{ appConfig.nav.privacy.echo }}
         </h1>
         <div class="max-w-prose mx-auto p-4 space-y-4 ">
           <div class="flex items-center gap-2">
@@ -45,7 +44,7 @@ useSeoMeta({
               aria-label="sitemap.xml"
               class="text-blue-500 hover:text-blue-600 transition-colors duration-300"
             >
-              {{ constants.nav.privacy.sitemap }}
+              {{ appConfig.nav.privacy.sitemap }}
             </a>
           </div>
 
@@ -57,7 +56,7 @@ useSeoMeta({
               aria-label="rss.xml"
               class="text-blue-500 hover:text-blue-600 transition-colors duration-300"
             >
-              {{ constants.nav.privacy.rss }}
+              {{ appConfig.nav.privacy.rss }}
             </a>
           </div>
         </div>

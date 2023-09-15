@@ -172,12 +172,12 @@ export default defineNuxtConfig({
     }
   },
   runtimeConfig: {
-    rss: {
-      title: constants.title.home,
-      description: constants.description.home,
+    site: {
+      title: constants.site.name,
+      description: constants.site.description,
       image: `${pkg.homepage}${constants.site.avatar}`,
       favicon: `${pkg.homepage}${constants.site.favicon}`,
-      copyright: `All rights reserved ${(new Date()).getFullYear()}, ${constants.site.author}`
+      copyright: `All rights reserved ${(new Date()).getFullYear()}, ${pkg.author}`
     },
     public: {
       hostname: pkg.homepage,

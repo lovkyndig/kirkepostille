@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 // import { registerSW } from 'virtual:pwa-register'
-import { variables as constants } from '~/app/constants'
+import { variables as constants } from './app/constants'
 import pkg from '~/package.json'
 const appConfig = useAppConfig()
 /**
@@ -16,12 +16,12 @@ const appConfig = useAppConfig()
  */
 
 useServerSeoMeta({
-  ogTitle: `${appConfig.site.name} - v${pkg.version}`,
+  ogTitle: `${constants.site.name} - v${pkg.version}`,
   ogType: 'website',
   ogUrl: pkg.homepage,
-  ogImage: `${pkg.homepage}${constants.site.listview}`,
+  ogImage: `${pkg.homepage}${appConfig.site.listview}`,
   ogImageAlt: pkg.name,
-  twitterImage: `${pkg.homepage}${constants.site.frontpage}`,
+  twitterImage: `${pkg.homepage}${appConfig.site.frontpage}`,
   twitterSite: '@nuxt_js',
   twitterCreator: '@nuxt_js',
   twitterCard: 'summary_large_image',

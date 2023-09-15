@@ -1,6 +1,6 @@
 import { defineEventHandler } from 'h3'
 export default defineEventHandler(async (event) => {
-  appendHeader(event, 'Content-Type', 'text/plain')
+  await appendHeader(event, 'Content-Type', 'text/plain')
 
   return `
   # Personvernerklaering (GDPR)
