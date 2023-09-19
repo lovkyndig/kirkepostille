@@ -3,6 +3,8 @@ import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { logos } from '~/assets/logos'
 const appConfig = useAppConfig()
 
+const isActive = ref(true)
+
 const props = defineProps({
   footerCatalog: {
     type: Boolean,
@@ -88,6 +90,8 @@ const toggleCatalogHandler = () => {
     showBlogCatalog.value = !showBlogCatalog.value
   } else {
     showNoteCatalog.value = !showNoteCatalog.value
+    const element = document.getElementById('indexBtn')
+    element.classList.toggle('activated')
   }
 }
 
@@ -254,7 +258,7 @@ const showSearchModal = useShowSearchModal()
         v-if="props.footerCatalog"
         v-show="!showMoreOptions && !showCategoryOptions"
         id="indexBtn"
-        class="grow px-2 py-3 flex justify-center items-center space-y-1 bg-gray-50"
+        class="grow px-2 py-3 flex justify-center items-center space-y-1 bg-gray-50 hover:bg-purple-50"
         :class="showBlogCatalog ? (flexiMode === 'blog' ? 'text-purple-500': 'text-green-500'): 'text-gray-500'"
         @click="toggleCatalogHandler"
       >
@@ -270,6 +274,22 @@ const showSearchModal = useShowSearchModal()
 </template>
 
 <style scoped lang="scss">
+/*
+tailwind-colors
+https://tailwindcss.com/docs/customizing-colors
+*/
+/*
+#indexBtn.hover {
+  color: #6e1abd
+}
+*/
+
+#indexBtn.activated {
+  background: #86efac;
+  border: #e9d5ff;
+  color: #6e1abd
+}
+
 .options-container::-webkit-scrollbar {
   display: none;
 }

@@ -488,8 +488,9 @@ provide('setActiveHeadingId', setActiveHeadingId)
     </div>
     <button
       v-if="props.data?.body?.toc && props.data.body.toc.links.length > 0"
+      id="mdThemeBtn"
       class="p-2 hidden sm:flex justify-center items-center fixed bottom-16 right-4 z-40 border transition-colors duration-300 rounded-lg"
-      :class="showCatalog ? 'text-green-500 bg-green-100 hover:bg-green-50 border-green-200' : 'text-gray-500 bg-white hover:bg-gray-100 border-gray-200'"
+      :class="showCatalog ? 'text-green-500 bg-green-100 hover:bg-green-300 border-green-200' : 'text-gray-500 bg-white hover:bg-gray-100 border-gray-200'"
       @click="showCatalog = !showCatalog"
     >
       <IconCustom name="entypo:list" class="w-5 h-5" />
