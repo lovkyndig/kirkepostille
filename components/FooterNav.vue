@@ -279,9 +279,7 @@ tailwind-colors
 https://tailwindcss.com/docs/customizing-colors
 */
 /*
-#indexBtn.hover {
-  color: #6e1abd
-}
+
 */
 
 #indexBtn.activated {
