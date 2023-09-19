@@ -165,6 +165,7 @@ const showSearchModal = useShowSearchModal()
         </button>
         <button
           v-if="props.headerFlexiMode"
+          id="headerThemeBtn"
           :title="`${appConfig.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog' }`"
           class="hidden w-10 h-10 sm:flex justify-center items-center gap-1 transition-colors duration-300 rounded-lg"
           :class="flexiMode === 'blog' ? 'flex-col bg-purple-100 hover:bg-purple-200 ' : 'flex-row bg-green-100 hover:bg-green-200 '"

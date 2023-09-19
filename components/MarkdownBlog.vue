@@ -128,7 +128,6 @@ const flexiMode = useFlexiMode() // hide the first h1 in noteMode
           v-if="category"
           :to="{ path: '/list', query: { category: category } }"
           aria-label="category-list"
-          target="_blank"
           class="p-2 flex items-center gap-1 text-gray-400 hover:text-white hover:bg-purple-500 focus:outline-purple-500 focus:outline-none rounded transition-colors duration-300"
         >
           <IconCustom name="material-symbols:category-rounded" class="shrink-0 w-4 h-4" />
@@ -206,7 +205,6 @@ const flexiMode = useFlexiMode() // hide the first h1 in noteMode
           v-for="tag in props.data.tags"
           :key="tag"
           :to="{ path: '/list', query: { tags: [tag] } }"
-          target="_blank"
           aria-label="tag in props.data.tags"
           class="px-2 py-1 text-xs text-gray-400 hover:text-white hover:bg-blue-500 rounded focus:outline-blue-500 transition-colors duration-300"
         >

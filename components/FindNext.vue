@@ -15,11 +15,10 @@ const findNext = () => {
 }
 
 onMounted(() => {
-  if (window.find) { // Firefox, Google Chrome, Safari
-    findNext()
-  }
   if (document) {
-    findNext()
+    if (window.find) { // Firefox, Google Chrome, Safari
+      findNext()
+    }
     // const input = document.querySelector('#findIndput')
     // input.addEventListener('keyup', InputListener)
   }

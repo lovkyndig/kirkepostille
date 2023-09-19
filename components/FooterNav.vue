@@ -235,21 +235,6 @@ const showSearchModal = useShowSearchModal()
       </Transition>
 
       <button
-        v-if="props.footerCatalog"
-        v-show="!showMoreOptions && !showCategoryOptions"
-        class="grow px-2 py-3 flex justify-center items-center space-y-1 bg-gray-50"
-        :class="showBlogCatalog ? (flexiMode === 'blog' ? 'text-purple-500': 'text-green-500'): 'text-gray-500'"
-        @click="toggleCatalogHandler"
-      >
-        <div class="flex flex-col justify-center items-center gap-1">
-          <IconCustom name="entypo:list" class="w-6 h-6" />
-          <p class="text-xs">
-            {{ appConfig.filter.catalog }}
-          </p>
-        </div>
-      </button>
-
-      <button
         v-show="!showMoreOptions && !showCategoryOptions"
         class="grow px-2 py-3 flex justify-center items-center space-y-1 text-gray-500 bg-gray-50"
         @click="showSearchModal=true"
@@ -261,24 +246,23 @@ const showSearchModal = useShowSearchModal()
           </p>
         </div>
       </button>
-      <!-- This button is for big screens -->
+      <!--
+        Removed the original btn for blog-note-changing and
+        replaced it with the catalog-btn
+      -->
       <button
-        v-if="props.footerFlexiMode"
+        v-if="props.footerCatalog"
         v-show="!showMoreOptions && !showCategoryOptions"
-        :title="`${appConfig.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog'}`"
-        class="grow flex justify-center items-center"
-        @click="changeFlexiMode"
+        id="indexBtn"
+        class="grow px-2 py-3 flex justify-center items-center space-y-1 bg-gray-50"
+        :class="showBlogCatalog ? (flexiMode === 'blog' ? 'text-purple-500': 'text-green-500'): 'text-gray-500'"
+        @click="toggleCatalogHandler"
       >
-        <div
-          class="mx-2 w-11 h-11 flex flex-col justify-center items-center gap-1 transition-colors duration-300 rounded-lg"
-          :class="flexiMode === 'blog' ? 'flex-col bg-purple-100' : 'bg-green-100'"
-        >
-          <!-- mobil-problem with width of titles & footer-nav -->
-          <div class="shrink-0 w-2 h-2 rounded-full" :class="flexiMode === 'blog' ? 'bg-purple-500' : 'bg-green-500'" />
-          <div class="shrink-0 space-y-1">
-            <div class="w-1.5 h-1.5 rounded-full" :class="flexiMode === 'blog' ? 'bg-purple-400' : 'bg-green-400'" />
-            <div class="w-1.5 h-1.5 rounded-full" :class="flexiMode === 'blog' ? 'bg-purple-400' : 'bg-green-400'" />
-          </div>
+        <div class="flex flex-col justify-center items-center gap-1">
+          <IconCustom name="entypo:list" class="w-6 h-6" />
+          <p class="text-xs">
+            {{ appConfig.filter.catalog }}
+          </p>
         </div>
       </button>
     </div>

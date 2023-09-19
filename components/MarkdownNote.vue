@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useEventListener } from '@vueuse/core'
 const appConfig = useAppConfig()
 const props = defineProps<{ data: any }>()
 const showSeriesModal = useState('showSeriesModal')
@@ -223,6 +224,7 @@ onMounted(() => {
       } else { oneColHeaderOnBigScreen.value = false }
     })
   }
+  toggleAllContent()
 })
 /**
  * Added by lovkyndig Mars 2023
@@ -245,6 +247,25 @@ const changeDivideColumnsHandler = (event) => {
   } else { oneColHeaderOnBigScreen.value = false }
 }
 
+/**
+ * Toggle content on load on every element
+ * Source: css toggle
+ * https://blog.logrocket.com/advanced-guide-css-toggle-pseudo-class/
+ */
+const toggleAllContent = () => {
+  console.log('Kyrie is toogle all content from the MarkdownNote.')
+  // simulate push on button in CatalogSidebarForNote with id "collapseAll"
+  const element = document.getElementById('collapseAll')
+  element.dispatchEvent(new Event('click')) // Fire event
+  /* Old method:
+  const elements = document.querySelectorAll("button[name='toggleContent']")
+  elements.forEach((element) => {
+    element.dispatchEvent(new Event('click')) // Fire event
+  })
+  elements[0].dispatchEvent(new Event('click')) // Show ingress
+  */
+}
+
 // added code to fix problem with headers in node-modus (on big screens)
 watch(oneColHeaderOnBigScreen, () => {
   const elements = document.querySelectorAll("h2,h3,h4,h5[name='hnames']")
@@ -261,6 +282,42 @@ watch(oneColHeaderOnBigScreen, () => {
       element.classList.remove('fullwidth')
     })
   }
+  /**
+   * Sources:
+   * https://stackoverflow.com/questions/42575173/how-to-select-all-elements-between-two-elements
+   * https://www.javascripttutorial.net/javascript-dom/javascript-queryselector/
+   * http://com.hemiola.com/2018/12/17/javascript-not-selector-examples/
+   * https://blog.logrocket.com/advanced-guide-css-toggle-pseudo-class/
+   */
+})
+
+// deletete the following inside onMounted (testing only 18.09.23)
+onMounted(() => {
+  if (document) {
+    const elements2 = document.querySelectorAll('h2,h3,h4,h5,h6')
+    elements2.forEach((element) => {
+      element.classList.toggle('titles')
+      // element.classList.add('fullwidth')
+    })
+
+    const elements3 = document.querySelectorAll('.titles ~ :not(.titles)')
+    elements3.forEach((element) => {
+      element.classList.toggle('contents')
+    })
+
+    const elements4 = document.querySelectorAll('h2,h3,h4,h5,h6')
+    elements4.forEach((element) => {
+      element.addEventListener('click', (e: Event) => {
+        const test = e.currentTarget
+        console.log('clicking: ' + test)
+        const elements5 = document.querySelectorAll('.titles + :not(.titles)')
+        elements5.forEach((element) => {
+          element.classList.toggle('nondisplay')
+        })
+      })
+    })
+  }
+  // elements2.addEventListener(click, testfunck)
 })
 
 /**
@@ -321,7 +378,6 @@ provide('setActiveHeadingId', setActiveHeadingId)
         <NuxtLink
           v-if="category"
           :to="{ path: '/list', query: { category: category } }"
-          target="_blank"
           aria-label="category-path-list"
           class="p-2 flex items-center gap-1 text-gray-400 hover:text-white hover:bg-purple-500 focus:outline-purple-500 focus:outline-none rounded transition-colors duration-300"
         >
@@ -384,7 +440,6 @@ provide('setActiveHeadingId', setActiveHeadingId)
           v-for="tag in props.data.tags"
           :key="tag"
           :to="{ path: '/list', query: { tags: [tag] } }"
-          target="_blank"
           aria-label="tag in props.data.tags path-list"
           class="px-2 py-1 text-xs text-gray-400 hover:text-white hover:bg-blue-500 rounded focus:outline-blue-500 transition-colors duration-300"
         >
@@ -431,7 +486,6 @@ provide('setActiveHeadingId', setActiveHeadingId)
         <span class="w-5 h-5">{{ divideColumns }}</span>
       </button>
     </div>
-
     <button
       v-if="props.data?.body?.toc && props.data.body.toc.links.length > 0"
       class="p-2 hidden sm:flex justify-center items-center fixed bottom-16 right-4 z-40 border transition-colors duration-300 rounded-lg"
@@ -467,6 +521,9 @@ provide('setActiveHeadingId', setActiveHeadingId)
   }
 }
 
+.nondisplay {
+  display: none
+}
 </style>
 
 <style scoped>

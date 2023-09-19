@@ -26,6 +26,8 @@ useSeoMeta({
  *
  */
 const flexiMode = useFlexiMode()
+flexiMode.value = 'note' 
+// Changed from original. The button (slugThemeBtn) can be replaced with content-button.
 
 const changeFlexiMode = () => {
   if (flexiMode.value === 'blog') {
@@ -283,19 +285,10 @@ watch(showZoomImage, () => {
     <!-- *****************************  FIND-NEXT ********************************* -->
     <FindNext />
     <!-- *****************************  FIND-NEXT ********************************* -->
-    <button
-      v-if="!pending && data && data.articleType === 'note'"
-      :title="`${appConfig.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog'}`"
-      class="w-9 h-9 hidden sm:flex justify-center items-center gap-1 fixed bottom-4 left-4 z-20 border transition-colors duration-300 rounded-lg"
-      :class="flexiMode === 'blog' ? 'flex-col bg-purple-100 hover:bg-purple-50 border-purple-200' : 'flex-row bg-green-100 hover:bg-green-50 border-green-200'"
-      @click="changeFlexiMode"
-    >
-      <div class="shrink-0 w-1.5 h-1.5 rounded-full" :class="flexiMode === 'blog' ? 'bg-purple-500' : 'bg-green-500'" />
-      <div class="shrink-0 space-y-1">
-        <div class="w-1 h-1 rounded-full " :class="flexiMode === 'blog' ? 'bg-purple-400' : 'bg-green-400'" />
-        <div class="w-1 h-1 rounded-full " :class="flexiMode === 'blog' ? 'bg-purple-400' : 'bg-green-400'" />
-      </div>
-    </button>
+    <!--
+      Todo: Change this button with content-button.
+      Done: Removed the slugThemeBtn for changing blog to note.
+    -->
     <Teleport to="body">
       <SeriesModal
         v-if="data?.series && seriesList.length > 0 && showSeriesModal"

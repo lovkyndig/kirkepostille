@@ -451,6 +451,7 @@ const toggleAllHeadings = inject<(string) => void>('toggleAllHeadings')
             </button>
 
             <button
+              id="collapseAll"
               class="sidebar-btn flex bg-red-100 text-red-400 hover:text-red-500 active:text-white active:bg-red-500 border border-red-400"
               @click="toggleAllHeadings('collapse')"
             >

@@ -23,7 +23,8 @@ export default defineAppConfig({
   },
   menu: {
     more: 'Toggle',
-    theme: 'Endre tema til'
+    theme: 'Endre tema til',
+    toggle: 'Click to Toggle the Content'
   },
   filter: {
     catalog: 'Indhold',
