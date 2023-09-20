@@ -206,7 +206,7 @@ const showCatalog = useState('showNoteCatalog')
             aria-label="option-item"
             @click="changeFlexiMode"
           >
-            Endre tema
+            Toggle tema
           </NuxtLink>
         </div>
       </Transition>
