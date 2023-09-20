@@ -32,12 +32,12 @@ export default defineAppConfig({
     tags: 'Merke',
     series: 'Sesong',
     all: 'Alle',
-    less: 'Mindre',
-    more: 'Mer',
+    less: 'Skjul',
+    more: 'Vis',
     search: 'Søk',
     search_guide: 'Søg efter ord eller en frase. Fraser må være omsluttet av anførselstegn.',
     clear: 'Rens filter',
-    detail: 'info',
+    detail: 'ingress',
     loading: 'Laster'
   },
   privacyPage: true,
@@ -67,7 +67,7 @@ export default defineAppConfig({
   },
   title: {
     home: 'Dr. Martin Luthers kirkepostille - medisin for syke sjeler!',
-    about: 'Om kirkepostillen og dens fantastiske søkefunksjoner.',
+    about: 'Om nett-kirkepostillen og dens fantastiske søkefunksjoner.',
     list: 'Kirkepostille ord: ',
     list_all: 'ALLE talene vises her'
   },

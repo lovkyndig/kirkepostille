@@ -56,7 +56,7 @@ const toggleCategory = (category) => {
  * build the tag and series filter options
  *
  */
-const showMoreFilter = ref(true)
+const showMoreFilter = ref(false)
 let tagSet, seriesSet
 const tagArr = []
 const seriesArr = []
@@ -301,7 +301,29 @@ watch(() => route.fullPath, () => { // only on change after load
   }
 })
 
-
+/**
+ * Added 20.09.23 in v3.10-rc.19 to only show open filter on pc-screen.
+ */
+onMounted(() => {
+  if (window) {
+    if (window.innerWidth > 640) { // or window.outerWidth
+      showMoreFilter.value = true
+      /*
+      const btn = document.getElementById('showMoreFilter')
+      btn.dispatchEvent(new Event('click')) // Fire event
+      */
+    }
+  }
+})
+const windowSize = useWindowSize()
+watch(() => windowSize.value.width, () => {
+  const width = windowSize.value.width
+  if (width < 640) {
+    showMoreFilter.value = false
+  } else {
+    showMoreFilter.value = true
+  }
+})
 
 </script>
 
@@ -319,6 +341,7 @@ watch(() => route.fullPath, () => { // only on change after load
       <div class="shrink-0 px-4 sm:px-8 py-4 space-y-4 sm:sticky top-0 inset-x-0 z-10 bg-gray-50">
         <div class="flex items-start sm:space-x-2">
           <button
+            id="showMoreFilter"
             class="shrink-0 p-2.5 hidden sm:flex justify-center items-center transition-colors duration-300 rounded"
             :class="showMoreFilter ? 'bg-purple-500 hover:bg-purple-400 text-white' : 'bg-purple-100 text-purple-400 hover:text-purple-500'"
             @click="showMoreFilter = !showMoreFilter"
@@ -336,13 +359,9 @@ watch(() => route.fullPath, () => { // only on change after load
                   class="w-5 h-5 transition-transform duration-300"
                   :class="showMoreCategory ? 'rotate-90' : 'rotate-0'"
                 />
-                <p>
-                  {{ appConfig.filter.category }}
-                </p>
+                <!-- <p>{{ appConfig.filter.category }}</p> -->
               </button>
-              <p class="px-2 py-1 sm:hidden">
-                {{ appConfig.filter.category }}
-              </p>
+              <!-- <p class="px-2 py-1 sm:hidden">{{ appConfig.filter.category }}</p> -->
               <ul class="filter-list-container" :class="showMoreCategory ? 'max-h-96' : 'max-h-8'">
                 <li class="shrink-0">
                   <!-- all-buttons left -->
@@ -390,13 +409,9 @@ watch(() => route.fullPath, () => { // only on change after load
                       class="w-5 h-5 transition-transform duration-300"
                       :class="showMoreTag ? 'rotate-90' : 'rotate-0'"
                     />
-                    <p>
-                      {{ appConfig.filter.tags }}
-                    </p>
+                    <!-- <p>{{ appConfig.filter.tags }}</p> -->
                   </button>
-                  <p class="px-2 py-1 sm:hidden">
-                    {{ appConfig.filter.tags }}
-                  </p>
+                  <!-- <p class="px-2 py-1 sm:hidden">{{ appConfig.filter.tags }}</p> -->
                   <ul v-if="tagSet" class="filter-list-container" :class="showMoreTag ? 'max-h-96' : 'max-h-8'">
                     <li v-for="tag in [appConfig.filter.all, ...tagSet as string[]]" :key="tag" class="shrink-0">
                       <!-- tags buttons -->
@@ -421,13 +436,9 @@ watch(() => route.fullPath, () => { // only on change after load
                       class="w-5 h-5 transition-transform duration-300"
                       :class="showMoreSeries ? 'rotate-90' : 'rotate-0'"
                     />
-                    <p>
-                      {{ appConfig.filter.series }}
-                    </p>
+                    <!-- <p>{{ appConfig.filter.series }}</p> -->
                   </button>
-                  <p class="px-2 py-1 sm:hidden">
-                    {{ appConfig.filter.series }}
-                  </p>
+                  <!-- <p class="px-2 py-1 sm:hidden">{{ appConfig.filter.series }}</p> -->
                   <ul v-if="seriesSet" class="filter-list-container" :class="showMoreSeries ? 'max-h-96' : 'max-h-8'">
                     <li v-for="series in [appConfig.filter.all, ...seriesSet as string[]]" :key="series" class="shrink-0">
                       <button
