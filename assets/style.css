@@ -21,9 +21,6 @@ The button to change between 1 and 2 coloumn is in MarkdownNote.vue line 416
 div-parent to all header is maybe in MarkdownNote.vue line 
 */
 
-
-
-
 @media only screen and (max-width: 940px) {
   .notewidth {
     color: royalblue;
@@ -47,11 +44,12 @@ div-parent to all header is maybe in MarkdownNote.vue line
 Toggle between 1 and 2 coloumn in note-theme-modus if min 1000px 
 See the code in MarkdownNote.vue
 */
+
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
   .notewidth {
     color: rgb(230, 173, 173);
     width: 46vw
-  } /* someplaces the with can be only one col - then the width 46 is not good */
+  } /* someplaces the with can be only one col - then the width 46 is not good */ 
   h1[name='h1top'] {
     color: rgb(76, 139, 0);
     width: 88vw

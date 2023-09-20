@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { Ref } from 'vue'
 
+const appConfig = useAppConfig()
+
 const props = defineProps({
   elem: {
     type: Object,
@@ -222,6 +224,7 @@ const changeChildrenDivideColumns = (event:MouseEvent) => {
     childrenDivideColumns.value = columns
   }
 }
+
 </script>
 
 <template>
@@ -242,11 +245,15 @@ const changeChildrenDivideColumns = (event:MouseEvent) => {
       class="container mx-auto lg:max-w-4xl p-2 my-2 flex flex-wrap items-center gap-2 rounded-md"
       :class="highlightTitle ? `title-highlight-pulse ${highlightColorMap[props.elem.type]}` : ''"
       :style="props.elem.type === 'h1' ? 'justify-content: center': 'justify-content: flex-start'"
+      :title="appConfig.menu.toggle"
+      @click="toggleExpandStateHandler"
     >
       <div class="shrink-0 flex gap-0.5">
         <sup v-if="props.count>1" class="text-xs opacity-30" :class="`${headingColorMap[props.elem.type]}`">{{
           `${props.order}/${props.count}` }}</sup>
         <button
+          name="toggleContent"
+          :title="appConfig.menu.toggle"
           class="p-1 flex justify-center items-center text-xs border rounded-md transition-colors duration-300"
           :class="!collapseHeadings.has(props.elem.node.props.id) ? `${headingBtnMap[props.elem.type].expand}` : `${headingBtnMap[props.elem.type].collapse}`"
           @click="toggleExpandStateHandler"

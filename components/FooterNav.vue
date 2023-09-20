@@ -3,6 +3,8 @@ import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { logos } from '~/assets/logos'
 const appConfig = useAppConfig()
 
+const isActive = ref(true)
+
 const props = defineProps({
   footerCatalog: {
     type: Boolean,
@@ -66,8 +68,9 @@ const getCategory = (path = '') => {
  * toggle flexible mode
  *
  */
-const flexiMode = useFlexiMode()
 
+const flexiMode = useFlexiMode()
+// Not in use after september 2023
 const changeFlexiMode = () => {
   if (flexiMode.value === 'blog') {
     flexiMode.value = 'note'
@@ -81,15 +84,23 @@ const changeFlexiMode = () => {
  * toggle catalog
  *
  */
+/*
 const showBlogCatalog = useState('showBlogCatalog')
 const showNoteCatalog = useState('showNoteCatalog')
+
+// This code was used in indexBtn who is replaced with
+// the code for class, :class and @click in MarkdownNote for mdThemeBtn
+
 const toggleCatalogHandler = () => {
   if (flexiMode.value === 'blog') {
     showBlogCatalog.value = !showBlogCatalog.value
   } else {
     showNoteCatalog.value = !showNoteCatalog.value
+    const element = document.getElementById('indexBtn')
+    element.classList.toggle('activated')
   }
 }
+*/
 
 /**
  *
@@ -97,6 +108,9 @@ const toggleCatalogHandler = () => {
  *
  */
 const showSearchModal = useShowSearchModal()
+
+const showCatalog = useState('showNoteCatalog')
+
 </script>
 
 <template>
@@ -184,6 +198,16 @@ const showSearchModal = useShowSearchModal()
           >
             {{ appConfig.nav.privacy.echo }}
           </NuxtLink>
+          <NuxtLink
+            v-if="props.footerFlexiMode"
+            class="option-item"
+            :class="flexiMode === 'blog' ? 'text-purple-500 bg-purple-50 hover:bg-purple-100 border-purple-500' : 'text-green-500 bg-green-50 hover:bg-green-100 border-green-500'"
+            :title="`${appConfig.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog'}`"
+            aria-label="option-item"
+            @click="changeFlexiMode"
+          >
+            Endre tema
+          </NuxtLink>
         </div>
       </Transition>
 
@@ -235,21 +259,6 @@ const showSearchModal = useShowSearchModal()
       </Transition>
 
       <button
-        v-if="props.footerCatalog"
-        v-show="!showMoreOptions && !showCategoryOptions"
-        class="grow px-2 py-3 flex justify-center items-center space-y-1 bg-gray-50"
-        :class="showBlogCatalog ? (flexiMode === 'blog' ? 'text-purple-500': 'text-green-500'): 'text-gray-500'"
-        @click="toggleCatalogHandler"
-      >
-        <div class="flex flex-col justify-center items-center gap-1">
-          <IconCustom name="entypo:list" class="w-6 h-6" />
-          <p class="text-xs">
-            {{ appConfig.filter.catalog }}
-          </p>
-        </div>
-      </button>
-
-      <button
         v-show="!showMoreOptions && !showCategoryOptions"
         class="grow px-2 py-3 flex justify-center items-center space-y-1 text-gray-500 bg-gray-50"
         @click="showSearchModal=true"
@@ -261,24 +270,23 @@ const showSearchModal = useShowSearchModal()
           </p>
         </div>
       </button>
-      <!-- This button is for big screens -->
+      <!--
+        Removed the original btn for blog-note-changing and
+        replaced it with the catalog-btn
+      -->
       <button
-        v-if="props.footerFlexiMode"
+        v-if="props.footerCatalog"
         v-show="!showMoreOptions && !showCategoryOptions"
-        :title="`${appConfig.menu.theme} ${flexiMode === 'blog' ? 'note' : 'blog'}`"
-        class="grow flex justify-center items-center"
-        @click="changeFlexiMode"
+        id="indexBtn"
+        class="grow px-2 py-3 flex justify-center items-center space-y-1 bg-gray-50 hover:bg-green-400"
+        :class="showCatalog ? 'text-green-800 bg-green-200 hover:bg-green-400 border-green-200' : 'text-gray-500 bg-white hover:bg-gray-100 border-gray-200'"
+        @click="showCatalog = !showCatalog"
       >
-        <div
-          class="mx-2 w-11 h-11 flex flex-col justify-center items-center gap-1 transition-colors duration-300 rounded-lg"
-          :class="flexiMode === 'blog' ? 'flex-col bg-purple-100' : 'bg-green-100'"
-        >
-          <!-- mobil-problem with width of titles & footer-nav -->
-          <div class="shrink-0 w-2 h-2 rounded-full" :class="flexiMode === 'blog' ? 'bg-purple-500' : 'bg-green-500'" />
-          <div class="shrink-0 space-y-1">
-            <div class="w-1.5 h-1.5 rounded-full" :class="flexiMode === 'blog' ? 'bg-purple-400' : 'bg-green-400'" />
-            <div class="w-1.5 h-1.5 rounded-full" :class="flexiMode === 'blog' ? 'bg-purple-400' : 'bg-green-400'" />
-          </div>
+        <div class="flex flex-col justify-center items-center gap-1">
+          <IconCustom name="entypo:list" class="w-6 h-6" />
+          <p class="text-xs">
+            {{ appConfig.filter.catalog }}
+          </p>
         </div>
       </button>
     </div>
@@ -286,6 +294,18 @@ const showSearchModal = useShowSearchModal()
 </template>
 
 <style scoped lang="scss">
+/*
+tailwind-colors
+https://tailwindcss.com/docs/customizing-colors
+*/
+/*
+#indexBtn.activated {
+  background: #86efac;
+  border: #e9d5ff;
+  color: #6e1abd
+}
+*/
+
 .options-container::-webkit-scrollbar {
   display: none;
 }
