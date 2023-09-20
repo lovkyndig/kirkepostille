@@ -23,19 +23,12 @@ useSeoMeta({
 /**
  *
  * switch the flexiMode
+ * Not realy in use on articles after v3.10-rc.18 (september 2023)
+ * Removed changeFlexiMode-code
  *
  */
 const flexiMode = useFlexiMode()
-flexiMode.value = 'note' 
-// Changed from original. The button (slugThemeBtn) can be replaced with content-button.
 
-const changeFlexiMode = () => {
-  if (flexiMode.value === 'blog') {
-    flexiMode.value = 'note'
-  } else {
-    flexiMode.value = 'blog'
-  }
-}
 /**
  *
  * get article data
@@ -186,6 +179,7 @@ const getAndChangeSearchparam = () => {
 getAndChangeSearchparam()
 
 onMounted(() => {
+  flexiMode.value = 'note' // added 20.09.23 v3.10-rc.18
   clipboard.value = navigator.Clipboard
   if (articleContainer.value && clipboard.value) {
     const mathInlineList = articleContainer.value.querySelectorAll('.math-inline')
@@ -214,6 +208,13 @@ watch(showZoomImage, () => {
   }
 })
 
+/**
+ * added 20.09.23 v3.10-rc.18
+ * changeFlexiMode not in use on this page
+ */
+onUnmounted(() => {
+  flexiMode.value = 'blog'
+})
 </script>
 
 <template>
@@ -222,6 +223,7 @@ watch(showZoomImage, () => {
       <Title>{{ data?.title || 'Article' }}</Title>
     </Head>
     <NuxtLayout name="base" :footer-catalog="data?.body?.toc && data.body.toc.links.length > 0" :footer-flexi-mode="data && data.articleType==='note'">
+      <!--
       <MarkdownBlog
         v-if="!pending && data && data._type === 'markdown'"
         v-show="!data.articleType || data.articleType === 'blog' || (data.articleType === 'note' && flexiMode === 'blog')"
@@ -230,6 +232,7 @@ watch(showZoomImage, () => {
         :next-article-url="nextArticleUrl"
         class="container mx-auto px-6 md:px-12 py-12 lg:max-w-4xl"
       />
+      -->
       <MarkdownNote
         v-if="!pending && data && data._type === 'markdown' && data.articleType === 'note'"
         v-show="flexiMode === 'note'"
