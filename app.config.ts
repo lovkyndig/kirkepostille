@@ -67,7 +67,7 @@ export default defineAppConfig({
   },
   title: {
     home: 'Dr. Martin Luthers kirkepostille - medisin for syke sjeler!',
-    about: 'Om nett-kirkepostillen og dens fantastiske søkefunksjoner.',
+    about: 'Om nett-kirkepostillen og dens fantastiske søkefunksjonalitet.',
     list: 'Kirkepostille ord: ',
     list_all: 'ALLE talene vises her'
   },
