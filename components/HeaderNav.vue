@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Translator } from 'vue-google-translate';
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { logos } from '~/assets/logos'
 const appConfig = useAppConfig() as any
@@ -105,7 +106,13 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 }
 */
-
+/*
+export default {
+  components: {
+    Translator
+  }
+}
+*/
 </script>
 
 <template>
@@ -165,6 +172,7 @@ function googleTranslateElementInit() {
         </NuxtLink>
         <div id="google_translate_element">
           <!-- Creating a switch for changing language-translation -->
+          <!-- <Translator /> -->
         </div>
       </div>
       <div class="flex justify-end items-center gap-4">

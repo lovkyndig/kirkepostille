@@ -1,5 +1,3 @@
-import * as _nuxt_schema from '@nuxt/schema'
-import { Theme as Theme$1 } from 'shiki-es'
 /**
  *
  * window width and heigh

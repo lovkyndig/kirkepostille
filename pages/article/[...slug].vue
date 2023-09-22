@@ -217,8 +217,8 @@ function prevOrNext () {
 }
 onUnmounted(() => {
   flexiMode.value = 'note'
-  if (prevOrNext === true) {
-
+  if (prevOrNext) {
+    console.log('prevOrNext is ' + prevOrNext + ' and window.location.toLocaleString is ' + window.location.toLocaleString())
   }
 })
 </script>
