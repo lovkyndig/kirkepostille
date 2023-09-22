@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const appConfig = useAppConfig()
+const appConfig = useAppConfig() as any
 const props = defineProps<{
   date: string;
   type: 'created' | 'last updated'

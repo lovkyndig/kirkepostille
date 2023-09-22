@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { logos } from '~/assets/logos'
-const appConfig = useAppConfig()
+const appConfig = useAppConfig() as any
 
 const props = defineProps({
   headerFlexiMode: {
@@ -92,6 +92,20 @@ const changeFlexiMode = () => {
  *
  */
 const showSearchModal = useShowSearchModal()
+
+/**
+ * Google Translate
+ * Source:
+ * https://www.w3schools.com/howto/tryit.asp?filename=tryhow_google_translate_dropdown
+ * https://github.com/lewis-kori/vue-google-translate
+ * https://codesandbox.io/s/wz1ln
+ */
+/*
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+*/
+
 </script>
 
 <template>
@@ -149,6 +163,9 @@ const showSearchModal = useShowSearchModal()
         >
           {{ appConfig.nav.privacy.echo }}
         </NuxtLink>
+        <div id="google_translate_element">
+          <!-- Creating a switch for changing language-translation -->
+        </div>
       </div>
       <div class="flex justify-end items-center gap-4">
         <!-- top search button -->

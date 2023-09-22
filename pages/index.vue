@@ -2,8 +2,7 @@
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { logos } from '~/assets/logos'
 import pkg from '~/package.json'
-const appConfig = useAppConfig()
-// const config = useRuntimeConfig()
+const appConfig = useAppConfig() as any
 
 useSeoMeta({
   titleTemplate: appConfig.title.home,
@@ -145,6 +144,10 @@ useSeoMeta({
 */
 // https://nuxt.com/docs/getting-started/seo-meta#useseometa
 // https://nuxt.com/docs/getting-started/seo-meta
+
+onMounted(() => {
+  flexiMode.value = 'blog' // added 2.09.23 v3.11-rc.1 (Translate Branch)
+})
 
 </script>
 

@@ -50,10 +50,12 @@ See the code in MarkdownNote.vue
     color: rgb(230, 173, 173);
     width: 46vw
   } /* someplaces the with can be only one col - then the width 46 is not good */ 
+  /*
   h1[name='h1top'] {
     color: rgb(76, 139, 0);
     width: 88vw
   }
+  */
   .fullwidth {
     width: 78vw
   }
@@ -64,10 +66,12 @@ See the code in MarkdownNote.vue
     color: darkblue;
     width: 48vw
   }
+  /*
   h1[name='h1top'] {
     color: rgb(139, 107, 0);
     width: 80vw
   }
+  */
   .fullwidth {
     width: 70vw
   }

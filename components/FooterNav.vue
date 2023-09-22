@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { logos } from '~/assets/logos'
-const appConfig = useAppConfig()
+const appConfig = useAppConfig() as any
 
-const isActive = ref(true)
+// const isActive = ref(true)
 
 const props = defineProps({
   footerCatalog: {

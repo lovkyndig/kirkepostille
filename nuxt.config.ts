@@ -173,8 +173,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     site: {
-      title: 'Kirkepostille',
-      description: 'Dr. Martin Luthers Kirkepostille',
+      title: pkg.name,
+      description: pkg.description,
       image: `${pkg.homepage}${logos.avatar}`,
       favicon: `${pkg.homepage}${logos.favicon}`,
       copyright: `All rights reserved ${(new Date()).getFullYear()}, ${pkg.author}`
@@ -184,5 +184,8 @@ export default defineNuxtConfig({
       production_mode: isProduction,
       gtag_id: `G-${process.env.GTAG_ID}`
     }
+  },
+  imports: {
+    autoImport: true
   }
 })
