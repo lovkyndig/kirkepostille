@@ -111,6 +111,27 @@ const showSearchModal = useShowSearchModal()
 
 const showCatalog = useState('showNoteCatalog')
 
+/**
+ * Google Translate
+ * Source:
+ * https://www.npmjs.com/package/@google-translate-select/vue3
+ * https://github.com/i7eo/google-translate-select/tree/master
+ * https://google-translate-select.i7eo.com/
+ */
+onMounted(() => {
+  function changeStyle () {
+    // console.log('changeStyle starting ...')
+    const el2 = document.getElementsByClassName('google-translate-select-dropdown__menu')
+    el2[1].setAttribute('id', 'dropUpLang')
+    el2[1].setAttribute('style', 'bottom:100%')
+    el2[1].classList.add('drop-up-btn')
+  }
+  const el = document.getElementsByClassName('google-translate-select-dropdown__activator')
+  el[1].setAttribute('id', 'dropUpBtn')
+  el[1].addEventListener('click', changeStyle)
+  // console.log('changeStyle finished.')
+})
+
 </script>
 
 <template>
@@ -270,6 +291,10 @@ const showCatalog = useState('showNoteCatalog')
           </p>
         </div>
       </button>
+
+      <!-- Creating a switch for changing language-translation -->
+      <CustomGoogleTranslate />
+
       <!--
         Removed the original btn for blog-note-changing and
         replaced it with the catalog-btn
@@ -294,6 +319,27 @@ const showCatalog = useState('showNoteCatalog')
 </template>
 
 <style scoped lang="scss">
+
+.drop-up-btn {
+  top:-100% !important;
+  bottom: 100%
+}
+
+.drop-down-btn {
+  top: 100%;
+  bottom: -100% !important
+}
+
+/*
+change top: 100% width bottom: 100%
+remove top and add bottom
+*/
+/*
+.google-translate-select-dropdown__menu {
+  position: relative;
+  max-height: 50px;
+}
+*/
 /*
 tailwind-colors
 https://tailwindcss.com/docs/customizing-colors

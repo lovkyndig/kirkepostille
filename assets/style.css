@@ -21,6 +21,35 @@ The button to change between 1 and 2 coloumn is in MarkdownNote.vue line 416
 div-parent to all header is maybe in MarkdownNote.vue line 
 */
 
+@media only screen and (min-width: 640px) {
+  .google-translate-select-dropdown__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: calc(var(--google-translate-select-z-index-dropdown) + 1);
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid var(--google-translate-select-border-color-light);
+    border-radius: var(--google-translate-select-border-radius-base);
+    box-shadow: var(--google-translate-select-box-shadow-light);
+  }
+}
+@media only screen and (max-width: 640px) {
+  .google-translate-select-dropdown__menu {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    z-index: calc(var(--google-translate-select-z-index-dropdown) + 1);
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid var(--google-translate-select-border-color-light);
+    border-radius: var(--google-translate-select-border-radius-base);
+    box-shadow: var(--google-translate-select-box-shadow-light);
+  }
+}
+
 @media only screen and (max-width: 940px) {
   .notewidth {
     color: royalblue;

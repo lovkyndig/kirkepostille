@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Translator } from 'vue-google-translate';
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { logos } from '~/assets/logos'
 const appConfig = useAppConfig() as any
@@ -97,22 +96,23 @@ const showSearchModal = useShowSearchModal()
 /**
  * Google Translate
  * Source:
- * https://www.w3schools.com/howto/tryit.asp?filename=tryhow_google_translate_dropdown
- * https://github.com/lewis-kori/vue-google-translate
- * https://codesandbox.io/s/wz1ln
+ * https://www.npmjs.com/package/@google-translate-select/vue3
+ * https://github.com/i7eo/google-translate-select/tree/master
+ * https://google-translate-select.i7eo.com/
  */
-/*
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
-*/
-/*
-export default {
-  components: {
-    Translator
+onMounted(() => {
+  function changeStyle () {
+    // console.log('changeStyle starting ...')
+    const el2 = document.getElementsByClassName('google-translate-select-dropdown__menu')
+    el2[0].setAttribute('id', 'dropDownLang')
+    el2[0].setAttribute('style', 'top:100%')
+    el2[0].classList.add('drop-down-btn')
   }
-}
-*/
+  const el = document.getElementsByClassName('google-translate-select-dropdown__activator')
+  el[0].setAttribute('id', 'dropDownBtn')
+  el[0].addEventListener('click', changeStyle)
+  // console.log('changeStyle finished.')
+})
 </script>
 
 <template>
@@ -172,7 +172,7 @@ export default {
         </NuxtLink>
         <div id="google_translate_element">
           <!-- Creating a switch for changing language-translation -->
-          <!-- <Translator /> -->
+          <CustomGoogleTranslate />
         </div>
       </div>
       <div class="flex justify-end items-center gap-4">
