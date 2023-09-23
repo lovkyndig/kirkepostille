@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>Kirkepostille</title>
+        <title>kirkepostille</title>
         <link>https://kirkepostille.vercel.app</link>
-        <description>Dr. Martin Luthers Kirkepostille</description>
-        <lastBuildDate>Fri, 15 Sep 2023 22:46:14 GMT</lastBuildDate>
+        <description>⚡A book from 1888 with 1743 pages, converted to Nuxt content, implemented with pagefind.</description>
+        <lastBuildDate>Sat, 23 Sep 2023 08:49:30 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
-            <title>Kirkepostille</title>
+            <title>kirkepostille</title>
             <url>/img/180.jpg</url>
             <link>https://kirkepostille.vercel.app</link>
         </image>
         <copyright>lovkyndig</copyright>
         <item>
-            <title><![CDATA['Hvordan søke etter ord i Dr. Martin Luthers kirkepostille?]]></title>
+            <title><![CDATA[Om nett-kirkepostillen og dens moderne søkefunksjonalitet.]]></title>
             <link>https://kirkepostille.vercel.app/about</link>
             <guid>/about</guid>
             <content:encoded><![CDATA[this should be the full content]]></content:encoded>

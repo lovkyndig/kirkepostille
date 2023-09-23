@@ -319,37 +319,15 @@ onMounted(() => {
 </template>
 
 <style scoped lang="scss">
-
-.drop-up-btn {
-  top:-100% !important;
-  bottom: 100%
-}
+/* style for drop-up-btn have to be global - see style.css */
 
 .drop-down-btn {
-  top: 100%;
-  bottom: -100% !important
+  top: 100% !important;
 }
 
-/*
-change top: 100% width bottom: 100%
-remove top and add bottom
-*/
-/*
-.google-translate-select-dropdown__menu {
-  position: relative;
-  max-height: 50px;
-}
-*/
 /*
 tailwind-colors
 https://tailwindcss.com/docs/customizing-colors
-*/
-/*
-#indexBtn.activated {
-  background: #86efac;
-  border: #e9d5ff;
-  color: #6e1abd
-}
 */
 
 .options-container::-webkit-scrollbar {
