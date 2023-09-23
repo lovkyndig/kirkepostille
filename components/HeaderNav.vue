@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { logos } from '~/assets/logos'
-const appConfig = useAppConfig()
+const appConfig = useAppConfig() as any
 
 const props = defineProps({
   headerFlexiMode: {
@@ -92,6 +92,27 @@ const changeFlexiMode = () => {
  *
  */
 const showSearchModal = useShowSearchModal()
+
+/**
+ * Google Translate
+ * Source:
+ * https://www.npmjs.com/package/@google-translate-select/vue3
+ * https://github.com/i7eo/google-translate-select/tree/master
+ * https://google-translate-select.i7eo.com/
+ */
+onMounted(() => {
+  function changeStyle () {
+    // console.log('changeStyle starting ...')
+    const el2 = document.getElementsByClassName('google-translate-select-dropdown__menu')
+    el2[0].setAttribute('id', 'dropDownLang')
+    el2[0].setAttribute('style', 'top:100%')
+    el2[0].classList.add('drop-down-btn')
+  }
+  const el = document.getElementsByClassName('google-translate-select-dropdown__activator')
+  el[0].setAttribute('id', 'dropDownBtn')
+  el[0].addEventListener('click', changeStyle)
+  // console.log('changeStyle finished.')
+})
 </script>
 
 <template>
@@ -149,6 +170,10 @@ const showSearchModal = useShowSearchModal()
         >
           {{ appConfig.nav.privacy.echo }}
         </NuxtLink>
+        <div id="google_translate_element">
+          <!-- Creating a switch for changing language-translation -->
+          <CustomGoogleTranslate />
+        </div>
       </div>
       <div class="flex justify-end items-center gap-4">
         <!-- top search button -->

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const appConfig = useAppConfig()
+const appConfig = useAppConfig() as any
 
 const pagefindPath = '/_pagefind/pagefind.js'
 

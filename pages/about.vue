@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import pkg from '~/package.json'
-const appConfig = useAppConfig()
+const appConfig = useAppConfig() as any
 
 useSeoMeta({
   titleTemplate: appConfig.title.about,

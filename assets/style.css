@@ -21,6 +21,13 @@ The button to change between 1 and 2 coloumn is in MarkdownNote.vue line 416
 div-parent to all header is maybe in MarkdownNote.vue line 
 */
 
+.drop-up-btn {
+  /* right:0 !important;*/
+  /* left: 100px !important; */
+  top:-1000% !important;
+  bottom: 100%
+}
+
 @media only screen and (max-width: 940px) {
   .notewidth {
     color: royalblue;
@@ -50,10 +57,12 @@ See the code in MarkdownNote.vue
     color: rgb(230, 173, 173);
     width: 46vw
   } /* someplaces the with can be only one col - then the width 46 is not good */ 
+  /*
   h1[name='h1top'] {
     color: rgb(76, 139, 0);
     width: 88vw
   }
+  */
   .fullwidth {
     width: 78vw
   }
@@ -64,10 +73,12 @@ See the code in MarkdownNote.vue
     color: darkblue;
     width: 48vw
   }
+  /*
   h1[name='h1top'] {
     color: rgb(139, 107, 0);
     width: 80vw
   }
+  */
   .fullwidth {
     width: 70vw
   }

@@ -8,8 +8,8 @@
 // import { registerSW } from 'virtual:pwa-register'
 import { logos } from './assets/logos'
 import pkg from '~/package.json'
-const appConfig = useAppConfig()
-const config = useRuntimeConfig()
+const appConfig = useAppConfig() as any
+const config = useRuntimeConfig() as any
 /**
  *
  * set head meta for all pages
@@ -35,6 +35,12 @@ useServerSeoMeta({
 useHead({
   // meta: [{ name: 'doctype', content: 'html' }],
   htmlAttrs: { lang: 'da' },
+  script: [
+    {
+      // src: 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
+      // body: true
+    }
+  ],
   style: [
     { children: 'html, body { scroll-behavior: smooth; overflow: overlay }' }
   ],
@@ -43,8 +49,7 @@ useHead({
     { rel: 'apple-touch-icon', href: logos.apple },
     { rel: 'manifest', href: 'manifest.webmanifest', crossorigin: 'use-credentials' }
   ],
-  noscript: [{ children: 'JavaScript is required' }],
-  script: []
+  noscript: [{ children: 'JavaScript is required in this app.' }]
 })
 
 // const windowSize = useWindowSize()

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import pkg from '~/package.json'
-const appConfig = useAppConfig()
+const appConfig = useAppConfig() as any
 
 /**
 *
@@ -212,8 +212,14 @@ watch(showZoomImage, () => {
  * added 20.09.23 v3.10-rc.18
  * changeFlexiMode not in use on this page
  */
+function prevOrNext () {
+  return true
+}
 onUnmounted(() => {
-  flexiMode.value = 'blog'
+  flexiMode.value = 'note'
+  if (prevOrNext) {
+    console.log('prevOrNext is ' + prevOrNext + ' and window.location.toLocaleString is ' + window.location.toLocaleString())
+  }
 })
 </script>
 
@@ -249,9 +255,11 @@ onUnmounted(() => {
       <div v-if="(prevArticleUrl || nextArticleUrl)" class="container lg:max-w-4xl mx-auto px-6 md:px-12 py-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
         <NuxtLink
           v-if="prevArticleUrl"
+          id="prevArticleUrl"
           :to="prevArticleUrl"
           aria-label="prevArticleUrl"
           class="px-4 py-6 flex justify-start items-center text-gray-600 hover:text-white hover:bg-green-500 border border-gray-400 hover:border-green-500 focus:outline-none rounded-lg transition-colors duration-300"
+          @click="prevOrNext"
         >
           <div class="flex items-center gap-1">
             <IconCustom name="ic:round-keyboard-arrow-left" class="shrink-0 w-8 h-8 opacity-70" />
@@ -267,9 +275,11 @@ onUnmounted(() => {
         </NuxtLink>
         <NuxtLink
           v-if="nextArticleUrl"
+          id="nextArticleUrl"
           :to="nextArticleUrl"
           aria-label="nextArticleUrl"
           class="px-4 py-6 flex justify-end items-center text-gray-600 hover:text-white hover:bg-green-500 border border-gray-400 hover:border-green-500 focus:outline-none rounded-lg transition-colors duration-300"
+          @click="prevOrNext"
         >
           <div class="flex items-center gap-1">
             <div class="flex flex-col gap-2">

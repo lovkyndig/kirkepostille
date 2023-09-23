@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
 import pkg from '~/package.json'
-const appConfig = useAppConfig()
+const appConfig = useAppConfig() as any
 
 interface MyCustomParsedContent extends ParsedContent {
   tags: string[]

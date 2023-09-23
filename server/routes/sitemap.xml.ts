@@ -13,7 +13,7 @@ export default defineEventHandler(async (event) => {
   const articles = docs.filter(doc => doc?._type === 'markdown')
 
   const sitemap = new SitemapStream({
-    hostname: config.public.hostname
+    hostname: config.public.hostname as any
   })
 
   for (const article of articles) {

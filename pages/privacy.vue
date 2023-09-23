@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
-const appConfig = useAppConfig()
+const appConfig = useAppConfig() as any
 const config = useRuntimeConfig()
 const base = config.public.hostname
 

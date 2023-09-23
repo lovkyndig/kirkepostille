@@ -1,12 +1,22 @@
 {
-  // https://v3.nuxtjs.org/concepts/typescript
+  /* Sources:
+  https://v3.nuxtjs.org/concepts/typescript
+  https://nuxt.com/docs/guide/concepts/typescript#nuxttsconfigjson
+  https://www.typescriptlang.org/tsconfig
+  https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#types-typeroots-and-types
+  */
+  // 
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "types": [
-      "vite-plugin-pwa/client"
-    ]
+    // https://www.typescriptlang.org/docs/handbook/compiler-options.html
   },
+  
   "vueCompilerOptions": {
-    "skipTemplateCodegen": true
-  }
+    // "skipTemplateCodegen": true
+  },
+  // "include": ["**/*"], // only for checking everything sometimes:)
+  "exclude": [
+    "./node_modules/@nuxtjs/mdc/**/*", 
+    // This was a problem when I moved ProseH1 to 6 away from content-folder.
+  ]
 }

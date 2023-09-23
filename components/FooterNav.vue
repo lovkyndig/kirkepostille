@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { logos } from '~/assets/logos'
-const appConfig = useAppConfig()
+const appConfig = useAppConfig() as any
 
-const isActive = ref(true)
+// const isActive = ref(true)
 
 const props = defineProps({
   footerCatalog: {
@@ -110,6 +110,27 @@ const toggleCatalogHandler = () => {
 const showSearchModal = useShowSearchModal()
 
 const showCatalog = useState('showNoteCatalog')
+
+/**
+ * Google Translate
+ * Source:
+ * https://www.npmjs.com/package/@google-translate-select/vue3
+ * https://github.com/i7eo/google-translate-select/tree/master
+ * https://google-translate-select.i7eo.com/
+ */
+onMounted(() => {
+  function changeStyle () {
+    // console.log('changeStyle starting ...')
+    const el2 = document.getElementsByClassName('google-translate-select-dropdown__menu')
+    el2[1].setAttribute('id', 'dropUpLang')
+    el2[1].setAttribute('style', 'bottom:100%')
+    el2[1].classList.add('drop-up-btn')
+  }
+  const el = document.getElementsByClassName('google-translate-select-dropdown__activator')
+  el[1].setAttribute('id', 'dropUpBtn')
+  el[1].addEventListener('click', changeStyle)
+  // console.log('changeStyle finished.')
+})
 
 </script>
 
@@ -270,6 +291,10 @@ const showCatalog = useState('showNoteCatalog')
           </p>
         </div>
       </button>
+
+      <!-- Creating a switch for changing language-translation -->
+      <CustomGoogleTranslate />
+
       <!--
         Removed the original btn for blog-note-changing and
         replaced it with the catalog-btn
@@ -294,16 +319,15 @@ const showCatalog = useState('showNoteCatalog')
 </template>
 
 <style scoped lang="scss">
+/* style for drop-up-btn have to be global - see style.css */
+
+.drop-down-btn {
+  top: 100% !important;
+}
+
 /*
 tailwind-colors
 https://tailwindcss.com/docs/customizing-colors
-*/
-/*
-#indexBtn.activated {
-  background: #86efac;
-  border: #e9d5ff;
-  color: #6e1abd
-}
 */
 
 .options-container::-webkit-scrollbar {

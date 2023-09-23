@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const appConfig = useAppConfig()
+const appConfig = useAppConfig() as any
 const props = defineProps<{ data: any }>()
 const showSeriesModal = useState('showSeriesModal')
 
@@ -267,7 +267,7 @@ const toggleAllContent = () => {
 
 // added code to fix problem with headers in node-modus (on big screens)
 watch(oneColHeaderOnBigScreen, () => {
-  const elements = document.querySelectorAll("h2,h3,h4,h5[name='hnames']")
+  const elements = document.querySelectorAll("h2,h3,h4,h5[name='h2to5']")
   if (oneColHeaderOnBigScreen.value) {
     // loop trough headers and toggle the class .notewidth
     elements.forEach((element) => {

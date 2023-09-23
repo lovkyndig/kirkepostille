@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Ref } from 'vue'
 
-const appConfig = useAppConfig()
+const appConfig = useAppConfig() as any
 
 const props = defineProps({
   elem: {

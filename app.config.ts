@@ -15,7 +15,7 @@ export default defineAppConfig({
       link: '/about'
     },
     privacy: {
-      echo: 'Privacy',
+      echo: 'Priv',
       link: '/privacy',
       rss: 'Rss',
       sitemap: 'Sidekart'
@@ -67,7 +67,7 @@ export default defineAppConfig({
   },
   title: {
     home: 'Dr. Martin Luthers kirkepostille - medisin for syke sjeler!',
-    about: 'Om nett-kirkepostillen og dens fantastiske søkefunksjonalitet.',
+    about: 'Om nett-kirkepostillen og dens moderne søkefunksjonalitet.',
     list: 'Kirkepostille ord: ',
     list_all: 'ALLE talene vises her'
   },

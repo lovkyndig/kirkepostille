@@ -6,15 +6,15 @@ import { logos } from '~/assets/logos'
 
 // refer to https://mokkapps.de/blog/create-an-rss-feed-with-nuxt-3-and-nuxt-content-v2/
 export default defineEventHandler(async (event) => {
-  const config = useRuntimeConfig()
+  const config = useRuntimeConfig() as any
   // feed information
   const feed = new Feed({
     title: config.site.title,
     description: config.site.description,
     image: logos.avatar,
     copyright: pkg.author,
-    id: config.public.hostname,
-    link: config.public.hostname
+    id: config.public.hostname as any,
+    link: config.public.hostname as any
   })
 
   // feed items
