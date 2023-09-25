@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { logos } from '~/assets/logos'
+
 const appConfig = useAppConfig() as any
 
 const props = defineProps({
@@ -100,19 +101,22 @@ const showSearchModal = useShowSearchModal()
  * https://github.com/i7eo/google-translate-select/tree/master
  * https://google-translate-select.i7eo.com/
  */
+/*
 onMounted(() => {
-  function changeStyle () {
-    // console.log('changeStyle starting ...')
-    const el2 = document.getElementsByClassName('google-translate-select-dropdown__menu')
-    el2[0].setAttribute('id', 'dropDownLang')
-    el2[0].setAttribute('style', 'top:100%')
-    el2[0].classList.add('drop-down-btn')
+  changeLanguage0.count = 0
+  changeLanguage0()
+  function changeLanguage0 () {
+    console.log('ChangeLanguage starting ... DropDownBtn clicked ' + changeLanguage0.count)
+    const dropDownBtn = document.getElementsByClassName('google-translate-select-dropdown__menu')[0]
+    dropDownBtn.setAttribute('id', 'langMenu')
+    changeLanguage0.count = +1
   }
   const el = document.getElementsByClassName('google-translate-select-dropdown__activator')
   el[0].setAttribute('id', 'dropDownBtn')
-  el[0].addEventListener('click', changeStyle)
-  // console.log('changeStyle finished.')
+  el[0].addEventListener('click', changeLanguage0)
 })
+*/
+console.log('HeaderNav.vue finish loading.')
 </script>
 
 <template>
@@ -170,10 +174,8 @@ onMounted(() => {
         >
           {{ appConfig.nav.privacy.echo }}
         </NuxtLink>
-        <div id="google_translate_element">
-          <!-- Creating a switch for changing language-translation -->
-          <CustomGoogleTranslate />
-        </div>
+        <!-- Creating a switch for changing language-translation -->
+        <CustomGoogleTranslate />
       </div>
       <div class="flex justify-end items-center gap-4">
         <!-- top search button -->
