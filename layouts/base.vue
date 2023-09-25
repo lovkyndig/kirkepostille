@@ -1,4 +1,25 @@
 <script setup lang="ts">
+// import { useBreakpoints } from '@vueuse/core'
+/**
+ * source:
+ * https://vueuse.org/core/useBreakpoints/
+ * https://stackoverflow.com/questions/49414697/how-to-change-vue-js-data-value-when-screen-size-changes
+ * https://stackoverflow.com/questions/48515023/display-different-vuejs-components-for-mobile-browsers
+ */
+/*
+const breakpoints = useBreakpoints({
+  minimum: 320,
+  tablet: 640,
+  maximum: 1920
+})
+// <HeaderNav v-if="laptop"
+// <FooterNav v-if="mobil"
+
+// const laptop = breakpoints.between('laptop', 'desktop')
+const laptop = breakpoints.between('tablet', 'maximum')
+const mobil = breakpoints.between('minimum', 'tablet')
+*/
+
 const props = defineProps({
   headerFlexiMode: {
     type: Boolean,
@@ -115,7 +136,9 @@ onUnmounted(() => {
     <!-- <VitePwaManifest /> -->
     <div class="pb-20 sm:pb-0 bg-gray-50 flex flex-col min-h-screen">
       <header class="hidden sm:block shrink-0" :class="route.path === '/' ? 'sm:sticky top-0 inset-x-0 z-30' : 'relative z-40'">
-        <HeaderNav :header-flexi-mode="props.headerFlexiMode" />
+        <HeaderNav
+          :header-flexi-mode="props.headerFlexiMode"
+        />
       </header>
       <div class="grow flex flex-col">
         <slot />
@@ -137,7 +160,10 @@ onUnmounted(() => {
       </Transition>
 
       <nav class="sm:hidden fixed bottom-0 left-0 right-0 z-50">
-        <FooterNav :footer-catalog="props.footerCatalog" :footer-flexi-mode="props.footerFlexiMode" />
+        <FooterNav
+          :footer-catalog="props.footerCatalog"
+          :footer-flexi-mode="props.footerFlexiMode"
+        />
       </nav>
 
       <ClientOnly>

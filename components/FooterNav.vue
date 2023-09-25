@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import type { NavItem } from '@nuxt/content/dist/runtime/types'
 import { logos } from '~/assets/logos'
-const appConfig = useAppConfig() as any
 
-// const isActive = ref(true)
+const appConfig = useAppConfig() as any
 
 const props = defineProps({
   footerCatalog: {
@@ -118,20 +117,23 @@ const showCatalog = useState('showNoteCatalog')
  * https://github.com/i7eo/google-translate-select/tree/master
  * https://google-translate-select.i7eo.com/
  */
+/*
 onMounted(() => {
-  function changeStyle () {
-    // console.log('changeStyle starting ...')
-    const el2 = document.getElementsByClassName('google-translate-select-dropdown__menu')
-    el2[1].setAttribute('id', 'dropUpLang')
-    el2[1].setAttribute('style', 'bottom:100%')
-    el2[1].classList.add('drop-up-btn')
+  changeLanguage1.count = 0
+  function changeLanguage1 () {
+    console.log('ChangeLanguage starting ... DropUpBtn clicked ' + changeLanguage1.count)
+    const dropUpBtn = document.getElementsByClassName('google-translate-select-dropdown__menu')[0]
+    dropUpBtn.setAttribute('id', 'dropUpLang')
+    dropUpBtn.setAttribute('style', 'bottom:100%')
+    dropUpBtn.classList.add('drop-up-btn')
+    changeLanguage1.count = +1
   }
   const el = document.getElementsByClassName('google-translate-select-dropdown__activator')
-  el[1].setAttribute('id', 'dropUpBtn')
-  el[1].addEventListener('click', changeStyle)
-  // console.log('changeStyle finished.')
+  el[0].setAttribute('id', 'dropUpBtn')
+  el[0].addEventListener('click', changeLanguage1)
 })
-
+*/
+console.log('FooterNav.vue finish loading.')
 </script>
 
 <template>
@@ -291,10 +293,6 @@ onMounted(() => {
           </p>
         </div>
       </button>
-
-      <!-- Creating a switch for changing language-translation -->
-      <CustomGoogleTranslate />
-
       <!--
         Removed the original btn for blog-note-changing and
         replaced it with the catalog-btn
@@ -314,16 +312,18 @@ onMounted(() => {
           </p>
         </div>
       </button>
+      <!-- Creating a switch for changing language-translation -->
+      <!-- <CustomGoogleTranslate /> -->
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-/* style for drop-up-btn have to be global - see style.css */
-
+/* style for drop-up-btn have to be global - see style.css
 .drop-down-btn {
   top: 100% !important;
 }
+*/s
 
 /*
 tailwind-colors
