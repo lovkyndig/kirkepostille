@@ -1,6 +1,6 @@
 {
   "name": "@lovkyndig/kirkepostille",
-  "version": "1.0.0",
+  "version": "1.0.1-rc.1",
   "description": "⚡A book from 1888 with 1743 pages, converted to Nuxt content, implemented with pagefind.",
   "homepage": "https://kirkepostille.vercel.app",
   "author": "Kyrie Eleison",
