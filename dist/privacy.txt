@@ -1,61 +1,62 @@
-  # Personvernerklaering (GDPR)
-  Leseveiledning: De norske tegne i alfabetet er blitt byttet ut, med ae, o og aa.
-  
-  ## "Google Play" krever personvernerklaering
-  Google's regler for publisering av apper i "Google Play Store":
-  - _"Apper skal ha personvernregler selv om de ikke har tilgang til personlige og sensitive brukerdata."_ (NO)
-  - _"Apps that do not access any personal and sensitive user data must still submit a privacy policy."_ [EN](https://support.google.com/googleplay/android-developer/answer/9859455?hl=en)
-  
-  ## Hva slags personopplysninger behandles?
-  - Brukeraktivitet: Lese- og handlingshistorikk fra app og nettsider. Samt teknisk informasjon om enhetene de bruker.
-  Herettter benyttes begrepet brukeraktivitet istedenfor personopplysninger, fordi det beskriver de personopplysningene som behandles.
-  
-  ### Formaal
-  Formaalet er todelt; 
-  - kontroll av uonsket/ulovlig brukeraktivitet og 
-  - finne grunnlag for aa gjore appen bedre for brukerne.
-  
-  ## Om innhenting av brukeraktivitet
-  Opplysningene samles inn av "Google" via Play Console, Search Console og Analytics.
-  - Utvikleren samler ikke inn andre opplysninger enn det som samles inn og lagres av Google.
-  - Utvikleren har tilgang til denne informasjonen via Google, pga. verifisert eierskap til domenet hvor PWA er utplassert (se _#### Domene_ nedenfor).
-  - Utvikleren kopierer eller lagrer ikke brukeraktiviteten, som finnes paa Google', paa andre steder.
-  
-  ## Google Analytics og Cookies
-  Google Analytics lagrer og benytter cookies i sin behandling av brukerdata. Av den grunn (jf. GDPR) er utvikleren aa informere brukeren og sporre om samtykke til slik lagring, for aa gjore bruk av Google Analytics.
-  
-  ### Login autentisering
-  Cookies er paatvunget ved innlogging til passordbeskyttede sider. Slike cookies benyttes ikke hvis du logger inn til sider uten passord.
-  
-  ## Juridisk ansvar
-  Utvikleren erkjenner ansvar for studering av den brukeraktivit som Google' gjor tilgjengelig for utviklerne via: 
-  - [Google Search Console](https://search.google.com/search-console/about)
-  - [Google Analytics](https://en.wikipedia.org/wiki/Google_Analytics)
-  
-  ## Sporsmaal og innsigelser
-  Sporsmaal eller innsigelser til at utvikleren benytter seg av Google Analytics og cookies, eller andre sporsmaal og innsigelser, kan sendes til utviklerens email:
-  - [Eleison](mailto:jur.eleison@gmail.com)
-  
-  ## Klage paa behandling av brukeraktivitet
-  I tillegg til aa klage til epostadressen nevnt i forrige avsnitt, kan du klage til Datatilsynet (i Norge), dersom du mener at han gjor noe uriktig.
-  - [Datatilsynet](https://www.datatilsynet.no)
-  
-  #### Domene
-  Appen er tilknyttet en pwa (via twa) som er utplassert paa et underdomene under Vercel med folgende url:
-  - [kirkepostille.vercel.app](https://kirkepostille.vercel.app)
-  
-  #### Appnavn
-  Appnavnet på Google Play er:
-  - "Kirkepostille"
-  
-  #### Aapen kildekode
-  Kildekode for pwa som ligger til grunn for bygging av appen (med @bubblewrap) er aapen og offentlig:
-  - [GitHub](https://github.com/lovkyndig/kirkepostille)
-  
-  #### GitHub
-  Oversikt over utviklerens aapen kildekode-programmering er offentlig tilgjengelig paa uviklerens konto paa GitHub:
-  - [github.com/lovkyndig](https://github.com/lovkyndig).
-  
-  #### Google Play
-  Naermere info om denne appen finnes paa Google Play med oøk på google ved søkeordene "Google Play Kirkepostille". Direktelink:
-  - [Kirkepostille](https://play.google.com/store/apps/details?id=app.vercel.kirkepostille.twa).
+# Privacy Policy Statement (GDPR)
+
+## "Google Play" requires privacy clearance
+Google's rules for publishing apps in the "Google Play Store":  
+- _"Apps that do not access any personal and sensitive user data must still submit a privacy policy."_ [EN](https://support.google.com/googleplay/android-developer/answer/9859455?hl=en )  
+
+## What kind of personal data is processed?
+- User activity: Reading and action history from apps and websites. As well as technical information about the devices they use.  
+Hereafter, the term user activity is used instead of personal data, because it describes the personal data that is processed.
+
+### Purpose
+The purpose is twofold;
+- control of unwanted/illegal user activity and
+- find a basis for making the app better for users.
+
+## About collecting user activity
+The information is collected by "Google" via Play Console and Search Console.
+- The developer does not collect any other information than that which is collected and stored by Google.  
+- The developer has access to this information via Google, due to verified ownership of the domain where the PWA is deployed (see _#### The domain_ below).  
+- The developer does not copy or store the user activity, which is found on Google', in other places.
+
+## Legal liability
+The developer acknowledges responsibility for studying the user activity that Google makes available to the developers via:  
+- [Google Search Console](https://search.google.com/search-console/about)
+
+## Third party cookies
+We don't use cookies, but we are using a commenting addon from a third party, "Giscus".  
+They are using cookies in the login autentication process (before commenting).
+
+## Login
+As said above, login is required via third party, but only if you wish to write comments.  
+You can read comments and everyting on the websites, without logging in.
+
+## Claims and objections
+Complaints or objections of the developer's use of third parties services, or other complaints and objections, can be sent to the developer's email:  
+- [Kyrie Eleison](mailto:jesu.broder@gmail.com)
+
+## Complaint about processing of user activity
+In addition to complaining to the e-mail address mentioned in the previous section, you can complain to the Data Protection Authority (in Norway) if you believe that he is doing something wrong.  
+- [Datatilsynet] (https://www.datatilsynet.no)
+
+#### The domain
+The app is connected to a pwa (via twa) which is deployed on a subdomain under Vercel with the following url:  
+- [kirkepostille.vercel.app](https://kirkepostille.vercel.app)
+
+#### App name
+The app name on Google Play is:
+- "Kirkepostille"
+
+#### Open source code
+Source code for pwa that is the basis for building the app (with @bubblewrap) is open and public:  
+- [GitHub](https://github.com/lovkyndig/kirkepostille)
+
+#### GitHub
+An overview of the developer's open source programming is publicly available on the developer's account on GitHub:  
+- [github.com/lovkyndig](https://github.com/lovkyndig).
+
+#### Google Play
+More information about this app can be found on Google Play by adding it to Google with the search terms "Google Play Kirkepostille". Direct link:  
+- [Kirkepostille](https://play.google.com/store/apps/details?id=app.vercel.kirkepostille.twa).
+
+_Edited: 22.11.2023_

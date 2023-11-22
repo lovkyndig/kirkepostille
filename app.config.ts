@@ -1,84 +1,85 @@
-// @ts-nocheck
+import pkg from './package.json'
+// import { capitalize } from './node_modules/@lovkyndig/create-google-app/utils/capitalize-method'
+
 export default defineAppConfig({
-  site: {
-    listview: '/img/listview.png',
-    frontpage: '/img/frontpage.png'
-  },
-  nav: {
-    home: {
-      echo: 'Hjem',
-      more: 'Åpne mappe',
-      not_found: 'Ingen artikler funnet.'
+  myLayer: {
+    meta: {
+      name: 'Kirkepostille',
+      version: pkg.version,
+      description: pkg.description,
+      homepage: pkg.homepage,
+      logo: 'Kyrie Eleison'
     },
-    about: {
-      echo: 'Info',
-      link: '/about'
+    menu: { btn: 'Postiller' },
+    author: pkg.author,
+    email: 'jesu.broder@gmail.com',
+    avatar: '/img/180.webp',
+    favicon: '/favicon.ico',
+    assetTypes: [],
+    giscus: {
+      repo: 'lovkyndig/kirkepostille',
+      repoId: 'R_kgDOJCYY3Q',
+      category: 'Comments',
+      categoryId: 'DIC_kwDOJCYY3c4CbJbr',
+      mapping: 'pathname',
+      reactionsEnabled: '1',
+      emitMetadata: '0',
+      inputPosition: 'top',
+      theme: 'noborder_dark',
+      lang: 'en',
+      loading: 'lazy'
     },
     privacy: {
-      echo: 'Priv',
-      link: '/privacy',
-      rss: 'Rss',
-      sitemap: 'Sidekart'
+      title: 'Privacy Policy med rss og sitemap for kirkepostille.',
+      description: 'Privacy Policy er påkrevd for Google Play Apper, men også pga. kommentar-autentiseringen som benytter seg av cookies.',
+      notification: 'Privacy Policy, rss og sitemap for kirkepostille.'
+    },
+    about: {
+      title: 'Om nett-kirkepostillen og dens moderne søkefunksjonalitet.',
+      description: 'Les om Luthers kirkepostille, tilrettelagt for mobil og nettbrett, med søkefunksjon som i nettbibler.',
+      notification: 'Kyrie Eleison - er en av mange redaktører som arbeider med skriftlig evangelisering.'
+    },
+    home: {
+      title: 'Dr. Martin Luthers kirkepostille - medisin for syke sjeler!',
+      description: 'Dr. Martin Luthers kirkepostille med innebygd søkemotor, per dato med det mest avanserte brukergrenesnittet for mobil og nettbrett.',
+      notification: 'Guds fred fra Gud Fader, Jesus Kristus og Den Hellige Ånd.'
+    },
+    slug: {
+      description: 'Prediken/tale fra Dr. Martin Luthers kirkepostille med url: ',
+      notification: 'Det oppfordres til å bruke kommentarfeltene under predikenen!'
+    },
+    list: {
+      tags: 'Predikener fra Dr. Martin Luthers kirkepostille med tag: ',
+      tags_all: 'Alle predikener',
+      description: 'Liste med predikener og taler fra Dr. Martin Luthers kirkepostille, med beskrivende stikkord over innholdet.',
+      notification: 'Bruk gjerne søkeord/ strofer for å utnytte de fantastiske søkefunksjonene.'
+    },
+    scrollSmooth: true,
+    homePage: {
+      showBlogPosts: true,
+      postItemLimit: 20
+    },
+    privacyPage: true,
+    articlePage: {
+      showTime: true,
+      outdated: {
+        show: true,
+        threshold: 30
+      },
+      showCatalog: false
+    },
+    search: {
+      exclude: [
+        '/',
+        '/about/',
+        '/privacy/',
+        '/list/'
+      ]
     }
-  },
-  menu: {
-    more: 'Toggle',
-    theme: 'Endre tema til',
-    toggle: 'Click to Toggle the Content'
-  },
-  filter: {
-    catalog: 'Indhold',
-    category: 'Postiller',
-    tags: 'Merke',
-    series: 'Sesong',
-    all: 'Alle',
-    less: 'Skjul',
-    more: 'Vis',
-    search: 'Søk',
-    search_guide: 'Søg efter ord eller en frase. Fraser må være omsluttet av anførselstegn.',
-    clear: 'Rens filter',
-    detail: 'ingress',
-    loading: 'Laster'
-  },
-  privacyPage: true,
-  homePage: {
-    showBlogPosts: true,
-    postItemLimit: 55
-  },
-  articlePage: {
-    showTime: true,
-    outdated: {
-      show: true,
-      threshold: 30
-    }
-  },
-  article: {
-    parent: 'Content',
-    folder: 'article',
-    link: '/article'
-  },
-  search: {
-    exclude: [
-      '/',
-      '/about/',
-      '/privacy/',
-      '/list/'
-    ]
-  },
-  title: {
-    home: 'Dr. Martin Luthers kirkepostille - medisin for syke sjeler!',
-    about: 'Om nett-kirkepostillen og dens moderne søkefunksjonalitet.',
-    list: 'Kirkepostille ord: ',
-    list_all: 'ALLE talene vises her'
-  },
-  description: {
-    home: 'Dr. Martin Luthers kirkepostille med innebygd søkemotor, per dato med det mest avanserte brukergrenesnittet for mobil og nettbrett.',
-    about: 'Les om Luthers kirkepostille, tilrettelagt for mobil og nettbrett, med søkefunksjon som i nettbibler.',
-    list: 'Liste over Dr. Martin Luthers predikener i kirkepostillen innenfor folgende valgt serie, merke og/eller sesong:',
-    slug: 'Dr. Martin Luthers kirkepostille med forklaring av evangelium og epistelteksten. Publisert på https//kirkepostille/vercel.app.'
-  },
-  list: {
-    evangelie_list1: '/list?tags=Evangelium&category=Alle&series=Alle',
-    epistel_list1: '/list?tags=Epistel&category=Alle&series=Alle'
   }
 })
+/*
+ahrefs LENGTH guide:
+Title: 50-60
+Descriptionn 110-130
+*/

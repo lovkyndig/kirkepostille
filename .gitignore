@@ -1,28 +1,33 @@
-logg.txt
+# No need to have the following files on GitHub and Vercel.
+# Standard
 node_modules
-yarn.lock
+*.log*
+.env
+
+# dev, build and generate
 .nuxt
 .output
-.well-known/bubblewrap-guide
-.well-known/Link2PWABuilder.url
-.well-known/pc-api-keys.json
-.weel-known/signing-key-info.txt
-.gradle
-assetlinks.json
-app/src
-app/build
-app/build.gradle
-build.gradle
-gradle
-gradle.properties
-gradlew
-gradlew.bat
-manifest-checksum.txt
-settings.gradle
-signing.keystore
-store_icon.png
-twa-manifest.json
-app-release-bundle.aab
-app-release-signed.apk
-app-release-signed.apk.idsig
-app-release-unsigned-aligned.apk
+dist
+
+# Yarn
+yarn.lock
+
+# INIT-FILES
+# Service-Worker
+public/sw*
+public/workbox*
+
+# Public folders and files
+public/article
+public/convert
+public/*.bat
+
+# Root-folders and files
+*.bat
+
+# The GITHUB_TOKEN_READ .env-variable is inserted manually on Vercel.
+# .npmrc
+.well-known/*.txt
+
+# bubblewrap
+bubblewrap

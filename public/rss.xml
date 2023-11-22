@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>PWA Starter App</title>
+        <link>https://pwa-starter-app.vercel.app</link>
+        <description>This repo is used as starter for all new apps of Kyrie Eleison, published on Google Play Store.</description>
+        <lastBuildDate>Tue, 21 Nov 2023 08:29:41 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>PWA Starter App</title>
+            <url>https://pwa-starter-app.vercel.app/img/svg/avatar.svg</url>
+            <link>https://pwa-starter-app.vercel.app</link>
+        </image>
+        <copyright>All rights reserved 2023, Kyrie Eleison</copyright>
+        <item>
+            <title><![CDATA[About PWA Starter App]]></title>
+            <link>https://pwa-starter-app.vercel.app/about</link>
+            <guid>/about</guid>
+            <content:encoded><![CDATA[this should be the full content]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[How to use this PWA Starter App?]]></title>
+            <link>https://pwa-starter-app.vercel.app/article/intro</link>
+            <guid>/article/intro</guid>
+            <pubDate>Thu, 16 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[The easiest wat is to install it as a template from GitHub, and then create the content in markdown-format. Thats it. Don't thing about html, css and javascript.]]></description>
+            <content:encoded><![CDATA[this should be the full content]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[10 Commandments]]></title>
+            <link>https://pwa-starter-app.vercel.app/article/catechism/the-commandments</link>
+            <guid>/article/catechism/the-commandments</guid>
+            <pubDate>Mon, 20 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[THE TEN COMMANDMENTS OF GOD]]></description>
+            <content:encoded><![CDATA[this should be the full content]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[The Creed]]></title>
+            <link>https://pwa-starter-app.vercel.app/article/catechism/the-creed</link>
+            <guid>/article/catechism/the-creed</guid>
+            <pubDate>Tue, 21 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[THE CHIEF ARTICLES OF OUR FAITH]]></description>
+            <content:encoded><![CDATA[this should be the full content]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[The lord's prayer]]></title>
+            <link>https://pwa-starter-app.vercel.app/article/catechism/the-lords-prayer</link>
+            <guid>/article/catechism/the-lords-prayer</guid>
+            <pubDate>Wed, 22 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[THE PRAYER, OR "OUR FATHER," WHICH CHRIST TAUGHT]]></description>
+            <content:encoded><![CDATA[this should be the full content]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[The baptism]]></title>
+            <link>https://pwa-starter-app.vercel.app/article/catechism/the-baptism</link>
+            <guid>/article/catechism/the-baptism</guid>
+            <pubDate>Thu, 23 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Go ye and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost. He that believeth and is baptized shall be saved; but he that believeth not shall be damned.]]></description>
+            <content:encoded><![CDATA[this should be the full content]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[The sacrament of the altar]]></title>
+            <link>https://pwa-starter-app.vercel.app/article/catechism/the-sacrament</link>
+            <guid>/article/catechism/the-sacrament</guid>
+            <pubDate>Fri, 24 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[OF THE SACRAMENT (The Lord's Supper)]]></description>
+            <content:encoded><![CDATA[this should be the full content]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[PWA Starter App]]></title>
+            <link>https://pwa-starter-app.vercel.app/</link>
+            <guid>/</guid>
+            <content:encoded><![CDATA[this should be the full content]]></content:encoded>
+        </item>
+    </channel>
+</rss>

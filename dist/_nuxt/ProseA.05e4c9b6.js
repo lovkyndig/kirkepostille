@@ -1,1 +1,0 @@
-import{_ as a}from"./nuxt-link.127be1bd.js";import{f as r,o as n,s as f,w as s,P as l}from"./entry.1a9e1a05.js";const u=r({__name:"ProseA",props:{href:{type:String,default:""},blank:{type:Boolean,default:!1}},setup(e){return(t,_)=>{const o=a;return n(),f(o,{href:e.href,"aria-label":"href=href"},{default:s(()=>[l(t.$slots,"default")]),_:3},8,["href"])}}});export{u as default};

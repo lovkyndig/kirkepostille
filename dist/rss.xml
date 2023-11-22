@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>kirkepostille</title>
+        <title>Kirkepostille</title>
         <link>https://kirkepostille.vercel.app</link>
         <description>⚡A book from 1888 with 1743 pages, converted to Nuxt content, implemented with pagefind.</description>
-        <lastBuildDate>Sat, 23 Sep 2023 08:49:30 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 22 Nov 2023 08:30:15 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
-            <title>kirkepostille</title>
-            <url>/img/180.jpg</url>
+            <title>Kirkepostille</title>
+            <url>https://kirkepostille.vercel.app/img/svg/avatar.svg</url>
             <link>https://kirkepostille.vercel.app</link>
         </image>
-        <copyright>lovkyndig</copyright>
+        <copyright>All rights reserved 2023, Kyrie Eleison</copyright>
         <item>
             <title><![CDATA[Om nett-kirkepostillen og dens moderne søkefunksjonalitet.]]></title>
             <link>https://kirkepostille.vercel.app/about</link>
